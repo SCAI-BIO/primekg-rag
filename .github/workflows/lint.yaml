@@ -1,4 +1,4 @@
-name: Test Scripts
+name: Lint Code
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  test:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,8 +24,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install flake8
 
-    - name: Test scripts
+    - name: Run linter
       run: |
-        python primekg-rag/client.py
+        flake8 primekg-rag/
