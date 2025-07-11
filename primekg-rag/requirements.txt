@@ -1,0 +1,4 @@
+# Add requirements herestreamlit
+pandas
+numpy
+streamlit
