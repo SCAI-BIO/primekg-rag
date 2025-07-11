@@ -21,8 +21,13 @@ jobs:
       with:
         python-version: '3.9'
 
-    - name: Install dependencies
+    - name: Install dependencies and DEBUG
       run: |
+        echo "--- 1. Listing all files in the repository ---"
+        ls -R
+        echo "\n--- 2. Checking contents of requirements.txt ---"
+        cat requirements.txt
+        echo "\n--- 3. Installing dependencies ---"
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
