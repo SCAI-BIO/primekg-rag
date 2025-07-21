@@ -1,8 +1,12 @@
 import chromadb
 import pandas as pd
 from tqdm import tqdm
+import os
 #we just worked with the questions instead of q,a which made the matching hallucinating a bit
 # --- Configuration ---
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 CHROMA_DB_PATH = 'primekg_unified_db_asis'
 CHROMA_COLLECTION_NAME = 'unified_knowledge_asis'
 QA_FILE_PATH = r"C:\Users\aemekkawi\Documents\GitHub\primekg-rag\primekg-rag\mini_sample_cleaned.csv"

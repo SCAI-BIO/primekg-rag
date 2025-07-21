@@ -155,10 +155,17 @@ import re
 import torch # Sentence-transformers uses PyTorch
 import ollama # For local LLM integration
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Define paths for subgraphs and the database relative to the script's location.
+ANALYSIS_COLLECTION_NAME = "subgraph_analyses"
+OLLAMA_MODEL_NAME = "deepseek-r1:14b"
+
 # --- Configuration ---
-MATCHES_FILE = "qa_to_node_matches_improved.csv"
-SUBGRAPHS_DIR = "subgraphs"
-ANALYSIS_DB_PATH = "analyses_db"
+MATCHES_FILE = os.path.join(BASE_DIR,"qa_to_node_matches_improved.csv")
+SUBGRAPHS_DIR = os.path.join(BASE_DIR,"subgraphs")
+ANALYSIS_DB_PATH = os.path.join(BASE_DIR, "analyses_db")
+
 ANALYSIS_COLLECTION_NAME = "subgraph_analyses"
 MAX_NODES = 15
 LABEL_MAX_LENGTH = 15

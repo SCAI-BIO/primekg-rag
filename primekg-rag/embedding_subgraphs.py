@@ -11,9 +11,16 @@ import logging
 from tqdm import tqdm
 
 # --- Configuration ---
-# This script will read from SUBGRAPHS_DIR and write to ANALYSIS_DB_PATH.
-SUBGRAPHS_DIR = "subgraphs"
-ANALYSIS_DB_PATH = "analyses_db"
+# **UPDATED FOR PORTABILITY**
+# Get the absolute path of the directory where this script is located.
+# This makes all other paths relative to the script, so it works on any computer.
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Define paths for subgraphs and the database relative to the script's location.
+SUBGRAPHS_DIR = os.path.join(BASE_DIR, "subgraphs")
+ANALYSIS_DB_PATH = os.path.join(BASE_DIR, "analyses_db")
+LOG_FILE_PATH = os.path.join(BASE_DIR, "analysis_generation.log")
+
 ANALYSIS_COLLECTION_NAME = "subgraph_analyses"
 OLLAMA_MODEL_NAME = "deepseek-r1:14b"
 
@@ -22,7 +29,7 @@ OLLAMA_MODEL_NAME = "deepseek-r1:14b"
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
-    filename='analysis_generation.log',
+    filename=LOG_FILE_PATH, # Use the new portable path
     filemode='w' # 'w' overwrites the log file on each run. Use 'a' to append.
 )
 logger = logging.getLogger(__name__)

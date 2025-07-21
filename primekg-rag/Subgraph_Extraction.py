@@ -6,9 +6,17 @@ import numpy as np
 
 # --- Configuration ---
 
-KG_CSV_PATH = 'C://Users//aemekkawi//Documents//GitHub//primekg-rag//primekg-rag//kg.csv' 
-MATCH_FILE_PATH = "C://Users//aemekkawi//Documents//GitHub//primekg-rag//primekg-rag//qa_to_node_matches_improved.csv"
-OUTPUT_DIR = "C://Users//aemekkawi//Documents//GitHub//primekg-rag//primekg-rag//subgraphs"
+import os
+
+# Define base directory
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# --- Configuration ---
+KG_CSV_PATH = os.path.join(BASE_DIR, 'primekg-rag', 'kg.csv')
+MATCH_FILE_PATH = os.path.join(BASE_DIR, 'primekg-rag', 'qa_to_node_matches_improved.csv')
+OUTPUT_DIR = os.path.join(BASE_DIR, 'primekg-rag', 'subgraphs')
+
+# Make sure output directory exists
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
