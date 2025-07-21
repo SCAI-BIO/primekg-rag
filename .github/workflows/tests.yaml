@@ -35,4 +35,4 @@ jobs:
 
     - name: Test scripts
       run: |
-        python primekg-rag/client.py
+        python client.py
