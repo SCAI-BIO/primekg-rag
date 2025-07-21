@@ -29,9 +29,8 @@ jobs:
         cat requirements.txt
         echo "\n--- 3. Installing dependencies ---"
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        pip install pyvis
-
+        python -m pip install -r requirements.txt
+        python -m pip install pyvis
 
     - name: Test scripts
       run: |
