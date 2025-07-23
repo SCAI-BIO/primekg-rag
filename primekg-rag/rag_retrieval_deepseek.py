@@ -53,16 +53,20 @@ class OllamaRAG:
         )
 
         prompt = f"""
-You are a leading AI research analyst specializing in bioinformatics and systems biology. Your task is to analyze a set of relationships from a knowledge graph and provide a high-level summary of their implications.
+You are a leading AI research analyst specializing in bioinformatics and systems biology.
+Your task is to analyze a set of relationships from a knowledge graph and provide
+a high-level summary of their implications.
 
 **Provided Context from Knowledge Graph:**
 {context_block}
 
 **Your Analysis Task:**
-Based *only* on the context provided, generate a professional analysis of the connections related to "{topic}". Structure your response with the following sections:
+Based *only* on the context provided, generate a professional analysis of the connections related to "{topic}".
+Structure your response with the following sections:
 1.  **Introduction:** Briefly state the central theme emerging from the data.
 2.  **Key Findings:** Synthesize the specific relationships into 2-3 key thematic points.
-3.  **Overall Implications:** Conclude with a high-level summary of what these connections imply about the complex nature of the topic.
+3.  **Overall Implications:** Conclude with a high-level summary of what these connections imply
+about the complex nature of the topic.
 
 **Professional Analysis:**
 """
@@ -114,7 +118,7 @@ def generate_all_analyses():
             )
             print(f" Stored analysis for: {topic}")
 
-    print(f"\n--- Process Complete. All analyses have been generated and stored. ---")
+    print("\n--- Process Complete. All analyses have been generated and stored. ---")
     print(f"Total analyses stored: {analysis_collection.count()}")
 
 
