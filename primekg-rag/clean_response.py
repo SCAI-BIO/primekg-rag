@@ -34,9 +34,7 @@ def clean_analyses_in_db():
     print_limit = 3  # Set how many examples to print
 
     print(f"Cleaning {len(ids_to_update)} documents...")
-    for i, doc in enumerate(
-        tqdm(all_analyses["documents"], desc="Cleaning Documents")
-    ):
+    for i, doc in enumerate(tqdm(all_analyses["documents"], desc="Cleaning Documents")):
 
         original_doc = doc
         clean_text = doc  # Default to original text
@@ -69,9 +67,7 @@ def clean_analyses_in_db():
         print("\nUpdating database with cleaned documents...")
         collection.update(ids=ids_to_update, documents=cleaned_documents)
         print("✅ Database cleaning complete.")
-        print(
-            f"({cleaned_count}out of the first{print_limit}were cleaned.)"
-        )
+        print(f"({cleaned_count}out of the first{print_limit}were cleaned.)")
     else:
         print("No documents were cleaned.")
 

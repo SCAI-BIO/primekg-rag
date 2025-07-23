@@ -24,9 +24,7 @@ def create_fully_deduplicated_subgraphs():
         """
         ).to_df()
         SYMMETRICAL_RELATIONS = all_relations_df["display_relation"].tolist()
-        print(
-            f"Found {len(SYMMETRICAL_RELATIONS)} unique relations."
-        )
+        print(f"Found {len(SYMMETRICAL_RELATIONS)} unique relations.")
     except Exception as e:
         print(f"Error finding relations: {e}")
         SYMMETRICAL_RELATIONS = []  # Fallback to an empty list on error
@@ -78,18 +76,14 @@ def create_fully_deduplicated_subgraphs():
                     x for x in node_name if x.isalnum() or x in " _-"
                 ).rstrip()
 
-                output_path = os.path.join(
-                    OUTPUT_DIR, f"{safe_filename}_subgraph.csv"
-                )
+                output_path = os.path.join(OUTPUT_DIR, f"{safe_filename}_subgraph.csv")
 
             subgraph_df.to_csv(output_path, index=False)
         except Exception as e:
             print(f"An error for node '{node_name}': {e}")
             continue
 
-    print(
-        f"\nDe-duplicated subgraph files created in'{OUTPUT_DIR}'."
-    )
+    print(f"\nDe-duplicated subgraph files created in'{OUTPUT_DIR}'.")
 
 
 if __name__ == "__main__":
