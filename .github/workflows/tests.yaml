@@ -29,9 +29,9 @@ jobs:
         cat requirements.txt
         echo "\n--- 3. Installing dependencies ---"
         python -m pip install --upgrade pip
-        python -m pip install -r requirements.txt
+        pip install -r primekg-rag/requirements.txt
         python -m pip install pyvis
 
     - name: Test scripts
       run: |
-        python client.py
+        python primekg-rag/client.py
