@@ -20,12 +20,12 @@ def create_fully_deduplicated_subgraphs():
     try:
         all_relations_df = duckdb.query(
             f"""
-            SELECT DISTINCT display_relation FROM read_csv_auto('{KG_CSV_PATH}', ignore_errors=true)
+            SELECT display_relation FROM ('{KG_CSV_PATH}', ignore_errors=true)
         """
         ).to_df()
         SYMMETRICAL_RELATIONS = all_relations_df["display_relation"].tolist()
         print(
-            f"Found {len(SYMMETRICAL_RELATIONS)} unique relations. All will be treated as symmetrical."
+            f"Found {len(SYMMETRICAL_RELATIONS)} unique relations."
         )
     except Exception as e:
         print(f"Error finding relations: {e}")
@@ -35,7 +35,7 @@ def create_fully_deduplicated_subgraphs():
     matches_df = pd.read_csv(MATCH_FILE_PATH)
     nodes_to_process = matches_df["best_match_node"].unique()
 
-    print(f"Starting clean subgraph creation for {len(nodes_to_process)} nodes.")
+    print(f"Starting subgraph creation for {len(nodes_to_process)} nodes")
 
     for node_name in tqdm(nodes_to_process, desc="Processing Nodes"):
         try:
@@ -45,7 +45,7 @@ def create_fully_deduplicated_subgraphs():
                 f"""
                 SELECT x_name, x_type, display_relation, y_name, y_type
                 FROM read_csv_auto('{KG_CSV_PATH}', ignore_errors=true)
-                WHERE x_name = '{safe_node_name}' OR y_name = '{safe_node_name}';
+                WHERE x_name='{safe_node_name}'OR y_name='{safe_node_name}';
             """
             ).to_df()
 
@@ -77,14 +77,18 @@ def create_fully_deduplicated_subgraphs():
                 safe_filename = "".join(
                     x for x in node_name if x.isalnum() or x in " _-"
                 ).rstrip()
-                output_path = os.path.join(OUTPUT_DIR, f"{safe_filename}_subgraph.csv")
-                subgraph_df.to_csv(output_path, index=False)
+
+                output_path = os.path.join(
+                    OUTPUT_DIR, f"{safe_filename}_subgraph.csv"
+                )
+
+            subgraph_df.to_csv(output_path, index=False)
         except Exception as e:
             print(f"An error for node '{node_name}': {e}")
             continue
 
     print(
-        f"\n✅ Process Complete. Fully de-duplicated subgraph files created in '{OUTPUT_DIR}'."
+        f"\nDe-duplicated subgraph files created in'{OUTPUT_DIR}'."
     )
 
 
