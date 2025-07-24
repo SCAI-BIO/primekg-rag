@@ -58,7 +58,7 @@ def create_rag_database():
             ids=doc_ids[i : i + batch_size], documents=all_documents[i : i + batch_size]
         )
 
-    print(f"\nRAG Vector Database is ready.")
+    print("RAG Vector Database is ready.")
     print(f"Total documents for retrieval: {collection.count()}")
 
 
