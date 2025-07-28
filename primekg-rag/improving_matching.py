@@ -1,22 +1,22 @@
+import os
 import chromadb
 import pandas as pd
 from tqdm import tqdm
-<<<<<<< HEAD
-import os
-#we just worked with the questions instead of q,a which made the matching hallucinating a bit
+<< << << < HEAD
+# we just worked with the questions instead of q,a which made the matching hallucinating a bit
 # --- Configuration ---
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 CHROMA_DB_PATH = 'primekg_unified_db_asis'
 CHROMA_COLLECTION_NAME = 'unified_knowledge_asis'
-=======
+== == == =
 
 # we just worked with the questions instead of q,a which made the matching hallucinating a bit
 # --- Configuration ---
 CHROMA_DB_PATH = "primekg_unified_db_asis"
 CHROMA_COLLECTION_NAME = "unified_knowledge_asis"
->>>>>>> 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
+>>>>>> > 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
 QA_FILE_PATH = r"C:\Users\aemekkawi\Documents\GitHub\primekg-rag\primekg-rag\mini_sample_cleaned.csv"
 OUTPUT_FILE_PATH = "qa_to_node_matches_improved.csv"  # New output file
 

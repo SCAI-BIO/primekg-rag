@@ -2,7 +2,8 @@ import pandas as pd
 import sys
 
 # --- Configuration ---
-EXCEL_FILE_PATH = "C://Users//aemekkawi//Documents//GitHub//primekg-rag//primekg-rag//Codebook opzet.xlsx"  # <-- IMPORTANT: Change this to your actual Excel file name
+# <-- IMPORTANT: Change this to your actual Excel file name
+EXCEL_FILE_PATH = "C://Users//aemekkawi//Documents//GitHub//primekg-rag//primekg-rag//Codebook opzet.xlsx"
 SHEET_NAME = "MINI"
 QUESTION_COLUMN_NAME = "Item + question"
 OUTPUT_CSV_FILE = "questions_for_mapping.csv"

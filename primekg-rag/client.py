@@ -14,7 +14,7 @@
 # LABEL_MAX_LENGTH = 15
 # NODE_COLORS = {
 #     "gene/protein": "#4CAF50", "drug": "#2196F3", "disease": "#9C27B0",
-#     "phenotype": "#00BCD4", "pathway": "#FFC107", 
+#     "phenotype": "#00BCD4", "pathway": "#FFC107",
 #     "molecular_function": "#F44336", "biological_process": "#E91E63",
 #     "cellular_component": "#673AB7", "compound": "#8BC34A",
 #     "chemical_compound": "#8BC34A", "biological_entity": "#FFEB3B",
@@ -86,7 +86,7 @@
 #         st.markdown(f"#### Interactive Graph for `{selected_file}`")
 #         file_path = os.path.join(SUBGRAPHS_DIR, selected_file)
 #         full_subgraph_df = pd.read_csv(file_path)
-        
+
 #         nodes_in_graph = set()
 #         edges_for_graph = []
 #         for _, row in full_subgraph_df.iterrows():
@@ -96,7 +96,7 @@
 #             nodes_in_graph.add(row['x_name'])
 #             nodes_in_graph.add(row['y_name'])
 #             edges_for_graph.append(row)
-        
+
 #         trimmed_subgraph_df = pd.DataFrame(edges_for_graph)
 
 #         if not trimmed_subgraph_df.empty:
@@ -105,18 +105,18 @@
 #                 src, src_type = row['x_name'], row['x_type']
 #                 dst, dst_type = row['y_name'], row['y_type']
 #                 rel = row['display_relation']
-                
+
 #                 src_color = NODE_COLORS.get(src_type, NODE_COLORS['default'])
 #                 dst_color = NODE_COLORS.get(dst_type, NODE_COLORS['default'])
 #                 src_label = truncate_label(src, LABEL_MAX_LENGTH)
 #                 dst_label = truncate_label(dst, LABEL_MAX_LENGTH)
 #                 src_title = f"{src}\nType: {src_type}"
 #                 dst_title = f"{dst}\nType: {dst_type}"
-                
+
 #                 net.add_node(src, label=src_label, title=src_title, color=src_color)
 #                 net.add_node(dst, label=dst_label, title=dst_title, color=dst_color)
 #                 net.add_edge(src, dst, label=rel, title=rel)
-            
+
 #             net.show_buttons(filter_=['physics'])
 #             try:
 #                 net.save_graph("final_graph.html")
@@ -134,7 +134,7 @@
 #         if analysis_collection:
 #             with st.spinner("Retrieving analysis..."):
 #                 retrieved_analysis = analysis_collection.get(ids=[selected_file])
-                
+
 #                 if retrieved_analysis and retrieved_analysis['documents']:
 #                     st.markdown(retrieved_analysis['documents'][0])
 #                 else:
@@ -152,8 +152,8 @@ import chromadb
 from sentence_transformers import SentenceTransformer, util
 import numpy as np
 import re
-import torch # Sentence-transformers uses PyTorch
-import ollama # For local LLM integration
+import torch  # Sentence-transformers uses PyTorch
+import ollama  # For local LLM integration
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -162,8 +162,8 @@ ANALYSIS_COLLECTION_NAME = "subgraph_analyses"
 OLLAMA_MODEL_NAME = "deepseek-r1:14b"
 
 # --- Configuration ---
-MATCHES_FILE = os.path.join(BASE_DIR,"qa_to_node_matches_improved.csv")
-SUBGRAPHS_DIR = os.path.join(BASE_DIR,"subgraphs")
+MATCHES_FILE = os.path.join(BASE_DIR, "qa_to_node_matches_improved.csv")
+SUBGRAPHS_DIR = os.path.join(BASE_DIR, "subgraphs")
 ANALYSIS_DB_PATH = os.path.join(BASE_DIR, "analyses_db")
 
 ANALYSIS_COLLECTION_NAME = "subgraph_analyses"
@@ -189,7 +189,6 @@ NODE_COLORS = {
 EMBEDDING_MODEL = 'all-MiniLM-L6-v2'
 # Define the local model for generation
 OLLAMA_MODEL_NAME = "deepseek-r1:14b"
-
 
 
 # --- Helper Functions ---
@@ -229,13 +228,16 @@ def truncate_label(text, max_length):
         return text[: max_length - 3] + "..."
     return text
 
-<<<<<<< HEAD
+
+<< << << < HEAD
 # --- Chatbot Helper Functions ---
+
 
 @st.cache_resource
 def load_embedding_model():
     """Loads the Sentence Transformer model from cache."""
     return SentenceTransformer(EMBEDDING_MODEL)
+
 
 def split_into_sentences(text):
     """Splits text into a list of sentences."""
@@ -243,6 +245,7 @@ def split_into_sentences(text):
         return []
     sentences = re.split(r'(?<=[.?!])\s+', text)
     return [s.strip() for s in sentences if s.strip()]
+
 
 def get_most_relevant_sentence(question, context_sentences, model):
     """
@@ -254,15 +257,16 @@ def get_most_relevant_sentence(question, context_sentences, model):
     # Encode the question and context sentences into embeddings
     question_embedding = model.encode(question, convert_to_tensor=True)
     context_embeddings = model.encode(context_sentences, convert_to_tensor=True)
-    
+
     # Calculate cosine similarity
     cosine_scores = util.cos_sim(question_embedding, context_embeddings)
-    
+
     # Find the index of the highest score
     most_similar_index = torch.argmax(cosine_scores)
     max_similarity_score = cosine_scores[0][most_similar_index].item()
-    
+
     return context_sentences[most_similar_index], max_similarity_score
+
 
 def generate_llm_response(question, context_sentence):
     """
@@ -292,8 +296,9 @@ Answer:"""
         st.error(f"Error connecting to Ollama model '{OLLAMA_MODEL_NAME}': {e}")
         return "I'm sorry, I'm having trouble connecting to my reasoning model. Please ensure Ollama is running and the model is available."
 
-=======
->>>>>>> 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
+
+== == == =
+>>>>>> > 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
 
 # --- Streamlit App Layout ---
 st.set_page_config(layout="wide", page_title="STRATA DSS")
@@ -321,13 +326,13 @@ if not subgraph_files:
     st.warning(f"No subgraph files found in the '{SUBGRAPHS_DIR}' folder.")
 else:
     selected_file = st.selectbox(
-<<<<<<< HEAD
+<< << << < HEAD
         "Select a Subgraph to Analyze:",
         options=subgraph_files,
-        key='selected_file_key' # Give a key to track changes
-=======
+        key='selected_file_key'  # Give a key to track changes
+== == ===
         "Select a Subgraph to Analyze:", options=subgraph_files
->>>>>>> 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
+>> >>>> > 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
     )
 
     # Initialize session state variables
@@ -365,21 +370,21 @@ else:
                 directed=True,
             )
             for _, row in trimmed_subgraph_df.iterrows():
-<<<<<<< HEAD
+<< << << < HEAD
                 src, src_type = row['x_name'], str(row['x_type'])
                 dst, dst_type = row['y_name'], str(row['y_type'])
                 rel = str(row['display_relation'])
-                
+
                 src_color = NODE_COLORS.get(src_type, NODE_COLORS['default'])
                 dst_color = NODE_COLORS.get(dst_type, NODE_COLORS['default'])
-=======
+== == == =
                 src, src_type = row["x_name"], row["x_type"]
                 dst, dst_type = row["y_name"], row["y_type"]
                 rel = row["display_relation"]
 
                 src_color = NODE_COLORS.get(src_type, NODE_COLORS["default"])
                 dst_color = NODE_COLORS.get(dst_type, NODE_COLORS["default"])
->>>>>>> 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
+>>>>>> > 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
                 src_label = truncate_label(src, LABEL_MAX_LENGTH)
                 dst_label = truncate_label(dst, LABEL_MAX_LENGTH)
                 src_title = f"{src}\nType: {src_type}"
