@@ -36,4 +36,4 @@ jobs:
 
     - name: Test scripts
       run: |
-        python primekg-rag/client.py
+        streamlit run client.py --server.headless true
