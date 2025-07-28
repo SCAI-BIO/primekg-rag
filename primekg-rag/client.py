@@ -229,7 +229,6 @@ def truncate_label(text, max_length):
     return text
 
 
-<< << << < HEAD
 # --- Chatbot Helper Functions ---
 
 
@@ -297,8 +296,6 @@ Answer:"""
         return "I'm sorry, I'm having trouble connecting to my reasoning model. Please ensure Ollama is running and the model is available."
 
 
-== == == =
->>>>>> > 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
 
 # --- Streamlit App Layout ---
 st.set_page_config(layout="wide", page_title="STRATA DSS")
@@ -326,13 +323,12 @@ if not subgraph_files:
     st.warning(f"No subgraph files found in the '{SUBGRAPHS_DIR}' folder.")
 else:
     selected_file = st.selectbox(
-<< << << < HEAD
+
         "Select a Subgraph to Analyze:",
         options=subgraph_files,
         key='selected_file_key'  # Give a key to track changes
-== == ===
+
         "Select a Subgraph to Analyze:", options=subgraph_files
->> >>>> > 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
     )
 
     # Initialize session state variables
@@ -370,21 +366,21 @@ else:
                 directed=True,
             )
             for _, row in trimmed_subgraph_df.iterrows():
-<< << << < HEAD
+
                 src, src_type = row['x_name'], str(row['x_type'])
                 dst, dst_type = row['y_name'], str(row['y_type'])
                 rel = str(row['display_relation'])
 
                 src_color = NODE_COLORS.get(src_type, NODE_COLORS['default'])
                 dst_color = NODE_COLORS.get(dst_type, NODE_COLORS['default'])
-== == == =
+
                 src, src_type = row["x_name"], row["x_type"]
                 dst, dst_type = row["y_name"], row["y_type"]
                 rel = row["display_relation"]
 
                 src_color = NODE_COLORS.get(src_type, NODE_COLORS["default"])
                 dst_color = NODE_COLORS.get(dst_type, NODE_COLORS["default"])
->>>>>> > 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
+
                 src_label = truncate_label(src, LABEL_MAX_LENGTH)
                 dst_label = truncate_label(dst, LABEL_MAX_LENGTH)
                 src_title = f"{src}\nType: {src_type}"
@@ -416,23 +412,23 @@ else:
                     st.session_state.analysis_context = ""
 
                 retrieved_analysis = analysis_collection.get(ids=[selected_file])
-<<<<<<< HEAD
+
                 
                 if retrieved_analysis and retrieved_analysis['documents']:
                     analysis_text = retrieved_analysis['documents'][0]
                     st.session_state.analysis_context = analysis_text
                     st.markdown(analysis_text)
-=======
+
 
                 if retrieved_analysis and retrieved_analysis["documents"]:
                     st.markdown(retrieved_analysis["documents"][0])
->>>>>>> 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
+
                 else:
                     st.warning("No pre-generated analysis found for this subgraph.")
                     st.session_state.analysis_context = ""
         else:
             st.error("Analysis database not available.")
-<<<<<<< HEAD
+
 
 # --- Part 3: Interactive Chat with AI Analyst ---
 if st.session_state.get('analysis_context'):
@@ -469,5 +465,5 @@ if st.session_state.get('analysis_context'):
 
                 st.markdown(response)
                 st.session_state.messages.append({"role": "assistant", "content": response})
-=======
->>>>>>> 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
+
+

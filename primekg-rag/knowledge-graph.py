@@ -16,7 +16,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # Define the data source paths relative to the script's location.
 # This assumes your CSV files are in the same directory as your script.
 DATA_SOURCES = {
-<< << << < HEAD
     "qa_facts": os.path.join(BASE_DIR, "mini_sample_cleaned.csv"),
     "nodes": os.path.join(BASE_DIR, "nodes.csv")
 }
@@ -25,14 +24,15 @@ DATA_SOURCES = {
 # This will create a folder named 'primekg_unified_db_asis' inside your project.
 CHROMA_DB_PATH = os.path.join(BASE_DIR, 'primekg_unified_db_asis')
 CHROMA_COLLECTION_NAME = 'unified_knowledge_asis'
-== == == =
-    "qa_facts": r"C:\Users\aemekkawi\Documents\GitHub\primekg-rag\primekg-rag\mini_sample_cleaned.csv",
-    "nodes": r"C:\Users\aemekkawi\Documents\GitHub\primekg-rag\primekg-rag\nodes.csv",
+
+    file_paths = {
+    "qa_facts": os.path.join(BASE_DIR, "mini_sample_cleaned.csv"),
+    "nodes": os.path.join(BASE_DIR, "nodes.csv")
 }
+
 CHROMA_DB_PATH = "primekg_unified_db_asis"
 CHROMA_COLLECTION_NAME = "unified_knowledge_asis"
 
->> >>>> > 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
 
 def setup_database_asis():
     """

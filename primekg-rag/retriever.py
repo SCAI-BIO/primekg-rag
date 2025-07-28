@@ -8,18 +8,12 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # --- Configuration ---
-<< << << < HEAD
+
 CHROMA_DB_PATH = os.path.join(BASE_DIR, 'primekg_unified_db_asis')
 CHROMA_COLLECTION_NAME = 'unified_knowledge_asis'
 QA_FILE_PATH = os.path.join(BASE_DIR, 'primekg-rag', 'mini_sample_cleaned.csv')
 OUTPUT_FILE_PATH = os.path.join(BASE_DIR, 'qa_to_node_matches.csv')
 
-== == == =
-CHROMA_DB_PATH = "primekg_unified_db_asis"
-CHROMA_COLLECTION_NAME = "unified_knowledge_asis"
-QA_FILE_PATH = r"C:\Users\aemekkawi\Documents\GitHub\primekg-rag\primekg-rag\mini_sample_cleaned.csv"
-OUTPUT_FILE_PATH = "qa_to_node_matches.csv"
->>>>>> > 0a1a1d5724d2b2d238e128c2a15b60c4e316bfbd
 
 # --- Initialize ChromaDB Client ---
 try:
