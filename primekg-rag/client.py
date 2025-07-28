@@ -186,7 +186,7 @@ NODE_COLORS = {
     "default": "#607D8B",
 }
 # Define the model we'll use for embeddings
-EMBEDDING_MODEL = 'all-MiniLM-L6-v2'
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 # Define the local model for generation
 OLLAMA_MODEL_NAME = "deepseek-r1:14b"
 
@@ -242,7 +242,7 @@ def split_into_sentences(text):
     """Splits text into a list of sentences."""
     if not text or not isinstance(text, str):
         return []
-    sentences = re.split(r'(?<=[.?!])\s+', text)
+    sentences = re.split(r"(?<=[.?!])\s+", text)
     return [s.strip() for s in sentences if s.strip()]
 
 
@@ -284,17 +284,13 @@ Answer:"""
     try:
         # Make the API call to the local Ollama server
         response = ollama.chat(
-            model=OLLAMA_MODEL_NAME,
-            messages=[
-                {'role': 'user', 'content': prompt}
-            ]
+            model=OLLAMA_MODEL_NAME, messages=[{"role": "user", "content": prompt}]
         )
         # Extract the content from the response
-        return response['message']['content']
+        return response["message"]["content"]
     except Exception as e:
         st.error(f"Error connecting to Ollama model '{OLLAMA_MODEL_NAME}': {e}")
         return "I'm sorry, I'm having trouble connecting to my reasoning model. Please ensure Ollama is running and the model is available."
-
 
 
 # --- Streamlit App Layout ---
@@ -323,20 +319,19 @@ if not subgraph_files:
     st.warning(f"No subgraph files found in the '{SUBGRAPHS_DIR}' folder.")
 else:
     selected_file = st.selectbox(
-
         "Select a Subgraph to Analyze:",
         options=subgraph_files,
-        key='selected_file_key'  # Give a key to track changes
-
-        "Select a Subgraph to Analyze:", options=subgraph_files
+        key="selected_file_key"  # Give a key to track changes
+        "Select a Subgraph to Analyze:",
+        options=subgraph_files,
     )
 
     # Initialize session state variables
-    if 'current_file' not in st.session_state:
+    if "current_file" not in st.session_state:
         st.session_state.current_file = None
-    if 'messages' not in st.session_state:
+    if "messages" not in st.session_state:
         st.session_state.messages = []
-    if 'analysis_context' not in st.session_state:
+    if "analysis_context" not in st.session_state:
         st.session_state.analysis_context = ""
 
     if selected_file:
@@ -367,12 +362,12 @@ else:
             )
             for _, row in trimmed_subgraph_df.iterrows():
 
-                src, src_type = row['x_name'], str(row['x_type'])
-                dst, dst_type = row['y_name'], str(row['y_type'])
-                rel = str(row['display_relation'])
+                src, src_type = row["x_name"], str(row["x_type"])
+                dst, dst_type = row["y_name"], str(row["y_type"])
+                rel = str(row["display_relation"])
 
-                src_color = NODE_COLORS.get(src_type, NODE_COLORS['default'])
-                dst_color = NODE_COLORS.get(dst_type, NODE_COLORS['default'])
+                src_color = NODE_COLORS.get(src_type, NODE_COLORS["default"])
+                dst_color = NODE_COLORS.get(dst_type, NODE_COLORS["default"])
 
                 src, src_type = row["x_name"], row["x_type"]
                 dst, dst_type = row["y_name"], row["y_type"]
@@ -413,12 +408,10 @@ else:
 
                 retrieved_analysis = analysis_collection.get(ids=[selected_file])
 
-                
-                if retrieved_analysis and retrieved_analysis['documents']:
-                    analysis_text = retrieved_analysis['documents'][0]
+                if retrieved_analysis and retrieved_analysis["documents"]:
+                    analysis_text = retrieved_analysis["documents"][0]
                     st.session_state.analysis_context = analysis_text
                     st.markdown(analysis_text)
-
 
                 if retrieved_analysis and retrieved_analysis["documents"]:
                     st.markdown(retrieved_analysis["documents"][0])
@@ -431,12 +424,17 @@ else:
 
 
 # --- Part 3: Interactive Chat with AI Analyst ---
-if st.session_state.get('analysis_context'):
+if st.session_state.get("analysis_context"):
     st.divider()
     st.subheader("3. Interactive Chat with AI Analyst")
 
     if not st.session_state.messages:
-        st.session_state.messages.append({"role": "assistant", "content": "Ask me a follow-up question about the analysis above."})
+        st.session_state.messages.append(
+            {
+                "role": "assistant",
+                "content": "Ask me a follow-up question about the analysis above.",
+            }
+        )
 
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
@@ -449,12 +447,16 @@ if st.session_state.get('analysis_context'):
 
         with st.chat_message("assistant"):
             with st.spinner("Analyzing..."):
-                context_sentences = split_into_sentences(st.session_state.analysis_context)
-                
-                relevant_sentence, score = get_most_relevant_sentence(prompt, context_sentences, embedding_model)
-                
-                SIMILARITY_THRESHOLD = 0.5 
-                
+                context_sentences = split_into_sentences(
+                    st.session_state.analysis_context
+                )
+
+                relevant_sentence, score = get_most_relevant_sentence(
+                    prompt, context_sentences, embedding_model
+                )
+
+                SIMILARITY_THRESHOLD = 0.5
+
                 if score > SIMILARITY_THRESHOLD:
                     # **UPGRADED LOGIC**
                     # Now we call the generative model to answer the question
@@ -464,6 +466,6 @@ if st.session_state.get('analysis_context'):
                     response = "I'm sorry, I couldn't find a direct answer to your question within the provided analysis. Could you try rephrasing or asking about a specific concept mentioned in the text?"
 
                 st.markdown(response)
-                st.session_state.messages.append({"role": "assistant", "content": response})
-
-
+                st.session_state.messages.append(
+                    {"role": "assistant", "content": response}
+                )

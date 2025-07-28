@@ -9,10 +9,10 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # --- Configuration ---
 
-CHROMA_DB_PATH = os.path.join(BASE_DIR, 'primekg_unified_db_asis')
-CHROMA_COLLECTION_NAME = 'unified_knowledge_asis'
-QA_FILE_PATH = os.path.join(BASE_DIR, 'primekg-rag', 'mini_sample_cleaned.csv')
-OUTPUT_FILE_PATH = os.path.join(BASE_DIR, 'qa_to_node_matches.csv')
+CHROMA_DB_PATH = os.path.join(BASE_DIR, "primekg_unified_db_asis")
+CHROMA_COLLECTION_NAME = "unified_knowledge_asis"
+QA_FILE_PATH = os.path.join(BASE_DIR, "primekg-rag", "mini_sample_cleaned.csv")
+OUTPUT_FILE_PATH = os.path.join(BASE_DIR, "qa_to_node_matches.csv")
 
 
 # --- Initialize ChromaDB Client ---

@@ -13,7 +13,7 @@ def extract_questions_from_excel():
     """
     Reads an Excel sheet, extracts a specific column, and saves it to a CSV file.
     """
-    print(f"--- Starting Question Extraction ---")
+    print("--- Starting Question Extraction ---")
 
     try:
         # Read the specific sheet from the Excel file

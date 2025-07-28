@@ -8,11 +8,11 @@ from tqdm import tqdm
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-CHROMA_DB_PATH = 'primekg_unified_db_asis'
-CHROMA_COLLECTION_NAME = 'unified_knowledge_asis'
+CHROMA_DB_PATH = "primekg_unified_db_asis"
+CHROMA_COLLECTION_NAME = "unified_knowledge_asis"
 
-QA_FILE_PATH = os.path.join(BASE_DIR, 'mini_sample_cleaned.csv')
-OUTPUT_FILE_PATH = os.path.join(BASE_DIR, 'qa_to_node_matches_improved.csv')
+QA_FILE_PATH = os.path.join(BASE_DIR, "mini_sample_cleaned.csv")
+OUTPUT_FILE_PATH = os.path.join(BASE_DIR, "qa_to_node_matches_improved.csv")
 
 # --- Initialize ChromaDB Client ---
 try:
