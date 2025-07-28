@@ -79,9 +79,7 @@ def setup_database_asis():
 
     # Initialize ChromaDB client
     client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
-    embedding_func = embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name="all-MiniLM-L6-v2"
-    )
+    embedding_func = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
 
     # Get or create the collection, specifying cosine similarity
     collection = client.get_or_create_collection(

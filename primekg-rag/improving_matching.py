@@ -30,9 +30,7 @@ def find_best_node_for_qa(query_text: str):
         return None, None
 
     try:
-        results = collection.query(
-            query_texts=[query_text], n_results=1, where={"source": "nodes"}
-        )
+        results = collection.query(query_texts=[query_text], n_results=1, where={"source": "nodes"})
 
         if not results["ids"] or not results["ids"][0]:
             return None, None

@@ -11,18 +11,14 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # --- Configuration ---
 KG_CSV_PATH = os.path.join(BASE_DIR, "primekg-rag", "kg.csv")
-MATCH_FILE_PATH = os.path.join(
-    BASE_DIR, "primekg-rag", "qa_to_node_matches_improved.csv"
-)
+MATCH_FILE_PATH = os.path.join(BASE_DIR, "primekg-rag", "qa_to_node_matches_improved.csv")
 OUTPUT_DIR = os.path.join(BASE_DIR, "primekg-rag", "subgraphs")
 
 # Make sure output directory exists
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 KG_CSV_PATH = os.path.join(BASE_DIR, "primekg-rag", "kg.csv")
-MATCH_FILE_PATH = os.path.join(
-    BASE_DIR, "primekg-rag", "qa_to_node_matches_improved.csv"
-)
+MATCH_FILE_PATH = os.path.join(BASE_DIR, "primekg-rag", "qa_to_node_matches_improved.csv")
 OUTPUT_DIR = os.path.join(BASE_DIR, "primekg-rag", "subgraphs")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -63,12 +59,8 @@ def create_fully_deduplicated_subgraphs():
 
             if not subgraph_df.empty:
                 # Standardize all relationships before de-duplicating
-                is_symmetrical = subgraph_df["display_relation"].isin(
-                    SYMMETRICAL_RELATIONS
-                )
-                needs_swap = is_symmetrical & (
-                    subgraph_df["x_name"] > subgraph_df["y_name"]
-                )
+                is_symmetrical = subgraph_df["display_relation"].isin(SYMMETRICAL_RELATIONS)
+                needs_swap = is_symmetrical & (subgraph_df["x_name"] > subgraph_df["y_name"])
 
                 x_name_orig, y_name_orig = (
                     subgraph_df.loc[needs_swap, "x_name"],
@@ -86,9 +78,7 @@ def create_fully_deduplicated_subgraphs():
 
                 subgraph_df.drop_duplicates(inplace=True)
 
-                safe_filename = "".join(
-                    x for x in node_name if x.isalnum() or x in " _-"
-                ).rstrip()
+                safe_filename = "".join(x for x in node_name if x.isalnum() or x in " _-").rstrip()
 
                 output_path = os.path.join(OUTPUT_DIR, f"{safe_filename}_subgraph.csv")
 

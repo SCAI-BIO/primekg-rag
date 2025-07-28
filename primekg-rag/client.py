@@ -283,9 +283,7 @@ Answer:"""
 
     try:
         # Make the API call to the local Ollama server
-        response = ollama.chat(
-            model=OLLAMA_MODEL_NAME, messages=[{"role": "user", "content": prompt}]
-        )
+        response = ollama.chat(model=OLLAMA_MODEL_NAME, messages=[{"role": "user", "content": prompt}])
         # Extract the content from the response
         return response["message"]["content"]
     except Exception as e:
@@ -447,13 +445,9 @@ if st.session_state.get("analysis_context"):
 
         with st.chat_message("assistant"):
             with st.spinner("Analyzing..."):
-                context_sentences = split_into_sentences(
-                    st.session_state.analysis_context
-                )
+                context_sentences = split_into_sentences(st.session_state.analysis_context)
 
-                relevant_sentence, score = get_most_relevant_sentence(
-                    prompt, context_sentences, embedding_model
-                )
+                relevant_sentence, score = get_most_relevant_sentence(prompt, context_sentences, embedding_model)
 
                 SIMILARITY_THRESHOLD = 0.5
 
@@ -466,6 +460,4 @@ if st.session_state.get("analysis_context"):
                     response = "I'm sorry, I couldn't find a direct answer to your question within the provided analysis. Could you try rephrasing or asking about a specific concept mentioned in the text?"
 
                 st.markdown(response)
-                st.session_state.messages.append(
-                    {"role": "assistant", "content": response}
-                )
+                st.session_state.messages.append({"role": "assistant", "content": response})

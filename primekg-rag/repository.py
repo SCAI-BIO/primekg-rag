@@ -47,9 +47,7 @@ def prepare_verbalized_data(input_csv_path, output_parquet_path):
         print(f"Initial columns in DataFrame: {df_kg.columns.tolist()}")
 
         if df_kg.empty:
-            print(
-                "WARNING: The loaded CSV is empty. No verbalized data will be generated."
-            )
+            print("WARNING: The loaded CSV is empty. No verbalized data will be generated.")
             # Create an empty DataFrame with expected columns to avoid errors
             # later
             df_verbalized = pd.DataFrame(columns=["verbalized_text", "metadata"])
@@ -58,9 +56,7 @@ def prepare_verbalized_data(input_csv_path, output_parquet_path):
             # Use .progress_apply if tqdm is installed and configured for
             # pandas
             df_kg["verbalized_text"] = df_kg.progress_apply(verbalize_kg_row, axis=1)
-            print(
-                f"Verbalized text generated. Current columns: {df_kg.columns.tolist()}"
-            )
+            print(f"Verbalized text generated. Current columns: {df_kg.columns.tolist()}")
 
             print("Generating metadata...")
             df_kg["metadata"] = df_kg.progress_apply(create_metadata, axis=1)
@@ -68,9 +64,7 @@ def prepare_verbalized_data(input_csv_path, output_parquet_path):
 
             # Select only the columns needed for the output Parquet file
             df_verbalized = df_kg[["verbalized_text", "metadata"]]
-            print(
-                f"Selected final columns for Parquet. Final DataFrame columns: {df_verbalized.columns.tolist()}"
-            )
+            print(f"Selected final columns for Parquet. Final DataFrame columns: {df_verbalized.columns.tolist()}")
 
         print(f"Saving prepared data to {output_parquet_path}...")
         # Ensure the directory exists

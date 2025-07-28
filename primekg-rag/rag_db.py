@@ -100,9 +100,7 @@ def create_rag_database():
 
     # Initialize a new ChromaDB collection
     client = chromadb.PersistentClient(path=RAG_DB_PATH)
-    embedding_func = embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name="all-MiniLM-L6-v2"
-    )
+    embedding_func = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
 
     collection = client.get_or_create_collection(
         name=RAG_COLLECTION_NAME,
@@ -115,9 +113,7 @@ def create_rag_database():
     # Add documents to the collection in batches
     batch_size = 4096
     for i in tqdm(range(0, len(doc_ids), batch_size), desc="Embedding Documents"):
-        collection.add(
-            ids=doc_ids[i : i + batch_size], documents=all_documents[i : i + batch_size]
-        )
+        collection.add(ids=doc_ids[i : i + batch_size], documents=all_documents[i : i + batch_size])
 
     print("RAG Vector Database is ready.")
     print(f"Total documents for retrieval: {collection.count()}")

@@ -21,9 +21,7 @@ def extract_questions_from_excel():
         df = pd.read_excel(EXCEL_FILE_PATH, sheet_name=SHEET_NAME)
 
     except FileNotFoundError:
-        print(
-            f"ERROR: The file '{EXCEL_FILE_PATH}' was not found. Please make sure it's in the same directory."
-        )
+        print(f"ERROR: The file '{EXCEL_FILE_PATH}' was not found. Please make sure it's in the same directory.")
         sys.exit(1)
     except Exception as e:
         print(f"ERROR: Could not read the Excel file. Reason: {e}")
@@ -31,9 +29,7 @@ def extract_questions_from_excel():
 
     # Check if the question column exists
     if QUESTION_COLUMN_NAME not in df.columns:
-        print(
-            f"ERROR: The column '{QUESTION_COLUMN_NAME}' was not found in the '{SHEET_NAME}' sheet."
-        )
+        print(f"ERROR: The column '{QUESTION_COLUMN_NAME}' was not found in the '{SHEET_NAME}' sheet.")
         print(f"Available columns are: {list(df.columns)}")
         sys.exit(1)
 

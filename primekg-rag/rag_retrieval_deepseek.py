@@ -47,9 +47,7 @@ class OllamaRAG:
         if not results["documents"] or not results["documents"][0]:
             return f"No context found for topic: {topic}"
 
-        context_block = "\n".join(
-            f"- {sentence}" for sentence in results["documents"][0]
-        )
+        context_block = "\n".join(f"- {sentence}" for sentence in results["documents"][0])
 
         prompt = f"""
 You are a leading AI research analyst specializing in bioinformatics and systems biology.
@@ -92,9 +90,7 @@ def generate_all_analyses():
         return
 
     analysis_client = chromadb.PersistentClient(path=ANALYSIS_DB_PATH)
-    embedding_func = embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name="all-MiniLM-L6-v2"
-    )
+    embedding_func = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
     analysis_collection = analysis_client.get_or_create_collection(
         name=ANALYSIS_COLLECTION_NAME, embedding_function=embedding_func
     )
@@ -112,9 +108,7 @@ def generate_all_analyses():
         analysis_text = rag_system.get_expert_explanation(topic)
 
         if analysis_text and "No context found" not in analysis_text:
-            analysis_collection.add(
-                ids=[filename], documents=[analysis_text], metadatas=[{"topic": topic}]
-            )
+            analysis_collection.add(ids=[filename], documents=[analysis_text], metadatas=[{"topic": topic}])
             print(f" Stored analysis for: {topic}")
 
     print("\n--- Process Complete. All analyses have been generated and stored. ---")
