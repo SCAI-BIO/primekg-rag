@@ -196,3 +196,5 @@ cython_debug/
 # Ignore large data and embedding files
 kg.csv
 nodes_embeddings.pkl
+
+scihub.py/

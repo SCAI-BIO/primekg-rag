@@ -1,13 +1,18 @@
+import os
 import chromadb
 import pandas as pd
 from tqdm import tqdm
 
 # we just worked with the questions instead of q,a which made the matching hallucinating a bit
 # --- Configuration ---
-CHROMA_DB_PATH = "primekg_unified_db_asis"
-CHROMA_COLLECTION_NAME = "unified_knowledge_asis"
-QA_FILE_PATH = r"C:\Users\aemekkawi\Documents\GitHub\primekg-rag\primekg-rag\mini_sample_cleaned.csv"
-OUTPUT_FILE_PATH = "qa_to_node_matches_improved.csv"  # New output file
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+CHROMA_DB_PATH = 'primekg_unified_db_asis'
+CHROMA_COLLECTION_NAME = 'unified_knowledge_asis'
+
+QA_FILE_PATH = os.path.join(BASE_DIR, 'mini_sample_cleaned.csv')
+OUTPUT_FILE_PATH = os.path.join(BASE_DIR, 'qa_to_node_matches_improved.csv')
 
 # --- Initialize ChromaDB Client ---
 try:

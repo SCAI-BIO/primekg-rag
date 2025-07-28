@@ -5,12 +5,31 @@ import chromadb
 from chromadb.utils import embedding_functions
 import hashlib
 
+import os
+
 # --- Configuration ---
-# Uses the specific file paths you provided.
+
+# Get the absolute path of the directory where the script is located.
+# This makes all other paths relative to the script, so it works on any computer.
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Define the data source paths relative to the script's location.
+# This assumes your CSV files are in the same directory as your script.
 DATA_SOURCES = {
-    "qa_facts": r"C:\Users\aemekkawi\Documents\GitHub\primekg-rag\primekg-rag\mini_sample_cleaned.csv",
-    "nodes": r"C:\Users\aemekkawi\Documents\GitHub\primekg-rag\primekg-rag\nodes.csv",
+    "qa_facts": os.path.join(BASE_DIR, "mini_sample_cleaned.csv"),
+    "nodes": os.path.join(BASE_DIR, "nodes.csv")
 }
+
+# Define the ChromaDB path relative to the script's location.
+# This will create a folder named 'primekg_unified_db_asis' inside your project.
+CHROMA_DB_PATH = os.path.join(BASE_DIR, 'primekg_unified_db_asis')
+CHROMA_COLLECTION_NAME = 'unified_knowledge_asis'
+
+    file_paths = {
+    "qa_facts": os.path.join(BASE_DIR, "mini_sample_cleaned.csv"),
+    "nodes": os.path.join(BASE_DIR, "nodes.csv")
+}
+
 CHROMA_DB_PATH = "primekg_unified_db_asis"
 CHROMA_COLLECTION_NAME = "unified_knowledge_asis"
 
@@ -37,7 +56,7 @@ def setup_database_asis():
             df["document"] = df["Question"]
             df["id"] = df.apply(
                 lambda row: f"qa_{hashlib.md5(row['Question'].encode()).hexdigest()}",
-                axis=1,
+                axis = 1,
             )
             df["metadata"] = df.apply(
                 lambda row: {

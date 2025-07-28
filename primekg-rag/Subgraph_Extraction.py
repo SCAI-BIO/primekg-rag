@@ -4,6 +4,19 @@ import os
 from tqdm import tqdm
 
 # --- Configuration ---
+
+
+
+# Define base directory
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# --- Configuration ---
+KG_CSV_PATH = os.path.join(BASE_DIR, 'primekg-rag', 'kg.csv')
+MATCH_FILE_PATH = os.path.join(BASE_DIR, 'primekg-rag', 'qa_to_node_matches_improved.csv')
+OUTPUT_DIR = os.path.join(BASE_DIR, 'primekg-rag', 'subgraphs')
+
+# Make sure output directory exists
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 KG_CSV_PATH = os.path.join(BASE_DIR, "primekg-rag", "kg.csv")
 MATCH_FILE_PATH = os.path.join(

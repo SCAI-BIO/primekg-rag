@@ -1,8 +1,11 @@
 import chromadb
 from tqdm import tqdm
+import os
 
 # --- Configuration ---
-ANALYSIS_DB_PATH = "analyses_db"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+ANALYSIS_DB_PATH = os.path.join(BASE_DIR, "analyses_db")
 ANALYSIS_COLLECTION_NAME = "subgraph_analyses"
 
 
