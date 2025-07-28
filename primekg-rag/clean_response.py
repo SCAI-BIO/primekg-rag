@@ -1,6 +1,7 @@
 import chromadb
 from tqdm import tqdm
 import os
+
 # --- Configuration ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
