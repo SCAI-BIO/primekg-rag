@@ -76,7 +76,8 @@ Strictly adhere to these rules:
 - Do not infer or add any information not explicitly present in the context.
 - Do not hallucinate connections or implications.
 - Avoid all ambiguity.
-- For every factual statement in your analysis, you MUST cite the specific fact number from the context that supports it.
+- For every factual statement in your analysis,
+you MUST cite the specific fact number from the context that supports it.
 Use the format `[Source: Fact X]`.
 
 Structure your response with the following sections:
@@ -110,7 +111,7 @@ if __name__ == "__main__":
 
     if not os.path.exists(SUBGRAPHS_DIR):
         logger.error(
-            f"The '{SUBGRAPHS_DIR}' directory was not found. Please ensure it exists and contains your CSV files."
+            f"The '{SUBGRAPHS_DIR}' directory was not foun"
         )
         exit()
 
