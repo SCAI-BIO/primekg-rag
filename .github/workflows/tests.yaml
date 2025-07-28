@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - main
-      - RAG
+      - fixing-directories
   pull_request:
     branches:
       - main
-      - RAG
+      - fixing-directories
 
 jobs:
   test:
