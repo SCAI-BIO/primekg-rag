@@ -17,7 +17,6 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
-      # MODIFIED: Added this line to correctly handle Git submodules like 'scihub.py'
       with:
         submodules: 'recursive'
 
@@ -27,7 +26,6 @@ jobs:
         python-version: '3.9'
 
     - name: Install dependencies and DEBUG
-      # MODIFIED: Set the working directory to where your files are located
       working-directory: ./primekg-rag
       run: |
         echo "--- 1. Listing all files in the repository ---"
@@ -36,13 +34,15 @@ jobs:
         cat requirements.txt
         echo "\n--- 3. Installing dependencies ---"
         python -m pip install --upgrade pip
-        # Path is now correct relative to the working directory
         pip install -r requirements.txt
         python -m pip install pyvis
 
     - name: Test scripts
-      # MODIFIED: Set the working directory for the test step as well
       working-directory: ./primekg-rag
       run: |
-        # Path is now correct relative to the working directory
-        streamlit run client.py --server.headless true
+        # MODIFIED: Run Streamlit in the background, wait, and then stop it.
+        # This checks if the app can start without crashing and allows the job to finish.
+        streamlit run client.py --server.headless true &
+        PID=$!
+        sleep 15 # Wait for 15 seconds to see if it crashes
+        kill $PID
