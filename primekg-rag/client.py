@@ -273,7 +273,10 @@ def generate_llm_response(question, context_sentence):
     based on a specific piece of context.
     """
     # Construct the prompt for the local LLM, instructing it to be concise and use only the provided context.
-    prompt = f"""You are an AI assistant. Answer the user's question based ONLY on the following context. Do not use any outside knowledge. Be concise.
+    prompt = f"""
+    You are an AI assistant.
+    Answer the user's question based ONLY on the following context.
+    Do not use any outside knowledge. Be concise.
 
 Context: "{context_sentence}"
 
@@ -288,7 +291,7 @@ Answer:"""
         return response["message"]["content"]
     except Exception as e:
         st.error(f"Error connecting to Ollama model '{OLLAMA_MODEL_NAME}': {e}")
-        return "I'm sorry, I'm having trouble connecting to my reasoning model. Please ensure Ollama is running and the model is available."
+        return "Please ensure Ollama is running and the model is available."
 
 
 # --- Streamlit App Layout ---
@@ -457,7 +460,7 @@ if st.session_state.get("analysis_context"):
                     # using the retrieved sentence as context.
                     response = generate_llm_response(prompt, relevant_sentence)
                 else:
-                    response = "I'm sorry, I couldn't find a direct answer to your question within the provided analysis. Could you try rephrasing or asking about a specific concept mentioned in the text?"
+                    response = "Could you try rephrasing or asking about a specific concept mentioned in the text?"
 
                 st.markdown(response)
                 st.session_state.messages.append({"role": "assistant", "content": response})
