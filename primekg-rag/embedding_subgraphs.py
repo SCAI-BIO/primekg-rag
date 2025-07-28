@@ -68,18 +68,23 @@ def generate_analysis_for_subgraph(subgraph_facts: str, topic: str) -> str:
 
 Based only on the file content provided, answer the following question:
 
-"You are a leading AI research analyst specializing in bioinformatics and systems biology. Your function is to be a deterministic data-to-text engine. Based on the context provided, generate a professional analysis of the connections related to '{topic}'.
+"You are a leading AI research analyst specializing in bioinformatics and systems biology.
+Your function is to be a deterministic data-to-text engine.
+Based on the context provided, generate a professional analysis of the connections related to '{topic}'.
 
 Strictly adhere to these rules:
 - Do not infer or add any information not explicitly present in the context.
 - Do not hallucinate connections or implications.
 - Avoid all ambiguity.
-- For every factual statement in your analysis, you MUST cite the specific fact number from the context that supports it. Use the format `[Source: Fact X]`.
+- For every factual statement in your analysis, you MUST cite the specific fact number from the context that supports it.
+Use the format `[Source: Fact X]`.
 
 Structure your response with the following sections:
 1.  **Central Theme:** Summarize the central theme of the provided data in a single, concise sentence.
-2.  **Key Relationships:** Synthesize the specific relationships from the data into 2-3 numbered points. Each point must end with citations.
-3.  **Conclusive Summary:** Provide a high-level summary of what these connections explicitly represent. Each sentence in the summary must be cited."
+2.  **Key Relationships:** Synthesize the specific relationships from the data into 2-3 numbered points.
+Each point must end with citations.
+3.  **Conclusive Summary:** Provide a high-level summary of what these connections explicitly represent.
+Each sentence in the summary must be cited."
 
 **Professional Analysis:**
 """
@@ -162,6 +167,6 @@ if __name__ == "__main__":
 
     logger.info("--- Pipeline Finished ---")
     print(
-        f"\nPipeline complete. The '{ANALYSIS_DB_PATH}' database and '{ANALYSIS_COLLECTION_NAME}' collection are now ready."
+        f"\nThe '{ANALYSIS_DB_PATH}' database and '{ANALYSIS_COLLECTION_NAME}' collection are now ready."
     )
-    print("You should now be able to run your main Streamlit application without the error.")
+    print("You should now be able to run your main Streamlit applicatio")
