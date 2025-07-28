@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
+      - RAG
   pull_request:
     branches:
       - main
+      - RAG
 
 jobs:
   test:
@@ -29,7 +31,8 @@ jobs:
         cat requirements.txt
         echo "\n--- 3. Installing dependencies ---"
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install -r primekg-rag/requirements.txt
+        python -m pip install pyvis
 
     - name: Test scripts
       run: |

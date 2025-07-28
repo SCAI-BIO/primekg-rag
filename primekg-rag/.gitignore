@@ -216,3 +216,5 @@ primekg-rag/Codebook opzet.xlsx
 __pycache__/
 **/__pycache__/
 *.py[cod]
+kg.csv
+nodes_embeddings.pkl

@@ -1,5 +1,7 @@
-# Add requirements herestreamlit
-pandas
-numpy
 streamlit
+pandas
+chromadb
+sentence-transformers
+torch
+ollama
 pyvis
