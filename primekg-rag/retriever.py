@@ -91,8 +91,8 @@ def map_questions_to_nodes():
     if results:
         for i, q in enumerate(questions):
             if (
-                results["documents"]and
-                len(results["documents"]) > i and
+                results["documents"] and 
+                len(results["documents"]) > i and 
                 results["documents"][i]
             ):
                 dist = results["distances"][i][0]
@@ -142,7 +142,6 @@ def extract_subgraphs_for_nodes(nodes_to_process: list):
                 f"WHERE x_name = '{safe_node_name}' OR y_name = '{safe_node_name}';"
             )
             subgraph_df = duckdb.query(query).to_df()
-            
             if not subgraph_df.empty:
                 needs_swap = subgraph_df["x_name"] > subgraph_df["y_name"]
                 for col in ["id", "name", "type", "source"]:
