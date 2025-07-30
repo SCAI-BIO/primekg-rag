@@ -91,9 +91,9 @@ def map_questions_to_nodes():
     if results:
         for i, q in enumerate(questions):
             if (
-                results["documents"]
-                and len(results["documents"]) > i
-                and results["documents"][i]
+                results["documents"]and
+                len(results["documents"]) > i and
+                results["documents"][i]
             ):
                 dist = results["distances"][i][0]
                 similarity = 1 - dist
@@ -122,7 +122,7 @@ def map_questions_to_nodes():
         metadatas=mappings_df.to_dict("records"),
     )
 
-    logger.info(f"(SUCCESS) Stage 1 complete. Mappings saved to CSV and database.")
+    logger.info("(SUCCESS) Stage 1 complete. Mappings saved to CSV and database.")
     return mappings_df["best_match_node_name"].unique().tolist()
 
 
@@ -137,9 +137,12 @@ def extract_subgraphs_for_nodes(nodes_to_process: list):
     for node_name in tqdm(nodes_to_process, desc="Extracting Subgraphs"):
         try:
             safe_node_name = str(node_name).replace("'", "''")
-            subgraph_df = duckdb.query(
-                f"""SELECT * FROM read_csv_auto('{KG_CSV_PATH}', ignore_errors=true) WHERE x_name = '{safe_node_name}' OR y_name = '{safe_node_name}';"""
-            ).to_df()
+            query = (
+                f"SELECT * FROM read_csv_auto('{KG_CSV_PATH}', ignore_errors=true) "
+                f"WHERE x_name = '{safe_node_name}' OR y_name = '{safe_node_name}';"
+            )
+            subgraph_df = duckdb.query(query).to_df()
+            
             if not subgraph_df.empty:
                 needs_swap = subgraph_df["x_name"] > subgraph_df["y_name"]
                 for col in ["id", "name", "type", "source"]:

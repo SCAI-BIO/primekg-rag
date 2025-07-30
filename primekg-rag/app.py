@@ -85,7 +85,7 @@ def format_subgraph_for_chat_prompt(df: pd.DataFrame) -> str:
     """Formats a subgraph into a simple, readable list of facts for the LLM."""
     facts = []
     for index, row in df.iterrows():
-        fact = f"- The entity '{row['x_name']}' has a '{row['display_relation']}' relationship with the entity '{row['y_name']}'."
+        fact = f"The entity '{row['x_name']}' has '{row['display_relation']}' relationship with '{row['y_name']}'."
         facts.append(fact)
     return "\n".join(facts)
 
@@ -99,7 +99,9 @@ def generate_chat_response(context: str, question: str, chat_history: list) -> s
         else:
             formatted_history += f"Previous answer: {msg['content']}\n"
 
-    prompt = f"""You are an AI research assistant. Your knowledge is strictly limited to the following facts from a knowledge graph. Do not use any outside information.
+    prompt = f"""You are an AI research assistant.
+Your knowledge is strictly limited to the following facts from a knowledge graph.
+Do not use any outside information.
 <KNOWLEDGE_GRAPH_CONTEXT>
 {context}
 </KNOWLEDGE_GRAPH_CONTEXT>
@@ -154,8 +156,7 @@ else:
             for f in subgraph_files
             if node_type_map.get(
                 Path(f).stem.replace("_subgraph", "").replace("_", " ")
-            )
-            == selected_type_filter
+            ) == selected_type_filter
         ]
         subgraphs_to_display = filtered_files
     else:
