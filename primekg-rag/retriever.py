@@ -90,11 +90,7 @@ def map_questions_to_nodes():
     all_mappings = []
     if results:
         for i, q in enumerate(questions):
-            if (
-                results["documents"] and 
-                len(results["documents"]) > i and 
-                results["documents"][i]
-            ):
+            if (results["documents"] and len(results["documents"]) > i and results["documents"][i]):
                 dist = results["distances"][i][0]
                 similarity = 1 - dist
                 doc = results["documents"][i][0]
