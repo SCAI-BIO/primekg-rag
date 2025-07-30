@@ -22,16 +22,16 @@ SUBGRAPH_INPUT_DIR = BASE_DIR / "subgraphs"
 # --- Output Database ---
 ANALYSIS_DB_PATH = BASE_DIR / "analyses_db"
 ANALYSIS_COLLECTION_NAME = "subgraph_analyses"
-OLLAMA_MODEL_NAME = "deepseek-r1:14b" # Or your preferred Ollama model
+OLLAMA_MODEL_NAME = "deepseek-r1:14b"  # Or your preferred Ollama model
 
 # --- Logging Configuration ---
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
-file_handler = logging.FileHandler(LOG_FILE_PATH, mode='w', encoding='utf-8')
-file_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+file_handler = logging.FileHandler(LOG_FILE_PATH, mode="w", encoding="utf-8")
+file_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
 file_handler.setFormatter(file_formatter)
 stream_handler = logging.StreamHandler(sys.stdout)
-stream_formatter = logging.Formatter('%(message)s')
+stream_formatter = logging.Formatter("%(message)s")
 stream_handler.setFormatter(stream_formatter)
 logger.addHandler(file_handler)
 logger.addHandler(stream_handler)
@@ -44,11 +44,13 @@ def format_subgraph_for_prompt(df: pd.DataFrame) -> str:
     """
     facts = []
     for index, row in df.iterrows():
-        x_type = row.get('x_type', 'entity')
-        y_type = row.get('y_type', 'entity')
-        sources = sorted(list(set([row.get('x_source', 'N/A'), row.get('y_source', 'N/A')])))
+        x_type = row.get("x_type", "entity")
+        y_type = row.get("y_type", "entity")
+        sources = sorted(
+            list(set([row.get("x_source", "N/A"), row.get("y_source", "N/A")]))
+        )
         source_str = "/".join(sources)
-        
+
         fact = (
             f"Fact {index + 1}: The {x_type} '{row['x_name']}' "
             f"has a '{row['display_relation']}' relationship with "
@@ -101,20 +103,18 @@ Based strictly on the evidence provided above, generate a report on the topic of
 
 **BEGIN REPORT**
 """
-    last_fact_number = len(subgraph_facts.split('\n'))
-    
+    last_fact_number = len(subgraph_facts.split("\n"))
+
     final_prompt = prompt_template.format(
-        context_block=subgraph_facts, 
-        topic=topic,
-        last_fact_number=last_fact_number
+        context_block=subgraph_facts, topic=topic, last_fact_number=last_fact_number
     )
     try:
         response = ollama.chat(
             model=OLLAMA_MODEL_NAME,
-            messages=[{'role': 'user', 'content': final_prompt}],
-            options={'temperature': 0.05}
+            messages=[{"role": "user", "content": final_prompt}],
+            options={"temperature": 0.05},
         )
-        return response['message']['content']
+        return response["message"]["content"]
     except Exception as e:
         logger.error(f"Ollama API call failed for topic '{topic}': {e}")
         return f"Error: Could not generate analysis for {topic}."
@@ -125,14 +125,20 @@ if __name__ == "__main__":
     ANALYSIS_DB_PATH.mkdir(exist_ok=True)
 
     if not SUBGRAPH_INPUT_DIR.is_dir():
-        logger.error(f"The '{SUBGRAPH_INPUT_DIR}' directory was not found. Please run the data preparation script first.")
+        logger.error(
+            f"The '{SUBGRAPH_INPUT_DIR}' directory was not found. Please run the data preparation script first."
+        )
         sys.exit(1)
 
     # Set up the ChromaDB for storing analyses
     try:
         client = chromadb.PersistentClient(path=str(ANALYSIS_DB_PATH))
-        analysis_collection = client.get_or_create_collection(name=ANALYSIS_COLLECTION_NAME)
-        logger.info(f"Successfully connected to collection: '{ANALYSIS_COLLECTION_NAME}'")
+        analysis_collection = client.get_or_create_collection(
+            name=ANALYSIS_COLLECTION_NAME
+        )
+        logger.info(
+            f"Successfully connected to collection: '{ANALYSIS_COLLECTION_NAME}'"
+        )
     except Exception as e:
         logger.critical(f"Could not connect to the analysis ChromaDB: {e}")
         sys.exit(1)
@@ -151,21 +157,25 @@ if __name__ == "__main__":
             if subgraph_df.empty:
                 logger.warning(f"Subgraph file {file_path.name} is empty, skipping.")
                 continue
-            topic = file_path.stem.replace('_subgraph', '').replace('_', ' ')
-            
+            topic = file_path.stem.replace("_subgraph", "").replace("_", " ")
+
             subgraph_facts = format_subgraph_for_prompt(subgraph_df)
             analysis_text = generate_analysis_for_subgraph(subgraph_facts, topic)
-            
+
             if not analysis_text.startswith("Error:"):
                 analyses_to_store.append(analysis_text)
-                ids_to_store.append(file_path.name) # Use filename as the ID
+                ids_to_store.append(file_path.name)  # Use filename as the ID
         except Exception as e:
             logger.error(f"Failed to process file {file_path.name}: {e}")
 
     # Upsert all generated analyses into ChromaDB in a single batch
     if analyses_to_store:
-        logger.info(f"Storing {len(analyses_to_store)} generated analyses in ChromaDB...")
+        logger.info(
+            f"Storing {len(analyses_to_store)} generated analyses in ChromaDB..."
+        )
         analysis_collection.upsert(documents=analyses_to_store, ids=ids_to_store)
         logger.info("All analyses have been successfully stored.")
-    
-    logger.info(f"(SUCCESS) AI Analysis complete. Analyses stored in '{ANALYSIS_DB_PATH}'.")
+
+    logger.info(
+        f"(SUCCESS) AI Analysis complete. Analyses stored in '{ANALYSIS_DB_PATH}'."
+    )

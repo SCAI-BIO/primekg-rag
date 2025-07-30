@@ -18,7 +18,7 @@ BATCH_SIZE = 1000
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 stream_handler = logging.StreamHandler(sys.stdout)
-formatter = logging.Formatter('%(message)s')
+formatter = logging.Formatter("%(message)s")
 stream_handler.setFormatter(formatter)
 logger.addHandler(stream_handler)
 
@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
     # Load and deduplicate
     df = pd.read_csv(NODE_CSV_PATH)
-    required_cols = ['id', 'name', 'type']
+    required_cols = ["id", "name", "type"]
     if not all(col in df.columns for col in required_cols):
         logger.critical(f"CSV must contain columns: {required_cols}")
         sys.exit(1)
@@ -40,9 +40,11 @@ if __name__ == "__main__":
     logger.info(f"Loaded {len(df)} nodes from '{NODE_CSV_PATH.name}'.")
 
     before_dedup = len(df)
-    df = df.drop_duplicates(subset=['id'])
+    df = df.drop_duplicates(subset=["id"])
     after_dedup = len(df)
-    logger.info(f"Removed {before_dedup - after_dedup} duplicate nodes. {after_dedup} remain.")
+    logger.info(
+        f"Removed {before_dedup - after_dedup} duplicate nodes. {after_dedup} remain."
+    )
 
     # Connect to ChromaDB
     embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
@@ -52,28 +54,32 @@ if __name__ == "__main__":
 
     # Get or create collection
     try:
-        collection = client.get_collection(name=COLLECTION_NAME, embedding_function=embedding_fn)
+        collection = client.get_collection(
+            name=COLLECTION_NAME, embedding_function=embedding_fn
+        )
         logger.info(f"🔄 Existing collection '{COLLECTION_NAME}' loaded.")
     except:
-        collection = client.create_collection(name=COLLECTION_NAME, embedding_function=embedding_fn)
+        collection = client.create_collection(
+            name=COLLECTION_NAME, embedding_function=embedding_fn
+        )
         logger.info(f"📦 New collection '{COLLECTION_NAME}' created.")
 
     # Prepare IDs
-    df['chroma_id'] = df['id'].apply(lambda x: f"node_{x}")
+    df["chroma_id"] = df["id"].apply(lambda x: f"node_{x}")
 
     # Check which IDs are already in DB
-    existing_ids = set(collection.get(include=[])['ids'])  # Get just the IDs
-    df_to_embed = df[~df['chroma_id'].isin(existing_ids)]
+    existing_ids = set(collection.get(include=[])["ids"])  # Get just the IDs
+    df_to_embed = df[~df["chroma_id"].isin(existing_ids)]
 
     logger.info(f"⚙️ {len(existing_ids)} nodes already embedded.")
     logger.info(f"🧠 {len(df_to_embed)} new nodes to embed.")
 
     # Embed new entries only
     for i in tqdm(range(0, len(df_to_embed), BATCH_SIZE), desc="Embedding New Nodes"):
-        batch = df_to_embed.iloc[i:i + BATCH_SIZE]
-        documents = batch['name'].astype(str).tolist()
-        ids = batch['chroma_id'].tolist()
-        metadatas = batch.drop(columns=['name', 'chroma_id']).to_dict(orient='records')
+        batch = df_to_embed.iloc[i : i + BATCH_SIZE]
+        documents = batch["name"].astype(str).tolist()
+        ids = batch["chroma_id"].tolist()
+        metadatas = batch.drop(columns=["name", "chroma_id"]).to_dict(orient="records")
 
         try:
             collection.add(documents=documents, ids=ids, metadatas=metadatas)
