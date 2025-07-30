@@ -110,9 +110,7 @@ if __name__ == "__main__":
     logger.info("--- Starting Analysis Generation and Database Creation Pipeline ---")
 
     if not os.path.exists(SUBGRAPHS_DIR):
-        logger.error(
-            f"The '{SUBGRAPHS_DIR}' directory was not foun"
-        )
+        logger.error(f"The '{SUBGRAPHS_DIR}' directory was not foun")
         exit()
 
     # 1. Set up the ChromaDB client and create the collection.
@@ -122,7 +120,9 @@ if __name__ == "__main__":
 
     # This line CREATES the collection your main app is looking for.
     analysis_collection = client.get_or_create_collection(name=ANALYSIS_COLLECTION_NAME)
-    logger.info(f"Successfully created or connected to collection: '{ANALYSIS_COLLECTION_NAME}'")
+    logger.info(
+        f"Successfully created or connected to collection: '{ANALYSIS_COLLECTION_NAME}'"
+    )
 
     # 2. Find all subgraph files to process.
     subgraph_files = [f for f in os.listdir(SUBGRAPHS_DIR) if f.endswith(".csv")]
@@ -153,14 +153,18 @@ if __name__ == "__main__":
 
             if not analysis_text.startswith("Error:"):
                 analyses_to_store.append(analysis_text)
-                ids_to_store.append(filename)  # Use the filename as the unique ID in the database.
+                ids_to_store.append(
+                    filename
+                )  # Use the filename as the unique ID in the database.
 
         except Exception as e:
             logger.error(f"Failed to process file {filename}: {e}")
 
     # 4. Upsert all generated analyses into ChromaDB in a single efficient batch.
     if analyses_to_store:
-        logger.info(f"Storing {len(analyses_to_store)} generated analyses in ChromaDB...")
+        logger.info(
+            f"Storing {len(analyses_to_store)} generated analyses in ChromaDB..."
+        )
         analysis_collection.upsert(documents=analyses_to_store, ids=ids_to_store)
         logger.info("All analyses have been successfully stored.")
     else:

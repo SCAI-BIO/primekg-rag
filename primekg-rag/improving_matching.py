@@ -1,83 +1,89 @@
-import os
-import chromadb
-import pandas as pd
-from tqdm import tqdm
+# import pandas as pd
+# import chromadb
+# from chromadb.utils import embedding_functions
+# from pathlib import Path
+# from tqdm import tqdm
+# import logging
+# import sys
 
-# we just worked with the questions instead of q,a which made the matching hallucinating a bit
-# --- Configuration ---
+# # --- Configuration ---
+# BASE_DIR = Path(__file__).parent
+# NODE_CSV_PATH = BASE_DIR / "nodes.csv"
+# PERSIST_DIR = BASE_DIR / "node_db"
+# COLLECTION_NAME = "node_embeddings"
+# EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
+# BATCH_SIZE = 1000
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# # --- Logging ---
+# logger = logging.getLogger(__name__)
+# logger.setLevel(logging.INFO)
+# stream_handler = logging.StreamHandler(sys.stdout)
+# formatter = logging.Formatter("%(message)s")
+# stream_handler.setFormatter(formatter)
+# logger.addHandler(stream_handler)
 
-CHROMA_DB_PATH = "primekg_unified_db_asis"
-CHROMA_COLLECTION_NAME = "unified_knowledge_asis"
+# # --- Main ---
+# if __name__ == "__main__":
+#     logger.info("--- Starting Node Embedding Pipeline ---")
 
-QA_FILE_PATH = os.path.join(BASE_DIR, "mini_sample_cleaned.csv")
-OUTPUT_FILE_PATH = os.path.join(BASE_DIR, "qa_to_node_matches_improved.csv")
+#     if not NODE_CSV_PATH.is_file():
+#         logger.critical(f"CSV file not found: '{NODE_CSV_PATH}'")
+#         sys.exit(1)
 
-# --- Initialize ChromaDB Client ---
-try:
-    client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
-    collection = client.get_collection(name=CHROMA_COLLECTION_NAME)
-    print("Successfully connected to the ChromaDB collection.")
-except Exception as e:
-    print(f" Failed to connect to ChromaDB: {e}")
-    collection = None
+#     # Load and deduplicate
+#     df = pd.read_csv(NODE_CSV_PATH)
+#     required_cols = ["id", "name", "type"]
+#     if not all(col in df.columns for col in required_cols):
+#         logger.critical(f"CSV must contain columns: {required_cols}")
+#         sys.exit(1)
 
+#     logger.info(f"Loaded {len(df)} nodes from '{NODE_CSV_PATH.name}'.")
 
-def find_best_node_for_qa(query_text: str):
-    """Finds the single best matching node from nodes.csv for a query."""
-    if collection is None:
-        return None, None
+#     before_dedup = len(df)
+#     df = df.drop_duplicates(subset=["id"])
+#     after_dedup = len(df)
+#     logger.info(
+#         f"Removed {before_dedup - after_dedup} duplicate nodes. {after_dedup} remain."
+#     )
 
-    try:
-        results = collection.query(query_texts=[query_text], n_results=1, where={"source": "nodes"})
+#     # Connect to ChromaDB
+#     embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
+#         model_name=EMBEDDING_MODEL_NAME
+#     )
+#     client = chromadb.PersistentClient(path=str(PERSIST_DIR))
 
-        if not results["ids"] or not results["ids"][0]:
-            return None, None
+#     # Get or create collection
+#     try:
+#         collection = client.get_collection(
+#             name=COLLECTION_NAME, embedding_function=embedding_fn
+#         )
+#         logger.info(f"🔄 Existing collection '{COLLECTION_NAME}' loaded.")
+#     except:
+#         collection = client.create_collection(
+#             name=COLLECTION_NAME, embedding_function=embedding_fn
+#         )
+#         logger.info(f"📦 New collection '{COLLECTION_NAME}' created.")
 
-        best_match = results["metadatas"][0][0]
-        distance = results["distances"][0][0]
-        similarity = 1 - distance
-        best_node_name = best_match["name"]
+#     # Prepare IDs
+#     df["chroma_id"] = df["id"].apply(lambda x: f"node_{x}")
 
-        return best_node_name, f"{similarity:.4f}"
+#     # Check which IDs are already in DB
+#     existing_ids = set(collection.get(include=[])["ids"])  # Get just the IDs
+#     df_to_embed = df[~df["chroma_id"].isin(existing_ids)]
 
-    except Exception as e:
-        print(f"An error occurred during query for '{query_text}': {e}")
-        return None, None
+#     logger.info(f"⚙️ {len(existing_ids)} nodes already embedded.")
+#     logger.info(f"🧠 {len(df_to_embed)} new nodes to embed.")
 
+#     # Embed new entries only
+#     for i in tqdm(range(0, len(df_to_embed), BATCH_SIZE), desc="Embedding New Nodes"):
+#         batch = df_to_embed.iloc[i : i + BATCH_SIZE]
+#         documents = batch["name"].astype(str).tolist()
+#         ids = batch["chroma_id"].tolist()
+#         metadatas = batch.drop(columns=["name", "chroma_id"]).to_dict(orient="records")
 
-if __name__ == "__main__":
-    if collection:
-        qa_df = pd.read_csv(QA_FILE_PATH)
-        qa_df.dropna(inplace=True)
+#         try:
+#             collection.add(documents=documents, ids=ids, metadatas=metadatas)
+#         except Exception as e:
+#             logger.error(f"Failed to add batch at index {i}: {e}")
 
-        match_results = []
-
-        print(f"Finding best matches for {len(qa_df)} questions...")
-        for index, row in tqdm(qa_df.iterrows(), total=qa_df.shape[0]):
-            question = row["Question"]
-            answer = row["Answer"]
-
-            # --- THIS IS THE KEY CHANGE ---
-            # Clean the question to get the core keyword for a better match.
-            cleaned_query = question.replace("?", "").strip()
-
-            # Use the cleaned query to find the best matching node
-            node, score = find_best_node_for_qa(cleaned_query)
-
-            if node and score:
-                result_dict = {
-                    "q": question,  # Store the original question
-                    "a": answer,
-                    "best_match_node": node,
-                    "similarity_score": score,
-                }
-                match_results.append(result_dict)
-
-        final_df = pd.DataFrame(match_results)
-        final_df.to_csv(OUTPUT_FILE_PATH, index=False)
-
-        print(f"\nDone! Improved results saved to '{OUTPUT_FILE_PATH}'")
-        print("\n--- Sample of the new results ---")
-        print(final_df.head())
+#     logger.info(f"✅ Done. Total in collection: {collection.count()} nodes.")
