@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - main
-      - fixing-directories
+      - embedding_nodes
   pull_request:
     branches:
       - main
-      - fixing-directories
+      - embedding_nodes
 
 jobs:
   test:
@@ -42,7 +42,7 @@ jobs:
       run: |
         # MODIFIED: Run Streamlit in the background, wait, and then stop it.
         # This checks if the app can start without crashing and allows the job to finish.
-        streamlit run client.py --server.headless true &
+        streamlit run app.py --server.headless true &
         PID=$!
         sleep 15 # Wait for 15 seconds to see if it crashes
         kill $PID
