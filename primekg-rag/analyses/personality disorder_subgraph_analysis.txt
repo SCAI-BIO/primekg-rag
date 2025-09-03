@@ -1,0 +1,34 @@
+## Clinical Summary: Personality Disorder
+
+### Key Clinical Relationships
+- Personality disorder is a type of psychiatric disorder. [ID: 2025, Source: MONDO]
+- Personality disorder is associated with impairment in personality functioning. [ID: 2028_1156, Source: MONDO_grouped]
+- Personality disorder is associated with the MAOA gene/protein. [ID: 2028_1156, Source: MONDO_grouped]
+- The MAOA gene/protein is associated with personality disorder. [ID: 4128, Source: NCBI]
+- Personality disorder includes schizotypal, dependent, obsessive-compulsive, schizoid, paranoid, antisocial, avoidant, narcissistic, and histrionic personality disorders. [ID: 1087, Source: MONDO; ID: 1157, Source: MONDO; ID: 8114_1158, Source: MONDO_grouped; ID: 1161, Source: MONDO; ID: 1163, Source: MONDO; ID: 1164, Source: MONDO; ID: 2027, Source: MONDO; ID: 2411, Source: MONDO; ID: 2613, Source: MONDO]
+- Schizotypal, dependent, obsessive-compulsive, schizoid, paranoid, antisocial, avoidant, narcissistic, and histrionic personality disorders are types of personality disorder. [ID: 2028_1156, Source: MONDO_grouped]
+
+
+### Therapeutic Insights
+- Oxazepam, prazepam, and flurazepam are contraindicated in personality disorder. [ID: 2028_1156, Source: MONDO_grouped]
+- Oxazepam is associated with personality disorder. [ID: DB00842, Source: DrugBank]
+- Prazepam is associated with personality disorder. [ID: DB01588, Source: DrugBank]
+- Flurazepam is associated with personality disorder. [ID: DB00690, Source: DrugBank]
+
+
+### Associated Conditions & Phenotypes
+- Schizotypal personality disorder is a type of personality disorder. [ID: 1087, Source: MONDO]
+- Dependent personality disorder is a type of personality disorder. [ID: 1157, Source: MONDO]
+- Obsessive-compulsive personality disorder is a type of personality disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Schizoid personality disorder is a type of personality disorder. [ID: 1161, Source: MONDO]
+- Paranoid personality disorder is a type of personality disorder. [ID: 1163, Source: MONDO]
+- Antisocial personality disorder is a type of personality disorder. [ID: 1164, Source: MONDO]
+- Avoidant personality disorder is a type of personality disorder. [ID: 2027, Source: MONDO]
+- Narcissistic personality disorder is a type of personality disorder. [ID: 2411, Source: MONDO]
+- Histrionic personality disorder is a type of personality disorder. [ID: 2613, Source: MONDO]
+- Impairment in personality functioning is a phenotype present in personality disorder. [ID: 2028_1156, Source: MONDO_grouped]
+
+
+### Biological Context
+- The MAOA gene/protein is associated with personality disorder. [ID: 2028_1156, Source: MONDO_grouped; ID: 4128, Source: NCBI]
+

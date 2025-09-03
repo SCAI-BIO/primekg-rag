@@ -1,0 +1,22 @@
+## Clinical Summary: Anxiety Disorder
+
+### Key Clinical Relationships
+- Anxiety disorder is associated with A2M. [ID: 8187_2050_5618_5451_5371_100081_5383_1942_1098_3265_11924_12384, Source: MONDO_grouped]
+- Anxiety disorder is associated with AANAT. [ID: 8187_2050_5618_5451_5371_100081_5383_1942_1098_3265_11924_12384, Source: MONDO_grouped]
+- Anxiety disorder is associated with ADCY5. [ID: 8187_2050_5618_5451_5371_100081_5383_1942_1098_3265_11924_12384, Source: MONDO_grouped]
+- Anxiety disorder is associated with ADCY7. [ID: 8187_2050_5618_5451_5371_100081_5383_1942_1098_3265_11924_12384, Source: MONDO_grouped]
+- Anxiety disorder is associated with ADCY8. [ID: 8187_2050_5618_5451_5371_100081_5383_1942_1098_3265_11924_12384, Source: MONDO_grouped]
+- ...(This list is truncated due to length.  The provided data contains 158 associations with genes/proteins.  Listing all would exceed reasonable length.)...
+- Anxiety disorder is associated with ZBTB16. [ID: 8187_2050_5618_5451_5371_100081_5383_1942_1098_3265_11924_12384, Source: MONDO_grouped]
+
+
+### Therapeutic Insights
+The provided data does not contain information on treatments or drug interactions for anxiety disorder.  There is no information on Lorazepam, Citalopram, Chlordiazepoxide, or Imipramine,  beyond the statistical summary noting their number of connections.
+
+
+### Associated Conditions & Phenotypes
+The provided data does not list any conditions or phenotypes associated with anxiety disorder beyond the genes and proteins listed above.
+
+
+### Biological Context
+Anxiety disorder is associated with numerous genes and proteins.  Examples include A2M, AANAT, ADCY5, ADCY7, ADCY8, ADCYAP1,  and many others. [ID: 8187_2050_5618_5451_5371_100081_5383_1942_1098_3265_11924_12384, Source: MONDO_grouped;  IDs 2-12384 and similar IDs in the NCBI source.  A complete list is too extensive for this summary].  The specific roles of these genes and proteins in anxiety disorder are not detailed in this subgraph.

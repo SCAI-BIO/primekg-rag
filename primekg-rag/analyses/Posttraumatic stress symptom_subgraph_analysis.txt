@@ -1,0 +1,24 @@
+## Clinical Summary: Posttraumatic Stress Symptom
+
+### Key Clinical Relationships
+- Posttraumatic stress symptom is a type of behavioral abnormality. [ID: 708, Source: HPO]
+- Posttraumatic stress symptom includes intrusion symptoms. [ID: 32936, Source: HPO]
+- Posttraumatic stress symptom includes avoidance of stimuli associated with traumatic events. [ID: 32942, Source: HPO]
+- Intrusion symptoms are a type of posttraumatic stress symptom. [ID: 33676, Source: HPO]
+- Avoidance of stimuli associated with traumatic events is a type of posttraumatic stress symptom. [ID: 33676, Source: HPO]
+- Behavioral abnormality is a type of posttraumatic stress symptom. [ID: 33676, Source: HPO]
+
+
+### Therapeutic Insights
+No treatments or drug interactions are mentioned in the provided data.
+
+
+### Associated Conditions & Phenotypes
+- Intrusion symptoms are associated with posttraumatic stress symptom. [ID: 32936, Source: HPO]
+- Avoidance of stimuli associated with traumatic events are associated with posttraumatic stress symptom. [ID: 32942, Source: HPO]
+- Behavioral abnormality is associated with posttraumatic stress symptom. [ID: 708, Source: HPO]
+- Behavioral abnormality is a type of posttraumatic stress symptom. [ID: 33676, Source: HPO]
+
+
+### Biological Context
+No genes, proteins, or biological processes are mentioned in the provided data.
