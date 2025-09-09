@@ -1,0 +1,34 @@
+## Clinical Summary: Alcohol-Related Disorders
+
+### Key Clinical Relationships
+- Alcohol-related disorders encompass substance abuse/dependence. [ID: 7079_2491_4938_2046_5367_5689_4456_5186, Source: MONDO_grouped]
+- Alcohol-related disorders include alcoholic psychosis. [ID: 2330, Source: MONDO]
+- Alcohol-related disorders include pancreatitis. [ID: 11986_4982_5003_6515_3232, Source: MONDO_grouped]
+- Alcohol-related disorders include alcoholic cardiomyopathy. [ID: 6643, Source: MONDO]
+- Alcohol-related disorders include Wernicke encephalopathy. [ID: 7020, Source: MONDO]
+- Alcohol-related disorders include acute alcohol sensitivity. [ID: 12454, Source: MONDO]
+- Alcohol-related disorders include alcohol amnestic disorder. [ID: 21702, Source: MONDO]
+- Alcohol-related disorders include fetal alcohol spectrum disorder. [ID: 408_21720, Source: MONDO_grouped]
+- Alcohol-related disorders include fatty liver disease. [ID: 43693_13209_4790_21104, Source: MONDO_grouped]
+- Substance-related disorders include alcohol-related disorders. [ID: 2494, Source: MONDO]
+- Alcohol-related disorders include substance-related disorders. [ID: 21698_21699, Source: MONDO_grouped]
+
+
+### Therapeutic Insights
+No therapeutic insights or drug interactions are provided in the given data.
+
+### Associated Conditions & Phenotypes
+- Substance abuse/dependence is associated with alcohol-related disorders. [ID: 7079_2491_4938_2046_5367_5689_4456_5186, Source: MONDO_grouped]
+- Alcoholic psychosis is associated with alcohol-related disorders. [ID: 2330, Source: MONDO]
+- Pancreatitis is associated with alcohol-related disorders. [ID: 11986_4982_5003_6515_3232, Source: MONDO_grouped]
+- Alcoholic cardiomyopathy is associated with alcohol-related disorders. [ID: 6643, Source: MONDO]
+- Wernicke encephalopathy is associated with alcohol-related disorders. [ID: 7020, Source: MONDO]
+- Acute alcohol sensitivity is associated with alcohol-related disorders. [ID: 12454, Source: MONDO]
+- Alcohol amnestic disorder is associated with alcohol-related disorders. [ID: 21702, Source: MONDO]
+- Fetal alcohol spectrum disorder is associated with alcohol-related disorders. [ID: 408_21720, Source: MONDO_grouped]
+- Fatty liver disease is associated with alcohol-related disorders. [ID: 43693_13209_4790_21104, Source: MONDO_grouped]
+- Substance-related disorders are associated with alcohol-related disorders. [ID: 21698_21699, Source: MONDO_grouped]
+
+
+### Biological Context
+No genes, proteins, or biological processes are linked to the condition in the provided data.

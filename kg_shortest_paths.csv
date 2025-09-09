@@ -1,0 +1,434 @@
+Source_Query,Target_Query,Status,Path_Length,Source_Node,Target_Node,Path,Detailed_Path
+alcohol-related disorders,anorexia nervosa,Path found,3,alcohol-related disorders,anorexia nervosa,alcohol-related disorders → substance abuse/dependence → Medroxyprogesterone acetate → anorexia nervosa,"
+  • alcohol-related disorders [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --contraindication--> Medroxyprogesterone acetate [drug]
+  • Medroxyprogesterone acetate [drug] --contraindication--> anorexia nervosa [disease]"
+alcohol-related disorders,Behavioral abnormality,Path found,3,alcohol-related disorders,Behavioral abnormality,alcohol-related disorders → substance abuse/dependence → Topiramate → Behavioral abnormality,"
+  • alcohol-related disorders [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --off-label use--> Topiramate [drug]
+  • Topiramate [drug] --side effect--> Behavioral abnormality [effect/phenotype]"
+alcohol-related disorders,Bipolar affective disorder,Path found,3,alcohol-related disorders,Bipolar affective disorder,alcohol-related disorders → substance abuse/dependence → Topiramate → Bipolar affective disorder,"
+  • alcohol-related disorders [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --off-label use--> Topiramate [drug]
+  • Topiramate [drug] --side effect--> Bipolar affective disorder [effect/phenotype]"
+alcohol-related disorders,bipolar disorder,Path found,3,alcohol-related disorders,bipolar disorder,alcohol-related disorders → substance abuse/dependence → Trimipramine → bipolar disorder,"
+  • alcohol-related disorders [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --contraindication--> Trimipramine [drug]
+  • Trimipramine [drug] --contraindication--> bipolar disorder [disease]"
+alcohol-related disorders,Death in adolescence,Path found,4,alcohol-related disorders,Death in adolescence,"alcohol-related disorders → pancreatitis → Autosomal recessive inheritance → mitochondrial complex 4 deficiency, nuclear → Death in adolescence","
+  • alcohol-related disorders [disease] --parent-child--> pancreatitis [disease]
+  • pancreatitis [disease] --phenotype present--> Autosomal recessive inheritance [effect/phenotype]
+  • Autosomal recessive inheritance [effect/phenotype] --phenotype present--> mitochondrial complex 4 deficiency, nuclear [disease]
+  • mitochondrial complex 4 deficiency, nuclear [disease] --phenotype present--> Death in adolescence [effect/phenotype]"
+alcohol-related disorders,drugalcohol-induced mental disorder,Path found,2,alcohol-related disorders,drug/alcohol-induced mental disorder,alcohol-related disorders → alcoholic psychosis → drug/alcohol-induced mental disorder,"
+  • alcohol-related disorders [disease] --parent-child--> alcoholic psychosis [disease]
+  • alcoholic psychosis [disease] --parent-child--> drug/alcohol-induced mental disorder [disease]"
+alcohol-related disorders,eating behavior,Path found,3,alcohol-related disorders,eating behavior,alcohol-related disorders → substance abuse/dependence → CCK → eating behavior,"
+  • alcohol-related disorders [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --associated with--> CCK [gene/protein]
+  • CCK [gene/protein] --interacts with--> eating behavior [biological_process]"
+alcohol-related disorders,Hypotropia,Path found,5,alcohol-related disorders,hypotropia,alcohol-related disorders → pancreatitis → Autosomal dominant inheritance → Brown syndrome → strabismus → hypotropia,"
+  • alcohol-related disorders [disease] --parent-child--> pancreatitis [disease]
+  • pancreatitis [disease] --phenotype present--> Autosomal dominant inheritance [effect/phenotype]
+  • Autosomal dominant inheritance [effect/phenotype] --phenotype present--> Brown syndrome [disease]
+  • Brown syndrome [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"
+alcohol-related disorders,major depressive disorder,Path found,3,alcohol-related disorders,major depressive disorder,alcohol-related disorders → substance abuse/dependence → Ketamine → major depressive disorder,"
+  • alcohol-related disorders [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --contraindication--> Ketamine [drug]
+  • Ketamine [drug] --off-label use--> major depressive disorder [disease]"
+alcohol-related disorders,Mania,Path found,3,alcohol-related disorders,Mania,alcohol-related disorders → substance abuse/dependence → Topiramate → Mania,"
+  • alcohol-related disorders [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --off-label use--> Topiramate [drug]
+  • Topiramate [drug] --side effect--> Mania [effect/phenotype]"
+alcohol-related disorders,manic bipolar affective disorder,Path found,3,alcohol-related disorders,manic bipolar affective disorder,alcohol-related disorders → substance abuse/dependence → Nortriptyline → manic bipolar affective disorder,"
+  • alcohol-related disorders [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --contraindication--> Nortriptyline [drug]
+  • Nortriptyline [drug] --contraindication--> manic bipolar affective disorder [disease]"
+alcohol-related disorders,Panic attack,Path found,4,alcohol-related disorders,Panic attack,alcohol-related disorders → pancreatitis → Autosomal recessive inheritance → Troyer syndrome → Panic attack,"
+  • alcohol-related disorders [disease] --parent-child--> pancreatitis [disease]
+  • pancreatitis [disease] --phenotype present--> Autosomal recessive inheritance [effect/phenotype]
+  • Autosomal recessive inheritance [effect/phenotype] --phenotype present--> Troyer syndrome [disease]
+  • Troyer syndrome [disease] --phenotype present--> Panic attack [effect/phenotype]"
+alcohol-related disorders,Panic disorder,Path found,4,alcohol-related disorders,Panic attack,alcohol-related disorders → pancreatitis → Autosomal recessive inheritance → Troyer syndrome → Panic attack,"
+  • alcohol-related disorders [disease] --parent-child--> pancreatitis [disease]
+  • pancreatitis [disease] --phenotype present--> Autosomal recessive inheritance [effect/phenotype]
+  • Autosomal recessive inheritance [effect/phenotype] --phenotype present--> Troyer syndrome [disease]
+  • Troyer syndrome [disease] --phenotype present--> Panic attack [effect/phenotype]"
+alcohol-related disorders,Posttraumatic stress symptom,Path found,4,alcohol-related disorders,Posttraumatic stress symptom,alcohol-related disorders → substance abuse/dependence → Topiramate → Behavioral abnormality → Posttraumatic stress symptom,"
+  • alcohol-related disorders [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --off-label use--> Topiramate [drug]
+  • Topiramate [drug] --side effect--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"
+anorexia nervosa,Behavioral abnormality,Path found,2,anorexia nervosa,Behavioral abnormality,anorexia nervosa → Methylphenidate → Behavioral abnormality,"
+  • anorexia nervosa [disease] --contraindication--> Methylphenidate [drug]
+  • Methylphenidate [drug] --side effect--> Behavioral abnormality [effect/phenotype]"
+anorexia nervosa,Bipolar affective disorder,Path found,2,anorexia nervosa,Bipolar affective disorder,anorexia nervosa → Bupropion → Bipolar affective disorder,"
+  • anorexia nervosa [disease] --contraindication--> Bupropion [drug]
+  • Bupropion [drug] --side effect--> Bipolar affective disorder [effect/phenotype]"
+anorexia nervosa,bipolar disorder,Path found,2,anorexia nervosa,bipolar disorder,anorexia nervosa → Fluoxetine → bipolar disorder,"
+  • anorexia nervosa [disease] --contraindication--> Fluoxetine [drug]
+  • Fluoxetine [drug] --contraindication--> bipolar disorder [disease]"
+anorexia nervosa,Death in adolescence,Path found,4,anorexia nervosa,Death in adolescence,anorexia nervosa → Orlistat → Arthritis → proteasome-associated autoinflammatory syndrome → Death in adolescence,"
+  • anorexia nervosa [disease] --contraindication--> Orlistat [drug]
+  • Orlistat [drug] --side effect--> Arthritis [effect/phenotype]
+  • Arthritis [effect/phenotype] --phenotype present--> proteasome-associated autoinflammatory syndrome [disease]
+  • proteasome-associated autoinflammatory syndrome [disease] --phenotype present--> Death in adolescence [effect/phenotype]"
+anorexia nervosa,drugalcohol-induced mental disorder,Path found,3,anorexia nervosa,drug/alcohol-induced mental disorder,anorexia nervosa → Trolnitrate → mental disorder → drug/alcohol-induced mental disorder,"
+  • anorexia nervosa [disease] --contraindication--> Trolnitrate [drug]
+  • Trolnitrate [drug] --contraindication--> mental disorder [disease]
+  • mental disorder [disease] --parent-child--> drug/alcohol-induced mental disorder [disease]"
+anorexia nervosa,eating behavior,Path found,3,anorexia nervosa,eating behavior,anorexia nervosa → Progesterone → OPRK1 → eating behavior,"
+  • anorexia nervosa [disease] --contraindication--> Progesterone [exposure]
+  • Progesterone [exposure] --target--> OPRK1 [gene/protein]
+  • OPRK1 [gene/protein] --interacts with--> eating behavior [biological_process]"
+anorexia nervosa,Hypotropia,Path found,5,anorexia nervosa,hypotropia,anorexia nervosa → Medroxyprogesterone acetate → Diplopia → Brown syndrome → strabismus → hypotropia,"
+  • anorexia nervosa [disease] --contraindication--> Medroxyprogesterone acetate [drug]
+  • Medroxyprogesterone acetate [drug] --side effect--> Diplopia [effect/phenotype]
+  • Diplopia [effect/phenotype] --phenotype present--> Brown syndrome [disease]
+  • Brown syndrome [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"
+anorexia nervosa,major depressive disorder,Path found,2,anorexia nervosa,major depressive disorder,anorexia nervosa → Fluoxetine → major depressive disorder,"
+  • anorexia nervosa [disease] --contraindication--> Fluoxetine [drug]
+  • Fluoxetine [drug] --indication--> major depressive disorder [disease]"
+anorexia nervosa,Mania,Path found,2,anorexia nervosa,Mania,anorexia nervosa → Bupropion → Mania,"
+  • anorexia nervosa [disease] --contraindication--> Bupropion [drug]
+  • Bupropion [drug] --side effect--> Mania [effect/phenotype]"
+anorexia nervosa,manic bipolar affective disorder,Path found,2,anorexia nervosa,manic bipolar affective disorder,anorexia nervosa → Bupropion → manic bipolar affective disorder,"
+  • anorexia nervosa [disease] --contraindication--> Bupropion [drug]
+  • Bupropion [drug] --contraindication--> manic bipolar affective disorder [disease]"
+anorexia nervosa,Panic attack,Path found,3,anorexia nervosa,Panic attack,anorexia nervosa → Rivastigmine → Parkinson disease → Panic attack,"
+  • anorexia nervosa [disease] --contraindication--> Rivastigmine [drug]
+  • Rivastigmine [drug] --contraindication--> Parkinson disease [disease]
+  • Parkinson disease [disease] --phenotype present--> Panic attack [effect/phenotype]"
+anorexia nervosa,Panic disorder,Path found,3,anorexia nervosa,Panic attack,anorexia nervosa → Rivastigmine → Parkinson disease → Panic attack,"
+  • anorexia nervosa [disease] --contraindication--> Rivastigmine [drug]
+  • Rivastigmine [drug] --contraindication--> Parkinson disease [disease]
+  • Parkinson disease [disease] --phenotype present--> Panic attack [effect/phenotype]"
+anorexia nervosa,Posttraumatic stress symptom,Path found,3,anorexia nervosa,Posttraumatic stress symptom,anorexia nervosa → Methylphenidate → Behavioral abnormality → Posttraumatic stress symptom,"
+  • anorexia nervosa [disease] --contraindication--> Methylphenidate [drug]
+  • Methylphenidate [drug] --side effect--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"
+Behavioral abnormality,Bipolar affective disorder,Path found,2,Behavioral abnormality,Bipolar affective disorder,Behavioral abnormality → Impairment in personality functioning → Bipolar affective disorder,"
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Impairment in personality functioning [effect/phenotype]
+  • Impairment in personality functioning [effect/phenotype] --parent-child--> Bipolar affective disorder [effect/phenotype]"
+Behavioral abnormality,bipolar disorder,Path found,2,Behavioral abnormality,bipolar disorder,Behavioral abnormality → Valproic acid → bipolar disorder,"
+  • Behavioral abnormality [effect/phenotype] --side effect--> Valproic acid [drug]
+  • Valproic acid [drug] --off-label use--> bipolar disorder [disease]"
+Behavioral abnormality,Death in adolescence,Path found,3,Behavioral abnormality,Death in adolescence,"Behavioral abnormality → Perseveration → mitochondrial complex 4 deficiency, nuclear → Death in adolescence","
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Perseveration [effect/phenotype]
+  • Perseveration [effect/phenotype] --phenotype present--> mitochondrial complex 4 deficiency, nuclear [disease]
+  • mitochondrial complex 4 deficiency, nuclear [disease] --phenotype present--> Death in adolescence [effect/phenotype]"
+Behavioral abnormality,drugalcohol-induced mental disorder,Path found,3,Behavioral abnormality,drug/alcohol-induced mental disorder,Behavioral abnormality → Atomoxetine → mental disorder → drug/alcohol-induced mental disorder,"
+  • Behavioral abnormality [effect/phenotype] --side effect--> Atomoxetine [drug]
+  • Atomoxetine [drug] --contraindication--> mental disorder [disease]
+  • mental disorder [disease] --parent-child--> drug/alcohol-induced mental disorder [disease]"
+Behavioral abnormality,eating behavior,Path found,3,Behavioral abnormality,eating behavior,Behavioral abnormality → schizophrenia → ADORA2A → eating behavior,"
+  • Behavioral abnormality [effect/phenotype] --phenotype present--> schizophrenia [disease]
+  • schizophrenia [disease] --associated with--> ADORA2A [gene/protein]
+  • ADORA2A [gene/protein] --interacts with--> eating behavior [biological_process]"
+Behavioral abnormality,Hypotropia,Path found,4,Behavioral abnormality,hypotropia,Behavioral abnormality → Riley-Day syndrome → neuro-ophthalmological disease → strabismus → hypotropia,"
+  • Behavioral abnormality [effect/phenotype] --phenotype present--> Riley-Day syndrome [disease]
+  • Riley-Day syndrome [disease] --parent-child--> neuro-ophthalmological disease [disease]
+  • neuro-ophthalmological disease [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"
+Behavioral abnormality,major depressive disorder,Path found,2,Behavioral abnormality,major depressive disorder,Behavioral abnormality → Venlafaxine → major depressive disorder,"
+  • Behavioral abnormality [effect/phenotype] --side effect--> Venlafaxine [drug]
+  • Venlafaxine [drug] --indication--> major depressive disorder [disease]"
+Behavioral abnormality,Mania,Path found,1,Behavioral abnormality,Mania,Behavioral abnormality → Mania,"
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Mania [effect/phenotype]"
+Behavioral abnormality,manic bipolar affective disorder,Path found,2,Behavioral abnormality,manic bipolar affective disorder,Behavioral abnormality → Valproic acid → manic bipolar affective disorder,"
+  • Behavioral abnormality [effect/phenotype] --side effect--> Valproic acid [drug]
+  • Valproic acid [drug] --indication--> manic bipolar affective disorder [disease]"
+Behavioral abnormality,Panic attack,Path found,2,Behavioral abnormality,Panic attack,Behavioral abnormality → Psychogenic non-epileptic seizure → Panic attack,"
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Psychogenic non-epileptic seizure [effect/phenotype]
+  • Psychogenic non-epileptic seizure [effect/phenotype] --parent-child--> Panic attack [effect/phenotype]"
+Behavioral abnormality,Panic disorder,Path found,2,Behavioral abnormality,Panic attack,Behavioral abnormality → Psychogenic non-epileptic seizure → Panic attack,"
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Psychogenic non-epileptic seizure [effect/phenotype]
+  • Psychogenic non-epileptic seizure [effect/phenotype] --parent-child--> Panic attack [effect/phenotype]"
+Behavioral abnormality,Posttraumatic stress symptom,Path found,1,Behavioral abnormality,Posttraumatic stress symptom,Behavioral abnormality → Posttraumatic stress symptom,"
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"
+Bipolar affective disorder,bipolar disorder,Path found,2,Bipolar affective disorder,bipolar disorder,Bipolar affective disorder → Lamotrigine → bipolar disorder,"
+  • Bipolar affective disorder [effect/phenotype] --side effect--> Lamotrigine [drug]
+  • Lamotrigine [drug] --off-label use--> bipolar disorder [disease]"
+Bipolar affective disorder,Death in adolescence,Path found,4,Bipolar affective disorder,Death in adolescence,Bipolar affective disorder → lithium transport → Autosomal dominant inheritance → proteasome-associated autoinflammatory syndrome → Death in adolescence,"
+  • Bipolar affective disorder [effect/phenotype] --phenotype present--> lithium transport [disease]
+  • lithium transport [disease] --phenotype present--> Autosomal dominant inheritance [effect/phenotype]
+  • Autosomal dominant inheritance [effect/phenotype] --phenotype present--> proteasome-associated autoinflammatory syndrome [disease]
+  • proteasome-associated autoinflammatory syndrome [disease] --phenotype present--> Death in adolescence [effect/phenotype]"
+Bipolar affective disorder,drugalcohol-induced mental disorder,Path found,3,Bipolar affective disorder,drug/alcohol-induced mental disorder,Bipolar affective disorder → Bupropion → mental disorder → drug/alcohol-induced mental disorder,"
+  • Bipolar affective disorder [effect/phenotype] --side effect--> Bupropion [drug]
+  • Bupropion [drug] --contraindication--> mental disorder [disease]
+  • mental disorder [disease] --parent-child--> drug/alcohol-induced mental disorder [disease]"
+Bipolar affective disorder,eating behavior,Path found,3,Bipolar affective disorder,eating behavior,Bipolar affective disorder → Lamotrigine → ADORA2A → eating behavior,"
+  • Bipolar affective disorder [effect/phenotype] --side effect--> Lamotrigine [drug]
+  • Lamotrigine [drug] --target--> ADORA2A [gene/protein]
+  • ADORA2A [gene/protein] --interacts with--> eating behavior [biological_process]"
+Bipolar affective disorder,Hypotropia,Path found,5,Bipolar affective disorder,hypotropia,Bipolar affective disorder → lithium transport → Autosomal dominant inheritance → Brown syndrome → strabismus → hypotropia,"
+  • Bipolar affective disorder [effect/phenotype] --phenotype present--> lithium transport [disease]
+  • lithium transport [disease] --phenotype present--> Autosomal dominant inheritance [effect/phenotype]
+  • Autosomal dominant inheritance [effect/phenotype] --phenotype present--> Brown syndrome [disease]
+  • Brown syndrome [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"
+Bipolar affective disorder,major depressive disorder,Path found,2,Bipolar affective disorder,major depressive disorder,Bipolar affective disorder → Paroxetine → major depressive disorder,"
+  • Bipolar affective disorder [effect/phenotype] --side effect--> Paroxetine [drug]
+  • Paroxetine [drug] --indication--> major depressive disorder [disease]"
+Bipolar affective disorder,Mania,Path found,1,Bipolar affective disorder,Mania,Bipolar affective disorder → Mania,"
+  • Bipolar affective disorder [effect/phenotype] --parent-child--> Mania [effect/phenotype]"
+Bipolar affective disorder,manic bipolar affective disorder,Path found,2,Bipolar affective disorder,manic bipolar affective disorder,Bipolar affective disorder → Bupropion → manic bipolar affective disorder,"
+  • Bipolar affective disorder [effect/phenotype] --side effect--> Bupropion [drug]
+  • Bupropion [drug] --contraindication--> manic bipolar affective disorder [disease]"
+Bipolar affective disorder,Panic attack,Path found,3,Bipolar affective disorder,Panic attack,Bipolar affective disorder → Impairment in personality functioning → Abnormal fear/anxiety-related behavior → Panic attack,"
+  • Bipolar affective disorder [effect/phenotype] --parent-child--> Impairment in personality functioning [effect/phenotype]
+  • Impairment in personality functioning [effect/phenotype] --parent-child--> Abnormal fear/anxiety-related behavior [effect/phenotype]
+  • Abnormal fear/anxiety-related behavior [effect/phenotype] --parent-child--> Panic attack [effect/phenotype]"
+Bipolar affective disorder,Panic disorder,Path found,3,Bipolar affective disorder,Panic attack,Bipolar affective disorder → Impairment in personality functioning → Abnormal fear/anxiety-related behavior → Panic attack,"
+  • Bipolar affective disorder [effect/phenotype] --parent-child--> Impairment in personality functioning [effect/phenotype]
+  • Impairment in personality functioning [effect/phenotype] --parent-child--> Abnormal fear/anxiety-related behavior [effect/phenotype]
+  • Abnormal fear/anxiety-related behavior [effect/phenotype] --parent-child--> Panic attack [effect/phenotype]"
+Bipolar affective disorder,Posttraumatic stress symptom,Path found,3,Bipolar affective disorder,Posttraumatic stress symptom,Bipolar affective disorder → Impairment in personality functioning → Behavioral abnormality → Posttraumatic stress symptom,"
+  • Bipolar affective disorder [effect/phenotype] --parent-child--> Impairment in personality functioning [effect/phenotype]
+  • Impairment in personality functioning [effect/phenotype] --parent-child--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"
+bipolar disorder,Death in adolescence,Path found,4,bipolar disorder,Death in adolescence,bipolar disorder → Citalopram → Stillbirth → Age of death → Death in adolescence,"
+  • bipolar disorder [disease] --contraindication--> Citalopram [drug]
+  • Citalopram [drug] --side effect--> Stillbirth [effect/phenotype]
+  • Stillbirth [effect/phenotype] --parent-child--> Age of death [effect/phenotype]
+  • Age of death [effect/phenotype] --parent-child--> Death in adolescence [effect/phenotype]"
+bipolar disorder,drugalcohol-induced mental disorder,Path found,3,bipolar disorder,drug/alcohol-induced mental disorder,bipolar disorder → ANK3 → alcohol-related birth defect → drug/alcohol-induced mental disorder,"
+  • bipolar disorder [disease] --associated with--> ANK3 [gene/protein]
+  • ANK3 [gene/protein] --associated with--> alcohol-related birth defect [disease]
+  • alcohol-related birth defect [disease] --parent-child--> drug/alcohol-induced mental disorder [disease]"
+bipolar disorder,eating behavior,Path found,2,bipolar disorder,eating behavior,bipolar disorder → TH → eating behavior,"
+  • bipolar disorder [disease] --associated with--> TH [gene/protein]
+  • TH [gene/protein] --interacts with--> eating behavior [biological_process]"
+bipolar disorder,Hypotropia,Path found,5,bipolar disorder,hypotropia,bipolar disorder → BCHE → Echothiophate → esotropia → strabismus → hypotropia,"
+  • bipolar disorder [disease] --associated with--> BCHE [gene/protein]
+  • BCHE [gene/protein] --target--> Echothiophate [drug]
+  • Echothiophate [drug] --indication--> esotropia [disease]
+  • esotropia [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"
+bipolar disorder,major depressive disorder,Path found,2,bipolar disorder,major depressive disorder,bipolar disorder → Venlafaxine → major depressive disorder,"
+  • bipolar disorder [disease] --contraindication--> Venlafaxine [drug]
+  • Venlafaxine [drug] --indication--> major depressive disorder [disease]"
+bipolar disorder,Mania,Path found,2,bipolar disorder,Mania,bipolar disorder → major affective disorder → Mania,"
+  • bipolar disorder [disease] --parent-child--> major affective disorder [disease]
+  • major affective disorder [disease] --phenotype present--> Mania [effect/phenotype]"
+bipolar disorder,manic bipolar affective disorder,Path found,1,bipolar disorder,manic bipolar affective disorder,bipolar disorder → manic bipolar affective disorder,"
+  • bipolar disorder [disease] --parent-child--> manic bipolar affective disorder [disease]"
+bipolar disorder,Panic attack,Path found,3,bipolar disorder,Panic attack,bipolar disorder → ATP1A1 → adrenal cortex carcinoma → Panic attack,"
+  • bipolar disorder [disease] --associated with--> ATP1A1 [gene/protein]
+  • ATP1A1 [gene/protein] --associated with--> adrenal cortex carcinoma [disease]
+  • adrenal cortex carcinoma [disease] --phenotype present--> Panic attack [effect/phenotype]"
+bipolar disorder,Panic disorder,Path found,3,bipolar disorder,Panic attack,bipolar disorder → ATP1A1 → adrenal cortex carcinoma → Panic attack,"
+  • bipolar disorder [disease] --associated with--> ATP1A1 [gene/protein]
+  • ATP1A1 [gene/protein] --associated with--> adrenal cortex carcinoma [disease]
+  • adrenal cortex carcinoma [disease] --phenotype present--> Panic attack [effect/phenotype]"
+bipolar disorder,Posttraumatic stress symptom,Path found,3,bipolar disorder,Posttraumatic stress symptom,bipolar disorder → NR4A2 → Behavioral abnormality → Posttraumatic stress symptom,"
+  • bipolar disorder [disease] --associated with--> NR4A2 [gene/protein]
+  • NR4A2 [gene/protein] --associated with--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"
+Death in adolescence,drugalcohol-induced mental disorder,Path found,5,Death in adolescence,drug/alcohol-induced mental disorder,Death in adolescence → Age of death → Stillbirth → Methotrexate → substance abuse/dependence → drug/alcohol-induced mental disorder,"
+  • Death in adolescence [effect/phenotype] --parent-child--> Age of death [effect/phenotype]
+  • Age of death [effect/phenotype] --parent-child--> Stillbirth [effect/phenotype]
+  • Stillbirth [effect/phenotype] --side effect--> Methotrexate [drug]
+  • Methotrexate [drug] --contraindication--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --parent-child--> drug/alcohol-induced mental disorder [disease]"
+Death in adolescence,eating behavior,Path found,4,Death in adolescence,eating behavior,"Death in adolescence → mitochondrial complex 4 deficiency, nuclear → Seizure → ADORA2A → eating behavior","
+  • Death in adolescence [effect/phenotype] --phenotype present--> mitochondrial complex 4 deficiency, nuclear [disease]
+  • mitochondrial complex 4 deficiency, nuclear [disease] --phenotype present--> Seizure [effect/phenotype]
+  • Seizure [effect/phenotype] --associated with--> ADORA2A [gene/protein]
+  • ADORA2A [gene/protein] --interacts with--> eating behavior [biological_process]"
+Death in adolescence,Hypotropia,Path found,5,Death in adolescence,hypotropia,Death in adolescence → deeah syndrome → Strabismus → paralytic strabismus → strabismus → hypotropia,"
+  • Death in adolescence [effect/phenotype] --phenotype present--> deeah syndrome [disease]
+  • deeah syndrome [disease] --phenotype present--> Strabismus [effect/phenotype]
+  • Strabismus [effect/phenotype] --phenotype present--> paralytic strabismus [disease]
+  • paralytic strabismus [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"
+Death in adolescence,major depressive disorder,Path found,4,Death in adolescence,major depressive disorder,Death in adolescence → Age of death → Stillbirth → Citalopram → major depressive disorder,"
+  • Death in adolescence [effect/phenotype] --parent-child--> Age of death [effect/phenotype]
+  • Age of death [effect/phenotype] --parent-child--> Stillbirth [effect/phenotype]
+  • Stillbirth [effect/phenotype] --side effect--> Citalopram [drug]
+  • Citalopram [drug] --indication--> major depressive disorder [disease]"
+Death in adolescence,Mania,Path found,4,Death in adolescence,Mania,"Death in adolescence → mitochondrial complex 4 deficiency, nuclear → Perseveration → Behavioral abnormality → Mania","
+  • Death in adolescence [effect/phenotype] --phenotype present--> mitochondrial complex 4 deficiency, nuclear [disease]
+  • mitochondrial complex 4 deficiency, nuclear [disease] --phenotype present--> Perseveration [effect/phenotype]
+  • Perseveration [effect/phenotype] --parent-child--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Mania [effect/phenotype]"
+Death in adolescence,manic bipolar affective disorder,Path found,4,Death in adolescence,manic bipolar affective disorder,Death in adolescence → proteasome-associated autoinflammatory syndrome → Arrhythmia → Valproic acid → manic bipolar affective disorder,"
+  • Death in adolescence [effect/phenotype] --phenotype present--> proteasome-associated autoinflammatory syndrome [disease]
+  • proteasome-associated autoinflammatory syndrome [disease] --phenotype present--> Arrhythmia [effect/phenotype]
+  • Arrhythmia [effect/phenotype] --side effect--> Valproic acid [drug]
+  • Valproic acid [drug] --indication--> manic bipolar affective disorder [disease]"
+Death in adolescence,Panic attack,Path found,4,Death in adolescence,Panic attack,"Death in adolescence → proteasome-associated autoinflammatory syndrome → Intellectual disability, mild → Troyer syndrome → Panic attack","
+  • Death in adolescence [effect/phenotype] --phenotype present--> proteasome-associated autoinflammatory syndrome [disease]
+  • proteasome-associated autoinflammatory syndrome [disease] --phenotype present--> Intellectual disability, mild [effect/phenotype]
+  • Intellectual disability, mild [effect/phenotype] --phenotype present--> Troyer syndrome [disease]
+  • Troyer syndrome [disease] --phenotype present--> Panic attack [effect/phenotype]"
+Death in adolescence,Panic disorder,Path found,4,Death in adolescence,Panic attack,"Death in adolescence → proteasome-associated autoinflammatory syndrome → Intellectual disability, mild → Troyer syndrome → Panic attack","
+  • Death in adolescence [effect/phenotype] --phenotype present--> proteasome-associated autoinflammatory syndrome [disease]
+  • proteasome-associated autoinflammatory syndrome [disease] --phenotype present--> Intellectual disability, mild [effect/phenotype]
+  • Intellectual disability, mild [effect/phenotype] --phenotype present--> Troyer syndrome [disease]
+  • Troyer syndrome [disease] --phenotype present--> Panic attack [effect/phenotype]"
+Death in adolescence,Posttraumatic stress symptom,Path found,4,Death in adolescence,Posttraumatic stress symptom,"Death in adolescence → mitochondrial complex 4 deficiency, nuclear → Perseveration → Behavioral abnormality → Posttraumatic stress symptom","
+  • Death in adolescence [effect/phenotype] --phenotype present--> mitochondrial complex 4 deficiency, nuclear [disease]
+  • mitochondrial complex 4 deficiency, nuclear [disease] --phenotype present--> Perseveration [effect/phenotype]
+  • Perseveration [effect/phenotype] --parent-child--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"
+drugalcohol-induced mental disorder,eating behavior,Path found,3,drug/alcohol-induced mental disorder,eating behavior,drug/alcohol-induced mental disorder → drug psychosis → ADORA2A → eating behavior,"
+  • drug/alcohol-induced mental disorder [disease] --parent-child--> drug psychosis [disease]
+  • drug psychosis [disease] --associated with--> ADORA2A [gene/protein]
+  • ADORA2A [gene/protein] --interacts with--> eating behavior [biological_process]"
+drugalcohol-induced mental disorder,Hypotropia,Path found,6,drug/alcohol-induced mental disorder,hypotropia,drug/alcohol-induced mental disorder → substance abuse/dependence → Hyoscyamine → Strabismus → paralytic strabismus → strabismus → hypotropia,"
+  • drug/alcohol-induced mental disorder [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --contraindication--> Hyoscyamine [drug]
+  • Hyoscyamine [drug] --side effect--> Strabismus [effect/phenotype]
+  • Strabismus [effect/phenotype] --phenotype present--> paralytic strabismus [disease]
+  • paralytic strabismus [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"
+drugalcohol-induced mental disorder,major depressive disorder,Path found,3,drug/alcohol-induced mental disorder,major depressive disorder,drug/alcohol-induced mental disorder → alcohol-related birth defect → CAT → major depressive disorder,"
+  • drug/alcohol-induced mental disorder [disease] --parent-child--> alcohol-related birth defect [disease]
+  • alcohol-related birth defect [disease] --associated with--> CAT [gene/protein]
+  • CAT [gene/protein] --associated with--> major depressive disorder [disease]"
+drugalcohol-induced mental disorder,Mania,Path found,3,drug/alcohol-induced mental disorder,Mania,drug/alcohol-induced mental disorder → mental disorder → Ropinirole → Mania,"
+  • drug/alcohol-induced mental disorder [disease] --parent-child--> mental disorder [disease]
+  • mental disorder [disease] --contraindication--> Ropinirole [drug]
+  • Ropinirole [drug] --side effect--> Mania [effect/phenotype]"
+drugalcohol-induced mental disorder,manic bipolar affective disorder,Path found,3,drug/alcohol-induced mental disorder,manic bipolar affective disorder,drug/alcohol-induced mental disorder → alcohol-related birth defect → ANK3 → manic bipolar affective disorder,"
+  • drug/alcohol-induced mental disorder [disease] --parent-child--> alcohol-related birth defect [disease]
+  • alcohol-related birth defect [disease] --associated with--> ANK3 [gene/protein]
+  • ANK3 [gene/protein] --associated with--> manic bipolar affective disorder [disease]"
+drugalcohol-induced mental disorder,Panic attack,Path found,4,drug/alcohol-induced mental disorder,Panic attack,drug/alcohol-induced mental disorder → substance abuse/dependence → EGFR → adrenal cortex carcinoma → Panic attack,"
+  • drug/alcohol-induced mental disorder [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --associated with--> EGFR [gene/protein]
+  • EGFR [gene/protein] --associated with--> adrenal cortex carcinoma [disease]
+  • adrenal cortex carcinoma [disease] --phenotype present--> Panic attack [effect/phenotype]"
+drugalcohol-induced mental disorder,Panic disorder,Path found,4,drug/alcohol-induced mental disorder,Panic attack,drug/alcohol-induced mental disorder → substance abuse/dependence → EGFR → adrenal cortex carcinoma → Panic attack,"
+  • drug/alcohol-induced mental disorder [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --associated with--> EGFR [gene/protein]
+  • EGFR [gene/protein] --associated with--> adrenal cortex carcinoma [disease]
+  • adrenal cortex carcinoma [disease] --phenotype present--> Panic attack [effect/phenotype]"
+drugalcohol-induced mental disorder,Posttraumatic stress symptom,Path found,4,drug/alcohol-induced mental disorder,Posttraumatic stress symptom,drug/alcohol-induced mental disorder → mental disorder → Atomoxetine → Behavioral abnormality → Posttraumatic stress symptom,"
+  • drug/alcohol-induced mental disorder [disease] --parent-child--> mental disorder [disease]
+  • mental disorder [disease] --contraindication--> Atomoxetine [drug]
+  • Atomoxetine [drug] --side effect--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"
+eating behavior,Hypotropia,Path found,6,eating behavior,hypotropia,eating behavior → OXTR → 3p- syndrome → Strabismus → paralytic strabismus → strabismus → hypotropia,"
+  • eating behavior [biological_process] --interacts with--> OXTR [gene/protein]
+  • OXTR [gene/protein] --associated with--> 3p- syndrome [disease]
+  • 3p- syndrome [disease] --phenotype present--> Strabismus [effect/phenotype]
+  • Strabismus [effect/phenotype] --phenotype present--> paralytic strabismus [disease]
+  • paralytic strabismus [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"
+eating behavior,major depressive disorder,Path found,2,eating behavior,major depressive disorder,eating behavior → LEP → major depressive disorder,"
+  • eating behavior [biological_process] --interacts with--> LEP [gene/protein]
+  • LEP [gene/protein] --associated with--> major depressive disorder [disease]"
+eating behavior,Mania,Path found,3,eating behavior,Mania,eating behavior → ADORA2A → Lamotrigine → Mania,"
+  • eating behavior [biological_process] --interacts with--> ADORA2A [gene/protein]
+  • ADORA2A [gene/protein] --target--> Lamotrigine [drug]
+  • Lamotrigine [drug] --side effect--> Mania [effect/phenotype]"
+eating behavior,manic bipolar affective disorder,Path found,3,eating behavior,manic bipolar affective disorder,eating behavior → feeding behavior → NTRK2 → manic bipolar affective disorder,"
+  • eating behavior [biological_process] --parent-child--> feeding behavior [biological_process]
+  • feeding behavior [biological_process] --interacts with--> NTRK2 [gene/protein]
+  • NTRK2 [gene/protein] --associated with--> manic bipolar affective disorder [disease]"
+eating behavior,Panic attack,Path found,3,eating behavior,Panic attack,eating behavior → TH → Parkinson disease → Panic attack,"
+  • eating behavior [biological_process] --interacts with--> TH [gene/protein]
+  • TH [gene/protein] --associated with--> Parkinson disease [disease]
+  • Parkinson disease [disease] --phenotype present--> Panic attack [effect/phenotype]"
+eating behavior,Panic disorder,Path found,3,eating behavior,Panic attack,eating behavior → TH → Parkinson disease → Panic attack,"
+  • eating behavior [biological_process] --interacts with--> TH [gene/protein]
+  • TH [gene/protein] --associated with--> Parkinson disease [disease]
+  • Parkinson disease [disease] --phenotype present--> Panic attack [effect/phenotype]"
+eating behavior,Posttraumatic stress symptom,Path found,4,eating behavior,Posttraumatic stress symptom,eating behavior → ADORA2A → schizophrenia → Behavioral abnormality → Posttraumatic stress symptom,"
+  • eating behavior [biological_process] --interacts with--> ADORA2A [gene/protein]
+  • ADORA2A [gene/protein] --associated with--> schizophrenia [disease]
+  • schizophrenia [disease] --phenotype present--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"
+Hypotropia,major depressive disorder,Path found,4,hypotropia,major depressive disorder,hypotropia → strabismus → Brown syndrome → genetic nervous system disorder → major depressive disorder,"
+  • hypotropia [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> Brown syndrome [disease]
+  • Brown syndrome [disease] --parent-child--> genetic nervous system disorder [disease]
+  • genetic nervous system disorder [disease] --parent-child--> major depressive disorder [disease]"
+Hypotropia,Mania,Path found,5,hypotropia,Mania,hypotropia → strabismus → paralytic strabismus → Strabismus → Atropine → Mania,"
+  • hypotropia [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> paralytic strabismus [disease]
+  • paralytic strabismus [disease] --phenotype present--> Strabismus [effect/phenotype]
+  • Strabismus [effect/phenotype] --side effect--> Atropine [drug]
+  • Atropine [drug] --side effect--> Mania [effect/phenotype]"
+Hypotropia,manic bipolar affective disorder,Path found,5,hypotropia,manic bipolar affective disorder,hypotropia → strabismus → esotropia → Echothiophate → Ziprasidone → manic bipolar affective disorder,"
+  • hypotropia [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> esotropia [disease]
+  • esotropia [disease] --indication--> Echothiophate [drug]
+  • Echothiophate [drug] --synergistic interaction--> Ziprasidone [drug]
+  • Ziprasidone [drug] --indication--> manic bipolar affective disorder [disease]"
+Hypotropia,Panic attack,Path found,5,hypotropia,Panic attack,hypotropia → strabismus → esotropia → Echothiophate → Parkinson disease → Panic attack,"
+  • hypotropia [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> esotropia [disease]
+  • esotropia [disease] --indication--> Echothiophate [drug]
+  • Echothiophate [drug] --contraindication--> Parkinson disease [disease]
+  • Parkinson disease [disease] --phenotype present--> Panic attack [effect/phenotype]"
+Hypotropia,Panic disorder,Path found,5,hypotropia,Panic attack,hypotropia → strabismus → esotropia → Echothiophate → Parkinson disease → Panic attack,"
+  • hypotropia [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> esotropia [disease]
+  • esotropia [disease] --indication--> Echothiophate [drug]
+  • Echothiophate [drug] --contraindication--> Parkinson disease [disease]
+  • Parkinson disease [disease] --phenotype present--> Panic attack [effect/phenotype]"
+Hypotropia,Posttraumatic stress symptom,Path found,5,hypotropia,Posttraumatic stress symptom,hypotropia → strabismus → neuro-ophthalmological disease → Riley-Day syndrome → Behavioral abnormality → Posttraumatic stress symptom,"
+  • hypotropia [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> neuro-ophthalmological disease [disease]
+  • neuro-ophthalmological disease [disease] --parent-child--> Riley-Day syndrome [disease]
+  • Riley-Day syndrome [disease] --phenotype present--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"
+major depressive disorder,Mania,Path found,2,major depressive disorder,Mania,major depressive disorder → Bupropion → Mania,"
+  • major depressive disorder [disease] --indication--> Bupropion [drug]
+  • Bupropion [drug] --side effect--> Mania [effect/phenotype]"
+major depressive disorder,manic bipolar affective disorder,Path found,2,major depressive disorder,manic bipolar affective disorder,major depressive disorder → Mirtazapine → manic bipolar affective disorder,"
+  • major depressive disorder [disease] --indication--> Mirtazapine [drug]
+  • Mirtazapine [drug] --contraindication--> manic bipolar affective disorder [disease]"
+major depressive disorder,Panic attack,Path found,3,major depressive disorder,Panic attack,major depressive disorder → CDKN2A → adrenal cortex carcinoma → Panic attack,"
+  • major depressive disorder [disease] --associated with--> CDKN2A [gene/protein]
+  • CDKN2A [gene/protein] --associated with--> adrenal cortex carcinoma [disease]
+  • adrenal cortex carcinoma [disease] --phenotype present--> Panic attack [effect/phenotype]"
+major depressive disorder,Panic disorder,Path found,3,major depressive disorder,Panic attack,major depressive disorder → CDKN2A → adrenal cortex carcinoma → Panic attack,"
+  • major depressive disorder [disease] --associated with--> CDKN2A [gene/protein]
+  • CDKN2A [gene/protein] --associated with--> adrenal cortex carcinoma [disease]
+  • adrenal cortex carcinoma [disease] --phenotype present--> Panic attack [effect/phenotype]"
+major depressive disorder,Posttraumatic stress symptom,Path found,3,major depressive disorder,Posttraumatic stress symptom,major depressive disorder → NR4A2 → Behavioral abnormality → Posttraumatic stress symptom,"
+  • major depressive disorder [disease] --associated with--> NR4A2 [gene/protein]
+  • NR4A2 [gene/protein] --associated with--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"
+Mania,manic bipolar affective disorder,Path found,2,Mania,manic bipolar affective disorder,Mania → Mirtazapine → manic bipolar affective disorder,"
+  • Mania [effect/phenotype] --side effect--> Mirtazapine [drug]
+  • Mirtazapine [drug] --contraindication--> manic bipolar affective disorder [disease]"
+Mania,Panic attack,Path found,3,Mania,Panic attack,Mania → PANDAS → Abnormal fear/anxiety-related behavior → Panic attack,"
+  • Mania [effect/phenotype] --phenotype absent--> PANDAS [disease]
+  • PANDAS [disease] --phenotype present--> Abnormal fear/anxiety-related behavior [effect/phenotype]
+  • Abnormal fear/anxiety-related behavior [effect/phenotype] --parent-child--> Panic attack [effect/phenotype]"
+Mania,Panic disorder,Path found,3,Mania,Panic attack,Mania → PANDAS → Abnormal fear/anxiety-related behavior → Panic attack,"
+  • Mania [effect/phenotype] --phenotype absent--> PANDAS [disease]
+  • PANDAS [disease] --phenotype present--> Abnormal fear/anxiety-related behavior [effect/phenotype]
+  • Abnormal fear/anxiety-related behavior [effect/phenotype] --parent-child--> Panic attack [effect/phenotype]"
+Mania,Posttraumatic stress symptom,Path found,2,Mania,Posttraumatic stress symptom,Mania → Behavioral abnormality → Posttraumatic stress symptom,"
+  • Mania [effect/phenotype] --parent-child--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"
+manic bipolar affective disorder,Panic attack,Path found,3,manic bipolar affective disorder,Panic attack,manic bipolar affective disorder → Promazine → Parkinson disease → Panic attack,"
+  • manic bipolar affective disorder [disease] --indication--> Promazine [drug]
+  • Promazine [drug] --contraindication--> Parkinson disease [disease]
+  • Parkinson disease [disease] --phenotype present--> Panic attack [effect/phenotype]"
+manic bipolar affective disorder,Panic disorder,Path found,3,manic bipolar affective disorder,Panic attack,manic bipolar affective disorder → Promazine → Parkinson disease → Panic attack,"
+  • manic bipolar affective disorder [disease] --indication--> Promazine [drug]
+  • Promazine [drug] --contraindication--> Parkinson disease [disease]
+  • Parkinson disease [disease] --phenotype present--> Panic attack [effect/phenotype]"
+manic bipolar affective disorder,Posttraumatic stress symptom,Path found,3,manic bipolar affective disorder,Posttraumatic stress symptom,manic bipolar affective disorder → NTNG2 → Behavioral abnormality → Posttraumatic stress symptom,"
+  • manic bipolar affective disorder [disease] --associated with--> NTNG2 [gene/protein]
+  • NTNG2 [gene/protein] --associated with--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"
+Panic attack,Panic disorder,Path found,0,Panic attack,Panic attack,Panic attack,
+Panic attack,Posttraumatic stress symptom,Path found,3,Panic attack,Posttraumatic stress symptom,Panic attack → Psychogenic non-epileptic seizure → Behavioral abnormality → Posttraumatic stress symptom,"
+  • Panic attack [effect/phenotype] --parent-child--> Psychogenic non-epileptic seizure [effect/phenotype]
+  • Psychogenic non-epileptic seizure [effect/phenotype] --parent-child--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"
+Panic disorder,Posttraumatic stress symptom,Path found,3,Panic attack,Posttraumatic stress symptom,Panic attack → Psychogenic non-epileptic seizure → Behavioral abnormality → Posttraumatic stress symptom,"
+  • Panic attack [effect/phenotype] --parent-child--> Psychogenic non-epileptic seizure [effect/phenotype]
+  • Psychogenic non-epileptic seizure [effect/phenotype] --parent-child--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"

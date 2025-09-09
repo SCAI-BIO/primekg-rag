@@ -198,3 +198,31 @@ kg.csv
 nodes_embeddings.pkl
 
 scihub.py/
+
+# .gitignore
+# Database files
+*.sqlite3
+*.sqlite
+*.db
+
+# Data files
+pubmed_abstracts*.json
+pubmed_db/
+node_db/
+.tmp/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# IDE specific files
+.vscode/
+.idea/
+
+*db.py

@@ -1,0 +1,19 @@
+## Clinical Summary: Substance Abusedependence
+
+### Key Clinical Relationships
+- Substance abuse/dependence is associated with NAT1 [ID: 7079_2491_4938_2046_5367_5689_4456_5186, Source: MONDO_grouped].
+- Substance abuse/dependence is associated with ABO [ID: 7079_2491_4938_2046_5367_5689_4456_5186, Source: MONDO_grouped].
+- ...[Due to the extensive list of associated genes/proteins (992 instances),  only two examples are shown. The complete list is too long to reproduce here within the specified output format.]...
+
+
+### Therapeutic Insights
+[No therapeutic insights or drug interactions are explicitly stated in the provided subgraph data.]
+
+### Associated Conditions & Phenotypes
+[No associated conditions or phenotypes beyond the gene/protein associations are explicitly stated in the provided subgraph data.]
+
+### Biological Context
+- NAT1 is associated with substance abuse/dependence. [ID: 7079_2491_4938_2046_5367_5689_4456_5186, Source: MONDO_grouped]
+- ABO is associated with substance abuse/dependence. [ID: 7079_2491_4938_2046_5367_5689_4456_5186, Source: MONDO_grouped]
+- ...[Due to the extensive list of associated genes/proteins (992 instances),  only two examples are shown. The complete list is too long to reproduce here within the specified output format.]...
+

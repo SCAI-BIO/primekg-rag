@@ -1,0 +1,19 @@
+## Clinical Summary: Atypical Depressive Disorder
+
+### Key Clinical Relationships
+- Atypical depressive disorder is a type of anxiety disorder. [ID: 1485, Source: MONDO]
+- Anxiety disorder is a type of atypical depressive disorder. [ID: 8187_2050_5618_5451_5371_100081_5383_1942_1098_3265_11924_12384, Source: MONDO_grouped]
+
+
+### Therapeutic Insights
+No therapeutic insights or drug interactions are found in the provided data.
+
+
+### Associated Conditions & Phenotypes
+- Anxiety disorder is associated with atypical depressive disorder. [ID: 1485, Source: MONDO]
+- Atypical depressive disorder is associated with anxiety disorder. [ID: 8187_2050_5618_5451_5371_100081_5383_1942_1098_3265_11924_12384, Source: MONDO_grouped]
+
+
+### Biological Context
+No genes, proteins, or biological processes are linked to atypical depressive disorder in the provided data.
+

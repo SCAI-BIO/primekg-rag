@@ -17,11 +17,11 @@ from tqdm import tqdm
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Define paths for subgraphs and the database relative to the script's location.
-SUBGRAPHS_DIR = os.path.join(BASE_DIR, "subgraphs")
-ANALYSIS_DB_PATH = os.path.join(BASE_DIR, "analyses_db")
+SUBGRAPHS_DIR = os.path.join(BASE_DIR, "new_subgraphs")
+ANALYSIS_DB_PATH = os.path.join(BASE_DIR, "new_analyses_db")
 LOG_FILE_PATH = os.path.join(BASE_DIR, "analysis_generation.log")
 
-ANALYSIS_COLLECTION_NAME = "subgraph_analyses"
+ANALYSIS_COLLECTION_NAME = "new_subgraph_analyses"
 OLLAMA_MODEL_NAME = "deepseek-r1:14b"
 
 # --- Logging Configuration ---

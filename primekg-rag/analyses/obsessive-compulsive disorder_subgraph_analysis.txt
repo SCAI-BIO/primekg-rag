@@ -1,0 +1,61 @@
+## Clinical Summary: Obsessive-Compulsive Disorder
+
+### Key Clinical Relationships
+- Obsessive-compulsive disorder is a type of anxiety disorder. [ID: 8187_2050_5618_5451_5371_100081_5383_1942_1098_3265_11924_12384, Source: MONDO_grouped]
+- Obsessive-compulsive disorder is also classified as a genetic nervous system disorder. [ID: 19117, Source: MONDO]
+- Obsessive-compulsive disorder is a type of personality disorder. [ID: 2028_1156, Source: MONDO_grouped]
+- Obsessive-compulsive disorder is associated with skin-picking. [ID: 12166, Source: HPO]
+- Obsessive-compulsive disorder is associated with depressivity. [ID: 716, Source: HPO]
+- Obsessive-compulsive disorder is associated with collectionism. [ID: 30212, Source: HPO]
+- Obsessive-compulsive disorder is associated with anxiety. [ID: 739, Source: HPO]
+- Obsessive-compulsive disorder is associated with obsessive-compulsive behavior. [ID: 722, Source: HPO]
+- Obsessive-compulsive disorder may have an autosomal dominant inheritance pattern. [ID: 6, Source: HPO]
+
+
+### Therapeutic Insights
+- Sertraline is indicated for obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Paroxetine is indicated for obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Fluoxetine is indicated for obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Fluvoxamine is indicated for obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Clomipramine is indicated for obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Citalopram is used off-label for obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Escitalopram is used off-label for obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Guaifenesin may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Phenyltoloxamine may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Mepyramine may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Pheniramine may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Orphenadrine may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Riboflavin may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Butalbital may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Codeine may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Trolnitrate may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Salicylamide may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Phenacetin may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Phenylephrine may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Caffeine may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Isometheptene may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Phenobarbital may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Dextropropoxyphene may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Calcium gluconate may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Magnesium salicylate may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Ibuprofen may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Phenylpropanolamine may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Chlorpheniramine may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Dihydrocodeine may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Ammonium chloride may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- Ergotamine may be contraindicated in obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+
+
+### Associated Conditions & Phenotypes
+- Obsessive-compulsive disorder is linked to asbestos exposure. [ID: 8114_1158, Source: MONDO_grouped]
+- Obsessive-compulsive disorder is linked to nicotine exposure. [ID: 8114_1158, Source: MONDO_grouped]
+- Obsessive-compulsive disorder is linked to tobacco smoke pollution. [ID: 8114_1158, Source: MONDO_grouped]
+
+### Biological Context
+- CCKBR gene/protein is associated with obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- HOXB8 gene/protein is associated with obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- HTR1D gene/protein is associated with obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- HTR2A gene/protein is associated with obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- SLC6A4 gene/protein is associated with obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+- SLITRK5 gene/protein is associated with obsessive-compulsive disorder. [ID: 8114_1158, Source: MONDO_grouped]
+
