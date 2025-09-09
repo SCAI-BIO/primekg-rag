@@ -1,0 +1,25 @@
+{
+  "title": "Clinical characteristics of obsessive-compulsive disorder comorbid with obsessive -compulsive personality disorder: subtype implications.",
+  "abstract": "Obsessive-compulsive disorder (OCD) is a psychiatric condition characterized by persistent obsessions and compulsions that lead to significant distress and functional impairment. Obsessive-compulsive personality disorder (OCPD) frequently co-occurs in individuals with OCD and has been identified in several studies as the most prevalent personality disorder within this population. However, the clinical relevance of this comorbidity remains uncertain, particularly in terms of whether it reflects a distinct OCD subtype characterized by specific onset patterns and symptom dimensions. The present study aimed to examine whether OCD patients with and without comorbid OCPD differ in terms of age and mode of onset, as well as the content of obsessive-compulsive (OC) symptoms. We hypothesized that the presence of comorbid OCPD may define a clinically meaningful subtype of OCD. The sample consisted of 148 individuals diagnosed with OCD, all of whom underwent a comprehensive clinical evaluation. The following clinical variables were recorded: age at onset of OCD, mode of onset (acute vs. insidious), illness course (chronic vs. episodic), total duration of OCD, and other relevant clinical features including symptom severity and treatment history. Diagnostic assessments were conducted according to the criteria of the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5). In order to evaluate comorbid OCPD, participants were administered the OCPD module of the Structured Clinical Interview for DSM-5 Personality Disorders (SCID- 5-PD), in conjunction with a self-report screener. The severity of current OC symptoms was assessed using the Yale-Brown Obsessive Compulsive Scale (Y-BOCS), while depressive symptoms were measured with the Hamilton Depression Rating Scale (HDRS). Anxiety symptoms were also evaluated using the Hamilton Anxiety Rating Scale (HARS). Among 148 OCD patients, 58.8% met the diagnostic criteria for OCPD. While no differences were found in demographic variables, those with comorbid OCPD had higher lifetime counts of obsessions and compulsions, greater depression severity, and more severe OC symptoms. They also exhibited an earlier and more insidious onset of OCD and a more chronic illness course. Symmetry and hoarding obsessions, as well as ordering and hoarding compulsions, were more common in this group. Symmetry and hoarding obsessions, as well as ordering and hoarding compulsions, were more prevalent in the comorbid group. Binary logistic regression analysis identified earlier onset (OR = 2.45), insidious onset (OR = 2.68), higher depression severity (OR = 1.15), and presence of ordering compulsions (OR = 2.36) were significantly associated with OCD-OCPD comorbidity. Comorbid OCD and OCPD may represent a distinct subtype of OCD, characterized by insidious onset, early OC symptom onset, symmetry/ordering, hoarding obsessions and compulsions, and more severe depression. These findings underscore the importance of recognizing heterogeneity within OCD and highlight the need for targeted treatment strategies tailored to distinct clinical subtypes. Future studies should investigate the neurobiological mechanisms and developmental pathways underlying this comorbid presentation, as well as the potential efficacy of cognitive-behavioral interventions specifically designed to address both OC symptoms and maladaptive personality traits.",
+  "journal": "Frontiers in psychiatry",
+  "authors": [
+    {
+      "lastname": "Dondu",
+      "forename": "Ayse",
+      "initials": "A"
+    },
+    {
+      "lastname": "Sevincok",
+      "forename": "Levent",
+      "initials": "L"
+    }
+  ],
+  "pmid": "40727850",
+  "doi": "10.3389/fpsyt.2025.1577042",
+  "similarity_score": 0.632267701625824,
+  "source_subgraph": "obsessive-compulsive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Obsessive-Compulsive Disorder"
+  ]
+}

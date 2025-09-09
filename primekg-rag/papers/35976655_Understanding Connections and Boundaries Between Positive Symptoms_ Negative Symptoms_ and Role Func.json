@@ -1,0 +1,40 @@
+{
+  "title": "Understanding Connections and Boundaries Between Positive Symptoms, Negative Symptoms, and Role Functioning Among Individuals With Schizophrenia: A Network Psychometric Approach.",
+  "abstract": "Improved understanding of the boundaries and connections between positive symptoms, negative symptoms, and role functioning in schizophrenia is critical, given limited empirical support for clear distinctions among these clinical areas. This study's use of network psychometrics to investigate differential associations and structural overlap between positive symptoms, negative symptoms, and functional domains in schizophrenia may contribute to such understanding. To apply network analysis and community detection methods to examine the interplay and structure of positive symptoms, negative symptoms, and functional domains in individuals with schizophrenia. Cross-sectional study in 5 geographically distributed research centers in the US as part of the Consortium on the Genetics of Schizophrenia-2 from July 1, 2010, through January 31, 2014. Data were analyzed from November 2021 to June 2022. Clinically stable outpatients with schizophrenia or schizoaffective disorder were included. Participants were excluded if they had evidence of neurologic or additional Axis I psychiatric disorders. Other exclusion criteria included head injury, stroke, and substance abuse. Of 1415 patients approached, 979 were included in the final analysis. Measures included the Scale for the Assessment of Positive Symptoms, the Scale for the Assessment of Negative Symptoms, and the Role Functioning Scale. Main outcomes were expected influence, which assesses the relative importance of items to the network and is defined as the association of an item with all others, and community detection and stability, defined as the presence of statistical clusters and their replicability. Participants with complete data included 979 outpatients (mean [SD] age, 46 [11] years; 663 male [67.7%]; 390 participants [40%] self-identified as African American, 30 [3%] as Asian, 7 [0.7%] as Native American, 8 [0.8%] as Pacific Islander, 412 [42.1%] as White, 125 [12.8%] as more than 1 race, and 5 [0.5%] did not identify). Anhedonia had the highest expected influence in the most comprehensive network analysis, showing connections with negative and positive symptoms and functional domains. Positive symptoms had the lowest expected influence. Community detection analyses indicated the presence of 3 clusters corresponding to positive symptoms; negative symptoms and work functioning; functional domains, including independent living, family relationships, and social network; and avolition, anhedonia, and work functioning. Hallucinations and delusions replicated in 1000 bootstrapped samples (100%), while bizarre behavior and thought disorder replicated in 390 (39%) and 570 (57%), respectively. In contrast, negative symptoms and work functioning replicated between 730 (73%) and 770 (77%) samples, respectively, and the remaining functional domains in 940 samples (94%). The high centrality of anhedonia and its connections with multiple functional domains suggest that it could be a treatment target for global functioning. Interventions for work functioning may benefit from a specialized approach that focuses primarily on avolition.",
+  "journal": "JAMA psychiatry",
+  "authors": [
+    {
+      "lastname": "Abplanalp",
+      "forename": "Samuel J",
+      "initials": "SJ"
+    },
+    {
+      "lastname": "Braff",
+      "forename": "David L",
+      "initials": "DL"
+    },
+    {
+      "lastname": "Light",
+      "forename": "Gregory A",
+      "initials": "GA"
+    },
+    {
+      "lastname": "Nuechterlein",
+      "forename": "Keith H",
+      "initials": "KH"
+    },
+    {
+      "lastname": "Green",
+      "forename": "Michael F",
+      "initials": "MF"
+    }
+  ],
+  "pmid": "35976655",
+  "doi": "10.1001/jamapsychiatry.2022.2386",
+  "similarity_score": 0.37479846477508544,
+  "source_subgraph": "schizophrenia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Schizophrenia"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Anxiety Disorders in the DSM-5: Changes, Controversies, and Future Directions.",
+  "abstract": "Under the partial influences of paradigm shift form category to dimension, the Diagnostic and Statistical Manual of Mental Disorder (DSM) was revised to the fifth edition (DSM-5); however, due to the lack of consistent biological makers and processes and the restricted availability of dimensional meta-structure, the revisions for the DSM-5 were based on a combination of categorical and dimensional approaches. Anxiety disorders were more clearly and consistently defined in the DSM-5 with the removal of obsessive compulsive, acute stress, and post-traumatic stress disorders. Differences between the childhood and adulthood categories of anxiety disorders were decreased, and overall, the symmetrical classification of anxiety subtypes was increased, since separation anxiety disorder and selective mutism were considered anxiety disorders, not neurodevelopmental disorders. Additionally, based on growing evidence, agoraphobia is distinct from panic disorder. Next, considering cultural syndromes including taijin kyofusho, khyal cap, trung gio attacks, and ataque de nervios, cultural influences are considered a significant factor for definitions and presentations of anxiety disorders. Controversies in the DSM-5 criteria for anxiety disorders are lowering the diagnostic thresholds of anxiety disorders and limiting the dichotomous view of anxiety and depression when defining generalized anxiety disorder. Further studies of alternative approaches to the restrictions of the DSM-5 criteria of anxiety disorders, including transdiagnostic specifiers and dimensional assessment tools, may be required.",
+  "journal": "Advances in experimental medicine and biology",
+  "authors": [
+    {
+      "lastname": "Park",
+      "forename": "Seon-Cheol",
+      "initials": "SC"
+    },
+    {
+      "lastname": "Kim",
+      "forename": "Yong-Ku",
+      "initials": "YK"
+    }
+  ],
+  "pmid": "32002930",
+  "doi": "10.1007/978-981-32-9705-0_12",
+  "similarity_score": 0.4595584750175476,
+  "source_subgraph": "anxiety disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anxiety Disorder"
+  ]
+}

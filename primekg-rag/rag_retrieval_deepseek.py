@@ -66,48 +66,72 @@ def generate_analysis_for_subgraph(subgraph_facts: str, topic: str) -> str:
     Generates a highly structured, evidence-backed analysis using
     a sophisticated and constraining prompt.
     """
-    prompt_template = """**Role:** You are a Senior Bioinformatician and Clinical Data Scientist. Your task is to analyze a provided knowledge subgraph and generate a professional, evidence-based report.
+    system_prompt = """**CRITICAL INSTRUCTIONS:**
+1. **Multi-Source Evidence Integration:**
+   - Primary: Knowledge graph relationships `[KG: ID: y_id, Source: y_source]`
+   - Secondary: Peer-reviewed research `[PMID: xxxxxxx]`
+   - Tertiary: Established medical knowledge (only when explicitly relevant)
 
-**Objective:** Act as a deterministic data-to-text engine. Your entire analysis must be based *only* on the facts provided in the "Evidence Context" section.
+2. **Analytical Depth Required:**
+   - Perform causal reasoning between related entities
+   - Identify and resolve potential contradictions in evidence
+   - Highlight consensus and controversies in the literature
+   - Assess the strength and quality of each piece of evidence
 
-**CRITICAL RULES:**
-1.  **DO NOT** use any external knowledge. Your world is limited to the text provided below.
-2.  **DO NOT** infer, speculate, or hallucinate any information, relationships, or implications not explicitly stated in the facts.
-3.  **MANDATORY CITATIONS:** Every single statement you make in your report must be directly supported by one or more facts from the context. Cite facts using the format `[Fact X]`. A single sentence may require multiple citations, like `[Fact 1, Fact 3]`.
+3. **Clinical & Research Context:**
+   - Relate findings to current clinical practice guidelines
+   - Note the level of evidence for each claim (RCT, meta-analysis, etc.)
+   - Consider potential biases in the available evidence
 
-**Evidence Context:**
----
-{context_block}
----
+**MANDATORY OUTPUT FORMAT:**
 
-**Analysis Request:**
-Based strictly on the evidence provided above, generate a report on the topic of **'{topic}'**. Structure your report with the following sections:
+## Advanced Clinical Analysis: {condition}
 
-**1. Executive Summary:**
-   - In one sentence, state the central theme of the provided data concerning '{topic}'.
-   - In 2-3 bullet points, summarize the most critical connections shown in the data. Every bullet point must end with citations.
+### 1. Comprehensive Disease Profile
+[Integrate epidemiological, clinical, and molecular perspectives:
+- Current diagnostic criteria and clinical subtypes
+- Known risk factors and prognostic indicators
+- Pathophysiological mechanisms with supporting evidence
+- Recent advances in disease understanding]
 
-**2. Detailed Molecular and Biological Context:**
-   - Synthesize the specific interactions and relationships from the data into a detailed paragraph.
-   - Describe the types of entities involved (e.g., gene/protein, disease, phenotype) and the nature of their connections.
-   - Every sentence must be explicitly cited.
+### 2. Evidence-Based Relationship Analysis
+[For each significant relationship:
+- State the relationship in clinical terms
+- Provide all supporting KG evidence with quality assessment
+- Note any conflicting evidence or knowledge gaps
+- Assess clinical significance and confidence level]"""
 
-**3. Potential Clinical & Therapeutic Relevance (if applicable):**
-   - Based *only* on the data, identify any connections that involve diseases, drugs, or clinical phenotypes.
-   - Do not suggest treatments or cures. Only state the direct relationships shown in the evidence.
-   - If no clinical data is present, state: "The provided data does not contain explicit clinical or therapeutic connections. [Fact 1-{last_fact_number}]"
-   - Every sentence must be cited.
+    user_prompt = f"""**ANALYSIS REQUEST**
 
-**4. Evidence Mapping:**
-   - List every fact number from the context and the full text of the fact next to it.
+**Condition of Interest:** {topic}
 
-**BEGIN REPORT**
-"""
-    last_fact_number = len(subgraph_facts.split("\n"))
+**KNOWLEDGE GRAPH EVIDENCE:**
+{subgraph_facts}
 
-    final_prompt = prompt_template.format(
-        context_block=subgraph_facts, topic=topic, last_fact_number=last_fact_number
-    )
+**ANALYTICAL TASKS:**
+1. Perform a critical synthesis of the provided knowledge graph relationships
+2. Identify and elaborate on the most clinically significant patterns
+3. Evaluate the strength and consistency of the evidence
+4. Generate novel insights through evidence integration
+5. Provide specific, actionable recommendations
+
+**REQUIRED ELEMENTS:**
+- Clear distinction between established facts and novel hypotheses
+- Explicit assessment of evidence quality
+- Identification of knowledge gaps and research opportunities
+- Practical clinical implications
+- Specific citations for all claims
+
+**OUTPUT GUIDELINES:**
+- Use clear, hierarchical organization
+- Stick to the sources
+- Highlight key takeaways in bullet points
+- Maintain scientific rigor while being clinically relevant
+- Use plain language explanations for complex concepts"""
+
+    # Combine prompts and make API call
+    final_prompt = f"{system_prompt}\n\n{user_prompt}"
+    
     try:
         response = ollama.chat(
             model=OLLAMA_MODEL_NAME,

@@ -1,0 +1,20 @@
+{
+  "title": "Epidemiology of Cardiovascular Risk Trajectories Following a Diagnosis of Anorexia Nervosa.",
+  "abstract": "",
+  "journal": "JAMA network open",
+  "authors": [
+    {
+      "lastname": "Kim",
+      "forename": "Youngjung Rachel",
+      "initials": "YR"
+    }
+  ],
+  "pmid": "39699899",
+  "doi": "10.1001/jamanetworkopen.2024.51047",
+  "similarity_score": 0.7456807374954224,
+  "source_subgraph": "anorexia nervosa_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anorexia Nervosa"
+  ]
+}

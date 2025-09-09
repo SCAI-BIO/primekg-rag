@@ -1,0 +1,20 @@
+{
+  "title": "Psychoanalytic Conceptions of Agoraphobia.",
+  "abstract": "This contribution addresses the agoraphobic syndrome in several important ways. Tracing the different formulations of agoraphobia reveals shifts in psychoanalytic theorizing. The etiology and maintenance of agoraphobia includes the role of genetic factors, intra- and interpersonal dynamics, and the influence of social conditions. As such, an understanding and treatment of agoraphobia requires a multimodal and interdisciplinary approach.",
+  "journal": "Psychoanalytic review",
+  "authors": [
+    {
+      "lastname": "Eagle",
+      "forename": "Morris",
+      "initials": "M"
+    }
+  ],
+  "pmid": "40569684",
+  "doi": "10.1521/prev.2025.112.2.199",
+  "similarity_score": 0.6804101943969727,
+  "source_subgraph": "agoraphobia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Agoraphobia"
+  ]
+}

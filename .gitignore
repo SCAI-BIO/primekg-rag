@@ -128,7 +128,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
@@ -204,6 +203,7 @@ scihub.py/
 *.sqlite3
 *.sqlite
 *.db
+node_db/chroma.sqlite3
 
 # Data files
 pubmed_abstracts*.json

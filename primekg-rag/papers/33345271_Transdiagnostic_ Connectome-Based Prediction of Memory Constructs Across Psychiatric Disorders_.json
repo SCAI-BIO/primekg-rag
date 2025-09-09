@@ -1,0 +1,65 @@
+{
+  "title": "Transdiagnostic, Connectome-Based Prediction of Memory Constructs Across Psychiatric Disorders.",
+  "abstract": "Memory deficits are observed in a range of psychiatric disorders, but it is unclear whether memory deficits arise from a shared brain correlate across disorders or from various dysfunctions unique to each disorder. Connectome-based predictive modeling is a computational method that captures individual differences in functional connectomes associated with behavioral phenotypes such as memory. We used publicly available task-based functional MRI data from patients with schizophrenia (n = 33), bipolar disorder (n = 34), attention deficit hyper-activity disorder (n = 32), and healthy controls (n = 73) to model the macroscale brain networks associated with working, short- and long-term memory. First, we use 10-fold and leave-group-out analyses to demonstrate that the same macroscale brain networks subserve memory across diagnostic groups and that individual differences in memory performance are related to individual differences within networks distributed throughout the brain, including the subcortex, default mode network, limbic network, and cerebellum. Next, we show that diagnostic groups are associated with significant differences in whole-brain functional connectivity that are distinct from the predictive models of memory. Finally, we show that models trained on the transdiagnostic sample generalize to novel, healthy participants (n = 515) from the Human Connectome Project. These results suggest that despite significant differences in whole-brain patterns of functional connectivity between diagnostic groups, the core macroscale brain networks that subserve memory are shared.",
+  "journal": "Cerebral cortex (New York, N.Y. : 1991)",
+  "authors": [
+    {
+      "lastname": "Barron",
+      "forename": "Daniel S",
+      "initials": "DS"
+    },
+    {
+      "lastname": "Gao",
+      "forename": "Siyuan",
+      "initials": "S"
+    },
+    {
+      "lastname": "Dadashkarimi",
+      "forename": "Javid",
+      "initials": "J"
+    },
+    {
+      "lastname": "Greene",
+      "forename": "Abigail S",
+      "initials": "AS"
+    },
+    {
+      "lastname": "Spann",
+      "forename": "Marisa N",
+      "initials": "MN"
+    },
+    {
+      "lastname": "Noble",
+      "forename": "Stephanie",
+      "initials": "S"
+    },
+    {
+      "lastname": "Lake",
+      "forename": "Evelyn M R",
+      "initials": "EMR"
+    },
+    {
+      "lastname": "Krystal",
+      "forename": "John H",
+      "initials": "JH"
+    },
+    {
+      "lastname": "Constable",
+      "forename": "R Todd",
+      "initials": "RT"
+    },
+    {
+      "lastname": "Scheinost",
+      "forename": "Dustin",
+      "initials": "D"
+    }
+  ],
+  "pmid": "33345271",
+  "doi": "10.1093/cercor/bhaa371",
+  "similarity_score": 0.010661649703979481,
+  "source_subgraph": "memory_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Memory"
+  ]
+}

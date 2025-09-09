@@ -1,0 +1,35 @@
+{
+  "title": "Borderline Personality Disorder Diagnoses in Facial Plastic Surgery: A Large Database Analysis.",
+  "abstract": "To determine the prevalence of borderline personality disorder among patients who undergo facial plastic surgery and identify associated demographics, clinical characteristics, and outcomes. Retrospective cohort. More than 80 health care organizations across the United States. This retrospective cohort study queried the TriNetX Research Network to identify patients who underwent facial plastic surgeries during 2012 to 2023. Demographics, clinical characteristics, and outcomes were compared between patients with and without a diagnosis of borderline personality disorder. Among 60,792 patients, there were 309 (0.51%) with a diagnosis of borderline personality disorder (mean age 45.0; 77% female, 22% male) and 60,453 controls (mean age 54.7; 63.4% female, 34.5% male). Patients with borderline personality disorder were younger (<i>P</i> < .001) and more likely to be female (<i>P</i> < .001). They were more likely to undergo rhinoplasty (<i>P</i> < .001), but less likely to have blepharoplasty (<i>P</i> < .001) or facelift (<i>P</i> = .01). They also had higher rates of psychiatric and substance use disorders (<i>P</i> < .001). Patients with borderline personality disorder were at greater risk of postoperative emergency department visits (15.9% vs 4.8%) and hospitalization (12.0% vs 6.6%) compared to controls in the first 3 months postoperatively (<i>P</i> < .001). However, these rates did not represent a significant increase relative to their own baseline levels (15.9% for emergency visits and 3.9% for inpatient admissions over a comparable 3-month period, <i>P</i> = 1.0 and .44, respectively). Patients with borderline personality disorder are more likely to be younger, female, undergo rhinoplasty, have additional psychiatric comorbidities, and present to the hospital at baseline and during the recovery period.",
+  "journal": "OTO open",
+  "authors": [
+    {
+      "lastname": "Lorenz",
+      "forename": "F Jeffrey",
+      "initials": "FJ"
+    },
+    {
+      "lastname": "Ma",
+      "forename": "Cheng",
+      "initials": "C"
+    },
+    {
+      "lastname": "Givens",
+      "forename": "Alyssa K",
+      "initials": "AK"
+    },
+    {
+      "lastname": "Walen",
+      "forename": "Scott G",
+      "initials": "SG"
+    }
+  ],
+  "pmid": "40443568",
+  "doi": "10.1002/oto2.70135",
+  "similarity_score": 0.3986227989196777,
+  "source_subgraph": "personality disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Personality Disorder"
+  ]
+}

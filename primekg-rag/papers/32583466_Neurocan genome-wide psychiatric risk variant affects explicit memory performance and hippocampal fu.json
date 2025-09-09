@@ -1,0 +1,85 @@
+{
+  "title": "Neurocan genome-wide psychiatric risk variant affects explicit memory performance and hippocampal function in healthy humans.",
+  "abstract": "Alterations of the brain extracellular matrix (ECM) can perturb the structure and function of brain networks like the hippocampus, a key region in human memory that is commonly affected in psychiatric disorders. Here, we investigated the potential effects of a genome-wide psychiatric risk variant in the NCAN gene encoding the ECM proteoglycan neurocan (rs1064395) on memory performance, hippocampal function and cortical morphology in young, healthy volunteers. We assessed verbal memory performance in two cohorts (N = 572, 302) and found reduced recall performance in risk allele (A) carriers across both cohorts. In 117 participants, we performed functional magnetic resonance imaging using a novelty-encoding task with visual scenes. Risk allele carriers showed higher false alarm rates during recognition, accompanied by inefficiently increased left hippocampal activation. To assess effects of rs1064395 on brain morphology, we performed voxel-based morphometry in 420 participants from four independent cohorts and found lower grey matter density in the ventrolateral and rostral prefrontal cortex of risk allele carriers. In silico eQTL analysis revealed that rs1064395 SNP is linked not only to increased prefrontal expression of the NCAN gene itself, but also of the neighbouring HAPLN4 gene, suggesting a more complex effect of the SNP on ECM composition. Our results suggest that the NCAN rs1064395 A allele is associated with lower hippocampus-dependent memory function, variation of prefrontal cortex structure and ECM composition. Considering the well-documented hippocampal and prefrontal dysfunction in bipolar disorder and schizophrenia, our results may reflect an intermediate phenotype by which NCAN rs1064395 contributes to disease risk.",
+  "journal": "The European journal of neuroscience",
+  "authors": [
+    {
+      "lastname": "Assmann",
+      "forename": "Anne",
+      "initials": "A"
+    },
+    {
+      "lastname": "Richter",
+      "forename": "Anni",
+      "initials": "A"
+    },
+    {
+      "lastname": "Schütze",
+      "forename": "Hartmut",
+      "initials": "H"
+    },
+    {
+      "lastname": "Soch",
+      "forename": "Joram",
+      "initials": "J"
+    },
+    {
+      "lastname": "Barman",
+      "forename": "Adriana",
+      "initials": "A"
+    },
+    {
+      "lastname": "Behnisch",
+      "forename": "Gusalija",
+      "initials": "G"
+    },
+    {
+      "lastname": "Knopf",
+      "forename": "Lea",
+      "initials": "L"
+    },
+    {
+      "lastname": "Raschick",
+      "forename": "Matthias",
+      "initials": "M"
+    },
+    {
+      "lastname": "Schult",
+      "forename": "Annika",
+      "initials": "A"
+    },
+    {
+      "lastname": "Wüstenberg",
+      "forename": "Torsten",
+      "initials": "T"
+    },
+    {
+      "lastname": "Behr",
+      "forename": "Joachim",
+      "initials": "J"
+    },
+    {
+      "lastname": "Düzel",
+      "forename": "Emrah",
+      "initials": "E"
+    },
+    {
+      "lastname": "Seidenbecher",
+      "forename": "Constanze I",
+      "initials": "CI"
+    },
+    {
+      "lastname": "Schott",
+      "forename": "Björn H",
+      "initials": "BH"
+    }
+  ],
+  "pmid": "32583466",
+  "doi": "10.1111/ejn.14872",
+  "similarity_score": -0.12765200138092042,
+  "source_subgraph": "memory_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Memory"
+  ]
+}

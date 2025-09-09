@@ -4,12 +4,12 @@ from pyvis.network import Network
 import streamlit.components.v1 as components
 from pathlib import Path
 import chromadb
-import openai
 from chromadb.utils import embedding_functions
 import os
 from dotenv import load_dotenv
 from datetime import datetime
 import numpy as np
+import google.generativeai as genai
 
 # --- Load Environment Variables ---
 load_dotenv()
@@ -20,8 +20,15 @@ SUBGRAPHS_DIR = BASE_DIR / "new_subgraphs"
 NODES_CSV_PATH = BASE_DIR / "nodes.csv"
 ANALYSIS_DB_PATH = BASE_DIR / "analyses_db"
 ANALYSIS_COLLECTION_NAME = "medical_analyses"
-OPENAI_MODEL_NAME = "gpt-3.5-turbo"
-QUESTION_NODE_MAPPING_PATH = BASE_DIR / "question_node_matches.csv"
+GEMINI_MODEL_NAME = "gemini-1.5-pro"
+QUESTION_NODE_MAPPING_PATH = BASE_DIR / "best_question_matches.csv"
+
+# Initialize Gemini
+gemini_api_key = os.getenv("GOOGLE_API_KEY")
+if gemini_api_key:
+    genai.configure(api_key=gemini_api_key)
+else:
+    st.warning("GOOGLE_API_KEY not found in environment variables. Please set it in your .env file.")
 
 # --- Graph Visualization Settings ---
 MAX_NODES = 25
@@ -506,70 +513,54 @@ def generate_chat_response(
     question: str,
     chat_history: list,
     pubmed_collection: chromadb.Collection
-) -> str:
+):
     """Generates a response using both subgraph and PubMed evidence."""
-    retrieved_docs = retrieve_from_pubmed(query_text=question, collection=pubmed_collection, k=10)
+    # Format the chat history
+    formatted_history = "\n".join(
+        f"{'User' if msg['role'] == 'user' else 'Assistant'}: {msg['content']}"
+        for msg in chat_history
+    )
+    
+    pubmed_evidence = retrieve_from_pubmed(question, pubmed_collection, k=3, save_csv=False)
 
-    if retrieved_docs:
-        formatted_docs = []
-        for i, doc in enumerate(retrieved_docs):
-            pmid = doc.get('pmid', 'N/A')
-            pmid_link = create_pubmed_link(pmid)
-            sim = doc.get('combined_similarity') or doc.get('similarity')
-            sim_str = f"\nSimilarity: {sim:.3f}" if sim is not None else ""
-            formatted_docs.append(
-                f"**{doc.get('title', 'No title')}**"
-                f"\nPMID: {pmid_link}{sim_str}"
-                f"\n{doc.get('text', 'No content')}\n"
-            )
-        pubmed_evidence = "\n\n".join(formatted_docs)
-    else:
-        pubmed_evidence = "No relevant PubMed articles were found."
-
-    formatted_history = ""
-    for msg in chat_history:
-        role = "User" if msg["role"] == "user" else "Assistant"
-        formatted_history += f"{role}: {msg['content']}\n"
-
-    prompt = f"""You are an AI biomedical research assistant.
-Answer strictly using the provided knowledge graph and PubMed evidence.
-For every claim, cite the source: use PMID for PubMed or node_edge_node for the graph.
-
-<KNOWLEDGE_GRAPH_CONTEXT>
-{context}
-</KNOWLEDGE_GRAPH_CONTEXT>
-
-<PUBMED_EVIDENCE>
-{pubmed_evidence}
-</PUBMED_EVIDENCE>
-
-<CONVERSATION_HISTORY>
-{formatted_history}
-</CONVERSATION_HISTORY>
-
-Answer the following question: "{question}"
-
-Instructions:
-- Do not invent information.
-- If no relevant evidence is found, say so.
-- Cite sources clearly.
-"""
+    # Combine system instructions with the user prompt
+    prompt = (
+        "You are a knowledgeable and articulate biomedical research assistant. Provide clear, conversational responses "
+        "that synthesize information from the provided knowledge graph and PubMed evidence. "
+        "Maintain a professional yet approachable tone, as if explaining to a colleague. "
+        "Structure your response as follows:\n\n"
+        "1. Provide a concise, direct answer to the question first\n"
+        "2. Elaborate with relevant details and context\n"
+        "3. At the end, include a 'References' section with all sources in the format:\n"
+        "   - [PMID:12345678] Brief description of what this reference supports\n\n"
+        "<KNOWLEDGE_GRAPH_CONTEXT>\n{context}\n</KNOWLEDGE_GRAPH_CONTEXT>\n\n"
+        "<PUBMED_EVIDENCE>\n{pubmed_evidence}\n</PUBMED_EVIDENCE>\n\n"
+        "<CONVERSATION_HISTORY>\n{formatted_history}\n</CONVERSATION_HISTORY>\n\n"
+        "Question: {question}\n\n"
+        "Guidelines:\n"
+        "- Write in complete, flowing sentences\n"
+        "- Use transition words to connect ideas naturally\n"
+        "- Avoid robotic phrasing like 'based on the evidence'\n"
+        "- Group related information together logically\n"
+        "- Keep technical terms but explain them in context\n"
+        "- End with a brief summary or next steps when appropriate"
+    ).format(
+        context=context,
+        pubmed_evidence=pubmed_evidence,
+        formatted_history=formatted_history,
+        question=question
+    )
 
     try:
-        response = openai.chat.completions.create(
-            model=OPENAI_MODEL_NAME,
-            messages=[
-                {"role": "system", "content": "You are an AI biomedical research assistant. Answer strictly using the provided knowledge graph and PubMed evidence. For every claim, cite the source using the exact PMID number from the evidence (e.g., PMID:12345678). For graph relationships, use the node-edge-node format. Do not invent information. If no relevant evidence is found, say so."},
-                {"role": "user", "content": f"<KNOWLEDGE_GRAPH_CONTEXT>\n{context}\n</KNOWLEDGE_GRAPH_CONTEXT>\n\n<PUBMED_EVIDENCE>\n{pubmed_evidence}\n</PUBMED_EVIDENCE>\n\n<CONVERSATION_HISTORY>\n{formatted_history}\n</CONVERSATION_HISTORY>\n\nAnswer the following question: {question}"}
-            ],
-            max_tokens=1500,
-            temperature=0.1
-        )
-        # Convert PMID:12345678 patterns to clickable links in the response
-        response_text = response.choices[0].message.content or "The model returned an empty response."
-        return convert_pmids_to_links(response_text)
+        model = genai.GenerativeModel(GEMINI_MODEL_NAME)
+        response = model.generate_content(prompt)
+        
+        if response.text:
+            return convert_pmids_to_links(response.text)
+        else:
+            return "The model returned an empty response."
     except Exception as e:
-        return f"Error communicating with OpenAI: {e}"
+        return f"Error communicating with Gemini: {e}"
 
 @st.cache_data
 def load_precomputed_paths():
@@ -602,28 +593,41 @@ if "selected_file" not in st.session_state:
     st.session_state.selected_file = None
 
 # --- Load API Key ---
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-if not OPENAI_API_KEY:
-    st.error("❌ Could not find OPENAI_API_KEY in your .env file. Please add it.")
+GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY")
+if not GEMINI_API_KEY:
+    st.error("❌ Could not find GOOGLE_API_KEY in your .env file. Please add it.")
     st.stop()
 
 try:
-    openai.api_key = OPENAI_API_KEY
+    genai.configure(api_key=GEMINI_API_KEY)
 except Exception as e:
-    st.error(f"❌ Could not configure OpenAI API: {e}")
+    st.error(f"❌ Could not configure Gemini API: {e}")
     st.stop()
 
 # --- Load Question-to-Node Mappings ---
 try:
-    mappings_df = pd.read_csv(QUESTION_NODE_MAPPING_PATH)
-    st.subheader("🔍 Filter Question-to-Node Mappings by Similarity")
-    min_similarity = st.slider(
-        "Minimum Similarity Score", min_value=0.0, max_value=1.0, value=0.3, step=0.01
-    )
-    filtered_df = mappings_df[mappings_df["similarity_score"] >= min_similarity]
-    st.dataframe(filtered_df.reset_index(drop=True), use_container_width=True, height=500)
+    if not QUESTION_NODE_MAPPING_PATH.exists():
+        st.warning(f"Question-to-node mappings file not found at: {QUESTION_NODE_MAPPING_PATH}")
+    else:
+        mappings_df = pd.read_csv(QUESTION_NODE_MAPPING_PATH)
+        st.subheader("🔍 Filter Question-to-Node Mappings by Similarity")
+        
+        # Debug: Show available columns
+        st.info(f"Available columns in CSV: {', '.join(mappings_df.columns)}")
+        
+        if "similarity_score" not in mappings_df.columns:
+            st.error(f"Error: 'similarity_score' column not found in {QUESTION_NODE_MAPPING_PATH}")
+            st.error(f"Available columns are: {', '.join(mappings_df.columns)}")
+        else:
+            min_similarity = st.slider(
+                "Minimum Similarity Score", min_value=0.0, max_value=1.0, value=0.3, step=0.01
+            )
+            filtered_df = mappings_df[mappings_df["similarity_score"] >= min_similarity]
+            st.dataframe(filtered_df.reset_index(drop=True), use_container_width=True, height=500)
 except Exception as e:
-    st.warning(f"Could not load question-to-node mappings: {e}")
+    st.error(f"Error loading question-to-node mappings: {str(e)}")
+    import traceback
+    st.error(f"Error details: {traceback.format_exc()}")
 
 # --- Load Subgraphs and Databases ---
 analysis_collection = get_analysis_collection()

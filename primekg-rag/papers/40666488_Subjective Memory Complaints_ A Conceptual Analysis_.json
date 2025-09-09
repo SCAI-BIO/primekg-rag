@@ -1,0 +1,30 @@
+{
+  "title": "Subjective Memory Complaints: A Conceptual Analysis.",
+  "abstract": "To clarify the concept and connotation of subjective memory complaints. A total of 89 papers were retrieved from CNKI, Wanfang Database, VIP database, MedLine, Web of Science, OVID and Scopus. The search time limit was from January 1, 1982 to December 31, 2024. Walker and Avant's conceptual analysis method was applied. Through in-depth analysis, the defining attributes of the subjective memory complaints were memory dysfunction, cognitive decline risk, low help-seeking intentions, and notable memory-related negative emotions. Antecedents involve demographic, lifestyle, psychological, and health-related factors. Consequences include neurodegenerative diseases, anxiety, depression, and reduced quality of life. Multiple assessment tools such as the Subjective Memory Complaints Questionnaire and Memory Assessment Complaint Questionnaire were presented, providing means for measuring SMC in research and clinical practice. Defining this concept aids early screening and intervention for MCI and AD, helping clinical staff develop strategies to improve cognitive function, quality of life, and mental health.",
+  "journal": "Journal of multidisciplinary healthcare",
+  "authors": [
+    {
+      "lastname": "Yu",
+      "forename": "Jie",
+      "initials": "J"
+    },
+    {
+      "lastname": "Chen",
+      "forename": "Junqing",
+      "initials": "J"
+    },
+    {
+      "lastname": "Yang",
+      "forename": "Lili",
+      "initials": "L"
+    }
+  ],
+  "pmid": "40666488",
+  "doi": "10.2147/JMDH.S518951",
+  "similarity_score": -0.030776214599609386,
+  "source_subgraph": "memory_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Memory"
+  ]
+}

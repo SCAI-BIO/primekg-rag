@@ -1,0 +1,25 @@
+{
+  "title": "Acquired cyclic exotropia and hypotropia.",
+  "abstract": "Cyclic exotropia, a very rare condition, consists of periods of exotropia and orthotropia alternating on a regular, most commonly 48-hour, cycle. Cyclic vertical deviations, including cyclic oculomotor nerve palsy, also are extremely uncommon. Cyclic esotropia, which is more common than cyclic exotropia, has been reported to occur more frequently in children than adults. We describe an adult patient who developed cyclic exotropia and hypotropia associated with monocular loss of vision.",
+  "journal": "Journal of AAPOS : the official publication of the American Association for Pediatric Ophthalmology and Strabismus",
+  "authors": [
+    {
+      "lastname": "Murthy",
+      "forename": "Ramesh",
+      "initials": "R"
+    },
+    {
+      "lastname": "Hegde",
+      "forename": "Sunayana",
+      "initials": "S"
+    }
+  ],
+  "pmid": "19541276",
+  "doi": "10.1016/j.jaapos.2009.01.008",
+  "similarity_score": 0.14177160263061522,
+  "source_subgraph": "Hypotropia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Hypotropia"
+  ]
+}

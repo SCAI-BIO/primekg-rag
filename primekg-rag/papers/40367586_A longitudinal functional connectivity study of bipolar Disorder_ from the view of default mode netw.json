@@ -1,0 +1,70 @@
+{
+  "title": "A longitudinal functional connectivity study of bipolar Disorder: from the view of default mode network and its association with gene expression.",
+  "abstract": "Abnormal functions involving brain regions within the default mode network (DMN) have been reported in bipolar disorder (BD). However, most previous studies were cross-sectional. Therefore, a longitudinal study was conducted to observe the change trajectory of symptoms and functional connectivity (FC) of DMN in BD patients. Imaging transcriptomics is used for finding spatially transcriptional correlation of FC changes. Eighty-two BD patients (43 patients finished the follow-up after 3-month medication treatment) and matched 88 healthy controls were included to perform seed-based FC analysis. The correlation between FC alteration and clinical symptoms was explored with multiple regression analysis. Utilizing imaging transcriptomics, genes from the Allen Human Brain Atlas associated with abnormal imaging phenotypes were obtained by spatial Spearman correlation analysis. BD patients exhibited increased FC between the DMN and the orbitofrontal cortex (OFC), left cerebellar Crus II/VIIb, right inferior frontal gyrus, and bilateral anterior cingulate cortex. After treatment, elevated FC of DMN-OFC tended to normalize, while decreased FC within the inferior parietal gyrus (IPG) was observed. Two FC alterations of left IPG were positively associated with the Stroop Color-Word Test (p = 0.0014, 0.0019 respectively). Enrichment analysis suggested association genes were involved in ribosomal function, membrane transport, and enzymatic activity. The findings further suggest that FC of DMN may relate to symptomatic changes and therapeutic mechanisms of BD. Imaging transcriptomics provides a new perspective for researching genetic factors of BD. However, the small sample and single center of this study may impact the representativeness of the results.",
+  "journal": "Journal of psychiatric research",
+  "authors": [
+    {
+      "lastname": "Cui",
+      "forename": "Xuhan",
+      "initials": "X"
+    },
+    {
+      "lastname": "Han",
+      "forename": "Yiding",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Yan",
+      "forename": "Haohao",
+      "initials": "H"
+    },
+    {
+      "lastname": "Zhang",
+      "forename": "Chunguo",
+      "initials": "C"
+    },
+    {
+      "lastname": "Li",
+      "forename": "Xiaoling",
+      "initials": "X"
+    },
+    {
+      "lastname": "Liang",
+      "forename": "Jiaquan",
+      "initials": "J"
+    },
+    {
+      "lastname": "Tang",
+      "forename": "Chaohua",
+      "initials": "C"
+    },
+    {
+      "lastname": "Wu",
+      "forename": "Weibin",
+      "initials": "W"
+    },
+    {
+      "lastname": "Deng",
+      "forename": "Wen",
+      "initials": "W"
+    },
+    {
+      "lastname": "Xie",
+      "forename": "Guojun",
+      "initials": "G"
+    },
+    {
+      "lastname": "Guo",
+      "forename": "Wenbin",
+      "initials": "W"
+    }
+  ],
+  "pmid": "40367586",
+  "doi": "10.1016/j.jpsychires.2025.05.019",
+  "similarity_score": 0.4907306909561157,
+  "source_subgraph": "bipolar disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Bipolar Disorder"
+  ]
+}

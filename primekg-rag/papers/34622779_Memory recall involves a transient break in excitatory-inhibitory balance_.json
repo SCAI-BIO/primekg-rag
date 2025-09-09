@@ -1,0 +1,50 @@
+{
+  "title": "Memory recall involves a transient break in excitatory-inhibitory balance.",
+  "abstract": "The brain has a remarkable capacity to acquire and store memories that can later be selectively recalled. These processes are supported by the hippocampus which is thought to index memory recall by reinstating information stored across distributed neocortical circuits. However, the mechanism that supports this interaction remains unclear. Here, in humans, we show that recall of a visual cue from a paired associate is accompanied by a transient increase in the ratio between glutamate and GABA in visual cortex. Moreover, these excitatory-inhibitory fluctuations are predicted by activity in the hippocampus. These data suggest the hippocampus gates memory recall by indexing information stored across neocortical circuits using a disinhibitory mechanism.",
+  "journal": "eLife",
+  "authors": [
+    {
+      "lastname": "Koolschijn",
+      "forename": "Renée S",
+      "initials": "RS"
+    },
+    {
+      "lastname": "Shpektor",
+      "forename": "Anna",
+      "initials": "A"
+    },
+    {
+      "lastname": "Clarke",
+      "forename": "William T",
+      "initials": "WT"
+    },
+    {
+      "lastname": "Ip",
+      "forename": "I Betina",
+      "initials": "IB"
+    },
+    {
+      "lastname": "Dupret",
+      "forename": "David",
+      "initials": "D"
+    },
+    {
+      "lastname": "Emir",
+      "forename": "Uzay E",
+      "initials": "UE"
+    },
+    {
+      "lastname": "Barron",
+      "forename": "Helen C",
+      "initials": "HC"
+    }
+  ],
+  "pmid": "34622779",
+  "doi": "10.7554/eLife.70071",
+  "similarity_score": 0.0249772548675537,
+  "source_subgraph": "memory_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Memory"
+  ]
+}

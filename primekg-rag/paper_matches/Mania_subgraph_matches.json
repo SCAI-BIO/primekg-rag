@@ -1,0 +1,62 @@
+[
+  {
+    "pmid": "40613335",
+    "title": "Editorial on: The Underappreciated Importance of Mania.",
+    "abstract": "Editorial on: The Underappreciated Importance of Mania.",
+    "similarity": 0.14450411796569823
+  },
+  {
+    "pmid": "40167542",
+    "title": "Informing the dimensional classification of mania: A daily diary study of symptom-level structure.",
+    "abstract": "Informing the dimensional classification of mania: A daily diary study of symptom-level structure.",
+    "similarity": 0.1378300666809082
+  },
+  {
+    "pmid": "38605735",
+    "title": "Presentation and Management of Acute Mania in Fanconi-Bickel Syndrome, A Metabolic Genetic Disorder.",
+    "abstract": "Presentation and Management of Acute Mania in Fanconi-Bickel Syndrome, A Metabolic Genetic Disorder.",
+    "similarity": 0.11125831604003905
+  },
+  {
+    "pmid": "40435929",
+    "title": "Age at onset and trajectory to mania.",
+    "abstract": "Age at onset and trajectory to mania.",
+    "similarity": 0.10993175506591796
+  },
+  {
+    "pmid": "39320064",
+    "title": "Correspondence on \"An algorithm for pharmacological treatment of mania during hospitalisation\".",
+    "abstract": "Correspondence on \"An algorithm for pharmacological treatment of mania during hospitalisation\".",
+    "similarity": 0.08633451461791991
+  },
+  {
+    "pmid": "32831292",
+    "title": "Mapping mania symptoms based on focal brain damage.",
+    "abstract": "BACKGROUNDAlthough mania is characteristic of bipolar disorder, it can also occur following focal brain damage. Such cases may provide unique insight into brain regions responsible for mania symptoms and identify therapeutic targets.METHODSLesion locations associated with mania were identified using a systematic literature search (n = 41) and mapped onto a common brain atlas. The network of brain regions functionally connected to each lesion location was computed using normative human connectome data (resting-state functional MRI, n = 1000) and contrasted with those obtained from lesion locations not associated with mania (n = 79). Reproducibility was assessed using independent cohorts of mania lesions derived from clinical chart review (n = 15) and of control lesions (n = 490). Results were compared with brain stimulation sites previously reported to induce or relieve mania symptoms.RESULTSLesion locations associated with mania were heterogeneous and no single brain region was lesioned in all, or even most, cases. However, these lesion locations showed a unique pattern of functional connectivity to the right orbitofrontal cortex, right inferior temporal gyrus, and right frontal pole. This connectivity profile was reproducible across independent lesion cohorts and aligned with the effects of therapeutic brain stimulation on mania symptoms.CONCLUSIONBrain lesions associated with mania are characterized by a specific pattern of brain connectivity that lends insight into localization of mania symptoms and potential therapeutic targets.FUNDINGFundação para a Ciência e Tecnologia (FCT), Harvard Medical School DuPont-Warren Fellowship, Portuguese national funds from FCT and Fundo Europeu de Desenvolvimento Regional, Child Neurology Foundation Shields Research, Sidney R. Baer, Jr. Foundation, Nancy Lurie Marks Foundation, Mather's Foundation, and the NIH.",
+    "similarity": 0.08096485137939452
+  },
+  {
+    "pmid": "15529230",
+    "title": "[A case of chronic mania].",
+    "abstract": "In this paper, we present a case of chronic mania and we revise its diagnosis and treatment. A case of a 23 year old patient with chronic mania as well as his response to clozapine treatment is described.",
+    "similarity": 0.07429163455963134
+  },
+  {
+    "pmid": "40059291",
+    "title": "Unipolar Mania: Prevalence and Patient Characteristics.",
+    "abstract": "Unipolar Mania: Prevalence and Patient Characteristics.",
+    "similarity": 0.07077364921569823
+  },
+  {
+    "pmid": "39320065",
+    "title": "Reply to correspondence to \"Algorithm or not for pharmacological treatment of mania during hospitalisation\".",
+    "abstract": "Reply to correspondence to \"Algorithm or not for pharmacological treatment of mania during hospitalisation\".",
+    "similarity": 0.06350426673889159
+  },
+  {
+    "pmid": "38545540",
+    "title": "Sex Differences in First-Episode Mania-Data from a Retrospective Chart Review.",
+    "abstract": "Sex Differences in First-Episode Mania-Data from a Retrospective Chart Review.",
+    "similarity": 0.05490105152130126
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "title": "[Panic disorder and agoraphobia: understanding and therapy].",
+  "abstract": "Recurrent and unexpected panic attacks, persistent concerns about their implications, and the avoidance of numerous situations in which panic attacks are particularly feared significantly impact the lives of affected individuals. These symptoms are key characteristics of the co-occurrence of panic disorder and agoraphobia. This article provides an overview of these disorders and discusses effective therapeutic approaches.",
+  "journal": "Fortschritte der Neurologie-Psychiatrie",
+  "authors": [
+    {
+      "lastname": "Wannemüller",
+      "forename": "André",
+      "initials": "A"
+    },
+    {
+      "lastname": "Margraf",
+      "forename": "Jürgen",
+      "initials": "J"
+    }
+  ],
+  "pmid": "40609545",
+  "doi": "10.1055/a-2557-8259",
+  "similarity_score": 0.5388929724693299,
+  "source_subgraph": "agoraphobia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Agoraphobia"
+  ]
+}

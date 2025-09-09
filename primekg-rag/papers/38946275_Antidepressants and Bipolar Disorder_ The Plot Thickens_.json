@@ -1,0 +1,25 @@
+{
+  "title": "Antidepressants and Bipolar Disorder: The Plot Thickens.",
+  "abstract": "",
+  "journal": "The American journal of psychiatry",
+  "authors": [
+    {
+      "lastname": "Gottlieb",
+      "forename": "Natalie",
+      "initials": "N"
+    },
+    {
+      "lastname": "Young",
+      "forename": "Allan H",
+      "initials": "AH"
+    }
+  ],
+  "pmid": "38946275",
+  "doi": "10.1176/appi.ajp.20240411",
+  "similarity_score": 0.5168720960617066,
+  "source_subgraph": "bipolar disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Bipolar Disorder"
+  ]
+}

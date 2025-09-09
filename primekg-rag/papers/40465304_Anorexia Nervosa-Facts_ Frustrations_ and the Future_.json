@@ -1,0 +1,45 @@
+{
+  "title": "Anorexia Nervosa-Facts, Frustrations, and the Future.",
+  "abstract": "Anorexia nervosa is a prevalent psychiatric illness associated with exceptionally poor outcomes, including high rates of morbidity and premature mortality. Current evidence-based treatments for anorexia nervosa were developed several decades ago and have limited efficacy. The anorexia nervosa field-and the eating disorders field more broadly-has yet to make significant scientific breakthroughs that lead to acceptable outcomes for people with anorexia nervosa. This Special Communication highlights how the concurrent psychological and physical symptoms of anorexia nervosa contribute to 2 major problems that have held the anorexia nervosa research field back and hindered research innovations: (1) overspecialization and siloing of the field and (2) an overly narrow focus on weight restoration in treatment. Specific recommendations are made to help progress the field, including taking a multidisciplinary and collaborative approach to research with colleagues from related disciplines, as well as taking a more holistic approach to understanding and treating anorexia nervosa.",
+  "journal": "JAMA psychiatry",
+  "authors": [
+    {
+      "lastname": "Phillipou",
+      "forename": "Andrea",
+      "initials": "A"
+    },
+    {
+      "lastname": "Schmidt",
+      "forename": "Ulrike",
+      "initials": "U"
+    },
+    {
+      "lastname": "Neill",
+      "forename": "Erica",
+      "initials": "E"
+    },
+    {
+      "lastname": "Miles",
+      "forename": "Stephanie",
+      "initials": "S"
+    },
+    {
+      "lastname": "McGorry",
+      "forename": "Patrick",
+      "initials": "P"
+    },
+    {
+      "lastname": "Eddy",
+      "forename": "Kamryn T",
+      "initials": "KT"
+    }
+  ],
+  "pmid": "40465304",
+  "doi": "10.1001/jamapsychiatry.2025.0812",
+  "similarity_score": 0.7910845756530762,
+  "source_subgraph": "anorexia nervosa_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anorexia Nervosa"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Managing a case of hypotropia with a positive traction test.",
+  "abstract": "",
+  "journal": "Journal of pediatric ophthalmology and strabismus",
+  "authors": [
+    {
+      "lastname": "Tien",
+      "forename": "David Robbins",
+      "initials": "DR"
+    },
+    {
+      "lastname": "Weaver",
+      "forename": "Daniel T",
+      "initials": "DT"
+    }
+  ],
+  "pmid": "23343087",
+  "doi": "10.3928/01913913-20120720-01",
+  "similarity_score": 0.37749128341674804,
+  "source_subgraph": "Hypotropia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Hypotropia"
+  ]
+}

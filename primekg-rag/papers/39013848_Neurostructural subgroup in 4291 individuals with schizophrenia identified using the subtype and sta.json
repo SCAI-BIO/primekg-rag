@@ -1,0 +1,540 @@
+{
+  "title": "Neurostructural subgroup in 4291 individuals with schizophrenia identified using the subtype and stage inference algorithm.",
+  "abstract": "Machine learning can be used to define subtypes of psychiatric conditions based on shared biological foundations of mental disorders. Here we analyzed cross-sectional brain images from 4,222 individuals with schizophrenia and 7038 healthy subjects pooled across 41 international cohorts from the ENIGMA, non-ENIGMA cohorts and public datasets. Using the Subtype and Stage Inference (SuStaIn) algorithm, we identify two distinct neurostructural subgroups by mapping the spatial and temporal 'trajectory' of gray matter change in schizophrenia. Subgroup 1 was characterized by an early cortical-predominant loss with enlarged striatum, whereas subgroup 2 displayed an early subcortical-predominant loss in the hippocampus, striatum and other subcortical regions. We confirmed the reproducibility of the two neurostructural subtypes across various sample sites, including Europe, North America and East Asia. This imaging-based taxonomy holds the potential to identify individuals with shared neurobiological attributes, thereby suggesting the viability of redefining existing disorder constructs based on biological factors.",
+  "journal": "Nature communications",
+  "authors": [
+    {
+      "lastname": "Jiang",
+      "forename": "Yuchao",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Luo",
+      "forename": "Cheng",
+      "initials": "C"
+    },
+    {
+      "lastname": "Wang",
+      "forename": "Jijun",
+      "initials": "J"
+    },
+    {
+      "lastname": "Palaniyappan",
+      "forename": "Lena",
+      "initials": "L"
+    },
+    {
+      "lastname": "Chang",
+      "forename": "Xiao",
+      "initials": "X"
+    },
+    {
+      "lastname": "Xiang",
+      "forename": "Shitong",
+      "initials": "S"
+    },
+    {
+      "lastname": "Zhang",
+      "forename": "Jie",
+      "initials": "J"
+    },
+    {
+      "lastname": "Duan",
+      "forename": "Mingjun",
+      "initials": "M"
+    },
+    {
+      "lastname": "Huang",
+      "forename": "Huan",
+      "initials": "H"
+    },
+    {
+      "lastname": "Gaser",
+      "forename": "Christian",
+      "initials": "C"
+    },
+    {
+      "lastname": "Nemoto",
+      "forename": "Kiyotaka",
+      "initials": "K"
+    },
+    {
+      "lastname": "Miura",
+      "forename": "Kenichiro",
+      "initials": "K"
+    },
+    {
+      "lastname": "Hashimoto",
+      "forename": "Ryota",
+      "initials": "R"
+    },
+    {
+      "lastname": "Westlye",
+      "forename": "Lars T",
+      "initials": "LT"
+    },
+    {
+      "lastname": "Richard",
+      "forename": "Genevieve",
+      "initials": "G"
+    },
+    {
+      "lastname": "Fernandez-Cabello",
+      "forename": "Sara",
+      "initials": "S"
+    },
+    {
+      "lastname": "Parker",
+      "forename": "Nadine",
+      "initials": "N"
+    },
+    {
+      "lastname": "Andreassen",
+      "forename": "Ole A",
+      "initials": "OA"
+    },
+    {
+      "lastname": "Kircher",
+      "forename": "Tilo",
+      "initials": "T"
+    },
+    {
+      "lastname": "Nenadić",
+      "forename": "Igor",
+      "initials": "I"
+    },
+    {
+      "lastname": "Stein",
+      "forename": "Frederike",
+      "initials": "F"
+    },
+    {
+      "lastname": "Thomas-Odenthal",
+      "forename": "Florian",
+      "initials": "F"
+    },
+    {
+      "lastname": "Teutenberg",
+      "forename": "Lea",
+      "initials": "L"
+    },
+    {
+      "lastname": "Usemann",
+      "forename": "Paula",
+      "initials": "P"
+    },
+    {
+      "lastname": "Dannlowski",
+      "forename": "Udo",
+      "initials": "U"
+    },
+    {
+      "lastname": "Hahn",
+      "forename": "Tim",
+      "initials": "T"
+    },
+    {
+      "lastname": "Grotegerd",
+      "forename": "Dominik",
+      "initials": "D"
+    },
+    {
+      "lastname": "Meinert",
+      "forename": "Susanne",
+      "initials": "S"
+    },
+    {
+      "lastname": "Lencer",
+      "forename": "Rebekka",
+      "initials": "R"
+    },
+    {
+      "lastname": "Tang",
+      "forename": "Yingying",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Zhang",
+      "forename": "Tianhong",
+      "initials": "T"
+    },
+    {
+      "lastname": "Li",
+      "forename": "Chunbo",
+      "initials": "C"
+    },
+    {
+      "lastname": "Yue",
+      "forename": "Weihua",
+      "initials": "W"
+    },
+    {
+      "lastname": "Zhang",
+      "forename": "Yuyanan",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Yu",
+      "forename": "Xin",
+      "initials": "X"
+    },
+    {
+      "lastname": "Zhou",
+      "forename": "Enpeng",
+      "initials": "E"
+    },
+    {
+      "lastname": "Lin",
+      "forename": "Ching-Po",
+      "initials": "CP"
+    },
+    {
+      "lastname": "Tsai",
+      "forename": "Shih-Jen",
+      "initials": "SJ"
+    },
+    {
+      "lastname": "Rodrigue",
+      "forename": "Amanda L",
+      "initials": "AL"
+    },
+    {
+      "lastname": "Glahn",
+      "forename": "David",
+      "initials": "D"
+    },
+    {
+      "lastname": "Pearlson",
+      "forename": "Godfrey",
+      "initials": "G"
+    },
+    {
+      "lastname": "Blangero",
+      "forename": "John",
+      "initials": "J"
+    },
+    {
+      "lastname": "Karuk",
+      "forename": "Andriana",
+      "initials": "A"
+    },
+    {
+      "lastname": "Pomarol-Clotet",
+      "forename": "Edith",
+      "initials": "E"
+    },
+    {
+      "lastname": "Salvador",
+      "forename": "Raymond",
+      "initials": "R"
+    },
+    {
+      "lastname": "Fuentes-Claramonte",
+      "forename": "Paola",
+      "initials": "P"
+    },
+    {
+      "lastname": "Garcia-León",
+      "forename": "María Ángeles",
+      "initials": "MÁ"
+    },
+    {
+      "lastname": "Spalletta",
+      "forename": "Gianfranco",
+      "initials": "G"
+    },
+    {
+      "lastname": "Piras",
+      "forename": "Fabrizio",
+      "initials": "F"
+    },
+    {
+      "lastname": "Vecchio",
+      "forename": "Daniela",
+      "initials": "D"
+    },
+    {
+      "lastname": "Banaj",
+      "forename": "Nerisa",
+      "initials": "N"
+    },
+    {
+      "lastname": "Cheng",
+      "forename": "Jingliang",
+      "initials": "J"
+    },
+    {
+      "lastname": "Liu",
+      "forename": "Zhening",
+      "initials": "Z"
+    },
+    {
+      "lastname": "Yang",
+      "forename": "Jie",
+      "initials": "J"
+    },
+    {
+      "lastname": "Gonul",
+      "forename": "Ali Saffet",
+      "initials": "AS"
+    },
+    {
+      "lastname": "Uslu",
+      "forename": "Ozgul",
+      "initials": "O"
+    },
+    {
+      "lastname": "Burhanoglu",
+      "forename": "Birce Begum",
+      "initials": "BB"
+    },
+    {
+      "lastname": "Uyar Demir",
+      "forename": "Aslihan",
+      "initials": "A"
+    },
+    {
+      "lastname": "Rootes-Murdy",
+      "forename": "Kelly",
+      "initials": "K"
+    },
+    {
+      "lastname": "Calhoun",
+      "forename": "Vince D",
+      "initials": "VD"
+    },
+    {
+      "lastname": "Sim",
+      "forename": "Kang",
+      "initials": "K"
+    },
+    {
+      "lastname": "Green",
+      "forename": "Melissa",
+      "initials": "M"
+    },
+    {
+      "lastname": "Quidé",
+      "forename": "Yann",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Chung",
+      "forename": "Young Chul",
+      "initials": "YC"
+    },
+    {
+      "lastname": "Kim",
+      "forename": "Woo-Sung",
+      "initials": "WS"
+    },
+    {
+      "lastname": "Sponheim",
+      "forename": "Scott R",
+      "initials": "SR"
+    },
+    {
+      "lastname": "Demro",
+      "forename": "Caroline",
+      "initials": "C"
+    },
+    {
+      "lastname": "Ramsay",
+      "forename": "Ian S",
+      "initials": "IS"
+    },
+    {
+      "lastname": "Iasevoli",
+      "forename": "Felice",
+      "initials": "F"
+    },
+    {
+      "lastname": "de Bartolomeis",
+      "forename": "Andrea",
+      "initials": "A"
+    },
+    {
+      "lastname": "Barone",
+      "forename": "Annarita",
+      "initials": "A"
+    },
+    {
+      "lastname": "Ciccarelli",
+      "forename": "Mariateresa",
+      "initials": "M"
+    },
+    {
+      "lastname": "Brunetti",
+      "forename": "Arturo",
+      "initials": "A"
+    },
+    {
+      "lastname": "Cocozza",
+      "forename": "Sirio",
+      "initials": "S"
+    },
+    {
+      "lastname": "Pontillo",
+      "forename": "Giuseppe",
+      "initials": "G"
+    },
+    {
+      "lastname": "Tranfa",
+      "forename": "Mario",
+      "initials": "M"
+    },
+    {
+      "lastname": "Park",
+      "forename": "Min Tae M",
+      "initials": "MTM"
+    },
+    {
+      "lastname": "Kirschner",
+      "forename": "Matthias",
+      "initials": "M"
+    },
+    {
+      "lastname": "Georgiadis",
+      "forename": "Foivos",
+      "initials": "F"
+    },
+    {
+      "lastname": "Kaiser",
+      "forename": "Stefan",
+      "initials": "S"
+    },
+    {
+      "lastname": "Van Rheenen",
+      "forename": "Tamsyn E",
+      "initials": "TE"
+    },
+    {
+      "lastname": "Rossell",
+      "forename": "Susan L",
+      "initials": "SL"
+    },
+    {
+      "lastname": "Hughes",
+      "forename": "Matthew",
+      "initials": "M"
+    },
+    {
+      "lastname": "Woods",
+      "forename": "William",
+      "initials": "W"
+    },
+    {
+      "lastname": "Carruthers",
+      "forename": "Sean P",
+      "initials": "SP"
+    },
+    {
+      "lastname": "Sumner",
+      "forename": "Philip",
+      "initials": "P"
+    },
+    {
+      "lastname": "Ringin",
+      "forename": "Elysha",
+      "initials": "E"
+    },
+    {
+      "lastname": "Spaniel",
+      "forename": "Filip",
+      "initials": "F"
+    },
+    {
+      "lastname": "Skoch",
+      "forename": "Antonin",
+      "initials": "A"
+    },
+    {
+      "lastname": "Tomecek",
+      "forename": "David",
+      "initials": "D"
+    },
+    {
+      "lastname": "Homan",
+      "forename": "Philipp",
+      "initials": "P"
+    },
+    {
+      "lastname": "Homan",
+      "forename": "Stephanie",
+      "initials": "S"
+    },
+    {
+      "lastname": "Omlor",
+      "forename": "Wolfgang",
+      "initials": "W"
+    },
+    {
+      "lastname": "Cecere",
+      "forename": "Giacomo",
+      "initials": "G"
+    },
+    {
+      "lastname": "Nguyen",
+      "forename": "Dana D",
+      "initials": "DD"
+    },
+    {
+      "lastname": "Preda",
+      "forename": "Adrian",
+      "initials": "A"
+    },
+    {
+      "lastname": "Thomopoulos",
+      "forename": "Sophia I",
+      "initials": "SI"
+    },
+    {
+      "lastname": "Jahanshad",
+      "forename": "Neda",
+      "initials": "N"
+    },
+    {
+      "lastname": "Cui",
+      "forename": "Long-Biao",
+      "initials": "LB"
+    },
+    {
+      "lastname": "Yao",
+      "forename": "Dezhong",
+      "initials": "D"
+    },
+    {
+      "lastname": "Thompson",
+      "forename": "Paul M",
+      "initials": "PM"
+    },
+    {
+      "lastname": "Turner",
+      "forename": "Jessica A",
+      "initials": "JA"
+    },
+    {
+      "lastname": "van Erp",
+      "forename": "Theo G M",
+      "initials": "TGM"
+    },
+    {
+      "lastname": "Cheng",
+      "forename": "Wei",
+      "initials": "W"
+    },
+    {
+      "lastname": "Feng",
+      "forename": "Jianfeng",
+      "initials": "J"
+    }
+  ],
+  "pmid": "39013848",
+  "doi": "10.1038/s41467-024-50267-3",
+  "similarity_score": 0.3804365277290344,
+  "source_subgraph": "schizophrenia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Schizophrenia"
+  ]
+}

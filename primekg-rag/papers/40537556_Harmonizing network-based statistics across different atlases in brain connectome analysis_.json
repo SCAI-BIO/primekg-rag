@@ -1,0 +1,60 @@
+{
+  "title": "Harmonizing network-based statistics across different atlases in brain connectome analysis.",
+  "abstract": "Incorporating summary statistics across neuroimaging studies is important for enhancing translatability but poses challenges to connectomic analyses due to diverse methodological pipelines and brain atlases. We present TACOS (Transform brAin COnnectomes across atlaSes), a novel tool that translates network-based statistics across different atlases without requiring individual raw data. TACOS employs linear models based on anatomical information from brain parcellations and white matter fibers. Testing across 17 atlases, we show TACOS-transformed t-statistics to correlate well to the ground truth for both structural (r = 0.32-0.95) and functional networks (r = 0.57-0.95) using HCP surrogate statistics. These correlations remain consistent when tested with independent data from populations of different ancestries. Furthermore, TACOS effectively harmonizes connectomic results across multi-site schizophrenia data cohorts (r = 0.57-0.94 and 0.75-0.95 for structural and functional networks, respectively). This tool enables cross-atlas transformations of network-based statistics, showing great potential for downstream applications that share and combine multi-site connectomic data.",
+  "journal": "Communications biology",
+  "authors": [
+    {
+      "lastname": "Liu",
+      "forename": "Qingyuan",
+      "initials": "Q"
+    },
+    {
+      "lastname": "Wei",
+      "forename": "Yongbin",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Liu",
+      "forename": "Dongxu",
+      "initials": "D"
+    },
+    {
+      "lastname": "Qi",
+      "forename": "Ting",
+      "initials": "T"
+    },
+    {
+      "lastname": "Zhao",
+      "forename": "Kun",
+      "initials": "K"
+    },
+    {
+      "lastname": "Zhang",
+      "forename": "Ya-Hong",
+      "initials": "YH"
+    },
+    {
+      "lastname": "Cui",
+      "forename": "Long-Biao",
+      "initials": "LB"
+    },
+    {
+      "lastname": "Liu",
+      "forename": "Yong",
+      "initials": "Y"
+    },
+    {
+      "lastname": "van den Heuvel",
+      "forename": "Martijn P",
+      "initials": "MP"
+    }
+  ],
+  "pmid": "40537556",
+  "doi": "10.1038/s42003-025-08341-z",
+  "similarity_score": -0.2368248224258423,
+  "source_subgraph": "Tics_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Tics"
+  ]
+}

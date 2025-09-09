@@ -1,0 +1,25 @@
+{
+  "title": "Mental Health and Personality Disorders: Personality Disorders.",
+  "abstract": "Personality disorders describe enduring, pervasive, pathologic patterns of behavior and inner experiences that deviate from a patient's culture. Personality disorders are divided into three clusters depending on core features. Diagnosis of a personality disorder is generally made based on criteria from the <i>Diagnostic and Statistical Manual of Mental Disorders</i>, although other diagnostic modalities exist. The most common disorders in primary care settings include obsessive-compulsive personality, narcissistic personality, and borderline personality disorders. Obsessive-compulsive personality disorder is associated with pathologic perfectionism and intense rigidity. Treatment is primarily psychotherapy, although there is some evidence for using selective serotonin reuptake inhibitors. Narcissistic personality disorder is marked by grandiosity, need for admiration, and a lack of empathy. Psychotherapy is the primary treatment. Borderline personality disorder is associated with instability and intense reactivity, and the primary treatment is typically psychotherapy. Dialectical behavior therapy was developed specifically for borderline personality disorder, although evidence suggests other behavior therapies may be as beneficial.",
+  "journal": "FP essentials",
+  "authors": [
+    {
+      "lastname": "Chisholm",
+      "forename": "Victoria",
+      "initials": "V"
+    },
+    {
+      "lastname": "Rountree",
+      "forename": "Boone G",
+      "initials": "BG"
+    }
+  ],
+  "pmid": "40674742",
+  "doi": "",
+  "similarity_score": 0.39415656328201293,
+  "source_subgraph": "personality disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Personality Disorder"
+  ]
+}

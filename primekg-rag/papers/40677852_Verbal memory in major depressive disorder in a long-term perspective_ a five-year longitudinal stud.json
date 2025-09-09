@@ -1,0 +1,35 @@
+{
+  "title": "Verbal memory in major depressive disorder in a long-term perspective: a five-year longitudinal study of first episode patients.",
+  "abstract": "Major depressive disorder (MDD) is associated with cognitive impairment, including verbal memory. Limited knowledge exists following memory performance in first episode (FE) MDD. This study investigated verbal memory, depressive symptoms, and relapse in FE MDD over five years, from the trait, state, and scar perspectives. These perspectives suggests that deficits in memory either preexists, manifest in MDD, or exacerbates with every MDD episode, respectively. Thirty patients and 30 healthy matched controls (HC) were assessed using the California Verbal Learning Test, second edition (CVLT-II) across three test occasions; in the acute phase (Y0), at one-year (Y1) and five-year (Y5) follow-up. The relationship between CVLT-II scores and depression severity (measured by the Montgomery Åsberg Depression Rating Scale) and relapse at the five-year follow-up, was assessed. The FE MDD group demonstrated significantly poorer performance on List A, Trial 1 immediate free recall at Y0 compared to HC, however correction for multiple comparisons the difference did not reach significance. No differences were observed in any other condition at any time point. Further, the PG had a significant improvement on List A, trial 1 from Y0 to Y5. No associations were found between symptom severity and verbal memory, and no performance differences were identified between patients with and without relapse in a five -year perspective. In conclusion, individuals with FE MDD show normal verbal memory performance, but exhibit impaired performance on List A, Trial 1 immediate free recall in the acute phase improving in remission, indicative of a state-related deficit in auditory attention. No evidence of scarring deficits in the FE MDD group was observed in the follow-up period.",
+  "journal": "Frontiers in psychiatry",
+  "authors": [
+    {
+      "lastname": "Schmid",
+      "forename": "Marit",
+      "initials": "M"
+    },
+    {
+      "lastname": "Ronold",
+      "forename": "Eivind Haga",
+      "initials": "EH"
+    },
+    {
+      "lastname": "Løchen",
+      "forename": "Maiken",
+      "initials": "M"
+    },
+    {
+      "lastname": "Hammar",
+      "forename": "Åsa",
+      "initials": "Å"
+    }
+  ],
+  "pmid": "40677852",
+  "doi": "10.3389/fpsyt.2025.1623126",
+  "similarity_score": -0.1220026731491089,
+  "source_subgraph": "memory_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Memory"
+  ]
+}

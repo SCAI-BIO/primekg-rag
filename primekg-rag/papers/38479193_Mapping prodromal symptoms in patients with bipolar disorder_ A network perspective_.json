@@ -1,0 +1,65 @@
+{
+  "title": "Mapping prodromal symptoms in patients with bipolar disorder: A network perspective.",
+  "abstract": "Bipolar disorder (BD) is a major mental disorder that significantly impairs behavior and social functioning. This study assessed the network structure of prodromal symptoms in patients with BD prior to their index mood episode. Semi-structured interviews were conducted with the Bipolar Prodrome Symptom Scale-Retrospective (BPSS-R) to examine patients' prodromal symptoms. Network analysis was conducted to elucidate inter-relations between prodromal symptoms. A total of 120 eligible patients participated in this study. Network analysis indicated that the observed model was stable. The edge Mania3-Depression9 ('Racing thoughts' - 'Thinking about suicide', edge weight = 14.919) showed the strongest positive connection in the model, followed by the edge Mania1-depression1 ('Extremely energetic/active' - 'Depressed mood', edge weight = 14.643). The only negative correlation in the model was for Mania7-depression2 ('Overly self-confident' - 'Tiredness or lack of energy', edge weight = -1.068). Nodes Mania3 ('Racing thoughts'), Depression9 ('Thinking about suicide'), Mania1 ('Extremely energetic/active'), and Depression1 ('Depressed mood') were the most central symptoms. Both depressive and manic or hypomanic symptoms appeared in the prodromal phase. Symptoms reflecting 'Racing thoughts', 'Thinking about suicide', 'Extremely energetic/active', and 'Depressed mood' should be thoroughly assessed and targeted as crucial prodromal symptoms in interventions to reduce the risk of BD episodes.",
+  "journal": "Psychiatry research",
+  "authors": [
+    {
+      "lastname": "Yang",
+      "forename": "Yuan",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Guo",
+      "forename": "Tong",
+      "initials": "T"
+    },
+    {
+      "lastname": "Zhao",
+      "forename": "Qian",
+      "initials": "Q"
+    },
+    {
+      "lastname": "Li",
+      "forename": "Yang",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Cheung",
+      "forename": "Teris",
+      "initials": "T"
+    },
+    {
+      "lastname": "Zhang",
+      "forename": "Lei",
+      "initials": "L"
+    },
+    {
+      "lastname": "Zhu",
+      "forename": "Xuequan",
+      "initials": "X"
+    },
+    {
+      "lastname": "Jackson",
+      "forename": "Todd",
+      "initials": "T"
+    },
+    {
+      "lastname": "Li",
+      "forename": "Xiao-Hong",
+      "initials": "XH"
+    },
+    {
+      "lastname": "Xiang",
+      "forename": "Yu-Tao",
+      "initials": "YT"
+    }
+  ],
+  "pmid": "38479193",
+  "doi": "10.1016/j.psychres.2024.115842",
+  "similarity_score": 0.5320035099983216,
+  "source_subgraph": "bipolar disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Bipolar Disorder"
+  ]
+}

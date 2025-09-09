@@ -1,0 +1,25 @@
+{
+  "title": "Spatiotemporal expression patterns of anxiety disorder-associated genes.",
+  "abstract": "Anxiety disorders (ADs) are the most common form of mental disorder that affects millions of individuals worldwide. Although physiological studies have revealed the neural circuits related to AD symptoms, how AD-associated genes are spatiotemporally expressed in the human brain still remains unclear. In this study, we integrated genome-wide association studies of four human AD subtypes-generalized anxiety disorder, social anxiety disorder, panic disorder, and obsessive-compulsive disorder-with spatial gene expression patterns. Our investigation uncovered a novel division among AD-associated genes, marked by significant and distinct expression enrichments in the cerebral nuclei, limbic, and midbrain regions. Each gene cluster was associated with specific anxiety-related behaviors, signaling pathways, region-specific gene networks, and cell types. Notably, we observed a significant negative correlation in the temporal expression patterns of these gene clusters during various developmental stages. Moreover, the specific brain regions enriched in each gene group aligned with neural circuits previously associated with negative decision-making and anxious temperament. These results suggest that the two distinct gene clusters may underlie separate neural systems involved in anxiety. As a result, our findings bridge the gap between genes and neural circuitry, shedding light on the mechanisms underlying AD-associated behaviors.",
+  "journal": "Translational psychiatry",
+  "authors": [
+    {
+      "lastname": "Karunakaran",
+      "forename": "Kalyani B",
+      "initials": "KB"
+    },
+    {
+      "lastname": "Amemori",
+      "forename": "Ken-Ichi",
+      "initials": "KI"
+    }
+  ],
+  "pmid": "38092764",
+  "doi": "10.1038/s41398-023-02693-y",
+  "similarity_score": 0.48481403589248656,
+  "source_subgraph": "anxiety disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anxiety Disorder"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "The Thorny Issue of Atypical Anorexia Nervosa: Clinicians' Perspectives on How It Should Be Defined.",
+  "abstract": "Atypical Anorexia Nervosa (AAN) is an ill-defined diagnosis. Little is known about how eating disorder clinicians perceive the utility of the diagnosis, and what changes they believe would add to that utility. This qualitative study aimed to explore clinicians' perspectives on refining the DSM-5 AAN diagnosis. Content analysis of text was used to categorise 47 responses to the questions: \"What changes are required to the DSM-5 definition of AAN?\", and \"How do you think significant weight loss should be defined?\". Over 27% of clinicians advocated removing the AAN diagnosis or combining it with Anorexia Nervosa, while nearly 15% reported concerns about the requirement for 'significant weight loss'. Over 87% of clinicians suggested ways (often inconsistent across clinicians) to define 'significant weight loss', with emphasis on the need for a specified rate (i.e., amount of loss/time) and consideration of physical health impacts. Clinicians broadly agree that revisions are necessary to the current AAN definition. However, while some propose specific modifications (e.g., defining 'significant weight loss'), others advocate for the complete removal of the diagnosis. The breadth of suggestions for how to define 'significant weight loss' highlights the ongoing lack of consensus on AAN's relevance as a diagnostic entity.",
+  "journal": "European eating disorders review : the journal of the Eating Disorders Association",
+  "authors": [
+    {
+      "lastname": "Beard",
+      "forename": "Jessica",
+      "initials": "J"
+    },
+    {
+      "lastname": "Waller",
+      "forename": "Glenn",
+      "initials": "G"
+    }
+  ],
+  "pmid": "39558221",
+  "doi": "10.1002/erv.3152",
+  "similarity_score": 0.7706406593322754,
+  "source_subgraph": "anorexia nervosa_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anorexia Nervosa"
+  ]
+}

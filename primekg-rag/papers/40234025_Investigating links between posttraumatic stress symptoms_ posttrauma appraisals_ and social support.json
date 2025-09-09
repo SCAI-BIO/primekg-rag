@@ -1,0 +1,40 @@
+{
+  "title": "Investigating links between posttraumatic stress symptoms, posttrauma appraisals, and social support in older adults.",
+  "abstract": "Research has established the importance of posttrauma appraisals to the development of posttraumatic stress symptoms (PTSS) across a variety of trauma types, populations, and developmental periods. Considering this large body of evidence, there is a notable lack of research on posttrauma appraisals in older adulthood. As rates of elder abuse and maltreatment grow, rates of PTSS are also expected to rise, signaling an urgent need to pinpoint the factors associated with the development and maintenance of PTSS during this unique developmental period. This study extends previous research by exploring whether alienation appraisals were positively associated with PTSS when controlling for other factors known to predict PTSS, including fear appraisals, social support, and cumulative maltreatment. In a convenience sample of community-dwelling older adults (N = 99), multiple linear regression revealed that alienation appraisals were significantly associated with PTSS, β = .34, p = .002, after controlling for cumulative maltreatment (before and after 60 years of age), financial exploitation, fear appraisals, and social support, R<sup>2</sup> = .51. Our findings suggest that consistent with research from earlier developmental periods, alienation appraisals are significantly associated with PTSS in older adults even when accounting for other factors, such as social support, that are known to be particularly important in old age. Implications, limitations, and future directions are discussed.",
+  "journal": "Journal of traumatic stress",
+  "authors": [
+    {
+      "lastname": "Suzuki",
+      "forename": "Rebecca R",
+      "initials": "RR"
+    },
+    {
+      "lastname": "Hasche",
+      "forename": "Leslie",
+      "initials": "L"
+    },
+    {
+      "lastname": "Srinivas",
+      "forename": "Tejas",
+      "initials": "T"
+    },
+    {
+      "lastname": "Gagnon",
+      "forename": "Kerry",
+      "initials": "K"
+    },
+    {
+      "lastname": "DePrince",
+      "forename": "Anne P",
+      "initials": "AP"
+    }
+  ],
+  "pmid": "40234025",
+  "doi": "10.1002/jts.23156",
+  "similarity_score": 0.481301474571228,
+  "source_subgraph": "Posttraumatic stress symptom_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Posttraumatic Stress Symptom"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "title": "The comorbidity of anxiety and depression symptoms in obsessive-compulsive disorder: a network analysis.",
+  "abstract": "People with obsessive-compulsive disorder (OCD) frequently suffer from comorbid anxiety and depression. From the perspective of the network model, this comorbidity is thought to be an interacting system of three symptoms. In the study, we conducted a network analysis of anxiety and depression comorbidity in OCD, aiming to identify the central and bridge symptoms and make informed suggestions for clinical interventions and psychotherapy. A total of 356 individuals with OCD were enrolled in the study. The Yale-Brown Obsessive-Compulsive Scale (Y-BOCS), Self-Rating Anxiety Scale (SAS), and Self-Rating Depression Scale (SDS) were selected to evaluate anxiety, depression, and obsessive-compulsive symptoms, respectively, followed by network analysis to construct the interacting networks. \"Panic\" and \"Distress caused by obsessive-compulsive behavior\" had the highest expected influence, indicating that the two variables were the most associated nodes in the network. \"Tachycardia,\" \"Constipation,\" \"Fatigue,\" \"Panic,\" \"Easy fatiguability, weakness,\" \"Palpitation,\" \"Crying spells,\" \"Psychomotor agitation,\" \"Mental disintegration,\" and \"Nightmares\" were the bridge nodes that had the strongest connection with OCD. Panic and distress caused by obsessive-compulsive, which are the central and bridge symptoms of the interacting network of anxiety and depression symptoms in OCD, might be a significant transdiagnostic intervention target for the management of the comorbidity. Additionally, it might be beneficial to consider implementing clinical prevention and psychotherapy, focusing on somatic symptoms, psychological symptoms, and sleep that have the strongest associations with OCD.",
+  "journal": "Frontiers in psychiatry",
+  "authors": [
+    {
+      "lastname": "Cheng",
+      "forename": "Sizhe",
+      "initials": "S"
+    },
+    {
+      "lastname": "Chen",
+      "forename": "Zhiguo",
+      "initials": "Z"
+    },
+    {
+      "lastname": "Wu",
+      "forename": "Chao",
+      "initials": "C"
+    },
+    {
+      "lastname": "Li",
+      "forename": "Xinhong",
+      "initials": "X"
+    },
+    {
+      "lastname": "Shen",
+      "forename": "Xin",
+      "initials": "X"
+    },
+    {
+      "lastname": "Qiu",
+      "forename": "Rui",
+      "initials": "R"
+    },
+    {
+      "lastname": "Tang",
+      "forename": "Nailong",
+      "initials": "N"
+    },
+    {
+      "lastname": "Feng",
+      "forename": "Chong",
+      "initials": "C"
+    },
+    {
+      "lastname": "Wang",
+      "forename": "Wenwen",
+      "initials": "W"
+    },
+    {
+      "lastname": "Lv",
+      "forename": "Jing",
+      "initials": "J"
+    },
+    {
+      "lastname": "Yuan",
+      "forename": "Shuiping",
+      "initials": "S"
+    },
+    {
+      "lastname": "Liu",
+      "forename": "Xufeng",
+      "initials": "X"
+    }
+  ],
+  "pmid": "40386117",
+  "doi": "10.3389/fpsyt.2025.1567448",
+  "similarity_score": 0.7121604561805726,
+  "source_subgraph": "obsessive-compulsive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Obsessive-Compulsive Disorder"
+  ]
+}

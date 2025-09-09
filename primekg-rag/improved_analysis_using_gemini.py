@@ -6,23 +6,27 @@ import logging
 from collections import defaultdict, Counter
 
 from dotenv import load_dotenv
-import google.generativeai as genai
+import requests
 import chromadb
+from sentence_transformers import SentenceTransformer
 
 # --- Setup ---
 logging.basicConfig(level=logging.INFO)
 load_dotenv()
-api_key = os.getenv("API_KEY")
-if not api_key:
-    raise ValueError("Missing API_KEY in .env")
 
-genai.configure(api_key=api_key)
-model = genai.GenerativeModel("gemini-1.5-flash-latest")
+# DeepSeek API configuration
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
+DEEPSEEK_API_URL = "http://localhost:11434/api/generate"  # Local Ollama server
+
+if not DEEPSEEK_API_KEY:
+    logging.warning("DEEPSEEK_API_KEY not found in .env, using local model")
+    DEEPSEEK_API_KEY = ""
 
 BASE_DIR = Path(__file__).parent.resolve()
 SUBGRAPH_DIR = BASE_DIR / "new_subgraphs"
 ANALYSIS_OUTPUT_DIR = BASE_DIR / "analyses"
 ANALYSIS_DB_PATH = BASE_DIR / "analyses_db"
+PUBMED_DB_PATH = BASE_DIR / "pubmed_db"
 ANALYSIS_OUTPUT_DIR.mkdir(exist_ok=True)
 
 def analyze_subgraph_structure(df: pd.DataFrame) -> dict:
@@ -106,41 +110,48 @@ def build_structured_prompt(file_path: Path) -> tuple:
     # Extract condition name from filename
     condition = file_path.stem.replace('_subgraph', '').replace('_', ' ').title()
     
-    system_prompt = f"""You are a biomedical knowledge graph analyst. Your task is to generate a clinical summary from a knowledge subgraph.
+    # Get relevant PubMed papers
+    pubmed_context = get_pubmed_context(condition)
+    
+    system_prompt = f"""You are a biomedical knowledge graph analyst with expertise in interpreting research literature. Your task is to generate a comprehensive clinical summary by integrating knowledge from both a knowledge subgraph and relevant scientific literature.
 
 **CRITICAL INSTRUCTIONS:**
-1.  **Cite Everything:** You MUST cite every piece of information in your summary. Each statement you make must be followed by its evidence citation in the format `[ID: y_id, Source: y_source]`.
-2.  **No External Knowledge:** Use ONLY the relationships provided in the 'EVIDENCE FROM SUBGRAPH' section. Do not use any outside knowledge.
-3.  **Strictly Adhere to Format:** Your entire response must follow the specified markdown format.
-
-**EXAMPLE OF A CORRECTLY CITED SENTENCE:**
-- Agoraphobia is treated by Fluvoxamine `[ID: DB00176, Source: DrugBank]`.
+1. **Cite Everything:** Every statement must be supported by either:
+   - Knowledge graph evidence: `[KG: ID: y_id, Source: y_source]`
+   - Research evidence: `[PMID: xxxxxxx]` (from provided papers)
+2. **Prioritize Evidence:** Use knowledge graph data as primary evidence, supplemented by research papers for context.
+3. **Be Precise:** Only make claims that can be directly supported by the provided evidence.
 
 **MANDATORY OUTPUT FORMAT:**
 
 ## Clinical Summary: {condition}
 
+### Disease Overview
+[Provide a 2-3 paragraph overview of the condition based on the most relevant research papers. Include key epidemiological data, clinical presentation, and current understanding of the condition. Cite research papers using PMIDs.]
+
 ### Key Clinical Relationships
-[Provide a bulleted list of the most clinically significant relationships. Each bullet point MUST end with an evidence citation.]
+[Bullet points of the most clinically significant relationships from the knowledge graph. Each point must include a KG citation.]
 
 ### Therapeutic Insights
-[Summarize any potential treatments or drug interactions found in the data. Each statement MUST end with an evidence citation.]
+[Summarize potential treatments, focusing on evidence from the knowledge graph. Include any drug mechanisms or interactions found. Add relevant context from research papers when available.]
 
-### Associated Conditions & Phenotypes
-[List any diseases or phenotypes associated with the main condition. Each statement MUST end with an evidence citation.]
+### Biological Mechanisms
+[Describe genes, proteins, and pathways involved, with emphasis on KG evidence. Use research papers to explain mechanisms and biological context.]
 
-### Biological Context
-[Describe any genes, proteins, or biological processes linked to the condition. Each statement MUST end with an evidence citation.]
+### Research Context
+[Highlight 3-5 key findings from the most relevant papers that provide additional context not fully captured in the knowledge graph.]
 
-**Remember: Every single claim requires a direct citation from the evidence provided.**
-"""
+**Remember:** All claims must be directly supported by either knowledge graph evidence or cited research papers."""
 
-    user_prompt = f"""**SUBGRAPH DATA FOR ANALYSIS:**
+    user_prompt = f"""**CONTEXT FOR ANALYSIS:**
 
 **Condition:** {condition}
 **Source File:** {file_path.name}
 
-**EVIDENCE FROM SUBGRAPH:**
+**RELEVANT RESEARCH LITERATURE (Top 50 most relevant papers):**
+{pubmed_context}
+
+**EVIDENCE FROM KNOWLEDGE GRAPH:**
 {evidence_text}
 
 **STATISTICAL SUMMARY:**
@@ -148,10 +159,46 @@ def build_structured_prompt(file_path: Path) -> tuple:
 - Relationship type distribution: {', '.join([f"{rel}: {count}" for rel, count in sorted(stats['relation_counts'].items(), key=lambda x: x[1], reverse=True)[:5]])}
 - Entity type distribution: {', '.join([f"{etype}: {count}" for etype, count in sorted(stats['node_type_counts'].items(), key=lambda x: x[1], reverse=True)[:5]])}
 
-Please generate the complete analysis following the exact format specified in the system prompt.
-"""
+**INSTRUCTIONS:**
+1. First, identify the most relevant papers that provide context about {condition}.
+2. Analyze the knowledge graph evidence, focusing on relationships that are supported by multiple sources.
+3. Integrate insights from both the knowledge graph and research papers, clearly citing your sources.
+4. Highlight any discrepancies or gaps between the knowledge graph and current research."""
 
     return system_prompt, user_prompt
+
+def get_pubmed_context(condition: str, top_k: int = 50) -> str:
+    """Retrieve relevant PubMed papers for the given condition."""
+    try:
+        # Connect to the pubmed database
+        client = chromadb.PersistentClient(path=str(PUBMED_DB_PATH))
+        collection = client.get_collection("pubmed_abstracts")
+        
+        # Get the embedding of the condition
+        model = SentenceTransformer('all-MiniLM-L6-v2')
+        query_embedding = model.encode(condition).tolist()
+        
+        # Search for similar documents
+        results = collection.query(
+            query_embeddings=[query_embedding],
+            n_results=top_k,
+            include=["documents", "metadatas"]
+        )
+        
+        # Format the results
+        context = []
+        for i, (doc, meta) in enumerate(zip(results['documents'][0], results['metadatas'][0]), 1):
+            title = meta.get('title', 'No title available')
+            pmid = meta.get('pmid', 'N/A')
+            abstract = doc
+            
+            context.append(f"{i}. [PMID: {pmid}] {title}\n   {abstract[:500]}{'...' if len(abstract) > 500 else ''}")
+        
+        return "\n\n".join(context)
+        
+    except Exception as e:
+        logging.error(f"Error retrieving PubMed context: {str(e)}")
+        return "[Could not retrieve PubMed context due to an error]"
 
 def save_to_new_analyses_db(filename: str, analysis_text: str, condition: str):
     """Save the analysis to the new analyses database."""
@@ -187,8 +234,39 @@ def save_to_new_analyses_db(filename: str, analysis_text: str, condition: str):
     except Exception as e:
         logging.error(f"❌ Error saving to analyses database: {e}")
 
+def is_ollama_running() -> bool:
+    """Check if the Ollama server is running and DeepSeek model is available."""
+    try:
+        # Check server status
+        response = requests.get("http://localhost:11434/api/tags")
+        if response.status_code != 200:
+            logging.error("Ollama server is not running or not accessible")
+            return False
+            
+        # Check if DeepSeek model is available
+        models = response.json().get("models", [])
+        deepseek_available = any("deepseek" in model.get("name", "").lower() for model in models)
+        
+        if not deepseek_available:
+            logging.error("DeepSeek model is not available. Please pull it with: ollama pull deepseek-r1:14b")
+            return False
+            
+        return True
+        
+    except requests.exceptions.RequestException as e:
+        logging.error(f"Error connecting to Ollama server: {e}")
+        return False
+
 def analyze_all_files():
     """Analyze all subgraph files and generate improved analyses."""
+    # Check if Ollama server is running and DeepSeek is available
+    if not is_ollama_running():
+        logging.error("❌ Please start the Ollama server and ensure the DeepSeek model is available")
+        logging.info("\nTo fix this, run these commands in your terminal:")
+        logging.info("1. Start the Ollama server: ollama serve")
+        logging.info("2. In a new terminal, pull the model: ollama pull deepseek-r1:14b")
+        return
+        
     all_files = sorted(SUBGRAPH_DIR.glob("*.csv"))
     
     if not all_files:
@@ -206,21 +284,39 @@ def analyze_all_files():
                 logging.warning(f"⚠️ Failed to build prompt for {file.name}")
                 continue
             
-            # Generate analysis with Gemini
-            full_prompt = system_prompt + "\n\n" + user_prompt
-            response = model.generate_content(full_prompt)
+            # Generate analysis with DeepSeek
+            full_prompt = f"""{system_prompt}
             
-            if response and response.text:
+            {user_prompt}"""
+            
+            # Prepare the request data
+            data = {
+                "model": "deepseek-r1:14b",
+                "prompt": full_prompt,
+                "stream": False
+            }
+            
+            # Make the API request
+            response = requests.post(
+                DEEPSEEK_API_URL,
+                json=data,
+                headers={"Content-Type": "application/json"}
+            )
+            response.raise_for_status()
+            response_data = response.json()
+            analysis_text = response_data.get("response", "")
+            
+            if analysis_text:
                 # Save as text file
                 output_path = ANALYSIS_OUTPUT_DIR / f"{file.stem}_analysis.txt"
                 with open(output_path, "w", encoding="utf-8") as f:
-                    f.write(response.text)
+                    f.write(analysis_text)
                 
                 # Save to analyses database
                 condition = file.stem.replace('_subgraph', '').replace('_', ' ').title()
                 save_to_new_analyses_db(
                     filename=output_path.name,
-                    analysis_text=response.text,
+                    analysis_text=analysis_text,
                     condition=condition
                 )
                 

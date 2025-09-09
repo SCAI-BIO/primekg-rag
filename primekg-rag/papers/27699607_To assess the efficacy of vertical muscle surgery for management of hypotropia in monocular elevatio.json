@@ -1,0 +1,50 @@
+{
+  "title": "To assess the efficacy of vertical muscle surgery for management of hypotropia in monocular elevation deficiency type II.",
+  "abstract": "To assess the efficacy of vertical muscle surgery for management of hypotropia in monocular elevation deficiency (MED) type II. Knapp's is described as standard procedure for management of MED type II. However, it is not graded and has unpredictable amount of correction. Besides this, there is drift towards overcorrection with time and limitation of movements in extreme adduction and abduction. MED is a vertical misalignment for which vertical muscle surgery is also described but limited literature is available. Thirteen fresh cases of MED type II with hypotropia >20 PD and age >4 years were included in our interventional study. All cases underwent superior rectus resection and inferior rectus recession (vertical R&R) depending upon amount of preoperative deviation. Success was defined as hypotropia <5 PD at 1-year follow-up. Twelve patients (92.30 %) were aligned to within 5 PD. Six patients (46.15 %) had gain in elevation. Bell's phenomenon was improved in six patients (46.15 %). There was no limitation in down gaze in any patient. None gained stereopsis. Vertical R&R is a good alternative for MED type II with predictable amount of correction especially in patients with higher preoperative deviation. It spares horizontal muscles for correction of any associated horizontal deviation.",
+  "journal": "International ophthalmology",
+  "authors": [
+    {
+      "lastname": "Kamlesh",
+      "forename": "",
+      "initials": ""
+    },
+    {
+      "lastname": "Dhiman",
+      "forename": "Shweta",
+      "initials": "S"
+    },
+    {
+      "lastname": "Thacker",
+      "forename": "Prolima",
+      "initials": "P"
+    },
+    {
+      "lastname": "Karothiya",
+      "forename": "Babita",
+      "initials": "B"
+    },
+    {
+      "lastname": "Goel",
+      "forename": "Yashpal",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Rastogi",
+      "forename": "Anju",
+      "initials": "A"
+    },
+    {
+      "lastname": "Chaudhary",
+      "forename": "Rupak",
+      "initials": "R"
+    }
+  ],
+  "pmid": "27699607",
+  "doi": "10.1007/s10792-016-0365-6",
+  "similarity_score": 0.1407536745071411,
+  "source_subgraph": "Hypotropia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Hypotropia"
+  ]
+}

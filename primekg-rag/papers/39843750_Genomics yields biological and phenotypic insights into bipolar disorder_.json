@@ -1,0 +1,1535 @@
+{
+  "title": "Genomics yields biological and phenotypic insights into bipolar disorder.",
+  "abstract": "Bipolar disorder is a leading contributor to the global burden of disease<sup>1</sup>. Despite high heritability (60-80%), the majority of the underlying genetic determinants remain unknown<sup>2</sup>. We analysed data from participants of European, East Asian, African American and Latino ancestries (n = 158,036 cases with bipolar disorder, 2.8 million controls), combining clinical, community and self-reported samples. We identified 298 genome-wide significant loci in the multi-ancestry meta-analysis, a fourfold increase over previous findings<sup>3</sup>, and identified an ancestry-specific association in the East Asian cohort. Integrating results from fine-mapping and other variant-to-gene mapping approaches identified 36 credible genes in the aetiology of bipolar disorder. Genes prioritized through fine-mapping were enriched for ultra-rare damaging missense and protein-truncating variations in cases with bipolar disorder<sup>4</sup>, highlighting convergence of common and rare variant signals. We report differences in the genetic architecture of bipolar disorder depending on the source of patient ascertainment and on bipolar disorder subtype (type I or type II). Several analyses implicate specific cell types in the pathophysiology of bipolar disorder, including GABAergic interneurons and medium spiny neurons. Together, these analyses provide additional insights into the genetic architecture and biological underpinnings of bipolar disorder.",
+  "journal": "Nature",
+  "authors": [
+    {
+      "lastname": "O'Connell",
+      "forename": "Kevin S",
+      "initials": "KS"
+    },
+    {
+      "lastname": "Koromina",
+      "forename": "Maria",
+      "initials": "M"
+    },
+    {
+      "lastname": "van der Veen",
+      "forename": "Tracey",
+      "initials": "T"
+    },
+    {
+      "lastname": "Boltz",
+      "forename": "Toni",
+      "initials": "T"
+    },
+    {
+      "lastname": "David",
+      "forename": "Friederike S",
+      "initials": "FS"
+    },
+    {
+      "lastname": "Yang",
+      "forename": "Jessica Mei Kay",
+      "initials": "JMK"
+    },
+    {
+      "lastname": "Lin",
+      "forename": "Keng-Han",
+      "initials": "KH"
+    },
+    {
+      "lastname": "Wang",
+      "forename": "Xin",
+      "initials": "X"
+    },
+    {
+      "lastname": "Coleman",
+      "forename": "Jonathan R I",
+      "initials": "JRI"
+    },
+    {
+      "lastname": "Mitchell",
+      "forename": "Brittany L",
+      "initials": "BL"
+    },
+    {
+      "lastname": "McGrouther",
+      "forename": "Caroline C",
+      "initials": "CC"
+    },
+    {
+      "lastname": "Rangan",
+      "forename": "Aaditya V",
+      "initials": "AV"
+    },
+    {
+      "lastname": "Lind",
+      "forename": "Penelope A",
+      "initials": "PA"
+    },
+    {
+      "lastname": "Koch",
+      "forename": "Elise",
+      "initials": "E"
+    },
+    {
+      "lastname": "Harder",
+      "forename": "Arvid",
+      "initials": "A"
+    },
+    {
+      "lastname": "Parker",
+      "forename": "Nadine",
+      "initials": "N"
+    },
+    {
+      "lastname": "Bendl",
+      "forename": "Jaroslav",
+      "initials": "J"
+    },
+    {
+      "lastname": "Adorjan",
+      "forename": "Kristina",
+      "initials": "K"
+    },
+    {
+      "lastname": "Agerbo",
+      "forename": "Esben",
+      "initials": "E"
+    },
+    {
+      "lastname": "Albani",
+      "forename": "Diego",
+      "initials": "D"
+    },
+    {
+      "lastname": "Alemany",
+      "forename": "Silvia",
+      "initials": "S"
+    },
+    {
+      "lastname": "Alliey-Rodriguez",
+      "forename": "Ney",
+      "initials": "N"
+    },
+    {
+      "lastname": "Als",
+      "forename": "Thomas D",
+      "initials": "TD"
+    },
+    {
+      "lastname": "Andlauer",
+      "forename": "Till F M",
+      "initials": "TFM"
+    },
+    {
+      "lastname": "Antoniou",
+      "forename": "Anastasia",
+      "initials": "A"
+    },
+    {
+      "lastname": "Ask",
+      "forename": "Helga",
+      "initials": "H"
+    },
+    {
+      "lastname": "Bass",
+      "forename": "Nicholas",
+      "initials": "N"
+    },
+    {
+      "lastname": "Bauer",
+      "forename": "Michael",
+      "initials": "M"
+    },
+    {
+      "lastname": "Beins",
+      "forename": "Eva C",
+      "initials": "EC"
+    },
+    {
+      "lastname": "Bigdeli",
+      "forename": "Tim B",
+      "initials": "TB"
+    },
+    {
+      "lastname": "Pedersen",
+      "forename": "Carsten Bøcker",
+      "initials": "CB"
+    },
+    {
+      "lastname": "Boks",
+      "forename": "Marco P",
+      "initials": "MP"
+    },
+    {
+      "lastname": "Børte",
+      "forename": "Sigrid",
+      "initials": "S"
+    },
+    {
+      "lastname": "Bosch",
+      "forename": "Rosa",
+      "initials": "R"
+    },
+    {
+      "lastname": "Brum",
+      "forename": "Murielle",
+      "initials": "M"
+    },
+    {
+      "lastname": "Brumpton",
+      "forename": "Ben M",
+      "initials": "BM"
+    },
+    {
+      "lastname": "Brunkhorst-Kanaan",
+      "forename": "Nathalie",
+      "initials": "N"
+    },
+    {
+      "lastname": "Budde",
+      "forename": "Monika",
+      "initials": "M"
+    },
+    {
+      "lastname": "Bybjerg-Grauholm",
+      "forename": "Jonas",
+      "initials": "J"
+    },
+    {
+      "lastname": "Byerley",
+      "forename": "William",
+      "initials": "W"
+    },
+    {
+      "lastname": "Cabana-Domínguez",
+      "forename": "Judit",
+      "initials": "J"
+    },
+    {
+      "lastname": "Cairns",
+      "forename": "Murray J",
+      "initials": "MJ"
+    },
+    {
+      "lastname": "Carpiniello",
+      "forename": "Bernardo",
+      "initials": "B"
+    },
+    {
+      "lastname": "Casas",
+      "forename": "Miquel",
+      "initials": "M"
+    },
+    {
+      "lastname": "Cervantes",
+      "forename": "Pablo",
+      "initials": "P"
+    },
+    {
+      "lastname": "Chatzinakos",
+      "forename": "Chris",
+      "initials": "C"
+    },
+    {
+      "lastname": "Chen",
+      "forename": "Hsi-Chung",
+      "initials": "HC"
+    },
+    {
+      "lastname": "Clarence",
+      "forename": "Tereza",
+      "initials": "T"
+    },
+    {
+      "lastname": "Clarke",
+      "forename": "Toni-Kim",
+      "initials": "TK"
+    },
+    {
+      "lastname": "Claus",
+      "forename": "Isabelle",
+      "initials": "I"
+    },
+    {
+      "lastname": "Coombes",
+      "forename": "Brandon",
+      "initials": "B"
+    },
+    {
+      "lastname": "Corfield",
+      "forename": "Elizabeth C",
+      "initials": "EC"
+    },
+    {
+      "lastname": "Cruceanu",
+      "forename": "Cristiana",
+      "initials": "C"
+    },
+    {
+      "lastname": "Cuellar-Barboza",
+      "forename": "Alfredo",
+      "initials": "A"
+    },
+    {
+      "lastname": "Czerski",
+      "forename": "Piotr M",
+      "initials": "PM"
+    },
+    {
+      "lastname": "Dafnas",
+      "forename": "Konstantinos",
+      "initials": "K"
+    },
+    {
+      "lastname": "Dale",
+      "forename": "Anders M",
+      "initials": "AM"
+    },
+    {
+      "lastname": "Dalkner",
+      "forename": "Nina",
+      "initials": "N"
+    },
+    {
+      "lastname": "Degenhardt",
+      "forename": "Franziska",
+      "initials": "F"
+    },
+    {
+      "lastname": "DePaulo",
+      "forename": "J Raymond",
+      "initials": "JR"
+    },
+    {
+      "lastname": "Djurovic",
+      "forename": "Srdjan",
+      "initials": "S"
+    },
+    {
+      "lastname": "Drange",
+      "forename": "Ole Kristian",
+      "initials": "OK"
+    },
+    {
+      "lastname": "Escott-Price",
+      "forename": "Valentina",
+      "initials": "V"
+    },
+    {
+      "lastname": "Fanous",
+      "forename": "Ayman H",
+      "initials": "AH"
+    },
+    {
+      "lastname": "Fellendorf",
+      "forename": "Frederike T",
+      "initials": "FT"
+    },
+    {
+      "lastname": "Ferrier",
+      "forename": "I Nicol",
+      "initials": "IN"
+    },
+    {
+      "lastname": "Forty",
+      "forename": "Liz",
+      "initials": "L"
+    },
+    {
+      "lastname": "Frank",
+      "forename": "Josef",
+      "initials": "J"
+    },
+    {
+      "lastname": "Frei",
+      "forename": "Oleksandr",
+      "initials": "O"
+    },
+    {
+      "lastname": "Freimer",
+      "forename": "Nelson B",
+      "initials": "NB"
+    },
+    {
+      "lastname": "Fullard",
+      "forename": "John F",
+      "initials": "JF"
+    },
+    {
+      "lastname": "Garnham",
+      "forename": "Julie",
+      "initials": "J"
+    },
+    {
+      "lastname": "Gizer",
+      "forename": "Ian R",
+      "initials": "IR"
+    },
+    {
+      "lastname": "Gordon",
+      "forename": "Scott D",
+      "initials": "SD"
+    },
+    {
+      "lastname": "Gordon-Smith",
+      "forename": "Katherine",
+      "initials": "K"
+    },
+    {
+      "lastname": "Greenwood",
+      "forename": "Tiffany A",
+      "initials": "TA"
+    },
+    {
+      "lastname": "Grove",
+      "forename": "Jakob",
+      "initials": "J"
+    },
+    {
+      "lastname": "Guzman-Parra",
+      "forename": "José",
+      "initials": "J"
+    },
+    {
+      "lastname": "Ha",
+      "forename": "Tae Hyon",
+      "initials": "TH"
+    },
+    {
+      "lastname": "Hahn",
+      "forename": "Tim",
+      "initials": "T"
+    },
+    {
+      "lastname": "Haraldsson",
+      "forename": "Magnus",
+      "initials": "M"
+    },
+    {
+      "lastname": "Hautzinger",
+      "forename": "Martin",
+      "initials": "M"
+    },
+    {
+      "lastname": "Havdahl",
+      "forename": "Alexandra",
+      "initials": "A"
+    },
+    {
+      "lastname": "Heilbronner",
+      "forename": "Urs",
+      "initials": "U"
+    },
+    {
+      "lastname": "Hellgren",
+      "forename": "Dennis",
+      "initials": "D"
+    },
+    {
+      "lastname": "Herms",
+      "forename": "Stefan",
+      "initials": "S"
+    },
+    {
+      "lastname": "Hickie",
+      "forename": "Ian B",
+      "initials": "IB"
+    },
+    {
+      "lastname": "Hoffmann",
+      "forename": "Per",
+      "initials": "P"
+    },
+    {
+      "lastname": "Holmans",
+      "forename": "Peter A",
+      "initials": "PA"
+    },
+    {
+      "lastname": "Huang",
+      "forename": "Ming-Chyi",
+      "initials": "MC"
+    },
+    {
+      "lastname": "Ikeda",
+      "forename": "Masashi",
+      "initials": "M"
+    },
+    {
+      "lastname": "Jamain",
+      "forename": "Stéphane",
+      "initials": "S"
+    },
+    {
+      "lastname": "Johnson",
+      "forename": "Jessica S",
+      "initials": "JS"
+    },
+    {
+      "lastname": "Jonsson",
+      "forename": "Lina",
+      "initials": "L"
+    },
+    {
+      "lastname": "Kalman",
+      "forename": "Janos L",
+      "initials": "JL"
+    },
+    {
+      "lastname": "Kamatani",
+      "forename": "Yoichiro",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Kennedy",
+      "forename": "James L",
+      "initials": "JL"
+    },
+    {
+      "lastname": "Kim",
+      "forename": "Euitae",
+      "initials": "E"
+    },
+    {
+      "lastname": "Kim",
+      "forename": "Jaeyoung",
+      "initials": "J"
+    },
+    {
+      "lastname": "Kittel-Schneider",
+      "forename": "Sarah",
+      "initials": "S"
+    },
+    {
+      "lastname": "Knowles",
+      "forename": "James A",
+      "initials": "JA"
+    },
+    {
+      "lastname": "Kogevinas",
+      "forename": "Manolis",
+      "initials": "M"
+    },
+    {
+      "lastname": "Kranz",
+      "forename": "Thorsten M",
+      "initials": "TM"
+    },
+    {
+      "lastname": "Krebs",
+      "forename": "Kristi",
+      "initials": "K"
+    },
+    {
+      "lastname": "Kushner",
+      "forename": "Steven A",
+      "initials": "SA"
+    },
+    {
+      "lastname": "Lavebratt",
+      "forename": "Catharina",
+      "initials": "C"
+    },
+    {
+      "lastname": "Lawrence",
+      "forename": "Jacob",
+      "initials": "J"
+    },
+    {
+      "lastname": "Leber",
+      "forename": "Markus",
+      "initials": "M"
+    },
+    {
+      "lastname": "Lee",
+      "forename": "Heon-Jeong",
+      "initials": "HJ"
+    },
+    {
+      "lastname": "Liao",
+      "forename": "Calwing",
+      "initials": "C"
+    },
+    {
+      "lastname": "Lucae",
+      "forename": "Susanne",
+      "initials": "S"
+    },
+    {
+      "lastname": "Lundberg",
+      "forename": "Martin",
+      "initials": "M"
+    },
+    {
+      "lastname": "MacIntyre",
+      "forename": "Donald J",
+      "initials": "DJ"
+    },
+    {
+      "lastname": "Maier",
+      "forename": "Wolfgang",
+      "initials": "W"
+    },
+    {
+      "lastname": "Maihofer",
+      "forename": "Adam X",
+      "initials": "AX"
+    },
+    {
+      "lastname": "Malaspina",
+      "forename": "Dolores",
+      "initials": "D"
+    },
+    {
+      "lastname": "Manchia",
+      "forename": "Mirko",
+      "initials": "M"
+    },
+    {
+      "lastname": "Maratou",
+      "forename": "Eirini",
+      "initials": "E"
+    },
+    {
+      "lastname": "Martinsson",
+      "forename": "Lina",
+      "initials": "L"
+    },
+    {
+      "lastname": "Mattheisen",
+      "forename": "Manuel",
+      "initials": "M"
+    },
+    {
+      "lastname": "McGregor",
+      "forename": "Nathaniel W",
+      "initials": "NW"
+    },
+    {
+      "lastname": "McInnis",
+      "forename": "Melvin G",
+      "initials": "MG"
+    },
+    {
+      "lastname": "McKay",
+      "forename": "James D",
+      "initials": "JD"
+    },
+    {
+      "lastname": "Medeiros",
+      "forename": "Helena",
+      "initials": "H"
+    },
+    {
+      "lastname": "Meyer-Lindenberg",
+      "forename": "Andreas",
+      "initials": "A"
+    },
+    {
+      "lastname": "Millischer",
+      "forename": "Vincent",
+      "initials": "V"
+    },
+    {
+      "lastname": "Morris",
+      "forename": "Derek W",
+      "initials": "DW"
+    },
+    {
+      "lastname": "Moutsatsou",
+      "forename": "Paraskevi",
+      "initials": "P"
+    },
+    {
+      "lastname": "Mühleisen",
+      "forename": "Thomas W",
+      "initials": "TW"
+    },
+    {
+      "lastname": "O'Donovan",
+      "forename": "Claire",
+      "initials": "C"
+    },
+    {
+      "lastname": "Olsen",
+      "forename": "Catherine M",
+      "initials": "CM"
+    },
+    {
+      "lastname": "Panagiotaropoulou",
+      "forename": "Georgia",
+      "initials": "G"
+    },
+    {
+      "lastname": "Papiol",
+      "forename": "Sergi",
+      "initials": "S"
+    },
+    {
+      "lastname": "Pardiñas",
+      "forename": "Antonio F",
+      "initials": "AF"
+    },
+    {
+      "lastname": "Park",
+      "forename": "Hye Youn",
+      "initials": "HY"
+    },
+    {
+      "lastname": "Perry",
+      "forename": "Amy",
+      "initials": "A"
+    },
+    {
+      "lastname": "Pfennig",
+      "forename": "Andrea",
+      "initials": "A"
+    },
+    {
+      "lastname": "Pisanu",
+      "forename": "Claudia",
+      "initials": "C"
+    },
+    {
+      "lastname": "Potash",
+      "forename": "James B",
+      "initials": "JB"
+    },
+    {
+      "lastname": "Quested",
+      "forename": "Digby",
+      "initials": "D"
+    },
+    {
+      "lastname": "Rapaport",
+      "forename": "Mark H",
+      "initials": "MH"
+    },
+    {
+      "lastname": "Regeer",
+      "forename": "Eline J",
+      "initials": "EJ"
+    },
+    {
+      "lastname": "Rice",
+      "forename": "John P",
+      "initials": "JP"
+    },
+    {
+      "lastname": "Rivera",
+      "forename": "Margarita",
+      "initials": "M"
+    },
+    {
+      "lastname": "Schulte",
+      "forename": "Eva C",
+      "initials": "EC"
+    },
+    {
+      "lastname": "Senner",
+      "forename": "Fanny",
+      "initials": "F"
+    },
+    {
+      "lastname": "Shadrin",
+      "forename": "Alexey",
+      "initials": "A"
+    },
+    {
+      "lastname": "Shilling",
+      "forename": "Paul D",
+      "initials": "PD"
+    },
+    {
+      "lastname": "Sigurdsson",
+      "forename": "Engilbert",
+      "initials": "E"
+    },
+    {
+      "lastname": "Sindermann",
+      "forename": "Lisa",
+      "initials": "L"
+    },
+    {
+      "lastname": "Sirignano",
+      "forename": "Lea",
+      "initials": "L"
+    },
+    {
+      "lastname": "Siskind",
+      "forename": "Dan",
+      "initials": "D"
+    },
+    {
+      "lastname": "Slaney",
+      "forename": "Claire",
+      "initials": "C"
+    },
+    {
+      "lastname": "Sloofman",
+      "forename": "Laura G",
+      "initials": "LG"
+    },
+    {
+      "lastname": "Smeland",
+      "forename": "Olav B",
+      "initials": "OB"
+    },
+    {
+      "lastname": "Smith",
+      "forename": "Daniel J",
+      "initials": "DJ"
+    },
+    {
+      "lastname": "Sobell",
+      "forename": "Janet L",
+      "initials": "JL"
+    },
+    {
+      "lastname": "Soler Artigas",
+      "forename": "Maria",
+      "initials": "M"
+    },
+    {
+      "lastname": "Stein",
+      "forename": "Dan J",
+      "initials": "DJ"
+    },
+    {
+      "lastname": "Stein",
+      "forename": "Frederike",
+      "initials": "F"
+    },
+    {
+      "lastname": "Su",
+      "forename": "Mei-Hsin",
+      "initials": "MH"
+    },
+    {
+      "lastname": "Sung",
+      "forename": "Heejong",
+      "initials": "H"
+    },
+    {
+      "lastname": "Świątkowska",
+      "forename": "Beata",
+      "initials": "B"
+    },
+    {
+      "lastname": "Terao",
+      "forename": "Chikashi",
+      "initials": "C"
+    },
+    {
+      "lastname": "Tesfaye",
+      "forename": "Markos",
+      "initials": "M"
+    },
+    {
+      "lastname": "Tesli",
+      "forename": "Martin",
+      "initials": "M"
+    },
+    {
+      "lastname": "Thorgeirsson",
+      "forename": "Thorgeir E",
+      "initials": "TE"
+    },
+    {
+      "lastname": "Thorp",
+      "forename": "Jackson G",
+      "initials": "JG"
+    },
+    {
+      "lastname": "Toma",
+      "forename": "Claudio",
+      "initials": "C"
+    },
+    {
+      "lastname": "Tondo",
+      "forename": "Leonardo",
+      "initials": "L"
+    },
+    {
+      "lastname": "Tooney",
+      "forename": "Paul A",
+      "initials": "PA"
+    },
+    {
+      "lastname": "Tsai",
+      "forename": "Shih-Jen",
+      "initials": "SJ"
+    },
+    {
+      "lastname": "Tsermpini",
+      "forename": "Evangelia Eirini",
+      "initials": "EE"
+    },
+    {
+      "lastname": "Vawter",
+      "forename": "Marquis P",
+      "initials": "MP"
+    },
+    {
+      "lastname": "Vedder",
+      "forename": "Helmut",
+      "initials": "H"
+    },
+    {
+      "lastname": "Vreeker",
+      "forename": "Annabel",
+      "initials": "A"
+    },
+    {
+      "lastname": "Walters",
+      "forename": "James T R",
+      "initials": "JTR"
+    },
+    {
+      "lastname": "Winsvold",
+      "forename": "Bendik S",
+      "initials": "BS"
+    },
+    {
+      "lastname": "Witt",
+      "forename": "Stephanie H",
+      "initials": "SH"
+    },
+    {
+      "lastname": "Won",
+      "forename": "Hong-Hee",
+      "initials": "HH"
+    },
+    {
+      "lastname": "Ye",
+      "forename": "Robert",
+      "initials": "R"
+    },
+    {
+      "lastname": "Young",
+      "forename": "Allan H",
+      "initials": "AH"
+    },
+    {
+      "lastname": "Zandi",
+      "forename": "Peter P",
+      "initials": "PP"
+    },
+    {
+      "lastname": "Zillich",
+      "forename": "Lea",
+      "initials": "L"
+    },
+    {
+      "lastname": "Adolfsson",
+      "forename": "Rolf",
+      "initials": "R"
+    },
+    {
+      "lastname": "Alda",
+      "forename": "Martin",
+      "initials": "M"
+    },
+    {
+      "lastname": "Alfredsson",
+      "forename": "Lars",
+      "initials": "L"
+    },
+    {
+      "lastname": "Backlund",
+      "forename": "Lena",
+      "initials": "L"
+    },
+    {
+      "lastname": "Baune",
+      "forename": "Bernhard T",
+      "initials": "BT"
+    },
+    {
+      "lastname": "Bellivier",
+      "forename": "Frank",
+      "initials": "F"
+    },
+    {
+      "lastname": "Bengesser",
+      "forename": "Susanne",
+      "initials": "S"
+    },
+    {
+      "lastname": "Berrettini",
+      "forename": "Wade H",
+      "initials": "WH"
+    },
+    {
+      "lastname": "Biernacka",
+      "forename": "Joanna M",
+      "initials": "JM"
+    },
+    {
+      "lastname": "Boehnke",
+      "forename": "Michael",
+      "initials": "M"
+    },
+    {
+      "lastname": "Børglum",
+      "forename": "Anders D",
+      "initials": "AD"
+    },
+    {
+      "lastname": "Breen",
+      "forename": "Gerome",
+      "initials": "G"
+    },
+    {
+      "lastname": "Carr",
+      "forename": "Vaughan J",
+      "initials": "VJ"
+    },
+    {
+      "lastname": "Catts",
+      "forename": "Stanley",
+      "initials": "S"
+    },
+    {
+      "lastname": "Cichon",
+      "forename": "Sven",
+      "initials": "S"
+    },
+    {
+      "lastname": "Corvin",
+      "forename": "Aiden",
+      "initials": "A"
+    },
+    {
+      "lastname": "Craddock",
+      "forename": "Nicholas",
+      "initials": "N"
+    },
+    {
+      "lastname": "Dannlowski",
+      "forename": "Udo",
+      "initials": "U"
+    },
+    {
+      "lastname": "Dikeos",
+      "forename": "Dimitris",
+      "initials": "D"
+    },
+    {
+      "lastname": "Etain",
+      "forename": "Bruno",
+      "initials": "B"
+    },
+    {
+      "lastname": "Ferentinos",
+      "forename": "Panagiotis",
+      "initials": "P"
+    },
+    {
+      "lastname": "Frye",
+      "forename": "Mark",
+      "initials": "M"
+    },
+    {
+      "lastname": "Fullerton",
+      "forename": "Janice M",
+      "initials": "JM"
+    },
+    {
+      "lastname": "Gawlik",
+      "forename": "Micha",
+      "initials": "M"
+    },
+    {
+      "lastname": "Gershon",
+      "forename": "Elliot S",
+      "initials": "ES"
+    },
+    {
+      "lastname": "Goes",
+      "forename": "Fernando S",
+      "initials": "FS"
+    },
+    {
+      "lastname": "Green",
+      "forename": "Melissa J",
+      "initials": "MJ"
+    },
+    {
+      "lastname": "Grigoroiu-Serbanescu",
+      "forename": "Maria",
+      "initials": "M"
+    },
+    {
+      "lastname": "Hauser",
+      "forename": "Joanna",
+      "initials": "J"
+    },
+    {
+      "lastname": "Henskens",
+      "forename": "Frans A",
+      "initials": "FA"
+    },
+    {
+      "lastname": "Hjerling-Leffler",
+      "forename": "Jens",
+      "initials": "J"
+    },
+    {
+      "lastname": "Hougaard",
+      "forename": "David M",
+      "initials": "DM"
+    },
+    {
+      "lastname": "Hveem",
+      "forename": "Kristian",
+      "initials": "K"
+    },
+    {
+      "lastname": "Iwata",
+      "forename": "Nakao",
+      "initials": "N"
+    },
+    {
+      "lastname": "Jones",
+      "forename": "Ian",
+      "initials": "I"
+    },
+    {
+      "lastname": "Jones",
+      "forename": "Lisa A",
+      "initials": "LA"
+    },
+    {
+      "lastname": "Kahn",
+      "forename": "René S",
+      "initials": "RS"
+    },
+    {
+      "lastname": "Kelsoe",
+      "forename": "John R",
+      "initials": "JR"
+    },
+    {
+      "lastname": "Kircher",
+      "forename": "Tilo",
+      "initials": "T"
+    },
+    {
+      "lastname": "Kirov",
+      "forename": "George",
+      "initials": "G"
+    },
+    {
+      "lastname": "Kuo",
+      "forename": "Po-Hsiu",
+      "initials": "PH"
+    },
+    {
+      "lastname": "Landén",
+      "forename": "Mikael",
+      "initials": "M"
+    },
+    {
+      "lastname": "Leboyer",
+      "forename": "Marion",
+      "initials": "M"
+    },
+    {
+      "lastname": "Li",
+      "forename": "Qingqin S",
+      "initials": "QS"
+    },
+    {
+      "lastname": "Lissowska",
+      "forename": "Jolanta",
+      "initials": "J"
+    },
+    {
+      "lastname": "Lochner",
+      "forename": "Christine",
+      "initials": "C"
+    },
+    {
+      "lastname": "Loughland",
+      "forename": "Carmel",
+      "initials": "C"
+    },
+    {
+      "lastname": "Luykx",
+      "forename": "Jurjen J",
+      "initials": "JJ"
+    },
+    {
+      "lastname": "Martin",
+      "forename": "Nicholas G",
+      "initials": "NG"
+    },
+    {
+      "lastname": "Mathews",
+      "forename": "Carol A",
+      "initials": "CA"
+    },
+    {
+      "lastname": "Mayoral",
+      "forename": "Fermin",
+      "initials": "F"
+    },
+    {
+      "lastname": "McElroy",
+      "forename": "Susan L",
+      "initials": "SL"
+    },
+    {
+      "lastname": "McIntosh",
+      "forename": "Andrew M",
+      "initials": "AM"
+    },
+    {
+      "lastname": "McMahon",
+      "forename": "Francis J",
+      "initials": "FJ"
+    },
+    {
+      "lastname": "Medland",
+      "forename": "Sarah E",
+      "initials": "SE"
+    },
+    {
+      "lastname": "Melle",
+      "forename": "Ingrid",
+      "initials": "I"
+    },
+    {
+      "lastname": "Milani",
+      "forename": "Lili",
+      "initials": "L"
+    },
+    {
+      "lastname": "Mitchell",
+      "forename": "Philip B",
+      "initials": "PB"
+    },
+    {
+      "lastname": "Morken",
+      "forename": "Gunnar",
+      "initials": "G"
+    },
+    {
+      "lastname": "Mors",
+      "forename": "Ole",
+      "initials": "O"
+    },
+    {
+      "lastname": "Mortensen",
+      "forename": "Preben Bo",
+      "initials": "PB"
+    },
+    {
+      "lastname": "Müller-Myhsok",
+      "forename": "Bertram",
+      "initials": "B"
+    },
+    {
+      "lastname": "Myers",
+      "forename": "Richard M",
+      "initials": "RM"
+    },
+    {
+      "lastname": "Myung",
+      "forename": "Woojae",
+      "initials": "W"
+    },
+    {
+      "lastname": "Neale",
+      "forename": "Benjamin M",
+      "initials": "BM"
+    },
+    {
+      "lastname": "Nievergelt",
+      "forename": "Caroline M",
+      "initials": "CM"
+    },
+    {
+      "lastname": "Nordentoft",
+      "forename": "Merete",
+      "initials": "M"
+    },
+    {
+      "lastname": "Nöthen",
+      "forename": "Markus M",
+      "initials": "MM"
+    },
+    {
+      "lastname": "Nurnberger",
+      "forename": "John I",
+      "initials": "JI"
+    },
+    {
+      "lastname": "O'Donovan",
+      "forename": "Michael C",
+      "initials": "MC"
+    },
+    {
+      "lastname": "Oedegaard",
+      "forename": "Ketil J",
+      "initials": "KJ"
+    },
+    {
+      "lastname": "Olsson",
+      "forename": "Tomas",
+      "initials": "T"
+    },
+    {
+      "lastname": "Owen",
+      "forename": "Michael J",
+      "initials": "MJ"
+    },
+    {
+      "lastname": "Paciga",
+      "forename": "Sara A",
+      "initials": "SA"
+    },
+    {
+      "lastname": "Pantelis",
+      "forename": "Christos",
+      "initials": "C"
+    },
+    {
+      "lastname": "Pato",
+      "forename": "Carlos N",
+      "initials": "CN"
+    },
+    {
+      "lastname": "Pato",
+      "forename": "Michele T",
+      "initials": "MT"
+    },
+    {
+      "lastname": "Patrinos",
+      "forename": "George P",
+      "initials": "GP"
+    },
+    {
+      "lastname": "Pawlak",
+      "forename": "Joanna M",
+      "initials": "JM"
+    },
+    {
+      "lastname": "Ramos-Quiroga",
+      "forename": "Josep Antoni",
+      "initials": "JA"
+    },
+    {
+      "lastname": "Reif",
+      "forename": "Andreas",
+      "initials": "A"
+    },
+    {
+      "lastname": "Reininghaus",
+      "forename": "Eva Z",
+      "initials": "EZ"
+    },
+    {
+      "lastname": "Ribasés",
+      "forename": "Marta",
+      "initials": "M"
+    },
+    {
+      "lastname": "Rietschel",
+      "forename": "Marcella",
+      "initials": "M"
+    },
+    {
+      "lastname": "Ripke",
+      "forename": "Stephan",
+      "initials": "S"
+    },
+    {
+      "lastname": "Rouleau",
+      "forename": "Guy A",
+      "initials": "GA"
+    },
+    {
+      "lastname": "Roussos",
+      "forename": "Panos",
+      "initials": "P"
+    },
+    {
+      "lastname": "Saito",
+      "forename": "Takeo",
+      "initials": "T"
+    },
+    {
+      "lastname": "Schall",
+      "forename": "Ulrich",
+      "initials": "U"
+    },
+    {
+      "lastname": "Schalling",
+      "forename": "Martin",
+      "initials": "M"
+    },
+    {
+      "lastname": "Schofield",
+      "forename": "Peter R",
+      "initials": "PR"
+    },
+    {
+      "lastname": "Schulze",
+      "forename": "Thomas G",
+      "initials": "TG"
+    },
+    {
+      "lastname": "Scott",
+      "forename": "Laura J",
+      "initials": "LJ"
+    },
+    {
+      "lastname": "Scott",
+      "forename": "Rodney J",
+      "initials": "RJ"
+    },
+    {
+      "lastname": "Serretti",
+      "forename": "Alessandro",
+      "initials": "A"
+    },
+    {
+      "lastname": "Smoller",
+      "forename": "Jordan W",
+      "initials": "JW"
+    },
+    {
+      "lastname": "Squassina",
+      "forename": "Alessio",
+      "initials": "A"
+    },
+    {
+      "lastname": "Stahl",
+      "forename": "Eli A",
+      "initials": "EA"
+    },
+    {
+      "lastname": "Stefansson",
+      "forename": "Hreinn",
+      "initials": "H"
+    },
+    {
+      "lastname": "Stefansson",
+      "forename": "Kari",
+      "initials": "K"
+    },
+    {
+      "lastname": "Stordal",
+      "forename": "Eystein",
+      "initials": "E"
+    },
+    {
+      "lastname": "Streit",
+      "forename": "Fabian",
+      "initials": "F"
+    },
+    {
+      "lastname": "Sullivan",
+      "forename": "Patrick F",
+      "initials": "PF"
+    },
+    {
+      "lastname": "Turecki",
+      "forename": "Gustavo",
+      "initials": "G"
+    },
+    {
+      "lastname": "Vaaler",
+      "forename": "Arne E",
+      "initials": "AE"
+    },
+    {
+      "lastname": "Vieta",
+      "forename": "Eduard",
+      "initials": "E"
+    },
+    {
+      "lastname": "Vincent",
+      "forename": "John B",
+      "initials": "JB"
+    },
+    {
+      "lastname": "Waldman",
+      "forename": "Irwin D",
+      "initials": "ID"
+    },
+    {
+      "lastname": "Weickert",
+      "forename": "Cynthia S",
+      "initials": "CS"
+    },
+    {
+      "lastname": "Weickert",
+      "forename": "Thomas W",
+      "initials": "TW"
+    },
+    {
+      "lastname": "Werge",
+      "forename": "Thomas",
+      "initials": "T"
+    },
+    {
+      "lastname": "Whiteman",
+      "forename": "David C",
+      "initials": "DC"
+    },
+    {
+      "lastname": "Zwart",
+      "forename": "John-Anker",
+      "initials": "JA"
+    },
+    {
+      "lastname": "Edenberg",
+      "forename": "Howard J",
+      "initials": "HJ"
+    },
+    {
+      "lastname": "McQuillin",
+      "forename": "Andrew",
+      "initials": "A"
+    },
+    {
+      "lastname": "Forstner",
+      "forename": "Andreas J",
+      "initials": "AJ"
+    },
+    {
+      "lastname": "Mullins",
+      "forename": "Niamh",
+      "initials": "N"
+    },
+    {
+      "lastname": "Di Florio",
+      "forename": "Arianna",
+      "initials": "A"
+    },
+    {
+      "lastname": "Ophoff",
+      "forename": "Roel A",
+      "initials": "RA"
+    },
+    {
+      "lastname": "Andreassen",
+      "forename": "Ole A",
+      "initials": "OA"
+    }
+  ],
+  "pmid": "39843750",
+  "doi": "10.1038/s41586-024-08468-9",
+  "similarity_score": 0.5041756510734559,
+  "source_subgraph": "bipolar disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Bipolar Disorder"
+  ]
+}

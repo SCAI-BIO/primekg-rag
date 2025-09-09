@@ -1,0 +1,65 @@
+{
+  "title": "NAc-DBS selectively enhances memory updating without effect on retrieval.",
+  "abstract": "Deep brain stimulation (DBS) has emerged as a widely used therapeutic option when pharmacological treatments prove ineffective or refractory for psychiatric patients. The nucleus accumbens (NAc) represents a frequently targeted site in DBS interventions due to its demonstrated safety profile and therapeutic efficacy in obsessive-compulsive disorder, major depression, and anorexia nervosa. However, limited mechanistic understanding hampers its broader clinical applicability. This study sought to delineate the distinct behavioural dimensions modulated by NAc-DBS, its impact on distinct facets of memory, and to elucidate the underlying brain-network mechanism of action. We developed a novel spatial navigation task for rats and employed a high-dimensional behavioural analysis complemented by fMRI to dissect the cognitive, behavioural and neurobiological effects of NAc-DBS. Active NAc-DBS in male rats produced a selective enhancement of long-term memory encoding without affecting memory recall or working memory. We found a small but statistically significant rewarding effect of NAc-DBS, with no detectable impact on motor or stress-related behaviours. Sustained neuronal activation in the NAc, septum, entorhinal and insular cortex demonstrated no desensitisation to chronic NAc-DBS, which triggered a functional reorganisation among dopaminergic-related structures. These findings suggest that NAc-DBS induces a functional reorganisation in the mesocorticolimbic system, potentially mimicking a dopaminergic novelty signal to enhance memory updating. This provides a mechanistic basis for the therapeutic use of NAc-DBS, particularly in improving cognitive flexibility in psychiatric disorders.",
+  "journal": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+  "authors": [
+    {
+      "lastname": "Pérez-Segura",
+      "forename": "Andrés",
+      "initials": "A"
+    },
+    {
+      "lastname": "Medina",
+      "forename": "Jorge",
+      "initials": "J"
+    },
+    {
+      "lastname": "Cerdán Cerdá",
+      "forename": "Antonio",
+      "initials": "A"
+    },
+    {
+      "lastname": "Sánchez-Ferri",
+      "forename": "Cristina",
+      "initials": "C"
+    },
+    {
+      "lastname": "Torres",
+      "forename": "Daniel",
+      "initials": "D"
+    },
+    {
+      "lastname": "Mirasso",
+      "forename": "Claudio R",
+      "initials": "CR"
+    },
+    {
+      "lastname": "Strange",
+      "forename": "Bryan",
+      "initials": "B"
+    },
+    {
+      "lastname": "Eguíluz",
+      "forename": "Víctor M",
+      "initials": "VM"
+    },
+    {
+      "lastname": "Lacasa",
+      "forename": "Lucas",
+      "initials": "L"
+    },
+    {
+      "lastname": "Canals",
+      "forename": "Santiago",
+      "initials": "S"
+    }
+  ],
+  "pmid": "40425790",
+  "doi": "10.1038/s41386-025-02132-0",
+  "similarity_score": -0.0200134038925171,
+  "source_subgraph": "memory_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Memory"
+  ]
+}

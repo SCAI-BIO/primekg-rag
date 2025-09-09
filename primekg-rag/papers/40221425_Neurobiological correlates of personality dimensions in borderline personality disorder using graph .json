@@ -1,0 +1,70 @@
+{
+  "title": "Neurobiological correlates of personality dimensions in borderline personality disorder using graph analysis of functional connectivity.",
+  "abstract": "Borderline personality disorder (BPD) is is a type B personality disorder primarily characterized by a pattern of unstable interpersonal relationships, a distorted self-concept, and intense emotional reactions, associated with extreme and opposing mental and behavioral states, which coexist and lead to destructive behaviors such as self-harm, commonly recurring over time.. The Personality Inventory for the Diagnostic and Statistical Manual of Mental Disorders (DSM), Fifth Edition (PID-5) provides a dimensional assessment of maladaptive domains associated with personality disorders, improving the understanding of their complex clinical presentations. While altered brain functional connectivity (FC) has been reported in BPD, neurobiological-clinical correlations remain debated. This study explores the relationship between the personality dimensions of BPD and resting-state fMRI (rs-fMRI) FC. Twenty-eight patients with BPD (6M/22F, 23.7 ± 3.4 years) and twenty-eight matched healthy controls (6M/22F, 24.3 ± 2.8 years) underwent a psychiatric assessment, including the PID-5, and an MRI protocol including rs-fMRI. Functional data were analyzed via graph theory to derive network properties at global and nodal levels, which were correlated with the PID-5 subdomains. The results revealed impairments across all personality trait facets. Patients had lower global connectivity and compromised centrality of several limbic structures and frontotemporal regions. Significant correlations were found between separation insecurity and global efficiency (R = 0.60, adjusted-p = 0.035) and between depressivity and the degree of the left middle temporal gyrus (R = 0.69, adjusted-p = 0.023) in females. These findings suggest links between negative affectivity traits, in particular separation insecurity and depressivity, and specific brain network dysfunctions in BPD.",
+  "journal": "Scientific reports",
+  "authors": [
+    {
+      "lastname": "D'Adda",
+      "forename": "Francesca",
+      "initials": "F"
+    },
+    {
+      "lastname": "Sighinolfi",
+      "forename": "Giovanni",
+      "initials": "G"
+    },
+    {
+      "lastname": "Mitolo",
+      "forename": "Micaela",
+      "initials": "M"
+    },
+    {
+      "lastname": "Scala",
+      "forename": "Mauro",
+      "initials": "M"
+    },
+    {
+      "lastname": "Guidi",
+      "forename": "Lucia",
+      "initials": "L"
+    },
+    {
+      "lastname": "Motta",
+      "forename": "Lorenzo",
+      "initials": "L"
+    },
+    {
+      "lastname": "Cirignotta",
+      "forename": "Lorenzo",
+      "initials": "L"
+    },
+    {
+      "lastname": "Manners",
+      "forename": "David Neil",
+      "initials": "DN"
+    },
+    {
+      "lastname": "Tonon",
+      "forename": "Caterina",
+      "initials": "C"
+    },
+    {
+      "lastname": "Lodi",
+      "forename": "Raffaele",
+      "initials": "R"
+    },
+    {
+      "lastname": "Menchetti",
+      "forename": "Marco",
+      "initials": "M"
+    }
+  ],
+  "pmid": "40221425",
+  "doi": "10.1038/s41598-025-85989-x",
+  "similarity_score": 0.6107535839080811,
+  "source_subgraph": "personality disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Personality Disorder"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "title": "[Current nosographic classifications of anxiety disorders].",
+  "abstract": "CURRENT NOSOGRAPHIC CLASSIFICATIONS TOF ANXIETY DISORDERS. Anxiety disorders are psychiatric pathologies covering a wide range of clinical entities that are characterized by a pathological anxiety leading to severe emotional distress and marked impairment in daily functioning. They primarily differentiate from each other according to the general content of concerns, and originally included the panic disorder with or without agoraphobia, specific phobias, social anxiety disorder, generalized anxiety disorder, obsessive-compulsive disorder and post-traumatic stress disorder. However, the 5th edition of the Diagnostic and Statistical Manual of Mental Disorders introduced the classification of anxiety disorders into three separate subcategories in 2013, mainly comprising the anxiety disorders themselves (panic disorder with or without agoraphobia, specific phobia, social anxiety disorder and generalized anxiety disorder), obsessive- compulsive disorder and post-traumatic stress disorder on the basis of their respective clinical, psychological and pathophysiological determinants.",
+  "journal": "La Revue du praticien",
+  "authors": [
+    {
+      "lastname": "Bouvard",
+      "forename": "Alexandra",
+      "initials": "A"
+    },
+    {
+      "lastname": "Doumy",
+      "forename": "Olivier",
+      "initials": "O"
+    },
+    {
+      "lastname": "Bienvenu",
+      "forename": "Thomas",
+      "initials": "T"
+    },
+    {
+      "lastname": "Aouizerate",
+      "forename": "Bruno",
+      "initials": "B"
+    }
+  ],
+  "pmid": "32237612",
+  "doi": "",
+  "similarity_score": 0.550343918800354,
+  "source_subgraph": "anxiety disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anxiety Disorder"
+  ]
+}

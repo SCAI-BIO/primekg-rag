@@ -1,0 +1,45 @@
+{
+  "title": "Altered Global Signal Topography in Major Depressive Disorder With and Without Anxiety.",
+  "abstract": "<b>Background:</b> Major depressive disorder (MDD) is a psychiatric disorder characterized by alterations in global signal (GS) topography across various neural networks and brain regions, including the default mode network and sensorimotor-related areas. While previous research has demonstrated the potential of global brain activity measures to differentiate MDD from healthy controls (HCs), specific changes in GS distribution among MDD patients with and without anxiety remain poorly understood. This study aims to investigate anxiety-related alterations in GS topography in MDD and their associations with clinical symptoms. <b>Methods:</b> Resting-state functional magnetic resonance imaging (fMRI) and T1-weighted imaging data were collected from 334 MDD patients with anxiety, 145 MDD patients without anxiety, and 307 HCs as part of the REST-meta-MDD consortium. We computed GS topography using GS correlation (GSCORR) and assessed structural-functional interaction (SFI) by examining the relationship between gray matter volume and GS for each subject. <b>Results:</b> Our analysis revealed no significant differences in GS topography among the three groups at either the whole-brain or network levels. However, decreased GSCORR was observed in the right precentral gyrus, insula, and posterior parieto-occipital cortex in anxious MDD patients compared to HC. SFI analyses indicated anxiety-related alterations in the sensorimotor network, precuneus, putamen, and middle temporal gyrus. Moreover, GSCORR in the inferior parietal lobe and cerebellum exhibited specific correlation trends with anxiety and depression symptoms, respectively. <b>Conclusions:</b> These findings underscore an abnormal topographic shift in global brain activity in MDD patients with anxiety, offering a new insight into understanding brain dysfunction associated with this disorder.",
+  "journal": "Depression and anxiety",
+  "authors": [
+    {
+      "lastname": "Gao",
+      "forename": "Huaijin",
+      "initials": "H"
+    },
+    {
+      "lastname": "Qian",
+      "forename": "Rui",
+      "initials": "R"
+    },
+    {
+      "lastname": "Zhu",
+      "forename": "Wen",
+      "initials": "W"
+    },
+    {
+      "lastname": "Ma",
+      "forename": "Yihan",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Wu",
+      "forename": "Dan",
+      "initials": "D"
+    },
+    {
+      "lastname": "Zhao",
+      "forename": "Zhiyong",
+      "initials": "Z"
+    }
+  ],
+  "pmid": "40636273",
+  "doi": "10.1155/da/3864020",
+  "similarity_score": 0.509587574005127,
+  "source_subgraph": "major depressive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Major Depressive Disorder"
+  ]
+}

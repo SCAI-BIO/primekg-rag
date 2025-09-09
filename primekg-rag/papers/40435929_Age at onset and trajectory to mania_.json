@@ -1,0 +1,25 @@
+{
+  "title": "Age at onset and trajectory to mania.",
+  "abstract": "",
+  "journal": "European neuropsychopharmacology : the journal of the European College of Neuropsychopharmacology",
+  "authors": [
+    {
+      "lastname": "Miola",
+      "forename": "Alessandro",
+      "initials": "A"
+    },
+    {
+      "lastname": "Frye",
+      "forename": "Mark A",
+      "initials": "MA"
+    }
+  ],
+  "pmid": "40435929",
+  "doi": "10.1016/j.euroneuro.2025.05.002",
+  "similarity_score": 0.10993175506591796,
+  "source_subgraph": "Mania_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Mania"
+  ]
+}

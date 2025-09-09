@@ -1,0 +1,90 @@
+{
+  "title": "Gene expression profiles associated with gray matter and dynamic connectivity disruptions in major depressive disorder.",
+  "abstract": "To identify biomarkers linking molecular mechanisms to macroscale brain changes in major depressive disorder (MDD) by integrating multimodal neuroimaging, transcriptomics, and machine learning. First, T1-weighted and resting-state functional magnetic resonance imaging (rs-fMRI) data from 160 first-episode, drug-naïve MDD patients and 119 age-/sex-matched healthy controls (HCs) were analyzed. Voxel-based morphometry (VBM) and dynamic functional connectivity (dFC) analyses were conducted to generate case-control t-maps. Next, minimum Redundancy Maximum Relevance (mRMR) was applied for feature selection, followed by support vector machine (SVM) modeling for diagnostic classification and symptom prediction. Subsequently, partial least squares (PLS) regression was employed to examine the link between case-control t-maps and gene expression. Finally, the findings were validated using two independent cohorts and alternative brain atlases. Patients with MDD exhibited gray matter reductions in bilateral inferior frontal gyri and dFC disruptions between default mode and sensorimotor networks (all P<sub>FDR</sub> < 0.05). The models classifier built on multimodal imaging features achieved high diagnostic performance (AUC = 0.92 [0.80-0.97], sensitivity = 0.84, specificity = 0.87, accuracy = 0.83) and accurately predicted symptom severity (HAMD: r = 0.614, NGASR: r = 0.581, MoCA: r = 0.707; all P<sub>FDR</sub> < 0.05). Neuroimaging-transcriptome integration identified 884 genes associated with structural-functional alterations (|Z| > 3, P<sub>FDR</sub> < 0.05), enriched in protein localization/trafficking, RNA metabolism, and chromatin organization. Replication analyses confirmed the model's robust generalizability. Multimodal imaging and transcriptomic integration revealed reliable biomarkers and underlying molecular pathways, supporting personalized diagnosis and intervention in MDD.",
+  "journal": "Journal of affective disorders",
+  "authors": [
+    {
+      "lastname": "Chen",
+      "forename": "Danni",
+      "initials": "D"
+    },
+    {
+      "lastname": "Li",
+      "forename": "Qinghe",
+      "initials": "Q"
+    },
+    {
+      "lastname": "Xiao",
+      "forename": "Yinuo",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Guo",
+      "forename": "Yuting",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Jing",
+      "forename": "Wanying",
+      "initials": "W"
+    },
+    {
+      "lastname": "Che",
+      "forename": "Kaili",
+      "initials": "K"
+    },
+    {
+      "lastname": "Dong",
+      "forename": "Fanghui",
+      "initials": "F"
+    },
+    {
+      "lastname": "Ma",
+      "forename": "Heng",
+      "initials": "H"
+    },
+    {
+      "lastname": "Zhao",
+      "forename": "Feng",
+      "initials": "F"
+    },
+    {
+      "lastname": "Lian",
+      "forename": "Haifeng",
+      "initials": "H"
+    },
+    {
+      "lastname": "Song",
+      "forename": "Xicheng",
+      "initials": "X"
+    },
+    {
+      "lastname": "Ren",
+      "forename": "Chao",
+      "initials": "C"
+    },
+    {
+      "lastname": "Chu",
+      "forename": "Tongpeng",
+      "initials": "T"
+    },
+    {
+      "lastname": "Mao",
+      "forename": "Ning",
+      "initials": "N"
+    },
+    {
+      "lastname": "Wang",
+      "forename": "Peiyuan",
+      "initials": "P"
+    }
+  ],
+  "pmid": "40553733",
+  "doi": "10.1016/j.jad.2025.119697",
+  "similarity_score": 0.5461009025573731,
+  "source_subgraph": "major depressive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Major Depressive Disorder"
+  ]
+}

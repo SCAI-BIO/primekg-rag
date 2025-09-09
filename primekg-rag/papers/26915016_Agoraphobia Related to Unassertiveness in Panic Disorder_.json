@@ -1,0 +1,35 @@
+{
+  "title": "Agoraphobia Related to Unassertiveness in Panic Disorder.",
+  "abstract": "Despite developments in panic disorder (PD) research, a significant percentage of patients do not benefit from conventional treatments. Interpersonal factors have been identified as potential predictors of treatment failures. We aimed to evaluate assertiveness in a sample of patients with PD and its implications for treatment. Forty-six symptomatic patients with PD and 46 college students responded to assessment scales regarding assertiveness and clinical data. Seventy-five percent of the patients had a secondary diagnosis of agoraphobia. We found that the PD group was characterized as nonassertive and slightly less assertive than control subjects. Furthermore, the deficit in the level of assertiveness correlated with the severity of the PD. The diagnosis of agoraphobia was correlated with unassertiveness (p < 0.05). Agoraphobia predisposes individuals to dependency and insecurity about their ability to overcome anxiogenic situations. These data demonstrate the importance of managing assertiveness in patients with PD accompanied by agoraphobia.",
+  "journal": "The Journal of nervous and mental disease",
+  "authors": [
+    {
+      "lastname": "Levitan",
+      "forename": "Michelle Nigri",
+      "initials": "MN"
+    },
+    {
+      "lastname": "Simoes",
+      "forename": "Pedro",
+      "initials": "P"
+    },
+    {
+      "lastname": "Sardinha",
+      "forename": "Aline G",
+      "initials": "AG"
+    },
+    {
+      "lastname": "Nardi",
+      "forename": "Antonio E",
+      "initials": "AE"
+    }
+  ],
+  "pmid": "26915016",
+  "doi": "10.1097/NMD.0000000000000486",
+  "similarity_score": 0.44730894565582274,
+  "source_subgraph": "agoraphobia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Agoraphobia"
+  ]
+}

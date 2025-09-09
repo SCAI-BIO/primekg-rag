@@ -1,0 +1,30 @@
+{
+  "title": "Primary-position hypotropia after anterior transposition of the inferior oblique.",
+  "abstract": "Three patients with fourth cranial nerve palsy underwent a recession of the ipsilateral inferior oblique muscle. In all three cases, the inferior oblique muscle was anteriorly displaced to the temporal border of the inferior rectus muscle. In the immediate postoperative period, all three patients developed a hypotropia and diplopia in the primary position with limitation of upgaze. The hypotropia remained stable and required retrodisplacement of the inferior oblique muscle in order to eliminate the diplopia. We emphasize the power of the anterior transposition of the inferior oblique muscle and caution its use as a unilateral procedure in patients with central fusion.",
+  "journal": "Archives of ophthalmology (Chicago, Ill. : 1960)",
+  "authors": [
+    {
+      "lastname": "Bremer",
+      "forename": "D L",
+      "initials": "DL"
+    },
+    {
+      "lastname": "Rogers",
+      "forename": "G L",
+      "initials": "GL"
+    },
+    {
+      "lastname": "Quick",
+      "forename": "L D",
+      "initials": "LD"
+    }
+  ],
+  "pmid": "3947298",
+  "doi": "10.1001/archopht.1986.01050140083025",
+  "similarity_score": 0.08839635848999022,
+  "source_subgraph": "Hypotropia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Hypotropia"
+  ]
+}

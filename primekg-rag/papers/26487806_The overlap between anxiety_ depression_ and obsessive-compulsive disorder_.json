@@ -1,0 +1,20 @@
+{
+  "title": "The overlap between anxiety, depression, and obsessive-compulsive disorder.",
+  "abstract": "The anxiety disorders include generalized anxiety disorder, specific phobia, social phobia, agoraphobia, and panic disorder. In addition to the specific symptoms of these disorders, there may be a common experience of anxiety and even dysphoria across the conditions, and of course recourse to the same drug or choice of drugs for treatment. This overlap probably occurs because of universal dimensions of distress or negative affectivity, a shared genetic predisposition, and a common neurobiology Evidence of shared genes is still based mainly on twin studies, but the shared neurobiology can be investigated directly by the investigation of emotional or cognitive bias either behaviorally or using functional brain imaging. This intermediate phenotype can then provide a substrate for understanding and developing medicines and psychological treatments.",
+  "journal": "Dialogues in clinical neuroscience",
+  "authors": [
+    {
+      "lastname": "Goodwin",
+      "forename": "Guy M",
+      "initials": "GM"
+    }
+  ],
+  "pmid": "26487806",
+  "doi": "10.31887/DCNS.2015.17.3/ggoodwin",
+  "similarity_score": 0.6237601518630982,
+  "source_subgraph": "obsessive-compulsive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Obsessive-Compulsive Disorder"
+  ]
+}

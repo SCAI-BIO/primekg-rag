@@ -1,0 +1,60 @@
+{
+  "title": "Diagnosis and surgical treatment of unilateral restrictive hypotropia and esotropia.",
+  "abstract": "To describe the clinical features, radiological findings, and surgical treatment of patients with congenital unilateral restrictive hypotropia and esotropia. Retrospective analysis of patients presenting with unilateral restrictive hypotropia and esotropia. In all patients, magnetic resonance imaging (MRI) or computed tomography (CT) of the brain, brainstem, and orbits was obtained before surgery. Surgery consisted of inferior rectus recession combined in some cases with resection and upward transposition of the upper half of the horizontal rectus muscles. Minimum follow-up was 6 weeks. Four patients meeting inclusion criteria were identified. All patients had amblyopia. Radiological findings included thickening of the posterior inferior rectus muscle belly (2 patients), inferior orbital fat hernia (2 patients), and an irregular soft tissue mass in the nasal inferior orbit (2 patients). The oculomotor nerve appeared to be normal in 3 patients and was not studied in 1. After surgery, 3 of 4 patients were aligned within 10Δ. One patient showed lower eyelid retraction and limitation of depression after a large recession of the inferior rectus muscle. Unilateral hypotropia and esotropia can be associated with severe inferior rectus muscle restriction. Amblyopia may be common in these patients. Surgery to relieve the restriction can also correct the esotropia, suggesting a role for orbital connective tissue in the motility defect in these cases.",
+  "journal": "Journal of AAPOS : the official publication of the American Association for Pediatric Ophthalmology and Strabismus",
+  "authors": [
+    {
+      "lastname": "Lin",
+      "forename": "Qi",
+      "initials": "Q"
+    },
+    {
+      "lastname": "Man",
+      "forename": "Fengyuan",
+      "initials": "F"
+    },
+    {
+      "lastname": "Wang",
+      "forename": "Ningli",
+      "initials": "N"
+    },
+    {
+      "lastname": "Chen",
+      "forename": "Tao",
+      "initials": "T"
+    },
+    {
+      "lastname": "Yu",
+      "forename": "Gang",
+      "initials": "G"
+    },
+    {
+      "lastname": "Wang",
+      "forename": "Zhenchang",
+      "initials": "Z"
+    },
+    {
+      "lastname": "Chang",
+      "forename": "Qinglin",
+      "initials": "Q"
+    },
+    {
+      "lastname": "Jiao",
+      "forename": "Yonghong",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Zhao",
+      "forename": "Kanxing",
+      "initials": "K"
+    }
+  ],
+  "pmid": "21397798",
+  "doi": "10.1016/j.jaapos.2010.09.019",
+  "similarity_score": 0.11381773948669432,
+  "source_subgraph": "Hypotropia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Hypotropia"
+  ]
+}

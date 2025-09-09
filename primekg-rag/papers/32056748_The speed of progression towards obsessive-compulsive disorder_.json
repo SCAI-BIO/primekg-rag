@@ -1,0 +1,60 @@
+{
+  "title": "The speed of progression towards obsessive-compulsive disorder.",
+  "abstract": "There is current interest in the elaboration of early intervention programs for obsessive-compulsive disorder (OCD). To this end, it is important to investigate the speed of progression from subthreshold symptoms to diagnosable OCD. In this study, we have retrospectively investigated the speed of progression towards full-blown OCD and sociodemographic and clinical factors associated with a faster transition. Patients enrolled in the Brazilian Research Consortium on Obsessive-Compulsive Spectrum Disorders (N = 954) were interviewed with a comprehensive assessment battery that included the interval (in years) between the onset of subthreshold OCD symptoms and the onset of full-blown OCD. It took a median of 7 years (interquartile range: 2-13 years) for subthreshold symptoms to convert to diagnosable OCD. Faster OCD onset was associated with lower age at the time of assessment, male gender, being in new romantic states as precipitants for compulsions, greater severity of sexual/religious symptoms and lower severity of hoarding and YBOCS compulsions severity scores, greater rates of generalized anxiety disorder and agoraphobia without panic disorder, and negative family history for OCD. The retrospective design of this study allowed for susceptibility to memory bias about age at onset of OCD symptoms. We were unable to capture progressions taking less than 12 months. We could identify a specific phenotype that was more likely to escalate rapidly to clinical levels within this large clinical sample. This phenomenon may be particularly relevant in the context of selecting individuals for early intervention initiatives in situations when resources are scarce.",
+  "journal": "Journal of affective disorders",
+  "authors": [
+    {
+      "lastname": "Thompson",
+      "forename": "Emma M",
+      "initials": "EM"
+    },
+    {
+      "lastname": "Torres",
+      "forename": "Albina R",
+      "initials": "AR"
+    },
+    {
+      "lastname": "Albertella",
+      "forename": "Lucy",
+      "initials": "L"
+    },
+    {
+      "lastname": "Ferrão",
+      "forename": "Ygor A",
+      "initials": "YA"
+    },
+    {
+      "lastname": "Tiego",
+      "forename": "Jeggan",
+      "initials": "J"
+    },
+    {
+      "lastname": "Shavitt",
+      "forename": "Roseli G",
+      "initials": "RG"
+    },
+    {
+      "lastname": "Conceição do Rosario",
+      "forename": "Maria",
+      "initials": "M"
+    },
+    {
+      "lastname": "Miguel",
+      "forename": "Euripedes C",
+      "initials": "EC"
+    },
+    {
+      "lastname": "Fontenelle",
+      "forename": "Leonardo F",
+      "initials": "LF"
+    }
+  ],
+  "pmid": "32056748",
+  "doi": "10.1016/j.jad.2019.12.016",
+  "similarity_score": 0.6829134106636048,
+  "source_subgraph": "obsessive-compulsive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Obsessive-Compulsive Disorder"
+  ]
+}

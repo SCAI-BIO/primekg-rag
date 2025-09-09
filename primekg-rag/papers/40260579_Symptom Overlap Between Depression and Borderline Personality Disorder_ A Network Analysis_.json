@@ -1,0 +1,65 @@
+{
+  "title": "Symptom Overlap Between Depression and Borderline Personality Disorder: A Network Analysis.",
+  "abstract": "Major depression (MD) is a serious mental health disorder projected to become the leading cause of global disability by 2030. Borderline personality disorder (BPD) frequently co-occurs with MD. Individuals with both conditions often experience prolonged recovery times and exhibit high levels of suicidal behaviour. Network theory and its application, network analysis, presents a novel framework for conceptualising and understanding the comorbidity between MD and BPD. This network analysis aims to identify influential symptoms within a BPD/MD network and explore the clinical relevance of these relationships. Data from 548 participants were pooled from four clinical trials run between 1994 and 2013 at the Department of Psychological Medicine, University of Otago, Christchurch, New Zealand. All participants were diagnosed with current MD (as part of major depressive disorder or bipolar II disorder). Baseline MD and BPD symptom data from trial entry assessments were entered into a cross-sectional network analysis. A further network analysis was estimated with the addition of three covariates (age, gender and depression severity) alongside the MD and BPD symptoms. Network analyses identified several connecting symptoms between MD and BPD. After controlling for depression severity, BPD symptoms of identity disturbance and unstable relationships had unique and robust relationships with MD suicidal ideation and behaviours. Further exploration of these bridge relationships found that participants who exhibited identity disturbance were almost three times more likely to have reported a previous suicide attempt. Results from this study have implications for risk assessment and treatment of individuals with comorbid MD and BPD.",
+  "journal": "Personality and mental health",
+  "authors": [
+    {
+      "lastname": "Kew",
+      "forename": "Bess M",
+      "initials": "BM"
+    },
+    {
+      "lastname": "Monk",
+      "forename": "Nathan J",
+      "initials": "NJ"
+    },
+    {
+      "lastname": "Conner",
+      "forename": "Tamlin S",
+      "initials": "TS"
+    },
+    {
+      "lastname": "Frampton",
+      "forename": "Chris",
+      "initials": "C"
+    },
+    {
+      "lastname": "Mulder",
+      "forename": "Roger T",
+      "initials": "RT"
+    },
+    {
+      "lastname": "Porter",
+      "forename": "Richard J",
+      "initials": "RJ"
+    },
+    {
+      "lastname": "Carter",
+      "forename": "Janet D",
+      "initials": "JD"
+    },
+    {
+      "lastname": "Jordan",
+      "forename": "Jennifer",
+      "initials": "J"
+    },
+    {
+      "lastname": "McIntosh",
+      "forename": "Virginia V W",
+      "initials": "VVW"
+    },
+    {
+      "lastname": "Douglas",
+      "forename": "Katie M",
+      "initials": "KM"
+    }
+  ],
+  "pmid": "40260579",
+  "doi": "10.1002/pmh.70019",
+  "similarity_score": 0.4027260422706604,
+  "source_subgraph": "personality disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Personality Disorder"
+  ]
+}

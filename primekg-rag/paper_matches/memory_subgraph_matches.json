@@ -1,0 +1,62 @@
+[
+  {
+    "pmid": "34622779",
+    "title": "Memory recall involves a transient break in excitatory-inhibitory balance.",
+    "abstract": "The brain has a remarkable capacity to acquire and store memories that can later be selectively recalled. These processes are supported by the hippocampus which is thought to index memory recall by reinstating information stored across distributed neocortical circuits. However, the mechanism that supports this interaction remains unclear. Here, in humans, we show that recall of a visual cue from a paired associate is accompanied by a transient increase in the ratio between glutamate and GABA in visual cortex. Moreover, these excitatory-inhibitory fluctuations are predicted by activity in the hippocampus. These data suggest the hippocampus gates memory recall by indexing information stored across neocortical circuits using a disinhibitory mechanism.",
+    "similarity": 0.0249772548675537
+  },
+  {
+    "pmid": "33345271",
+    "title": "Transdiagnostic, Connectome-Based Prediction of Memory Constructs Across Psychiatric Disorders.",
+    "abstract": "Memory deficits are observed in a range of psychiatric disorders, but it is unclear whether memory deficits arise from a shared brain correlate across disorders or from various dysfunctions unique to each disorder. Connectome-based predictive modeling is a computational method that captures individual differences in functional connectomes associated with behavioral phenotypes such as memory. We used publicly available task-based functional MRI data from patients with schizophrenia (n = 33), bipolar disorder (n = 34), attention deficit hyper-activity disorder (n = 32), and healthy controls (n = 73) to model the macroscale brain networks associated with working, short- and long-term memory. First, we use 10-fold and leave-group-out analyses to demonstrate that the same macroscale brain networks subserve memory across diagnostic groups and that individual differences in memory performance are related to individual differences within networks distributed throughout the brain, including the subcortex, default mode network, limbic network, and cerebellum. Next, we show that diagnostic groups are associated with significant differences in whole-brain functional connectivity that are distinct from the predictive models of memory. Finally, we show that models trained on the transdiagnostic sample generalize to novel, healthy participants (n = 515) from the Human Connectome Project. These results suggest that despite significant differences in whole-brain patterns of functional connectivity between diagnostic groups, the core macroscale brain networks that subserve memory are shared.",
+    "similarity": 0.010661649703979481
+  },
+  {
+    "pmid": "40425790",
+    "title": "NAc-DBS selectively enhances memory updating without effect on retrieval.",
+    "abstract": "NAc-DBS selectively enhances memory updating without effect on retrieval.",
+    "similarity": -0.0200134038925171
+  },
+  {
+    "pmid": "40666488",
+    "title": "Subjective Memory Complaints: A Conceptual Analysis.",
+    "abstract": "Subjective Memory Complaints: A Conceptual Analysis.",
+    "similarity": -0.030776214599609386
+  },
+  {
+    "pmid": "38810690",
+    "title": "Mechanisms of Neuronal Reactivation in Memory Consolidation: A Perspective from Pathological Conditions.",
+    "abstract": "Mechanisms of Neuronal Reactivation in Memory Consolidation: A Perspective from Pathological Conditions.",
+    "similarity": -0.04894108772277833
+  },
+  {
+    "pmid": "40527901",
+    "title": "Network-wide aberrancies in neuronal activity during working memory in a large cohort of patients with mood disorders: associations with cognitive impairment and functional disability.",
+    "abstract": "Network-wide aberrancies in neuronal activity during working memory in a large cohort of patients with mood disorders: associations with cognitive impairment and functional disability.",
+    "similarity": -0.06417126655578614
+  },
+  {
+    "pmid": "16106806",
+    "title": "[From the abducens nucleus to spatial memory: an ocular motor journey].",
+    "abstract": "[From the abducens nucleus to spatial memory: an ocular motor journey].",
+    "similarity": -0.07800931930541993
+  },
+  {
+    "pmid": "40677852",
+    "title": "Verbal memory in major depressive disorder in a long-term perspective: a five-year longitudinal study of first episode patients.",
+    "abstract": "Verbal memory in major depressive disorder in a long-term perspective: a five-year longitudinal study of first episode patients.",
+    "similarity": -0.1220026731491089
+  },
+  {
+    "pmid": "32583466",
+    "title": "Neurocan genome-wide psychiatric risk variant affects explicit memory performance and hippocampal function in healthy humans.",
+    "abstract": "Alterations of the brain extracellular matrix (ECM) can perturb the structure and function of brain networks like the hippocampus, a key region in human memory that is commonly affected in psychiatric disorders. Here, we investigated the potential effects of a genome-wide psychiatric risk variant in the NCAN gene encoding the ECM proteoglycan neurocan (rs1064395) on memory performance, hippocampal function and cortical morphology in young, healthy volunteers. We assessed verbal memory performance in two cohorts (N = 572, 302) and found reduced recall performance in risk allele (A) carriers across both cohorts. In 117 participants, we performed functional magnetic resonance imaging using a novelty-encoding task with visual scenes. Risk allele carriers showed higher false alarm rates during recognition, accompanied by inefficiently increased left hippocampal activation. To assess effects of rs1064395 on brain morphology, we performed voxel-based morphometry in 420 participants from four independent cohorts and found lower grey matter density in the ventrolateral and rostral prefrontal cortex of risk allele carriers. In silico eQTL analysis revealed that rs1064395 SNP is linked not only to increased prefrontal expression of the NCAN gene itself, but also of the neighbouring HAPLN4 gene, suggesting a more complex effect of the SNP on ECM composition. Our results suggest that the NCAN rs1064395 A allele is associated with lower hippocampus-dependent memory function, variation of prefrontal cortex structure and ECM composition. Considering the well-documented hippocampal and prefrontal dysfunction in bipolar disorder and schizophrenia, our results may reflect an intermediate phenotype by which NCAN rs1064395 contributes to disease risk.",
+    "similarity": -0.12765200138092042
+  },
+  {
+    "pmid": "40697334",
+    "title": "A vagal route to memory: evidence from invasive and non-invasive electrical vagus nerve stimulation studies and areas for future clinical application.",
+    "abstract": "A vagal route to memory: evidence from invasive and non-invasive electrical vagus nerve stimulation studies and areas for future clinical application.",
+    "similarity": -0.13276262283325196
+  }
+]

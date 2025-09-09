@@ -1,0 +1,35 @@
+{
+  "title": "Separating From the Mothership: A Coordinated Individual and Parent-Based Approach to Severe Agoraphobia in a Young Adult.",
+  "abstract": "Families are invested in an older adolescent gradually separating from the family to live independently as an adult, but for many families, adolescent psychopathology makes this transition difficult. Addressing such psychopathology is critical in preventing \"failure to launch,\" a breakdown in gaining age-appropriate independence from parents. This case study illustrates a promising approach directed at helping an 18-year-old female with agoraphobia and panic disorder who, upon intake, was at risk for long-lasting, prohibitive dependence on her parents. The clinical approach entails the convergence of two psychological treatments conducted in the same treatment center. One provider, working directly with the patient, delivered traditional cognitive-behavioral therapy (CBT) for anxiety. A second provider, working with the parents, delivered Supportive Parenting for Anxious Childhood Emotions (SPACE) a parent-based treatment focused on reducing family accommodation of the patient's anxiety. Behavioral indices and self-report scores indicated clinically significant improvement following the combined intervention. Attention is drawn to the convergence of those treatments and the utility and special considerations in taking this kind of approach. Overall, the combined treatment may have been more successful than the sum of its parts at preventing failure to launch. This case study, the first to describe the integration of CBT and SPACE, can provide useful guidance for clinicians helping families of adult children to transition to independence.",
+  "journal": "Cognitive and behavioral practice",
+  "authors": [
+    {
+      "lastname": "Raila",
+      "forename": "Hannah E",
+      "initials": "HE"
+    },
+    {
+      "lastname": "Julian",
+      "forename": "Megan",
+      "initials": "M"
+    },
+    {
+      "lastname": "Lebowitz",
+      "forename": "Eli R",
+      "initials": "ER"
+    },
+    {
+      "lastname": "Silverman",
+      "forename": "Wendy K",
+      "initials": "WK"
+    }
+  ],
+  "pmid": "34305384",
+  "doi": "10.1016/j.cbpra.2020.06.004",
+  "similarity_score": 0.48425261974334716,
+  "source_subgraph": "agoraphobia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Agoraphobia"
+  ]
+}

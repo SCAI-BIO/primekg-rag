@@ -1,0 +1,25 @@
+{
+  "title": "[Diagnostic of personality disorders according to ICD-11].",
+  "abstract": "The treatment of individuals with personality disorders often poses a major challenge in psychotherapy. It is therefore of great importance to accurately diagnose and classify personality disorders. This article provides an overview of the new diagnosis of personality disorders according to ICD-11 and shows the various steps and examples of the diagnostic process.",
+  "journal": "Fortschritte der Neurologie-Psychiatrie",
+  "authors": [
+    {
+      "lastname": "Rosenbach",
+      "forename": "Charlotte",
+      "initials": "C"
+    },
+    {
+      "lastname": "Renneberg",
+      "forename": "Babette",
+      "initials": "B"
+    }
+  ],
+  "pmid": "40328239",
+  "doi": "10.1055/a-2521-2900",
+  "similarity_score": 0.48550705909729003,
+  "source_subgraph": "personality disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Personality Disorder"
+  ]
+}

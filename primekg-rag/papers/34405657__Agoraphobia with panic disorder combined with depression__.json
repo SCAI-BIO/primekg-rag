@@ -1,0 +1,25 @@
+{
+  "title": "[Agoraphobia with panic disorder combined with depression].",
+  "abstract": "The aim of the study was to investigate the course of agoraphobia with panic disorder combined with the major depressive disorder to establish positive and negative prevalence predictors. The sample consisted of 49 women. The average age was 41.5±9.9 years. All patients (<i>n</i>=49; 100%) had symptoms of agoraphobia with panic disorder (F40.01) (<i>n</i>=49; 100%) and recurrent depressive disorder with mild (F33.01) (<i>n</i>=33; 67.3%) or moderate (F33.11) (<i>n</i>=16; 32.7%) severity. The duration of the disease by the time of inclusion in the study was from 2 to 5 years. Clinical-psychopathological, clinical-follow-up, clinical-dynamic, and statistical methods were used. Two types of agoraphobia prevalence with panic disorder were identified. Type I is a relatively favorable one with complete remissions of phobic anxiety and affective disorders (<i>n</i>=29; 59.2%). Type II is an unfavorable one with constant phobic anxiety symptoms (<i>n</i>=20; 40.8%). The predictive factors of the unfavorable type of agoraphobia with panic disorder (APD) combined with depression were psychogenic situations, astheno-vegetative disorders at the onset of APD, gastrointestinal symptoms, senestopathy, fear of going crazy, or loss of control in the structure of a panic attack (PA), morning PA, vertebral artery syndrome, diseases of the gastrointestinal tract, panic attacks with provocation, depression with hysteroform symptoms in pre-manifest period APD, the age at the time of the debut APD, professional status, occupational psychogenic, family microclimate, health problems, endocrine system diseases, severe agoraphobia.",
+  "journal": "Zhurnal nevrologii i psikhiatrii imeni S.S. Korsakova",
+  "authors": [
+    {
+      "lastname": "Statsenko",
+      "forename": "O A",
+      "initials": "OA"
+    },
+    {
+      "lastname": "Usov",
+      "forename": "G M",
+      "initials": "GM"
+    }
+  ],
+  "pmid": "34405657",
+  "doi": "10.17116/jnevro20211210549",
+  "similarity_score": 0.5641247510910035,
+  "source_subgraph": "agoraphobia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Agoraphobia"
+  ]
+}

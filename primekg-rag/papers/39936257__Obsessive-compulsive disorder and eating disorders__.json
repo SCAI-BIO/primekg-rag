@@ -1,0 +1,25 @@
+{
+  "title": "[Obsessive-compulsive disorder and eating disorders].",
+  "abstract": "This review finds that obsessive-compulsive disorder (OCD) and eating disorders share significant epidemiological and psychopathological similarities, entailing diagnostic challenges and potential for delayed treatment. Recent research suggests that several biological features are also shared between the diseases. However, further research is needed to explore this connection in more detail. Clinicians must identify the psychopathological features to ensure accurate diagnosis and outcome.",
+  "journal": "Ugeskrift for laeger",
+  "authors": [
+    {
+      "lastname": "Olsen",
+      "forename": "Stephanie Bøgely Bækgaard",
+      "initials": "SBB"
+    },
+    {
+      "lastname": "Sigvardsen",
+      "forename": "Per Ejlstrup",
+      "initials": "PE"
+    }
+  ],
+  "pmid": "39936257",
+  "doi": "10.61409/V06240409",
+  "similarity_score": 0.6397299647331238,
+  "source_subgraph": "obsessive-compulsive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Obsessive-Compulsive Disorder"
+  ]
+}

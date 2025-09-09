@@ -1,0 +1,45 @@
+{
+  "title": "Comparison of disease burden of major depressive disorder in China and globally from 1991 to 2021.",
+  "abstract": "This study was aimed to evaluate the burden of major depressive disorder (MDD) with the age and gender-specific trends in China and worldwide between 1991 and 2021. Using the Global Burden of Disease (GBD) database, this study examined the characteristics of the burden of MDD in China and globally, including changes in incidence, prevalence, disability-adjusted life years (DALY), and Joinpoint analysis was used to calculate the average annual percent change (AAPC) to describe the rates of depressive disorders. From 1991 to 2021, the age-standardized incidence rate (ASIR), age-standardized prevalence rate (ASPR) and age-standardized DALYs rate (ASDR) of MDD increased globally, but decreased in China. The AAPC of ASIR, ASPR and ASDR were 0.506 %, 0.492 % and 0.499 % in the world, and - 0.476 %, -0.488 % and - 0.514 % in China, respectively. The effect of age and sex in 1991 MDD was similar globally and in China. In 2021, the incidence, prevalence and DALYs of MDD increased significantly with age, and the highest rate was 70+ in China. In contrast, the global peaked in the 35-39 age group. Females were more likely to have MDD abnormalities than males in all age groups globally and in China in 1991 and 2021. While global and China trends showed a steady increase over 30 years, a sharp rise occurred post-2020 with global. In 2021, the burden of MDD in China increased significantly with age. The age group for MDD is younger globally. Women at all ages were more likely to have MDD abnormalities than men.",
+  "journal": "Journal of affective disorders",
+  "authors": [
+    {
+      "lastname": "Wang",
+      "forename": "Ling",
+      "initials": "L"
+    },
+    {
+      "lastname": "Li",
+      "forename": "Lili",
+      "initials": "L"
+    },
+    {
+      "lastname": "Zhang",
+      "forename": "Ran",
+      "initials": "R"
+    },
+    {
+      "lastname": "Zhao",
+      "forename": "Jianhua",
+      "initials": "J"
+    },
+    {
+      "lastname": "Wei",
+      "forename": "Menghui",
+      "initials": "M"
+    },
+    {
+      "lastname": "Nie",
+      "forename": "Zhongbiao",
+      "initials": "Z"
+    }
+  ],
+  "pmid": "40617487",
+  "doi": "10.1016/j.jad.2025.119816",
+  "similarity_score": 0.4866822838783264,
+  "source_subgraph": "major depressive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Major Depressive Disorder"
+  ]
+}

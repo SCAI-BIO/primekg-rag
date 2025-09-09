@@ -1,0 +1,30 @@
+{
+  "title": "Predictors of the application of exposure in vivo in the treatment of agoraphobia in an outpatient clinic: An exploratory approach.",
+  "abstract": "Although exposure in vivo is considered to be the most effective therapy component in the treatment of agoraphobia (AG), there is a remarkable lack of its application in psychotherapeutic routine care. We examined the severity of anxiety, psychological distress/comorbidity, therapeutic process/alliance, and sociodemographic status as potential predictors of in vivo exposure. We applied correlational analyses and logistic regression analyses in a sample of N = 92 patients (main diagnosis AG) in an outpatient setting. Logistic regression analyses did not yield any significant single predictors, whereas a combination of a subset of predictors significantly predicted the application of exposure in vivo in the completer sample (R<sup>2</sup> = .24, p = .041). The application of in vivo exposure may be predicted by a complex pattern of patient characteristics.",
+  "journal": "Psychotherapy research : journal of the Society for Psychotherapy Research",
+  "authors": [
+    {
+      "lastname": "Klan",
+      "forename": "Timo",
+      "initials": "T"
+    },
+    {
+      "lastname": "Jasper",
+      "forename": "Fabian",
+      "initials": "F"
+    },
+    {
+      "lastname": "Hiller",
+      "forename": "Wolfgang",
+      "initials": "W"
+    }
+  ],
+  "pmid": "26308791",
+  "doi": "10.1080/10503307.2015.1072284",
+  "similarity_score": 0.4383143663406372,
+  "source_subgraph": "agoraphobia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Agoraphobia"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Genomics of Bipolar Disorder: What the Clinician Needs to Know.",
+  "abstract": "Bipolar disorder (BD) affects approximately 2% of the global population, characterized by alternating episodes of mania or hypomania, and depression. It comprises two main types: bipolar I disorder, marked by severe manic episodes, and bipolar II disorder, defined by milder hypomanic episodes. Individuals often experience rapid cycling and significant comorbidities, leading to decreased productivity and increased mortality rates. Early diagnosis and intervention are crucial for better outcomes. Both genetic and environmental factors contribute to BD's etiology, with genetic research promising improved diagnosis, novel therapeutic targets, and societal understanding that may help destigmatize the disorder.",
+  "journal": "The Psychiatric clinics of North America",
+  "authors": [
+    {
+      "lastname": "McQuillin",
+      "forename": "Andrew",
+      "initials": "A"
+    },
+    {
+      "lastname": "Ophoff",
+      "forename": "Roel A",
+      "initials": "RA"
+    }
+  ],
+  "pmid": "40348421",
+  "doi": "10.1016/j.psc.2025.01.009",
+  "similarity_score": 0.5555987238883973,
+  "source_subgraph": "bipolar disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Bipolar Disorder"
+  ]
+}

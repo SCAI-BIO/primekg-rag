@@ -1,0 +1,30 @@
+{
+  "title": "The Diagnosis and Treatment of Anxiety Disorders.",
+  "abstract": "Anxiety disorders are the most common type of mental illness in Europe, with a 12-month prevalence of 14% among persons aged 14 to 65. Their onset is usually in adolescence or early adulthood. The affected patients often develop further mental or somatic illnesses (sequential comorbidity). This review is based on pertinent publications retrieved by a selective search in PubMed. The group of anxiety disorders includes generalized anxiety disorder (GAD), phobic disorders, panic disorders, and two disorders that are often restricted to childhood-separation anxiety and selective mutism. A comprehensive differential diag- nostic evaluation is essential, because anxiety can be a principal manifestation of other types of mental or somatic illness as well. Psychotherapy and treatment with psychoactive drugs are the therapeutic strategies of first choice. Of all types of psycho- therapy, cognitive behavioral therapy has the best documented efficacy. Modern antidepressants are the drugs of first choice for the treatment of panic disorders, agoraphobia, social phobia, and GAS; pregabalin is a further drug of first choice for GAS. In general, anxiety disorders can now be effectively treated. Patients should be informed of the therapeutic options and should be involved in treatment planning. Current research efforts are centered on individualized and therefore, it is hoped, even more effective treatment approaches than are available at present.",
+  "journal": "Deutsches Arzteblatt international",
+  "authors": [
+    {
+      "lastname": "Ströhle",
+      "forename": "Andreas",
+      "initials": "A"
+    },
+    {
+      "lastname": "Gensichen",
+      "forename": "Jochen",
+      "initials": "J"
+    },
+    {
+      "lastname": "Domschke",
+      "forename": "Katharina",
+      "initials": "K"
+    }
+  ],
+  "pmid": "30282583",
+  "doi": "10.3238/arztebl.2018.0611",
+  "similarity_score": 0.4411386728286743,
+  "source_subgraph": "anxiety disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anxiety Disorder"
+  ]
+}

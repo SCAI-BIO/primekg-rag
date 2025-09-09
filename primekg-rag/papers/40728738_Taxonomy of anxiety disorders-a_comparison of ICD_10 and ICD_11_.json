@@ -1,0 +1,25 @@
+{
+  "title": "Taxonomy of anxiety disorders-a comparison of ICD‑10 and ICD‑11.",
+  "abstract": "With the introduction of the 11th revision of the World Health Organization International Statistical Classification of Diseases and Related Health Problems (ICD-11), structural and content-related adjustments to the diagnostic guidelines for anxiety disorders were made, which are presented in this review article. Previously classified as \"phobic disorders\" and \"other anxiety disorders\" within the group \"neurotic, stress-related, and somatoform disorders\", in ICD-11 \"anxiety- or fear-related disorders\" now constitute a separate group. The core diagnoses of agoraphobia, social anxiety disorder, specific phobia, panic disorder and generalized anxiety disorder are retained, with the modification that agoraphobia and panic disorder can now be diagnosed separately and comorbidly. Within the framework of the lifespan perspective, separation anxiety disorder and selective mutism have been moved to the group \"anxiety- or fear-related disorders\". The diagnosis \"mixed anxiety and depressive disorder\" is now classified as \"mixed depressive and anxiety disorder\" in the group \"affective disorders\". In accordance with the 5th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM‑5), it is possible to code isolated panic attacks in addition to other mental or somatic disorders. Overall, ICD-11 follows the DSM‑5 classification of anxiety- and fear-related disorders in many respects. Furthermore, the omission of subcategorizations and a precise minimum number of required symptoms simplify the diagnostic criteria. Future studies will need to address questions regarding the diagnostic accuracy, clinical practicability and further operationalization of the ICD-11 diagnostic criteria for anxiety- or fear-related disorders.",
+  "journal": "Der Nervenarzt",
+  "authors": [
+    {
+      "lastname": "Domschke",
+      "forename": "Katharina",
+      "initials": "K"
+    },
+    {
+      "lastname": "Zwanzger",
+      "forename": "Peter",
+      "initials": "P"
+    }
+  ],
+  "pmid": "40728738",
+  "doi": "10.1007/s00115-025-01842-6",
+  "similarity_score": 0.46941308975219725,
+  "source_subgraph": "anxiety disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anxiety Disorder"
+  ]
+}

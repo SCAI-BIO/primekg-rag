@@ -1,0 +1,30 @@
+{
+  "title": "Co-occurrence of personality disorders and anxiety disorders.",
+  "abstract": "This review explores the high co-occurrence between personality disorders (PDs) and anxiety disorders (ADs), focusing on clinical implications, the frequency of their association, and the challenges these comorbidities pose for diagnosis and treatment. In addition, this review highlights recent research findings and the need for better therapeutic strategies. Contemporary studies have confirmed a strong association between PDs and ADs, particularly borderline personality disorder (BPD), which shows an 85% comorbidity with anxiety disorders. Gender differences are also observed, with women generally exhibiting higher rates of co-occurring psychiatric conditions. These comorbidities contribute to increased symptom severity, a higher suicide risk, and worse long-term outcomes. Recent clinical trials have shown positive results in managing these disorders. However, treatment approaches remain inconsistent, and further research is needed to refine these strategies. The co-occurrence of PDs and ADs complicates diagnosis and treatment, leading to worse outcomes. Although promising therapies exist, the current lack of a standardized treatment approach for this comorbid population highlights the need for further research. Future studies should explore more targeted treatment options, causal mechanisms linking PDs and ADs, and potential benefits of personalized interventions to improve clinical outcomes.",
+  "journal": "Current opinion in psychiatry",
+  "authors": [
+    {
+      "lastname": "Latas",
+      "forename": "Milan",
+      "initials": "M"
+    },
+    {
+      "lastname": "Baščarević",
+      "forename": "Nevena",
+      "initials": "N"
+    },
+    {
+      "lastname": "Latas",
+      "forename": "Dušanka Vučinić",
+      "initials": "DV"
+    }
+  ],
+  "pmid": "40709660",
+  "doi": "10.1097/YCO.0000000000001031",
+  "similarity_score": 0.3733211636543274,
+  "source_subgraph": "personality disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Personality Disorder"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Clinical implications of agoraphobia in patients with panic disorder.",
+  "abstract": "Agoraphobia is frequently accompanied by panic disorder and causes considerable suffering. The aim of this study was to compare clinical features and treatment courses between patients with and without agoraphobia in panic disorder.In this retrospective study, 87 patients with panic disorder were divided into two groups depending on the presence of agoraphobia: patients with agoraphobia (PDA, n = 41) and patients without agoraphobia (PD, n = 46). Agoraphobia subscale score of the Albany Panic and Phobia Questionnaire was used to identify correlations between agoraphobia and panic and affective symptoms.The PDA group showed more severe panic and affective symptoms than the PD group. Patients with PDA were more likely to be younger at the age of onset, take benzodiazepines for longer durations, and be treated with antipsychotics augmentation. Agoraphobia subscale was associated with panic symptoms, depression, anxiety, and the duration of benzodiazepines use.The findings suggest that patients with PDA experienced more severe panic symptoms, more profound psychiatric comorbidity, and worse illness progression than those with PD.",
+  "journal": "Medicine",
+  "authors": [
+    {
+      "lastname": "Shin",
+      "forename": "Jin",
+      "initials": "J"
+    },
+    {
+      "lastname": "Park",
+      "forename": "Doo-Heum",
+      "initials": "DH"
+    },
+    {
+      "lastname": "Ryu",
+      "forename": "Seung-Ho",
+      "initials": "SH"
+    },
+    {
+      "lastname": "Ha",
+      "forename": "Jee Hyun",
+      "initials": "JH"
+    },
+    {
+      "lastname": "Kim",
+      "forename": "Seol Min",
+      "initials": "SM"
+    },
+    {
+      "lastname": "Jeon",
+      "forename": "Hong Jun",
+      "initials": "HJ"
+    }
+  ],
+  "pmid": "32791758",
+  "doi": "10.1097/MD.0000000000021414",
+  "similarity_score": 0.54250066280365,
+  "source_subgraph": "agoraphobia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Agoraphobia"
+  ]
+}

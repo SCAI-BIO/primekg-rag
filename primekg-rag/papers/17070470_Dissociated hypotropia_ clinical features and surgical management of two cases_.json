@@ -1,0 +1,30 @@
+{
+  "title": "Dissociated hypotropia: clinical features and surgical management of two cases.",
+  "abstract": "Dissociated vertical deviation (DVD), which almost always shows a hypertropia of the affected eye, occasionally can manifest as a hypotropia, either unilaterally or bilaterally. Two patients are presented who had this rare variant of DVD, which has been termed \"dissociated hypotropia,\" both of whom underwent surgery and had good outcomes. Two patients, ages 13 and 14, with unilateral dissociated hypotropia underwent large inferior rectus muscle recessions on their affected eyes. In one case, a video-based eye tracker was used to record the dissociated hypotropic drifts in the eye to plot the changes in the drift amplitudes in response to increasing density filters over the fixating eye (Bielschowsky phenomenon) and to confirm whether the deviation changed in the light versus the dark. In case 1, the hypotropia drift measured up to 18(Delta), and it was reduced to zero with a 6 mm inferior rectus recession in the affected eye. In case 2, the drift measured up to 20(Delta). Eye movement recordings showed a time course of the downward drift that mirrored that of upward drift of hypertropic DVD and confirmed the presence of a Bielschowsky phenomenon. The drift amplitude did not change in bright versus dark conditions. An 8 mm inferior rectus recession on the affected eye reduced the hypotropia to 5(Delta). Dissociated hypotropia is a rare form of the dissociated strabismus complex. The downward drift has a time course similar to the upward drift of hypertropic DVD and shows the Bielschowsky phenomenon. It responds to a large inferior rectus muscle recession.",
+  "journal": "Journal of AAPOS : the official publication of the American Association for Pediatric Ophthalmology and Strabismus",
+  "authors": [
+    {
+      "lastname": "Kraft",
+      "forename": "Stephen P",
+      "initials": "SP"
+    },
+    {
+      "lastname": "Long",
+      "forename": "Quah Boon",
+      "initials": "QB"
+    },
+    {
+      "lastname": "Irving",
+      "forename": "Elizabeth L",
+      "initials": "EL"
+    }
+  ],
+  "pmid": "17070470",
+  "doi": "10.1016/j.jaapos.2006.06.015",
+  "similarity_score": 0.21473293304443358,
+  "source_subgraph": "Hypotropia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Hypotropia"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Differentiating Subtypes of Major Depressive Disorder Using Serum Biomarkers.",
+  "abstract": "<b>Objective:</b> This study aimed to differentiate subtypes of major depressive disorder (MDD) using 14 serum biomarkers across 6 functional systems. <b>Methods:</b> We analyzed serum biomarkers in 993 MDD patients, categorized into melancholic (N = 157; 16.8%), atypical (N = 56; 6.0%), and unspecified (N = 720; 77.2%) subtypes according to <i>DSM-IV</i> criteria. Biomarkers included high sensitivity C-reactive protein, tumor necrosis factor-α, interleukins (IL-1β, IL-6, IL-4, IL-10), cortisol, brain-derived neurotrophic factor, serotonin, leptin, total ghrelin, total cholesterol, folate, and homocysteine. Quantile regression analyses adjusted for relevant covariates were used to estimate associations between biomarkers and MDD subtypes. <b>Results:</b> Significant differences in biomarker profiles were observed across MDD subtypes: the melancholic subtype showed higher cortisol levels compared to the unspecified subtype (<i>P</i> = .009) and lower serotonin levels compared to both the unspecified (<i>P</i> = .045) and atypical (<i>P</i> = .006) subtypes. Meanwhile, the atypical subtype exhibited elevated levels of IL-1β compared to the unspecified subtype (<i>P</i> = .036) and higher IL-4 levels than both melancholic and unspecified subtypes (all <i>P</i> < .001). These associations remained significant even after adjusting for covariates. <b>Conclusion:</b> Distinct serum biomarker profiles among MDD subtypes highlight their unique biological underpinnings. These findings enhance current understanding of the pathophysiology of different depressive subtypes and suggest targeted therapeutic approaches. Future research should focus on longitudinal studies to monitor these biomarkers over time and explore new biomarkers from genomics and proteomics to advance precision medicine in psychiatry.",
+  "journal": "The Journal of clinical psychiatry",
+  "authors": [
+    {
+      "lastname": "Kim",
+      "forename": "Jae-Min",
+      "initials": "JM"
+    },
+    {
+      "lastname": "Kang",
+      "forename": "Hee-Ju",
+      "initials": "HJ"
+    },
+    {
+      "lastname": "Lee",
+      "forename": "Ju-Yeon",
+      "initials": "JY"
+    },
+    {
+      "lastname": "Kim",
+      "forename": "Ju-Wan",
+      "initials": "JW"
+    },
+    {
+      "lastname": "Kim",
+      "forename": "Honey",
+      "initials": "H"
+    },
+    {
+      "lastname": "Jhon",
+      "forename": "Min",
+      "initials": "M"
+    },
+    {
+      "lastname": "Kim",
+      "forename": "Sung-Wan",
+      "initials": "SW"
+    },
+    {
+      "lastname": "Shin",
+      "forename": "Il-Seon",
+      "initials": "IS"
+    }
+  ],
+  "pmid": "40608474",
+  "doi": "10.4088/JCP.25m15828",
+  "similarity_score": 0.5753643989562989,
+  "source_subgraph": "major depressive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Major Depressive Disorder"
+  ]
+}

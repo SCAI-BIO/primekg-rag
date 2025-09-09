@@ -1,0 +1,30 @@
+{
+  "title": "Deconstructing the Construction of Value in Anorexia Nervosa.",
+  "abstract": "",
+  "journal": "JAMA psychiatry",
+  "authors": [
+    {
+      "lastname": "Lloyd",
+      "forename": "E Caitlin",
+      "initials": "EC"
+    },
+    {
+      "lastname": "Steinglass",
+      "forename": "Joanna E",
+      "initials": "JE"
+    },
+    {
+      "lastname": "Foerde",
+      "forename": "Karin E",
+      "initials": "KE"
+    }
+  ],
+  "pmid": "39259537",
+  "doi": "10.1001/jamapsychiatry.2024.2647",
+  "similarity_score": 0.7380688071250916,
+  "source_subgraph": "anorexia nervosa_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anorexia Nervosa"
+  ]
+}

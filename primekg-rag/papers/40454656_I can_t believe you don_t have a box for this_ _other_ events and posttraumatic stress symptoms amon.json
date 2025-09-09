@@ -1,0 +1,50 @@
+{
+  "title": "I can't believe you don't have a box for this: 'other' events and posttraumatic stress symptoms among women.",
+  "abstract": "<b>Background</b>: Traumatic exposures are often assessed in clinical and research settings by a list of events chosen because they meet the definition of trauma required for the ICD-11 or DSM-5 diagnosis of posttraumatic stress disorder (PTSD). Some trauma measures include an 'other' option, with a text box enabling participants to describe an event not listed.<b>Objective:</b> There were three aims in this study: (1) to identify commonly endorsed 'other' events not listed on a standard measure of trauma exposure, (2) to identify thematic commonalities among these other events, and (3) to assess the prevalence of provisional lifetime and past month PTSD associated with these other events.<b>Method</b>: We used a parallel mixed methods approach and data from 2653 women in the Nurses' Health Study II to categorize 'other' events reported in free text and named as participants' 'worst' traumatic event. We assessed the prevalence of provisional lifetime and past month PTSD based on DSM-5 criteria associated with these 'worst' events.<b>Results</b>: 'Other' events fell into six thematic categories: non-violent death of a family member or close friend, distressing event occurring in the workplace, a family member being harmed in some way, a family member managing a distressing problem, problems with an intimate partner, or a personally distressing event/ problem. 'Other' event themes, such as a family member managing a problem distressing to the participant, were associated with high prevalence of provisional lifetime PTSD (33.7%; <i>n</i> = 101). Common 'other' events (within themes) were also associated with high provisional lifetime PTSD (e.g. verbal abuse or harassment, 43.8%; <i>n</i> = 89).<b>Conclusions</b>: Results suggest that events not typically defined as trauma may still be associated with clinically significant PTSD symptoms. Future studies should further investigate these events and consider including additional events to capture the range of clinically relevant experiences in research.",
+  "journal": "European journal of psychotraumatology",
+  "authors": [
+    {
+      "lastname": "Scoglio",
+      "forename": "Arielle A J",
+      "initials": "AAJ"
+    },
+    {
+      "lastname": "Sampson",
+      "forename": "Laura",
+      "initials": "L"
+    },
+    {
+      "lastname": "Kim",
+      "forename": "Ariel H",
+      "initials": "AH"
+    },
+    {
+      "lastname": "Serier",
+      "forename": "Kelsey N",
+      "initials": "KN"
+    },
+    {
+      "lastname": "Marquez",
+      "forename": "Camille Ianne",
+      "initials": "CI"
+    },
+    {
+      "lastname": "Jha",
+      "forename": "Shaili C",
+      "initials": "SC"
+    },
+    {
+      "lastname": "Koenen",
+      "forename": "Karestan C",
+      "initials": "KC"
+    }
+  ],
+  "pmid": "40454656",
+  "doi": "10.1080/20008066.2025.2506759",
+  "similarity_score": 0.5775161266326905,
+  "source_subgraph": "Posttraumatic stress symptom_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Posttraumatic Stress Symptom"
+  ]
+}

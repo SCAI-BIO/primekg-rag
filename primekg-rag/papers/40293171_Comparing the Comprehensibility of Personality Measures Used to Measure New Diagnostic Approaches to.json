@@ -1,0 +1,40 @@
+{
+  "title": "Comparing the Comprehensibility of Personality Measures Used to Measure New Diagnostic Approaches to Personality Disorders.",
+  "abstract": "In the fifth edition of the <i>Diagnostic and Statistical Manual of Mental Disorders</i> (<i>DSM-5</i>), an Alternative Model of Personality Disorder (AMPD) was proposed that considers the severity of impairment in personality functioning (Criterion A) and elevations in five pathological personality traits (Criterion B) as the primary diagnostic criteria. The present study examined whether self-report measures of personality impairment are longer, more complex, difficult, and require more introspection than items from measures of pathological personality traits. Participants from two undergraduate university research pools (<i>N</i> = 460) completed two measures of personality impairment and one measure of pathological personality traits. For all measures, participants rated item difficulty and introspection needed to answer each item. Additionally, the study compared the readability statistics of each measure automatically calculated by Microsoft Word. Results indicated that personality trait measures were significantly easier to read than personality impairment measures, and that answering personality trait items required less perceived introspection compared to personality impairment items; however, no significant differences were found in the perceived difficulty of items across measures. These results provide the first empirical examination of differences between personality trait and impairment measures in terms of readability statistics and participant perceptions of difficulty of items and required introspection.",
+  "journal": "Journal of personality assessment",
+  "authors": [
+    {
+      "lastname": "Ghosh",
+      "forename": "Ashmita",
+      "initials": "A"
+    },
+    {
+      "lastname": "Phillips",
+      "forename": "Nathaniel L",
+      "initials": "NL"
+    },
+    {
+      "lastname": "Van Til",
+      "forename": "Kaela",
+      "initials": "K"
+    },
+    {
+      "lastname": "Lynam",
+      "forename": "Donald R",
+      "initials": "DR"
+    },
+    {
+      "lastname": "Miller",
+      "forename": "Joshua D",
+      "initials": "JD"
+    }
+  ],
+  "pmid": "40293171",
+  "doi": "10.1080/00223891.2025.2491491",
+  "similarity_score": 0.4235542297363281,
+  "source_subgraph": "personality disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Personality Disorder"
+  ]
+}
