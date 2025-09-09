@@ -1,0 +1,25 @@
+{
+  "title": "The management of bipolar disorder.",
+  "abstract": "Bipolar disorder is a common mental disorder which is relapsing and remitting in nature. Subsyndromal symptoms are common and associated with poorer outcomes. Management of the disorder can be challenging and depends on the polarity and severity of the mood episode.",
+  "journal": "British journal of hospital medicine (London, England : 2005)",
+  "authors": [
+    {
+      "lastname": "Saunders",
+      "forename": "Kate E A",
+      "initials": "KE"
+    },
+    {
+      "lastname": "Geddes",
+      "forename": "John R",
+      "initials": "JR"
+    }
+  ],
+  "pmid": "26961448",
+  "doi": "10.12968/hmed.2016.77.3.175",
+  "similarity_score": 0.5057499289512635,
+  "source_subgraph": "bipolar disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Bipolar Disorder"
+  ]
+}

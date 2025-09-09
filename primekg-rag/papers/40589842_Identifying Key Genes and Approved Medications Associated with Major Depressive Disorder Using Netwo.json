@@ -1,0 +1,50 @@
+{
+  "title": "Identifying Key Genes and Approved Medications Associated with Major Depressive Disorder Using Network Analysis and Systems Biology.",
+  "abstract": "<b>Objective:</b> Major depressive disorder (MDD) stands as one of the serious psychiatric conditions that detrimentally affect patients' quality of life and leads to a significant part of disability worldwide. Due to the limited understanding of the basic molecular mechanisms of depression and antidepressant medications, a clear understanding of the onset and development of MDD is unavailable. This study aims to figure out the pivotal genes and pathways implicated in the MDD development and identify medications that can potentially improve MDD treatment based on their relation with the key genes. <b>Method</b> <b>:</b> Symbols of human coding genes were retrieved from the HUGO Gene Nomenclature Committee database. These symbols were then queried for MDD-related associations using a Python script in PubMed. Subsequently, genes with two or more related articles to MDD were selected. A union of our search data and MDD-related genes in the DisGeNET database was found. The gene interaction network was generated and analyzed utilizing the STRING and Cytoscape, respectively. Finally, a drug-gene network was constructed and medications that can affect multiple genes were selected. <b>Results:</b> The union of our search data and DisGeNET data contained 1734 genes. Based on network analysis, TNF, IL1B, IL6, STAT1, and STAT3 were identified as the key genes in the MDD pathogenesis. Eleven drugs that affect more than one gene were detected through a drug-gene network. These medications include Acitretin, Adalimumab, Alteplase, Cisplatin, Digoxin, Etanercept, Infliximab, Insulin, Omeprazole, Pentoxifylline, and Rabeprazole. <b>Conclusion:</b> In summary, our findings identified five genes as key genes in MDD development, as well as medications related to key genes. This study provides a new vision of the pathogenesis and treatment of MDD. However, further experimental and clinical studies are necessary.",
+  "journal": "Iranian journal of psychiatry",
+  "authors": [
+    {
+      "lastname": "Parvizi",
+      "forename": "Yasin",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Sadati",
+      "forename": "Seyed Mahdi",
+      "initials": "SM"
+    },
+    {
+      "lastname": "Porbaha",
+      "forename": "Pedram",
+      "initials": "P"
+    },
+    {
+      "lastname": "Masumi",
+      "forename": "Shima",
+      "initials": "S"
+    },
+    {
+      "lastname": "Mahdian",
+      "forename": "Saeid",
+      "initials": "S"
+    },
+    {
+      "lastname": "Vafaei",
+      "forename": "Seyed Alireza",
+      "initials": "SA"
+    },
+    {
+      "lastname": "Afshar",
+      "forename": "Saeid",
+      "initials": "S"
+    }
+  ],
+  "pmid": "40589842",
+  "doi": "10.18502/ijps.v19i4.16550",
+  "similarity_score": 0.5411161065101624,
+  "source_subgraph": "major depressive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Major Depressive Disorder"
+  ]
+}

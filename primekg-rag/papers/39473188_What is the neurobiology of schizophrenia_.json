@@ -1,0 +1,30 @@
+{
+  "title": "What is the neurobiology of schizophrenia?",
+  "abstract": "Schizophrenia spectrum disorders are brain diseases that are developmental dementias (dementia praecox). Their pathology begins in utero with psychosis most commonly becoming evident in adolescence and early adulthood. It is estimated they afflict the U.S. population at a prevalence rate of approximately 0.8%. Genetic studies indicate that these brain diseases are about 80% determined by genes and about 20% determined by environmental risk factors. Inheritance is polygenic with some 270 gene loci having been identified as contributing to the risk for schizophrenia. Interestingly, many of the identified gene loci and gene polymorphisms are involved in brain formation and maturation. The identified genetic and epigenetic risks give rise to a brain in which neuroblasts migrate abnormally, assume abnormal locations and orientations, and are vulnerable to excessive neuronal and synaptic loss, resulting in overt psychotic illness. The illness trajectory of schizophrenia then is one of loss of brain mass related to the number of active psychotic exacerbations and the duration of untreated illness. In this context, molecules such as dopamine, glutamate, and serotonin play critical roles with respect to positive, negative, and cognitive domains of illness. Acutely, antipsychotics ameliorate active psychotic illness, especially positive signs and symptoms. The long-term effects of antipsychotic medications have been debated; however, the bulk of imaging data suggest that antipsychotics slow but do not reverse the illness trajectory of schizophrenia. Long-acting injectable antipsychotics (LAI) appear superior in this regard. Clozapine remains the \"gold standard\" in managing treatment-resistant schizophrenia.",
+  "journal": "CNS spectrums",
+  "authors": [
+    {
+      "lastname": "Cummings",
+      "forename": "Michael A",
+      "initials": "MA"
+    },
+    {
+      "lastname": "Arias",
+      "forename": "Ai-Li W",
+      "initials": "AW"
+    },
+    {
+      "lastname": "Stahl",
+      "forename": "Stephen M",
+      "initials": "SM"
+    }
+  ],
+  "pmid": "39473188",
+  "doi": "10.1017/S1092852924000518",
+  "similarity_score": 0.4210232973098755,
+  "source_subgraph": "schizophrenia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Schizophrenia"
+  ]
+}

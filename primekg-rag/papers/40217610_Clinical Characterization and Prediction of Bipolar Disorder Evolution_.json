@@ -1,0 +1,30 @@
+{
+  "title": "Clinical Characterization and Prediction of Bipolar Disorder Evolution.",
+  "abstract": "<b>Background</b>: This paper addresses the possibility of replacing subjective evaluations of mental disorders with analytical tools based on large data provided by wearable sensors in combination with subsequent complexity mesoscale data projection using constitutive mathematical frameworks. <b>Methods</b>: The presented methods are based on the combination of a complexity/fractal approach and stochastic optimization, yielding Digital Mental Biomarkers (DMBs). <b>Results</b>: Analytic indexing can effectively augment the Young Mania Rating Scale, DSM-5 criteria, or structured interview diagnostics. The analytical approach allows us to carry out a prediction of mental disorder evolution as well as a subsequent probability characterization of BD episode progression over time. <b>Conclusions</b>: The presented analytical framework presents a semicontinuous diagnostic tool in the area of mental disorders, specifically applicable to bipolar disorder with corresponding manic episode indexing.",
+  "journal": "Journal of clinical medicine",
+  "authors": [
+    {
+      "lastname": "Kloucek",
+      "forename": "Petr",
+      "initials": "P"
+    },
+    {
+      "lastname": "von Gunten",
+      "forename": "Armin",
+      "initials": "A"
+    },
+    {
+      "lastname": "Fassassi",
+      "forename": "Sylfa",
+      "initials": "S"
+    }
+  ],
+  "pmid": "40217610",
+  "doi": "10.3390/jcm14072159",
+  "similarity_score": 0.5160405516624451,
+  "source_subgraph": "bipolar disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Bipolar Disorder"
+  ]
+}

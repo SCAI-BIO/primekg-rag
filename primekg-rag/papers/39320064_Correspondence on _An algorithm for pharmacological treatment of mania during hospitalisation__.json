@@ -1,0 +1,40 @@
+{
+  "title": "Correspondence on \"An algorithm for pharmacological treatment of mania during hospitalisation\".",
+  "abstract": "This is a letter to the editor on the article \"An algorithm for pharmacological treatment of mania during hospitalisation\" Dan Med J 2024;71(5):A08230525.",
+  "journal": "Danish medical journal",
+  "authors": [
+    {
+      "lastname": "Licht",
+      "forename": "Rasmus W",
+      "initials": "RW"
+    },
+    {
+      "lastname": "Straszek",
+      "forename": "Sune Pv",
+      "initials": "SP"
+    },
+    {
+      "lastname": "Kovacs",
+      "forename": "Zoltan",
+      "initials": "Z"
+    },
+    {
+      "lastname": "Devantier",
+      "forename": "Torben A",
+      "initials": "TA"
+    },
+    {
+      "lastname": "Nielsen",
+      "forename": "René Ernst",
+      "initials": "RE"
+    }
+  ],
+  "pmid": "39320064",
+  "doi": "10.61409/A300007",
+  "similarity_score": 0.08633451461791991,
+  "source_subgraph": "Mania_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Mania"
+  ]
+}

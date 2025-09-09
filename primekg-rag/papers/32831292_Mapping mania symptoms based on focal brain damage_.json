@@ -1,0 +1,85 @@
+{
+  "title": "Mapping mania symptoms based on focal brain damage.",
+  "abstract": "BACKGROUNDAlthough mania is characteristic of bipolar disorder, it can also occur following focal brain damage. Such cases may provide unique insight into brain regions responsible for mania symptoms and identify therapeutic targets.METHODSLesion locations associated with mania were identified using a systematic literature search (n = 41) and mapped onto a common brain atlas. The network of brain regions functionally connected to each lesion location was computed using normative human connectome data (resting-state functional MRI, n = 1000) and contrasted with those obtained from lesion locations not associated with mania (n = 79). Reproducibility was assessed using independent cohorts of mania lesions derived from clinical chart review (n = 15) and of control lesions (n = 490). Results were compared with brain stimulation sites previously reported to induce or relieve mania symptoms.RESULTSLesion locations associated with mania were heterogeneous and no single brain region was lesioned in all, or even most, cases. However, these lesion locations showed a unique pattern of functional connectivity to the right orbitofrontal cortex, right inferior temporal gyrus, and right frontal pole. This connectivity profile was reproducible across independent lesion cohorts and aligned with the effects of therapeutic brain stimulation on mania symptoms.CONCLUSIONBrain lesions associated with mania are characterized by a specific pattern of brain connectivity that lends insight into localization of mania symptoms and potential therapeutic targets.FUNDINGFundação para a Ciência e Tecnologia (FCT), Harvard Medical School DuPont-Warren Fellowship, Portuguese national funds from FCT and Fundo Europeu de Desenvolvimento Regional, Child Neurology Foundation Shields Research, Sidney R. Baer, Jr. Foundation, Nancy Lurie Marks Foundation, Mather's Foundation, and the NIH.",
+  "journal": "The Journal of clinical investigation",
+  "authors": [
+    {
+      "lastname": "Cotovio",
+      "forename": "Gonçalo",
+      "initials": "G"
+    },
+    {
+      "lastname": "Talmasov",
+      "forename": "Daniel",
+      "initials": "D"
+    },
+    {
+      "lastname": "Barahona-Corrêa",
+      "forename": "J Bernardo",
+      "initials": "JB"
+    },
+    {
+      "lastname": "Hsu",
+      "forename": "Joey",
+      "initials": "J"
+    },
+    {
+      "lastname": "Senova",
+      "forename": "Suhan",
+      "initials": "S"
+    },
+    {
+      "lastname": "Ribeiro",
+      "forename": "Ricardo",
+      "initials": "R"
+    },
+    {
+      "lastname": "Soussand",
+      "forename": "Louis",
+      "initials": "L"
+    },
+    {
+      "lastname": "Velosa",
+      "forename": "Ana",
+      "initials": "A"
+    },
+    {
+      "lastname": "Silva",
+      "forename": "Vera Cruz E",
+      "initials": "VCE"
+    },
+    {
+      "lastname": "Rost",
+      "forename": "Natalia",
+      "initials": "N"
+    },
+    {
+      "lastname": "Wu",
+      "forename": "Ona",
+      "initials": "O"
+    },
+    {
+      "lastname": "Cohen",
+      "forename": "Alexander L",
+      "initials": "AL"
+    },
+    {
+      "lastname": "Oliveira-Maia",
+      "forename": "Albino J",
+      "initials": "AJ"
+    },
+    {
+      "lastname": "Fox",
+      "forename": "Michael D",
+      "initials": "MD"
+    }
+  ],
+  "pmid": "32831292",
+  "doi": "10.1172/JCI136096",
+  "similarity_score": 0.08096485137939452,
+  "source_subgraph": "Mania_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Mania"
+  ]
+}

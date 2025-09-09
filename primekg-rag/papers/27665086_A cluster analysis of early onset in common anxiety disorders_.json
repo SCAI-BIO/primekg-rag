@@ -1,0 +1,60 @@
+{
+  "title": "A cluster analysis of early onset in common anxiety disorders.",
+  "abstract": "Early onset is regarded as an important characteristic of anxiety disorders, associated with higher severity. However, previous findings diverge, as definitions of early onset vary and are often unsubstantiated. We objectively defined early onset in social phobia, panic disorder, agoraphobia, and generalised anxiety disorder, using cluster analysis with data gathered in the general population. Resulting cut-off ages for early onset were ≤22 (social phobia), ≤31 (panic disorder), ≤21 (agoraphobia), and ≤27 (generalised anxiety disorder). Comparison of psychiatric comorbidity and general wellbeing between subjects with early and late onset in the general population and an outpatient cohort, demonstrated that among outpatients anxiety comorbidity was more common in early onset agoraphobia, but also that anxiety- as well as mood comorbidity were more common in late onset social phobia. A major limitation was the retrospective assessment of onset. Our results encourage future studies into correlates of early onset of psychiatric disorders.",
+  "journal": "Journal of anxiety disorders",
+  "authors": [
+    {
+      "lastname": "Schat",
+      "forename": "A",
+      "initials": "A"
+    },
+    {
+      "lastname": "van Noorden",
+      "forename": "M S",
+      "initials": "MS"
+    },
+    {
+      "lastname": "Noom",
+      "forename": "M J",
+      "initials": "MJ"
+    },
+    {
+      "lastname": "Giltay",
+      "forename": "E J",
+      "initials": "EJ"
+    },
+    {
+      "lastname": "van der Wee",
+      "forename": "N J A",
+      "initials": "NJ"
+    },
+    {
+      "lastname": "de Graaf",
+      "forename": "R",
+      "initials": "R"
+    },
+    {
+      "lastname": "Ten Have",
+      "forename": "M",
+      "initials": "M"
+    },
+    {
+      "lastname": "Vermeiren",
+      "forename": "R R J M M",
+      "initials": "RR"
+    },
+    {
+      "lastname": "Zitman",
+      "forename": "F G",
+      "initials": "FG"
+    }
+  ],
+  "pmid": "27665086",
+  "doi": "10.1016/j.janxdis.2016.09.001",
+  "similarity_score": 0.488243567943573,
+  "source_subgraph": "anxiety disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anxiety Disorder"
+  ]
+}

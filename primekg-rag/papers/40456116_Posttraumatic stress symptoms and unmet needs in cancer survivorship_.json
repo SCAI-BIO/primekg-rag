@@ -1,0 +1,35 @@
+{
+  "title": "Posttraumatic stress symptoms and unmet needs in cancer survivorship.",
+  "abstract": "Cancer diagnosis can be distressing, leading to multidimensional care needs which are often not fully met. The experience of diagnosis and treatment may be traumatizing for some patients, leading to a greater demand for support during survivorship. Survivors exposed to trauma may also have a harder time addressing their own needs or require additional support for their needs which have been neglected by the available care. We examined the degree to which exposure to trauma and posttraumatic stress disorder (PTSD) symptoms influence cancer survivor unmet needs, and the role of unmet needs in survivor life satisfaction. Survivors diagnosed with cancer in the past year or prior (<i>N</i> = 1,138) from a nationally representative population (<i>N</i> = 11,708) reported Adverse Childhood Experiences (ACES-Q-10) and PTSD symptoms (PTSD-8). Unmet needs were reported on the Survivor Unmet Needs Survey (SF-SUNS). Life satisfaction was measured on a single item. Chronic pain, sociodemographic variables, and self-reported cancer stage were self-reported and included as covariates. In stepwise-hierarchical regression modeling, PTSD symptoms, advanced-stage cancer and younger age were significant predictors of unmet needs in the first year after diagnosis and in the years thereafter (<i>p</i>s < 0.001); but the influence of ACEs on unmet needs was overshadowed by the other variables in the regression model. Chronic pain was associated with unmet needs experienced after one year (<i>p</i> < 0.001) but not in the first year after diagnosis. Having more unmet needs predicted poor life satisfaction when controlling for income, education, and age (<i>p</i> < 0.001). Findings suggest that cancer survivors with a trauma history and PTSD symptoms are more vulnerable to unmet needs, which contributes to poor life satisfaction. Trauma-informed care and PTSD treatment, especially in younger survivors and those with advanced-stage cancers, may mitigate the potential for unmet needs after cancer diagnosis and thereby improve health outcomes in survivorship.",
+  "journal": "Journal of psychosocial oncology",
+  "authors": [
+    {
+      "lastname": "Mitchell",
+      "forename": "Hannah-Rose",
+      "initials": "HR"
+    },
+    {
+      "lastname": "Kirshenbaum",
+      "forename": "Ari P",
+      "initials": "AP"
+    },
+    {
+      "lastname": "Zimmer",
+      "forename": "Sara",
+      "initials": "S"
+    },
+    {
+      "lastname": "Sofis",
+      "forename": "Michael J",
+      "initials": "MJ"
+    }
+  ],
+  "pmid": "40456116",
+  "doi": "10.1080/07347332.2025.2509985",
+  "similarity_score": 0.45542101860046386,
+  "source_subgraph": "Posttraumatic stress symptom_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Posttraumatic Stress Symptom"
+  ]
+}

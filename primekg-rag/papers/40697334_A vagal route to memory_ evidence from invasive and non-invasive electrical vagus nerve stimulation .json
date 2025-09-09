@@ -1,0 +1,35 @@
+{
+  "title": "A vagal route to memory: evidence from invasive and non-invasive electrical vagus nerve stimulation studies and areas for future clinical application.",
+  "abstract": "The ability to remember emotionally significant stimuli and stimulus associations is critical to survival, as it ensures that rewarding and threatening events can be recalled to guide future behavior. Consequently, events are consolidated more strongly into long-term memory as they are encoded under heightened emotional arousal. Such memory prioritization is partly driven by the release of peripheral adrenaline, which acts as a bodily signal emphasizing an event's emotional significance and enhances plasticity in the brain. Animal research suggest that the vagus nerve translates elevated peripheral adrenaline into central noradrenergic activation of memory-relevant brain areas via its projections to the brainstem locus coeruleus-the main source of noradrenaline in the brain. The possibility of vagus nerve stimulation (VNS), both invasively (iVNS) and non-invasively (i.e., transcutaneously; tVNS), has opened up new avenues to test a potential vagal route to memory in humans whilst circumventing the necessity of actual peripheral adrenergic release. Here, we briefly review recent research applying iVNS and tVNS in a variety of animal and human emotional episodic memory and Pavlovian conditioning and extinction learning experiments, supporting a critical role of the vagus nerve in modulating emotional memories. Based on this body of evidence, we highlight clinical areas where VNS may therefore serve as an adjunct to treatments for neurocognitive, anxiety- and trauma-related disorders, that aim at improving learning and memory consolidation. In fact, a brief review of (sub-) clinical studies shows that VNS alleviates symptoms in mild cognitive impairment, Alzheimer's disease as well as anxiety- and trauma-related disorders.",
+  "journal": "Frontiers in human neuroscience",
+  "authors": [
+    {
+      "lastname": "Szeska",
+      "forename": "Christoph",
+      "initials": "C"
+    },
+    {
+      "lastname": "Ventura-Bort",
+      "forename": "Carlos",
+      "initials": "C"
+    },
+    {
+      "lastname": "Giraudier",
+      "forename": "Manon",
+      "initials": "M"
+    },
+    {
+      "lastname": "Weymar",
+      "forename": "Mathias",
+      "initials": "M"
+    }
+  ],
+  "pmid": "40697334",
+  "doi": "10.3389/fnhum.2025.1595737",
+  "similarity_score": -0.13276262283325196,
+  "source_subgraph": "memory_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Memory"
+  ]
+}

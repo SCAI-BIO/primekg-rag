@@ -1,0 +1,45 @@
+{
+  "title": "Divergent Longitudinal Trajectories and Neurotransmitter Associations of Striatal Subparcellation Spontaneous Activity in Major Depressive Disorder.",
+  "abstract": "The striatum, which anatomically comprises the putamen, caudate, and nucleus accumbens (NAc), is a key region implicated in major depressive disorder (MDD). However, whether the abnormal spontaneous activity of these subparcellations exhibits universal or distinct characteristics remains unclear. In this study, we analyzed the amplitude of low-frequency fluctuations as an indicator of spontaneous activity from resting-state functional magnetic resonance imaging in 1832 individuals from 2 independent cohorts. Patients with MDD demonstrated consistent hyperactivity in the putamen and NAc (Cohen's <i>d</i> = 0.29-0.34). Striatal hyperactivity was not different in patients with first-episode and recurrent MDD. There was no robust correlation between striatal hyperactivity and Hamilton Depression Rating Scale scores. Only the putamen's hyperactivity could be normalized through ordinary antidepressant treatment. Hyperactivity in the putamen was correlated with both serotonin and dopamine neurotransmitter profiles, while NAc hyperactivity was correlated with serotonin profiles. Spontaneous hyperactivity in the putamen and NAc are reproducible functional imaging markers of MDD. While the hyperactivity of the putamen was responsive to antidepressant treatment, the hyperactivity of the NAc was more trait like. In conclusion, our study revealed both common and divergent spontaneous activity characteristics of the striatum subparcellations in patients with MDD.",
+  "journal": "Biological psychiatry global open science",
+  "authors": [
+    {
+      "lastname": "Zang",
+      "forename": "Zhenxiang",
+      "initials": "Z"
+    },
+    {
+      "lastname": "Qiao",
+      "forename": "Kaini",
+      "initials": "K"
+    },
+    {
+      "lastname": "Chen",
+      "forename": "Xiongying",
+      "initials": "X"
+    },
+    {
+      "lastname": "Zhou",
+      "forename": "Jing Jing",
+      "initials": "JJ"
+    },
+    {
+      "lastname": "Yang",
+      "forename": "Zhi",
+      "initials": "Z"
+    },
+    {
+      "lastname": "Wang",
+      "forename": "Gang",
+      "initials": "G"
+    }
+  ],
+  "pmid": "40546323",
+  "doi": "10.1016/j.bpsgos.2025.100523",
+  "similarity_score": 0.49386416673660277,
+  "source_subgraph": "major depressive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Major Depressive Disorder"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Subgraph entropy based network approaches for classifying bipolar disorder from resting-state magnetoencephalography.",
+  "abstract": "Currently, bipolar disorder diagnosis is primarily based on clinical interviews. Magnetoencephalography signals reflect changes in the brain's magnetic field induced by neuronal activity. As a result, the combination of magnetoencephalography and network science holds great promise for identifying bipolar disorder biomarkers. However, the existing methods remain limited in capturing the complexity of nodes and their connections within resting-state brain networks, making it difficult to fully reveal underlying pathological mechanisms. In this work, we measured the uncertainty associated with a subgraph, an information-theoretic metric called \"subgraph entropy,\" and used it to identify individuals with bipolar disorder. This method enabled a more accurate characterization of brain network complexity, facilitating the identification of regions closely associated with disease states. The results showed that subgraph entropy features significantly contributed to the classification of bipolar disorder, particularly within the beta frequency band. In addition, two special forms of subgraph entropy, namely node entropy and edge entropy, were examined to identify important brain regions and functional connectivity in bipolar disorder patients across multiple frequency bands. Notably, in the beta frequency band, the method based on edge entropy achieved 0.8462 accuracy, 0.7308 specificity, and 0.9231 sensitivity through leave-one-out cross-validation, effectively distinguishing individuals with bipolar disorder from healthy controls.",
+  "journal": "Cerebral cortex (New York, N.Y. : 1991)",
+  "authors": [
+    {
+      "lastname": "Sun",
+      "forename": "Qi",
+      "initials": "Q"
+    },
+    {
+      "lastname": "Zhong",
+      "forename": "Shuming",
+      "initials": "S"
+    },
+    {
+      "lastname": "Li",
+      "forename": "Tongtong",
+      "initials": "T"
+    },
+    {
+      "lastname": "Zhao",
+      "forename": "Ziyang",
+      "initials": "Z"
+    },
+    {
+      "lastname": "Lai",
+      "forename": "Shunkai",
+      "initials": "S"
+    },
+    {
+      "lastname": "Zhang",
+      "forename": "Yiliang",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Chen",
+      "forename": "Pan",
+      "initials": "P"
+    },
+    {
+      "lastname": "Wang",
+      "forename": "Ying",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Jia",
+      "forename": "Yanbin",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Yao",
+      "forename": "Zhijun",
+      "initials": "Z"
+    },
+    {
+      "lastname": "Hu",
+      "forename": "Bin",
+      "initials": "B"
+    }
+  ],
+  "pmid": "40680226",
+  "doi": "10.1093/cercor/bhaf182",
+  "similarity_score": 0.5887508869171143,
+  "source_subgraph": "bipolar disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Bipolar Disorder"
+  ]
+}

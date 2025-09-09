@@ -1,0 +1,35 @@
+{
+  "title": "Informing the dimensional classification of mania: A daily diary study of symptom-level structure.",
+  "abstract": "The optimal classification of mania symptoms within dimensional models such as the Hierarchical Taxonomy of Psychopathology remains unclear, although progress has been made recently. We extend dimensional classification research by assessing mania and other domains at the symptom level using a longitudinal, daily diary design (7-day period). Participants (N = 230; 1,243 total surveys) were adults recruited online based on having a self-identified history of significant mental health issues. Consistent with recent cross-sectional research, mania symptoms associated strongly with thought disorder at the between-person level, and they also associated strongly with some externalizing features across levels of analysis (i.e., within- and between-person). Regarding specific within-person results, select mania symptoms were more distinctive from other symptoms assessed overall, although mania symptoms still associated robustly with thought disorder in many cases. A subset of mania symptoms (e.g., euphoric mood) also had robust negative within-person associations with internalizing symptoms. These findings inform understanding of mania symptoms' daily associations and dimensional assessment, although several limitations are important to keep in mind. These limitations included some item ratings having limited within-person variability, as well as our study sampling period focusing on only 7 days. We hope that future research will address these limitations in other samples toward improving the dimensional classification and assessment of mania and other symptoms. (PsycInfo Database Record (c) 2025 APA, all rights reserved).",
+  "journal": "Psychological assessment",
+  "authors": [
+    {
+      "lastname": "Stanton",
+      "forename": "Kasey",
+      "initials": "K"
+    },
+    {
+      "lastname": "Merwin",
+      "forename": "Audrey L",
+      "initials": "AL"
+    },
+    {
+      "lastname": "Lindley",
+      "forename": "Sarah M",
+      "initials": "SM"
+    },
+    {
+      "lastname": "Emery",
+      "forename": "Noah N",
+      "initials": "NN"
+    }
+  ],
+  "pmid": "40167542",
+  "doi": "10.1037/pas0001366",
+  "similarity_score": 0.1378300666809082,
+  "source_subgraph": "Mania_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Mania"
+  ]
+}

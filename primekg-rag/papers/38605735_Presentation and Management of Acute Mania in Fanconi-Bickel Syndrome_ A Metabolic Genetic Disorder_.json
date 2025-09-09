@@ -1,0 +1,35 @@
+{
+  "title": "Presentation and Management of Acute Mania in Fanconi-Bickel Syndrome, A Metabolic Genetic Disorder.",
+  "abstract": "Fanconi-Bickel syndrome (FBS) is a rare metabolic disorder caused by decreased glucose transporter 2 (GLUT2) function due to several known mutations in the <i>SLC2A2</i> gene. As of 2020, 144 cases of FBS have been described in the literature. Metabolic and somatic sequelae include dysglycemia and accumulation of glycogen in the kidney and liver. However, there are no descriptions in the literature of possible neuropsychiatric manifestations of FBS. This case report is to our knowledge the first in this regard, describing a patient with FBS who was admitted to our psychiatric inpatient unit while experiencing acute mania. We conceptualize the case as a novel psychiatric presentation of acute mania in FBS, which may inform our understanding of bipolar disorder pathophysiology because of the hypothesized functional changes in neural pathways involving the paraventricular thalamus induced by decreased GLUT2 activity in FBS.",
+  "journal": "Case reports in psychiatry",
+  "authors": [
+    {
+      "lastname": "Chen",
+      "forename": "Allen P F",
+      "initials": "APF"
+    },
+    {
+      "lastname": "Russell",
+      "forename": "Geoffrey",
+      "initials": "G"
+    },
+    {
+      "lastname": "Ashour",
+      "forename": "Amnie",
+      "initials": "A"
+    },
+    {
+      "lastname": "Yacoub",
+      "forename": "Adeeb",
+      "initials": "A"
+    }
+  ],
+  "pmid": "38605735",
+  "doi": "10.1155/2024/5593846",
+  "similarity_score": 0.11125831604003905,
+  "source_subgraph": "Mania_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Mania"
+  ]
+}

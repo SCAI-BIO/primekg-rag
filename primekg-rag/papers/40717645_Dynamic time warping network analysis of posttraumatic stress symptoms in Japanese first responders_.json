@@ -1,0 +1,60 @@
+{
+  "title": "Dynamic time warping network analysis of posttraumatic stress symptoms in Japanese first responders.",
+  "abstract": "<b>Background:</b> A more inclusive approach for addressing the diverse spectrum of mental health experiences is needed. Network theory frames psychopathological complaints as complex dynamic systems, that can be modelled in a network of mutually interacting symptoms. These networks may provide important markers of symptom improvement or exacerbation, and inform strategies for early intervention and treatment. In previous research, we identified five distinct Post-Traumatic Stress Disorder (PTSD) symptom severity trajectories within a cohort of first responders from the Japan Ground Self-Defense Force (JGSDF), deployed following the Great East Japan Earthquake (GEJE) of 2011: Resilient, Recovery, Incomplete Recovery, Late-Onset, and Chronic.<b>Objective:</b> The current study was aimed at investigating differences in symptom dynamics within the four non-resilient PTSD symptom severity trajectories using the innovative method of Dynamic Time Warping (DTW).<b>Method</b>: This study sample was selected from a cohort of 55 632 JGSDF personnel, who completed at least four yearly mental health surveys between 2013 and 2018, and experienced PTSD symptoms over the course of follow-up. DTW, a statistical technique for identifying patterns in time-series data, was employed to model undirected and directed (temporal) symptom networks.<b>Results:</b> The sample consisted of 10211 personnel [97.8% male, mean age 36.7 (<i>SD</i> = 7.5)]. In the undirected DTW analyses, we found that lower network density was associated with a chronic symptom severity trajectory. Directed DTW analyses revealed that in improving post-traumatic stress, dissociation-like symptoms were the first to decrease, whereas emotional reactivity to trauma reminders was the most persistent symptom. In worsening post-traumatic stress, avoidance symptoms emerged earliest, while dissociation-like symptoms were the last to intensify.<b>Conclusions</b>: These findings highlight the importance of DTW network density in the chronicity of symptoms of post-traumatic stress. Furthermore, an increase in avoidance symptoms may serve as an early marker of worsening PTSD, signalling a need for timely intervention.",
+  "journal": "European journal of psychotraumatology",
+  "authors": [
+    {
+      "lastname": "van der Does",
+      "forename": "Florentine H S",
+      "initials": "FHS"
+    },
+    {
+      "lastname": "Kitano",
+      "forename": "Masato",
+      "initials": "M"
+    },
+    {
+      "lastname": "Nagamine",
+      "forename": "Masanori",
+      "initials": "M"
+    },
+    {
+      "lastname": "Saito",
+      "forename": "Taku",
+      "initials": "T"
+    },
+    {
+      "lastname": "van der Wee",
+      "forename": "Nic J A",
+      "initials": "NJA"
+    },
+    {
+      "lastname": "Chiba",
+      "forename": "Toshinori",
+      "initials": "T"
+    },
+    {
+      "lastname": "Edo",
+      "forename": "Naoki",
+      "initials": "N"
+    },
+    {
+      "lastname": "Vermetten",
+      "forename": "Eric",
+      "initials": "E"
+    },
+    {
+      "lastname": "Giltay",
+      "forename": "Erik J",
+      "initials": "EJ"
+    }
+  ],
+  "pmid": "40717645",
+  "doi": "10.1080/20008066.2025.2528313",
+  "similarity_score": 0.4774332523345947,
+  "source_subgraph": "Posttraumatic stress symptom_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Posttraumatic Stress Symptom"
+  ]
+}

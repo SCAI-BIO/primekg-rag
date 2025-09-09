@@ -1,0 +1,35 @@
+{
+  "title": "Altered resting-state functional connectivity in a thalamo-cortico-cerebellar network in patients with schizophrenia.",
+  "abstract": "The diagnosis of schizophrenia is associated with a complex psychopathology related to disrupted brain circuitry causing a failure in coordinating information across brain sites with no consensus regarding the mechanisms. Although schizophrenia is well-studied, the great majority of studies investigated pre-selected ROIs or Seed-based connectivity. Whole brain ROI-wise studies that consider all ROIs available simultaneously are lacking. This technique helps understand large- and local-scale dynamics of information exchange across the whole brain. We investigated ROI-wise whole brain networks in 35 participants diagnosed with schizophrenia and 41 control participants. To unveil dysfunctions in brain subnetworks and to characterize network topology, we applied a statistical tool specially developed for network comparison called network-based statistic and graph theory. We observed a hyperconnected thalamo-cortico-cerebellar subnetwork in participants with schizophrenia; nodal analysis revealed higher number of thalamic connections. Our results suggest disruptions at the local level of the subnetwork rather than globally spread across the brain and driven by hyperconnectivity. Importantly, this subnetwork emerged from an exploratory analysis directly comparing ROI-wise whole brain network. This fact makes it an important contribution to the field as additional evidence, demonstrating the high reliability of malfunction in the local thalamo-cortico-cerebellar network.",
+  "journal": "Scientific reports",
+  "authors": [
+    {
+      "lastname": "Forlim",
+      "forename": "Caroline Garcia",
+      "initials": "CG"
+    },
+    {
+      "lastname": "Klock",
+      "forename": "Leonie",
+      "initials": "L"
+    },
+    {
+      "lastname": "Gallinat",
+      "forename": "Jürgen",
+      "initials": "J"
+    },
+    {
+      "lastname": "Kühn",
+      "forename": "Simone",
+      "initials": "S"
+    }
+  ],
+  "pmid": "39487353",
+  "doi": "10.1038/s41598-024-78297-3",
+  "similarity_score": 0.3542389750480652,
+  "source_subgraph": "schizophrenia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Schizophrenia"
+  ]
+}

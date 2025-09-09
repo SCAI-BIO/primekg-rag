@@ -1,0 +1,20 @@
+{
+  "title": "Postanesthetic hypotropia.",
+  "abstract": "",
+  "journal": "Journal of cataract and refractive surgery",
+  "authors": [
+    {
+      "lastname": "Hamilton",
+      "forename": "R C",
+      "initials": "RC"
+    }
+  ],
+  "pmid": "9610432",
+  "doi": "10.1016/s0886-3350(98)80241-1",
+  "similarity_score": 0.25177817344665526,
+  "source_subgraph": "Hypotropia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Hypotropia"
+  ]
+}

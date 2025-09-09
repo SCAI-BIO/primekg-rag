@@ -1,0 +1,35 @@
+{
+  "title": "Unipolar Mania: Prevalence and Patient Characteristics.",
+  "abstract": "Recurrent [hypo]mania without major depressive episodes (\"unipolar mania\" [UPM]) is an uncommon form of major affective disorder related to bipolar disorder (BD). We characterized UPM patients and estimated the prevalence of their characteristics based on prolonged times-at-risk. Using standard bivariate and multivariate statistics, we compared the characteristics of 63 consecutive UPM patients to 1210 other BD patients over prolonged, close, prospective follow-up at expert mood disorder centers. UPM was uncommon (4.95% of 1273 BD cases during 18.2 years at risk) with a 2.5-fold excess of men and 93.4% considered type I BD. UPM cases had earlier initial clinical interventions than other BD patients, more psychotic features with first episodes, and fewer UPM patients were married but did not have fewer children and were more unemployed. UPM cases experienced more morbidity (episodes and hospitalizations/year and %-time ill) than other BD patients and made more follow-up clinic visits/year. They were less likely to be suicidal and had less general medical comorbidity but did not differ in substance abuse. They had lower ratings of depressive symptoms, used mood stabilizers more, and as expected, received antidepressants 27 times less than other BD patients. Observed rates of UPM declined with longer observation times. UPM was uncommon (4.95% of BD cases; 0.31% with hypomania only). Compared to ordinary BD, UPM had significantly greater morbidity and unemployment but a lower risk of suicidal behavior or general medical disorders associated with bipolar depression. This unusual disorder needs greater recognition, clarification of its nosological status, and efforts to optimize its treatment.",
+  "journal": "Acta psychiatrica Scandinavica",
+  "authors": [
+    {
+      "lastname": "Manchia",
+      "forename": "Mirko",
+      "initials": "M"
+    },
+    {
+      "lastname": "Miola",
+      "forename": "Alessandro",
+      "initials": "A"
+    },
+    {
+      "lastname": "Tondo",
+      "forename": "Leonardo",
+      "initials": "L"
+    },
+    {
+      "lastname": "Baldessarini",
+      "forename": "Ross J",
+      "initials": "RJ"
+    }
+  ],
+  "pmid": "40059291",
+  "doi": "10.1111/acps.13798",
+  "similarity_score": 0.07077364921569823,
+  "source_subgraph": "Mania_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Mania"
+  ]
+}

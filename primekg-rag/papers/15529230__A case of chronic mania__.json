@@ -1,0 +1,25 @@
+{
+  "title": "[A case of chronic mania].",
+  "abstract": "In this paper, we present a case of chronic mania and we revise its diagnosis and treatment. A case of a 23 year old patient with chronic mania as well as his response to clozapine treatment is described.",
+  "journal": "Actas espanolas de psiquiatria",
+  "authors": [
+    {
+      "lastname": "Pailhez Vindual",
+      "forename": "G",
+      "initials": "G"
+    },
+    {
+      "lastname": "Palomo Nicolau",
+      "forename": "A L",
+      "initials": "AL"
+    }
+  ],
+  "pmid": "15529230",
+  "doi": "",
+  "similarity_score": 0.07429163455963134,
+  "source_subgraph": "Mania_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Mania"
+  ]
+}

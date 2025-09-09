@@ -1,0 +1,45 @@
+{
+  "title": "A network-based approach to discover diagnostic metabolite markers associated with depressive features for major depressive disorder.",
+  "abstract": "Despite the high prevalence of major depressive disorder (MDD), current diagnostic methods rely on subjective clinical assessments, highlighting the need for biomarkers. This study aimed to investigate plasma metabolite signatures in patients with MDD compared with healthy controls (HC) and to identify diagnostic biomarkers associated with depressive features. A total of 99 patients with MDD and 50 HC were included in this study from a study cohort. Targeted plasma metabolomics was employed to quantify metabolites across diverse biochemical classes. Weighted gene co-expression network analysis (WGCNA) was performed to construct metabolite networks and identify modules and metabolites associated with depressive features. Diagnostic models were developed based on the identified hub metabolites, using six supervised machine-learning algorithms. Model interpretability was enhanced through the application of the SHapley Additive exPlanations (SHAP) algorithm. Pathways such as biosynthesis of phenylalanine, tyrosine and tryptophan, glutathione metabolism, and arginine and proline metabolism were significantly enriched in the comparison of metabolic profiles between the MDD and HC groups. Seven hub metabolites were identified as the biomarker signatures that effectively discriminate the MDD and HC groups. Among these metabolites, one sphingomyelin (SM (OH) C16:1), one hexosylceramide (HexCer(d18:1/24:1)), one phosphatidylcholine (PC aa C40:6), and one cholesteryl ester (CE(20:4)) were positively associated with the depression severity, sadness/depressive mood, and other depressive features, while methionine, arginine, and tyrosine showed negative correlation. The deep neural network model incorporating these seven biomarkers achieved the highest diagnostic performance, with an area under the curve (AUC) of 0.803 (95% CI, 0.643-0.962). We identified a novel signature of seven biomarkers for constructing an explainable diagnostic model that effectively discriminates between the MDD and HC groups. These biomarkers were associated with depressive symptoms. The findings provide new insights into the biological diagnosis of MDD. https://clinicaltrials.gov/search?cond=NCT04518592.",
+  "journal": "Frontiers in psychiatry",
+  "authors": [
+    {
+      "lastname": "Zheng",
+      "forename": "Yuzhen",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Zeng",
+      "forename": "Duan",
+      "initials": "D"
+    },
+    {
+      "lastname": "Tian",
+      "forename": "Ying",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Li",
+      "forename": "Siyuan",
+      "initials": "S"
+    },
+    {
+      "lastname": "He",
+      "forename": "Shen",
+      "initials": "S"
+    },
+    {
+      "lastname": "Li",
+      "forename": "Huafang",
+      "initials": "H"
+    }
+  ],
+  "pmid": "40547126",
+  "doi": "10.3389/fpsyt.2025.1610520",
+  "similarity_score": 0.5090902328491211,
+  "source_subgraph": "major depressive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Major Depressive Disorder"
+  ]
+}

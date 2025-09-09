@@ -1,0 +1,35 @@
+{
+  "title": "A generative model of personality disorder as a relational disorder.",
+  "abstract": "Existing models of personality disorder are statistical models: dispersion patterns of personality facets. Although useful in describing personality differences, such models fall short in terms of explaining those differences. Generative models can address these explanatory gaps by explicating the mechanisms that generate descriptive pathologies. In this article, we aim to move beyond the former descriptive models and toward the latter explanatory ones. To do so, we formalize personality pathology using a generative model with four key properties. First, it is probabilistic: it outlines how humans leverage uncertainty to make sense of their own and others' ways of being. Second, it is relational: it posits that personality pathology is about poor ways of experiencing and relating to the self and others. Third, it is hierarchical: it accounts for the multiplicity of self- and other-states (in the here-and-now) and traits (in the long run). Finally, it is dynamic: it outlines how these properties evolve over time, accounting for the development of personality. By simulating data from this model, we demonstrate how it can account for the generation, maintenance, and treatment of various personality problems (from borderline instability to narcissistic grandiosity) by formalizing them as relational problems: problems with navigating relationships. We thus discuss how our model could be used to address recent debates on what is central to personality pathology by clarifying the distinction between description (what personality \"is\") and explanation (what personality \"does\"). We conclude the article with a tutorial on our model and suggestions for future research. (PsycInfo Database Record (c) 2025 APA, all rights reserved).",
+  "journal": "Journal of psychopathology and clinical science",
+  "authors": [
+    {
+      "lastname": "Zavlis",
+      "forename": "Orestis",
+      "initials": "O"
+    },
+    {
+      "lastname": "Moutoussis",
+      "forename": "Michael",
+      "initials": "M"
+    },
+    {
+      "lastname": "Fonagy",
+      "forename": "Peter",
+      "initials": "P"
+    },
+    {
+      "lastname": "Story",
+      "forename": "Giles",
+      "initials": "G"
+    }
+  ],
+  "pmid": "40705631",
+  "doi": "10.1037/abn0001010",
+  "similarity_score": 0.471434223651886,
+  "source_subgraph": "personality disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Personality Disorder"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "title": "The Impact of Non-Criterion A Traumas in Intimate Relationships on Posttraumatic Stress Symptoms: A Systematic Review.",
+  "abstract": "Currently, the diagnosis of posttraumatic stress disorder necessitates exposure to a traumatic event as defined by DSM-5-TR Criterion A. Nevertheless, evidence suggests that experiences not meeting Criterion A stressor definitions, specifically related to intimate relationships (e.g., psychological abuse) can also elicit clinically significant posttraumatic stress symptoms (PTSS). However, the literature examining the unique role of non-Criterion A intimate relationship stressors on PTSS is sparse. This systematic review synthesized the literature examining the influence of non-Criterion A intimate relationship stressors on PTSS. Electronic searches of three databases (i.e., PsychInfo, Scopus, and PubMed) identified 3257 articles which underwent title and abstract screening and, if potentially eligible, full-text review. Nine articles met inclusion criteria; four of which examined PTSS after a conflict in a relationship and/or divorce, two studies focused on infidelity, and three studies focused on partner psychological abuse in an intimate relationship. Results revealed that relationship conflict and divorce, infidelity, and psychological abuse can lead to clinically significant PTSS, however, these findings were not consistent across all studies. Findings reveal considerable variability in the frequency and severity of PTSS following non-Criterion A intimate relationship stressors that is in line with the variability found in Criterion A-exposed samples. Nevertheless, given the limited number of studies identified, further research is needed. Understanding the impact of these stressors may have important implications for diagnostic and treatment considerations and will provide valuable insights for our understanding of the PTSD construct in its entirety.",
+  "journal": "Journal of trauma & dissociation : the official journal of the International Society for the Study of Dissociation (ISSD)",
+  "authors": [
+    {
+      "lastname": "Earle",
+      "forename": "Elizabeth A",
+      "initials": "EA"
+    },
+    {
+      "lastname": "Siegel",
+      "forename": "Ashley",
+      "initials": "A"
+    },
+    {
+      "lastname": "Tissera",
+      "forename": "Talia",
+      "initials": "T"
+    },
+    {
+      "lastname": "Hernandez",
+      "forename": "Kristen M",
+      "initials": "KM"
+    },
+    {
+      "lastname": "Di Bartolomeo",
+      "forename": "Alyssa A",
+      "initials": "AA"
+    },
+    {
+      "lastname": "Ip",
+      "forename": "Jennifer",
+      "initials": "J"
+    },
+    {
+      "lastname": "Fitzpatrick",
+      "forename": "Skye",
+      "initials": "S"
+    }
+  ],
+  "pmid": "40351300",
+  "doi": "10.1080/15299732.2025.2503713",
+  "similarity_score": 0.43896626234054564,
+  "source_subgraph": "Posttraumatic stress symptom_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Posttraumatic Stress Symptom"
+  ]
+}

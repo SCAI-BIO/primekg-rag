@@ -1,0 +1,25 @@
+{
+  "title": "Medical Complications of Anorexia Nervosa.",
+  "abstract": "Anorexia nervosa (AN) is the most prevalent eating disorder, affecting almost 3 million people and having the highest mortality rate among psychiatric conditions. The hypometabolic state in AN, caused by an imbalance between energy intake and needs, leads to various medical complications, including gastrointestinal disorders, cardiovascular abnormalities, hematologic alterations, neurocognitive impairment, low bone mineral density, electrolyte imbalances, nephrological issues, and dermatological lesions. Some of these complications are life-threatening, necessitating prompt recognition and treatment by pediatricians and psychiatrists. Indeed, the unfavorable outcome of AN is primarily due to medical and psychiatric comorbidities; approximately one-third of deaths in cases with AN are attributed to cardiovascular complications. Hematological alterations and symptoms of medical instability, such as bradycardia, hypotension, orthostasis, and electrolyte derangements, occur in 1 out of 5 youths with AN requiring hospitalization, with nearly 40% needing repeated hospitalizations. Prompt comprehensive medical, psychiatric, and nutritional assessments, along with thorough physical examinations and laboratory tests, are crucial for early identification and management of these complications. Immediate hospitalization is essential in life-threatening cases to prevent further clinical deterioration or manage the suicide risk. This article reviews the acute and chronic medical consequences of AN, divided into common and rare, focusing on children and adolescents and summarizing the complications by organ/system and frequency.",
+  "journal": "Pediatrics",
+  "authors": [
+    {
+      "lastname": "Trapani",
+      "forename": "Sandra",
+      "initials": "S"
+    },
+    {
+      "lastname": "Rubino",
+      "forename": "Chiara",
+      "initials": "C"
+    }
+  ],
+  "pmid": "40659363",
+  "doi": "10.1542/peds.2024-070304",
+  "similarity_score": 0.7770140647888184,
+  "source_subgraph": "anorexia nervosa_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anorexia Nervosa"
+  ]
+}

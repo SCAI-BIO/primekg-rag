@@ -1,0 +1,70 @@
+{
+  "title": "Network-wide aberrancies in neuronal activity during working memory in a large cohort of patients with mood disorders: associations with cognitive impairment and functional disability.",
+  "abstract": "Individuals with mood disorders present with cognitive impairment and functional disability, and small-scale studies underline aberrant cognitive control and default mode network activity as potential neuronal correlates underlying these deficiencies. The objectives of this large-scale, cross-sectional functional magnetic resonance imaging (fMRI) study were (I) to investigate the replicability of cognitive control network (CCN) hypo-activity and default mode network (DMN) hyper-activity in patients with mood disorders, and (II) to explore brain activity related to cognition and daily functioning across patients and controls. We pooled data from three studies conducted at the same study site, which resulted in a sample of 213 fully or partially remitted patients with mood disorders (189 with bipolar disorder, 24 with major depressive disorder) and 60 healthy controls (HC). All participants underwent fMRI, during which they performed a verbal working memory N-back task, as well as comprehensive neurocognitive testing and assessment of daily functioning. Patients showed task-related hypo-activity within the left dorsolateral prefrontal cortex as well as frontal and parietal nodes of the CCN, which correlated with poorer outside-scanner cognitive performance. Within the DMN, patients showed hyper-activity in the frontal medial cortex compared to HC. Cognitive performance was positively associated with task activity within the right middle frontal gyrus (p = 0.0005), located in the CCN, whereas daily functioning was negatively associated with activity within the cingulate gyrus, a key hub in the DMN (p = 0.007). In the largest study of its kind, we identified CCN and DMN abnormalities in mood disorders and associations with cognition and functioning. The findings highlight plausible neurocircuitry targets for enhancing cognitive and functional recovery in mood disorders.",
+  "journal": "Molecular psychiatry",
+  "authors": [
+    {
+      "lastname": "Damgaard",
+      "forename": "Viktoria",
+      "initials": "V"
+    },
+    {
+      "lastname": "Schandorff",
+      "forename": "Johanna Mariegaard",
+      "initials": "JM"
+    },
+    {
+      "lastname": "Macoveanu",
+      "forename": "Julian",
+      "initials": "J"
+    },
+    {
+      "lastname": "Sankar",
+      "forename": "Anjali",
+      "initials": "A"
+    },
+    {
+      "lastname": "Zarp",
+      "forename": "Jeff",
+      "initials": "J"
+    },
+    {
+      "lastname": "Fisher",
+      "forename": "Patrick M",
+      "initials": "PM"
+    },
+    {
+      "lastname": "Jørgensen",
+      "forename": "Martin Balslev",
+      "initials": "MB"
+    },
+    {
+      "lastname": "Kessing",
+      "forename": "Lars Vedel",
+      "initials": "LV"
+    },
+    {
+      "lastname": "Knudsen",
+      "forename": "Gitte Moos",
+      "initials": "GM"
+    },
+    {
+      "lastname": "Frokjaer",
+      "forename": "Vibe G",
+      "initials": "VG"
+    },
+    {
+      "lastname": "Miskowiak",
+      "forename": "Kamilla Woznica",
+      "initials": "KW"
+    }
+  ],
+  "pmid": "40527901",
+  "doi": "10.1038/s41380-025-03078-x",
+  "similarity_score": -0.06417126655578614,
+  "source_subgraph": "memory_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Memory"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Low stability of diagnostic classifications of anxiety disorders over time: A six-year follow-up of the NESDA study.",
+  "abstract": "Stability of diagnosis was listed as an important predictive validator for maintaining separate diagnostic classifications in DSM-5. The aim of this study is to examine the longitudinal stability of anxiety disorder diagnoses, and the difference in stability between subjects with a chronic versus a non-chronic course. Longitudinal data of 447 subjects with a current pure anxiety disorder diagnosis at baseline from the Netherlands Study of Depression and Anxiety were used. At baseline, 2-, 4-, and 6-year follow-up mental disorders were assessed and numbers (and percentages) of transitions from one anxiety disorder diagnosis to another were determined for each anxiety disorder diagnosis separately and for subjects with a chronic (i.e. one or more anxiety disorder at every follow-up assessment) and a non-chronic course. Transition percentages were high in all anxiety disorder diagnoses, ranging from 21.1% for social anxiety disorder to 46.3% for panic disorder with agoraphobia at six years of follow-up. Transition numbers were higher in the chronic than in the non-chronic course group (p=0.01). Due to the 2 year sample frequency, the number of subjects with a chronic course may have been overestimated as intermittent recovery periods may have been missed. These data indicate that anxiety disorder diagnoses are not stable over time. The validity of the different anxiety disorder categories is not supported by these longitudinal patterns, which may be interpreted as support for a more pronounced dimensional approach to the classification of anxiety disorders.",
+  "journal": "Journal of affective disorders",
+  "authors": [
+    {
+      "lastname": "Hovenkamp-Hermelink",
+      "forename": "Johanna Hm",
+      "initials": "JH"
+    },
+    {
+      "lastname": "Riese",
+      "forename": "Harriëtte",
+      "initials": "H"
+    },
+    {
+      "lastname": "van der Veen",
+      "forename": "Date C",
+      "initials": "DC"
+    },
+    {
+      "lastname": "Batelaan",
+      "forename": "Neeltje M",
+      "initials": "NM"
+    },
+    {
+      "lastname": "Penninx",
+      "forename": "Brenda Wjh",
+      "initials": "BW"
+    },
+    {
+      "lastname": "Schoevers",
+      "forename": "Robert A",
+      "initials": "RA"
+    }
+  ],
+  "pmid": "26544613",
+  "doi": "10.1016/j.jad.2015.10.035",
+  "similarity_score": 0.4801685094833374,
+  "source_subgraph": "anxiety disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anxiety Disorder"
+  ]
+}

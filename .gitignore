@@ -3,6 +3,47 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Database files
+*.db
+*.sqlite3
+*.sqlite
+*.db-journal
+*.sqlite3-journal
+analyses_db/
+analyses_db_old/
+
+# Vector stores and embeddings
+chroma-embeddings.parquet
+chroma-collections.parquet
+chroma-fulltext*.bin
+
+# Environment and virtual environment
+.venv/
+env/
+venv/
+ENV/
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+ai_analysis.log
+
+# Local development files
+.env
+.env.local
+
+# Subgraph files (can be regenerated)
+subgraphs/
+
+# Generated analyses
+generated_analyses/
+
 # C extensions
 *.so
 
@@ -128,7 +169,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/

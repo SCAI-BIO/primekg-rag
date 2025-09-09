@@ -32,55 +32,46 @@ chroma_embeddings = embedding_functions.SentenceTransformerEmbeddingFunction(mod
 
 collection = chroma_client.get_or_create_collection(name="subgraph_analysis", embedding_function=chroma_embeddings)
 
-system_prompt = """You are a Principal Knowledge Graph Analyst producing clinician-friendly factual reports. 
-You strictly follow the provided structured data and do not use any external sources or prior knowledge.
+# System prompt with proper line wrapping
+system_prompt = (
+    """You are a Principal Knowledge Graph Analyst producing clinician-friendly factual reports. """
+    "You strictly follow the provided structured data and do not use any external sources or "
+    "prior knowledge.\n\n"""
+    "**Core Directives:**\n"
+    "1. **Strict Data Adherence:** Use ONLY the information in the `<CONTEXT>` block.\n"
+    "2. **No Hallucination:** Do not invent, infer, or embellish relationships.\n"
+    "3. **Traceability:** Every fact must be directly traceable to a row in the data.\n"
+    "4. **Refusal on Missing Data:** If a relationship is not in the data, omit it.\n"
+    "5. **Complete Response:** You MUST always provide both sections below.\n"
+    "6. **No External Knowledge:** Base analysis solely on provided data relationships.\n\n"
+    "**MANDATORY OUTPUT FORMAT - INCLUDE BOTH SECTIONS:**\n\n"
+    "### Evidence\n"
+    "List all verifiable relationships from the data, each on its own bullet point.\n\n"
+    "### Summary\n"
+    "Write a concise, professional interpretation of the subgraph for a clinical audience, "
+    "highlighting relevant patterns and disease links based solely on the data relationships.\n\n"
+    "**CRITICAL: Your response is incomplete if it does not contain both sections above.**"
+)
 
-**Core Directives:**
-1. **Strict Data Adherence:** Use ONLY the information in the `<CONTEXT>` block provided by the user.
-2. **No Hallucination:** Do not invent, infer, or embellish relationships.
-3. **Traceability:** Every fact in the Evidence section must be directly traceable to a row in the provided data.
-4. **Refusal on Missing Data:** If a relationship is not in the data, omit it.
-5. **Complete Response:** You MUST always provide both sections below.
-6. **No External Knowledge:** Base your analysis solely on the provided data relationships, but do not mention this limitation in your output.
-
-**MANDATORY OUTPUT FORMAT - YOU MUST INCLUDE BOTH SECTIONS:**
-
-### Evidence
-List all verifiable relationships from the provided data, each on its own bullet point.
-
-### Summary
-Write a concise, professional interpretation of the subgraph for a clinical audience, highlighting relevant patterns, disease links, or potential biological significance. This should be a comprehensive clinical analysis based solely on the relationships found in the data.
-
-**CRITICAL: Your response is incomplete if it does not contain both sections above. Always complete the full report.**
-"""
-
-user_prompt_template = """**TASK:** Generate a complete clinician-friendly report based on the provided knowledge graph subgraph data.
-
-**MANDATORY REQUIREMENT:** Your response must contain exactly two sections:
-1. ### Evidence (with bullet points of all relationships)
-2. ### Summary (detailed clinical interpretation and significance)
-
-**CONTEXT:**
-The following data is a subgraph exported as a CSV with the columns:
-`relation, display_relation, x_index, x_id, x_type, x_name, x_source, y_index, y_id, y_type, y_name, y_source`
-
-<CONTEXT>
-{subgraph_facts}
-</CONTEXT>
-
-**OUTPUT TEMPLATE - Fill in each section completely:**
-
-### Evidence
-[Extract and list every relationship from the data above as bullet points]
-
-### Summary
-[Provide a comprehensive clinical analysis of the relationships, their patterns, significance for clinicians, potential diagnostic implications, and therapeutic considerations - make this substantial and informative based solely on the provided data relationships]
-
-**REMINDER: Complete both sections above. Use only the data provided in the context.**
-"""
+user_prompt_template = (
+    "**TASK:** Generate a complete clinician-friendly report based on the provided "
+    "knowledge graph subgraph data.\n\n"
+    "**MANDATORY REQUIREMENT:** Your response must contain exactly two sections:\n"
+    "1. ### Evidence (with bullet points of all relationships)\n"
+    "2. ### Summary (with clinical interpretation)\n\n"
+    "**CONTEXT:**\n"
+    "{subgraph_facts}\n\n"
+    "**OUTPUT TEMPLATE - Fill in each section completely:**\n\n"
+    "### Evidence\n"
+    "[Extract and list every relationship from the data above as bullet points]\n\n"
+    "### Summary\n"
+    "[Provide a comprehensive clinical analysis of the relationships, their patterns, significance for clinicians, potential diagnostic implications, and therapeutic considerations - make this substantial and informative based solely on the provided data relationships]\n\n"
+    "**REMINDER: Complete both sections above. Use only the data provided in the context.**"
+)
 
 # --- Build user prompt ---
 def build_user_prompt(file_path):
+    """Build user prompt from file content."""
     df = pd.read_csv(file_path)
     if df.empty:
         return None
@@ -91,17 +82,20 @@ def build_user_prompt(file_path):
 
 # --- Check if file already processed ---
 def is_already_analyzed(filename):
+    """Check if file has already been analyzed."""
     existing_ids = collection.get(include=[])["ids"]
     return filename in existing_ids
 
 # --- Save to ChromaDB ---
 def save_to_chromadb(filename, text):
+    """Save analysis to ChromaDB."""
     embedding = embedding_model.encode(text).tolist()
-    collection.add(documents=[text], embeddings=[embedding], ids=[filename])
+    collection.add(documents=[text], embeddings=[embedding], metadatas=[{"source": filename}], ids=[filename])
     logging.info(f"✅ Stored {filename} in ChromaDB.")
 
 # --- Analyze all files ---
 def analyze_all_files():
+    """Analyze all subgraph files and save results."""
     all_files = sorted(SUBGRAPH_DIR.glob("*.csv"))
 
     for file in all_files:

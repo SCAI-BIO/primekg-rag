@@ -1,0 +1,30 @@
+{
+  "title": "Multi-atlas ensemble graph neural network model for major depressive disorder detection using functional MRI data.",
+  "abstract": "Major depressive disorder (MDD) is one of the most common mental disorders, with significant impacts on many daily activities and quality of life. It stands as one of the most common mental disorders globally and ranks as the second leading cause of disability. The current diagnostic approach for MDD primarily relies on clinical observations and patient-reported symptoms, overlooking the diverse underlying causes and pathophysiological factors contributing to depression. Therefore, scientific researchers and clinicians must gain a deeper understanding of the pathophysiological mechanisms involved in MDD. There is growing evidence in neuroscience that depression is a brain network disorder, and the use of neuroimaging, such as magnetic resonance imaging (MRI), plays a significant role in identifying and treating MDD. Rest-state functional MRI (rs-fMRI) is among the most popular neuroimaging techniques used to study MDD. Deep learning techniques have been widely applied to neuroimaging data to help with early mental health disorder detection. Recent years have seen a rise in interest in graph neural networks (GNNs), which are deep neural architectures specifically designed to handle graph-structured data like rs-fMRI. This research aimed to develop an ensemble-based GNN model capable of detecting discriminative features from rs-fMRI images for the purpose of diagnosing MDD. Specifically, we constructed an ensemble model by combining functional connectivity features from multiple brain region segmentation atlases to capture brain complexity and detect distinct features more accurately than single atlas-based models. Further, the effectiveness of our model is demonstrated by assessing its performance on a large multi-site MDD dataset. We applied the synthetic minority over-sampling technique (SMOTE) to handle class imbalance across sites. Using stratified 10-fold cross-validation, the best performing model achieved an accuracy of 75.80%, a sensitivity of 88.89%, a specificity of 61.84%, a precision of 71.29%, and an F1-score of 79.12%. The results indicate that the proposed multi-atlas ensemble GNN model provides a reliable and generalizable solution for accurately detecting MDD.",
+  "journal": "Frontiers in computational neuroscience",
+  "authors": [
+    {
+      "lastname": "Alotaibi",
+      "forename": "Nojod M",
+      "initials": "NM"
+    },
+    {
+      "lastname": "Alhothali",
+      "forename": "Areej M",
+      "initials": "AM"
+    },
+    {
+      "lastname": "Ali",
+      "forename": "Manar S",
+      "initials": "MS"
+    }
+  ],
+  "pmid": "40552311",
+  "doi": "10.3389/fncom.2025.1537284",
+  "similarity_score": 0.5923468947410584,
+  "source_subgraph": "major depressive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Major Depressive Disorder"
+  ]
+}

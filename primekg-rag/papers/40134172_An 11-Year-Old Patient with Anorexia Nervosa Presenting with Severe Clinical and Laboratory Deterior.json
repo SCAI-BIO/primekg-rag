@@ -1,0 +1,35 @@
+{
+  "title": "An 11-Year-Old Patient with Anorexia Nervosa Presenting with Severe Clinical and Laboratory Deterioration: A Case Report.",
+  "abstract": "",
+  "journal": "The Israel Medical Association journal : IMAJ",
+  "authors": [
+    {
+      "lastname": "Shiber",
+      "forename": "Mai",
+      "initials": "M"
+    },
+    {
+      "lastname": "Shalev",
+      "forename": "Nadav",
+      "initials": "N"
+    },
+    {
+      "lastname": "Leibzon",
+      "forename": "Maor",
+      "initials": "M"
+    },
+    {
+      "lastname": "Sharon",
+      "forename": "Nechama",
+      "initials": "N"
+    }
+  ],
+  "pmid": "40134172",
+  "doi": "",
+  "similarity_score": 0.7485511779785157,
+  "source_subgraph": "anorexia nervosa_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anorexia Nervosa"
+  ]
+}

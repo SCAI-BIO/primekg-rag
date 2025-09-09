@@ -1,0 +1,270 @@
+{
+  "title": "New Genomics Discoveries Across the Bipolar Disorder Spectrum Implicate Neurobiological and Developmental Pathways.",
+  "abstract": "Bipolar disorder (BD) is a highly heritable mental disorder that affects millions of people worldwide. Our understanding of the genetic etiology and biological processes that underlie BD have greatly increased in recent years. Extensive progress has been made in identifying common variant signals for BD, and the polygenic score from the latest genome-wide association study (GWAS) may provide some clinical utility if combined with other risk factors for BD. The role of rare variation in BD remains to be determined, although genes annotated to common variant loci are shown to be enriched for rare variation. BD subtypes have been shown to differ in their genetic architecture, and as such, genetic studies across the subtypes of the BD spectrum will identify subtype-specific signals and reveal subtype-specific biological mechanisms. Despite this, subtype-specific GWAS sample sizes have not increased at the same rate as BD cases, and more concerted efforts are required to obtain this information for participants included in future BD GWASs. Moreover, assessment of culture, geography, and other systematic differences that may impact patient assessment will be necessary to ensure accurate inclusion of diverse ancestral groups and global representation in genetic studies of BD moving forward.",
+  "journal": "Biological psychiatry",
+  "authors": [
+    {
+      "lastname": "O'Connell",
+      "forename": "Kevin S",
+      "initials": "KS"
+    },
+    {
+      "lastname": "Adolfsson",
+      "forename": "Rolf",
+      "initials": "R"
+    },
+    {
+      "lastname": "Andlauer",
+      "forename": "Till F M",
+      "initials": "TFM"
+    },
+    {
+      "lastname": "Bauer",
+      "forename": "Michael",
+      "initials": "M"
+    },
+    {
+      "lastname": "Baune",
+      "forename": "Bernhaud",
+      "initials": "B"
+    },
+    {
+      "lastname": "Biernacka",
+      "forename": "Joanna M",
+      "initials": "JM"
+    },
+    {
+      "lastname": "Carpiniello",
+      "forename": "Bernardo",
+      "initials": "B"
+    },
+    {
+      "lastname": "Cichon",
+      "forename": "Sven",
+      "initials": "S"
+    },
+    {
+      "lastname": "Craddock",
+      "forename": "Nick",
+      "initials": "N"
+    },
+    {
+      "lastname": "Cuellar-Barboza",
+      "forename": "Alfredo B",
+      "initials": "AB"
+    },
+    {
+      "lastname": "Dannlowski",
+      "forename": "Udo",
+      "initials": "U"
+    },
+    {
+      "lastname": "Degenhardt",
+      "forename": "Franziska",
+      "initials": "F"
+    },
+    {
+      "lastname": "Dikeos",
+      "forename": "Dimitris",
+      "initials": "D"
+    },
+    {
+      "lastname": "Ferentinos",
+      "forename": "Panagiotis",
+      "initials": "P"
+    },
+    {
+      "lastname": "Forstner",
+      "forename": "Andreas J",
+      "initials": "AJ"
+    },
+    {
+      "lastname": "Frye",
+      "forename": "Mark A",
+      "initials": "MA"
+    },
+    {
+      "lastname": "Fullerton",
+      "forename": "Janice M",
+      "initials": "JM"
+    },
+    {
+      "lastname": "Grigoroiu-Serbanescu",
+      "forename": "Maria",
+      "initials": "M"
+    },
+    {
+      "lastname": "Guzman-Parra",
+      "forename": "José",
+      "initials": "J"
+    },
+    {
+      "lastname": "Jones",
+      "forename": "Lisa",
+      "initials": "L"
+    },
+    {
+      "lastname": "Jonsson",
+      "forename": "Lina",
+      "initials": "L"
+    },
+    {
+      "lastname": "Kircher",
+      "forename": "Tilo",
+      "initials": "T"
+    },
+    {
+      "lastname": "Kogevinas",
+      "forename": "Manolis",
+      "initials": "M"
+    },
+    {
+      "lastname": "Landén",
+      "forename": "Mikael",
+      "initials": "M"
+    },
+    {
+      "lastname": "Lissowska",
+      "forename": "Jolanta",
+      "initials": "J"
+    },
+    {
+      "lastname": "Lochner",
+      "forename": "Christine",
+      "initials": "C"
+    },
+    {
+      "lastname": "Manchia",
+      "forename": "Mirko",
+      "initials": "M"
+    },
+    {
+      "lastname": "Mayoral",
+      "forename": "Fermin",
+      "initials": "F"
+    },
+    {
+      "lastname": "McElroy",
+      "forename": "Susan L",
+      "initials": "SL"
+    },
+    {
+      "lastname": "McGregor",
+      "forename": "Nathaniel W",
+      "initials": "NW"
+    },
+    {
+      "lastname": "Meyer-Lindenberg",
+      "forename": "Andreas",
+      "initials": "A"
+    },
+    {
+      "lastname": "Mitchell",
+      "forename": "Philip B",
+      "initials": "PB"
+    },
+    {
+      "lastname": "Müller-Myhsok",
+      "forename": "Bertram",
+      "initials": "B"
+    },
+    {
+      "lastname": "Nöthen",
+      "forename": "Markus M",
+      "initials": "MM"
+    },
+    {
+      "lastname": "Patrinos",
+      "forename": "George P",
+      "initials": "GP"
+    },
+    {
+      "lastname": "Pawlak",
+      "forename": "Joanna M",
+      "initials": "JM"
+    },
+    {
+      "lastname": "Reif",
+      "forename": "Andreas",
+      "initials": "A"
+    },
+    {
+      "lastname": "Rietschel",
+      "forename": "Marcella",
+      "initials": "M"
+    },
+    {
+      "lastname": "Schofield",
+      "forename": "Peter R",
+      "initials": "PR"
+    },
+    {
+      "lastname": "Schulze",
+      "forename": "Thomas G",
+      "initials": "TG"
+    },
+    {
+      "lastname": "Serretti",
+      "forename": "Alessandro",
+      "initials": "A"
+    },
+    {
+      "lastname": "Smoller",
+      "forename": "Jordan W",
+      "initials": "JW"
+    },
+    {
+      "lastname": "Squassina",
+      "forename": "Alessio",
+      "initials": "A"
+    },
+    {
+      "lastname": "Stein",
+      "forename": "Dan J",
+      "initials": "DJ"
+    },
+    {
+      "lastname": "Streit",
+      "forename": "Fabian",
+      "initials": "F"
+    },
+    {
+      "lastname": "Świątkowska",
+      "forename": "Beata",
+      "initials": "B"
+    },
+    {
+      "lastname": "Tondo",
+      "forename": "Leonardo",
+      "initials": "L"
+    },
+    {
+      "lastname": "Vieta",
+      "forename": "Eduard",
+      "initials": "E"
+    },
+    {
+      "lastname": "Waldman",
+      "forename": "Irwin D",
+      "initials": "ID"
+    },
+    {
+      "lastname": "Dale",
+      "forename": "Anders M",
+      "initials": "AM"
+    },
+    {
+      "lastname": "Andreassen",
+      "forename": "Ole A",
+      "initials": "OA"
+    }
+  ],
+  "pmid": "40456304",
+  "doi": "10.1016/j.biopsych.2025.05.020",
+  "similarity_score": 0.5138055562973023,
+  "source_subgraph": "bipolar disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Bipolar Disorder"
+  ]
+}

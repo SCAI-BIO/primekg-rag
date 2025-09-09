@@ -1,0 +1,165 @@
+{
+  "title": "A comparison of DSM-5 and DSM-IV agoraphobia in the World Mental Health Surveys.",
+  "abstract": "The Diagnostic and Statistical Manual of Mental Disorders, version 5 (DSM-5) definition of agoraphobia (AG) as an independent diagnostic entity makes it timely to re-examine the epidemiology of AG. Study objective was to present representative data on the characteristics of individuals who meet DSM-IV criteria for AG (AG without a history of panic disorder [PD] and PD with AG) but not DSM-5 criteria, DSM-5 but not DSM-IV criteria, or both sets of criteria. Population-based surveys from the World Mental Health Survey Initiative including adult respondents (n = 136,357) from 27 countries across the world. The Composite International Diagnostic Interview was used to assess AG and other disorders. Lifetime and 12-month prevalence estimates of DSM-5 AG (1.5% and 1.0%) were comparable to DSM-IV (1.4% and 0.9%). Of respondents meeting criteria in either system, 57.1% met criteria in both, while 24.2% met criteria for DSM-5 only and 18.8% for DSM-IV only. Severe role impairment due to AG was reported by a lower proportion of respondents who met criteria only for DSM-IV AG (30.4%) than those with both DSM-5 and DSM-IV AG (44.0%; χ <sup>2</sup><sub>1</sub>  = 4.7; P = 0.031). The proportion of cases with any comorbidity was lower among respondents who met criteria only for DSM-IV AG (78.7%) than those who met both sets (92.9%; χ <sup>2</sup><sub>1</sub> = 14.5; P < 0.001). This first large survey shows that, compared to the DSM-IV, the DSM-5 identifies a substantial group of new cases with AG, while the prevalence rate remains stable at 1.5%. Severity and comorbidity are higher in individuals meeting DSM-5 AG criteria compared with individuals meeting DSM-IV AG criteria only.",
+  "journal": "Depression and anxiety",
+  "authors": [
+    {
+      "lastname": "Roest",
+      "forename": "Annelieke M",
+      "initials": "AM"
+    },
+    {
+      "lastname": "de Vries",
+      "forename": "Ymkje Anna",
+      "initials": "YA"
+    },
+    {
+      "lastname": "Lim",
+      "forename": "Carmen C W",
+      "initials": "CCW"
+    },
+    {
+      "lastname": "Wittchen",
+      "forename": "Hans-Ulrich",
+      "initials": "HU"
+    },
+    {
+      "lastname": "Stein",
+      "forename": "Dan J",
+      "initials": "DJ"
+    },
+    {
+      "lastname": "Adamowski",
+      "forename": "Tomasz",
+      "initials": "T"
+    },
+    {
+      "lastname": "Al-Hamzawi",
+      "forename": "Ali",
+      "initials": "A"
+    },
+    {
+      "lastname": "Bromet",
+      "forename": "Evelyn J",
+      "initials": "EJ"
+    },
+    {
+      "lastname": "Viana",
+      "forename": "Maria Carmen",
+      "initials": "MC"
+    },
+    {
+      "lastname": "de Girolamo",
+      "forename": "Giovanni",
+      "initials": "G"
+    },
+    {
+      "lastname": "Demyttenaere",
+      "forename": "Koen",
+      "initials": "K"
+    },
+    {
+      "lastname": "Florescu",
+      "forename": "Silvia",
+      "initials": "S"
+    },
+    {
+      "lastname": "Gureje",
+      "forename": "Oye",
+      "initials": "O"
+    },
+    {
+      "lastname": "Haro",
+      "forename": "Josep Maria",
+      "initials": "JM"
+    },
+    {
+      "lastname": "Hu",
+      "forename": "Chiyi",
+      "initials": "C"
+    },
+    {
+      "lastname": "Karam",
+      "forename": "Elie G",
+      "initials": "EG"
+    },
+    {
+      "lastname": "Caldas-de-Almeida",
+      "forename": "José Miguel",
+      "initials": "JM"
+    },
+    {
+      "lastname": "Kawakami",
+      "forename": "Norito",
+      "initials": "N"
+    },
+    {
+      "lastname": "Lépine",
+      "forename": "Jean Pierre",
+      "initials": "JP"
+    },
+    {
+      "lastname": "Levinson",
+      "forename": "Daphna",
+      "initials": "D"
+    },
+    {
+      "lastname": "Medina-Mora",
+      "forename": "Maria E",
+      "initials": "ME"
+    },
+    {
+      "lastname": "Navarro-Mateu",
+      "forename": "Fernando",
+      "initials": "F"
+    },
+    {
+      "lastname": "O'Neill",
+      "forename": "Siobhan",
+      "initials": "S"
+    },
+    {
+      "lastname": "Piazza",
+      "forename": "Marina",
+      "initials": "M"
+    },
+    {
+      "lastname": "Posada-Villa",
+      "forename": "José A",
+      "initials": "JA"
+    },
+    {
+      "lastname": "Slade",
+      "forename": "Tim",
+      "initials": "T"
+    },
+    {
+      "lastname": "Torres",
+      "forename": "Yolanda",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Kessler",
+      "forename": "Ronald C",
+      "initials": "RC"
+    },
+    {
+      "lastname": "Scott",
+      "forename": "Kate M",
+      "initials": "KM"
+    },
+    {
+      "lastname": "de Jonge",
+      "forename": "Peter",
+      "initials": "P"
+    }
+  ],
+  "pmid": "30726581",
+  "doi": "10.1002/da.22885",
+  "similarity_score": 0.5086253762245179,
+  "source_subgraph": "agoraphobia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Agoraphobia"
+  ]
+}

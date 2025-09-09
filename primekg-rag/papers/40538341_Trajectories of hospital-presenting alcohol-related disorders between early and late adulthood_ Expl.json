@@ -1,0 +1,30 @@
+{
+  "title": "Trajectories of hospital-presenting alcohol-related disorders between early and late adulthood: Exploring the role of mortality in a prospective study of a 1953 cohort.",
+  "abstract": "Alcohol-related disorders (ARDs) are associated with severe attributable harms that evolve throughout the life course, comprising distinct trajectories. Yet, how mortality affects the identification, shape and number of trajectory groups remains poorly understood. This study aimed to: (1) derive trajectories of hospital-presenting ARDs between early and late adulthood; (2) compare trajectories that include mortality information versus trajectories excluding individuals who died during follow-up; and (3) predict trajectory membership based on exposure to familial risk factors between ages 0-19. Prospective cohort study using group-based trajectory modeling to identify hospital-presenting ARD trajectories. Stockholm, Sweden. 1953 birth cohort (n = 14 608), with 43 years of follow-up data (ages 20-63), comprising two study samples: total sample (alive at age 20, n = 14 559) and surviving sample (alive at age 63, n = 13 276). Hospital-presenting ARDs were measured using national inpatient care data (1973-2016). Familial risk factors were assessed using national and local records on parental alcohol-related offenses, mental health problems, criminality and investigations by child welfare services. Five distinct hospital-presenting ARD trajectories were identified in the total sample; four were identified in the surviving sample. Mortality disproportionately affected individuals assigned to the two trajectories characterized by medium-to-high peaks of hospital-presenting ARDs (64.9% and 80.6% attrition due to death, respectively). The most severe trajectory was not identified in the surviving sample. Familial risk factors were significant predictors of trajectory membership for both samples, with odds ratios ranging between 1.67 and 8.10, though with largely overlapping 95% confidence intervals between the two risk groups and across trajectories. Mortality may disproportionately affect individuals assigned to trajectories of hospital-presenting alcohol-related disorders (ARDs) characterized by severe alcohol-attributable harms. Longitudinal studies of ARDs that exclude deceased participants may therefore underrepresent the most vulnerable groups: those with chronic or escalating ARDs.",
+  "journal": "Addiction (Abingdon, England)",
+  "authors": [
+    {
+      "lastname": "Bishop",
+      "forename": "Lauren",
+      "initials": "L"
+    },
+    {
+      "lastname": "Brännström",
+      "forename": "Lars",
+      "initials": "L"
+    },
+    {
+      "lastname": "Almquist",
+      "forename": "Ylva B",
+      "initials": "YB"
+    }
+  ],
+  "pmid": "40538341",
+  "doi": "10.1111/add.70107",
+  "similarity_score": 0.40072922706604003,
+  "source_subgraph": "alcohol-related disorders_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Alcohol-Related Disorders"
+  ]
+}

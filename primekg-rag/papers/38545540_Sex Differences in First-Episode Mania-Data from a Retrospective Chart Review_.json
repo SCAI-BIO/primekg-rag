@@ -1,0 +1,60 @@
+{
+  "title": "Sex Differences in First-Episode Mania-Data from a Retrospective Chart Review.",
+  "abstract": "",
+  "journal": "Indian journal of psychological medicine",
+  "authors": [
+    {
+      "lastname": "Chithra",
+      "forename": "Nellai K",
+      "initials": "NK"
+    },
+    {
+      "lastname": "Kanagarajan",
+      "forename": "Shyam Sundar",
+      "initials": "SS"
+    },
+    {
+      "lastname": "Jayasankar",
+      "forename": "Pavithra",
+      "initials": "P"
+    },
+    {
+      "lastname": "Kulkarni",
+      "forename": "Karishma Rajendra",
+      "initials": "KR"
+    },
+    {
+      "lastname": "Sanjay",
+      "forename": "Tarasingh N",
+      "initials": "TN"
+    },
+    {
+      "lastname": "Ritish",
+      "forename": "Daniel",
+      "initials": "D"
+    },
+    {
+      "lastname": "Rao",
+      "forename": "Naren",
+      "initials": "N"
+    },
+    {
+      "lastname": "Kumar",
+      "forename": "Vijay",
+      "initials": "V"
+    },
+    {
+      "lastname": "Muralidharan",
+      "forename": "Kesavan",
+      "initials": "K"
+    }
+  ],
+  "pmid": "38545540",
+  "doi": "10.1177/02537176221095271",
+  "similarity_score": 0.05490105152130126,
+  "source_subgraph": "Mania_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Mania"
+  ]
+}

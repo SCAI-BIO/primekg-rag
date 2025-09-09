@@ -1,0 +1,35 @@
+{
+  "title": "The natural history of lifetime psychiatric disorders in patients with obsessive-compulsive disorder followed over half a century.",
+  "abstract": "Few long-term studies have examined the life-time prevalence of comorbid psychiatric conditions in patients with obsessive-compulsive disorder (OCD). We therefore studied the frequency of comorbid psychiatric disorders, and their relation to onset and prognosis, in patients with OCD who were followed for almost half a century. During 1947-1953, 285 OCD patients were admitted as inpatients to a university hospital in Gothenburg, Sweden. Among those, 251 (88%) accepted a structured comprehensive psychiatric examination in 1954-1956. In 1989-1993, 176 survivors were eligible and 144 (response rate 82%) were re-examined. The same psychiatrist performed both examinations. OCD was diagnosed according to the Schneider criteria, and other mental disorders according to DSM-IV. Mean follow-up since onset was 47 years. The lifetime frequency of depressive disorders was 84.7% (major depression 43.8%), generalized anxiety disorder (GAD) 71.5%, panic anxiety disorder 47.9%, agoraphobia 52.1%, specific phobias 64.6%, social phobia 47.9%, paranoid conditions 40.3% (29.1% paranoid ideation), psychotic disorders 15.3%, alcohol abuse 13.2% (men 39%, women 3%) and substance abuse 17.4%. Specific phobia most often started before OCD, while depression had a varied onset in relation to OCD. Social phobia, agoraphobia, GAD, alcohol and substance abuse, psychotic disorders and paranoid conditions most often started after OCD. Presence of GAD, psychotic disorder and substance abuse worsened prognosis of OCD. Comorbid psychiatric conditions are common in OCD patients, and have onset throughout the course. OCD signals vulnerability for other psychiatric conditions, which are important to detect in clinical practice as they negatively affect the outcome.",
+  "journal": "Acta psychiatrica Scandinavica",
+  "authors": [
+    {
+      "lastname": "Klenfeldt",
+      "forename": "Isak Fredén",
+      "initials": "IF"
+    },
+    {
+      "lastname": "Skoog",
+      "forename": "Gunnar",
+      "initials": "G"
+    },
+    {
+      "lastname": "Skoog",
+      "forename": "Johan",
+      "initials": "J"
+    },
+    {
+      "lastname": "Skoog",
+      "forename": "Ingmar",
+      "initials": "I"
+    }
+  ],
+  "pmid": "38332338",
+  "doi": "10.1111/acps.13665",
+  "similarity_score": 0.6577152490615845,
+  "source_subgraph": "obsessive-compulsive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Obsessive-Compulsive Disorder"
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "pmid": "39473188",
+    "title": "What is the neurobiology of schizophrenia?",
+    "abstract": "What is the neurobiology of schizophrenia?",
+    "similarity": 0.4210232973098755
+  },
+  {
+    "pmid": "36260895",
+    "title": "Schizophrenia.",
+    "abstract": "Schizophrenia.",
+    "similarity": 0.4007920503616333
+  },
+  {
+    "pmid": "39980982",
+    "title": "Network analysis of clinical features in patients with treatment-resistant schizophrenia.",
+    "abstract": "Network analysis of clinical features in patients with treatment-resistant schizophrenia.",
+    "similarity": 0.39610652923583983
+  },
+  {
+    "pmid": "39013848",
+    "title": "Neurostructural subgroup in 4291 individuals with schizophrenia identified using the subtype and stage inference algorithm.",
+    "abstract": "Machine learning can be used to define subtypes of psychiatric conditions based on shared biological foundations of mental disorders. Here we analyzed cross-sectional brain images from 4,222 individuals with schizophrenia and 7038 healthy subjects pooled across 41 international cohorts from the ENIGMA, non-ENIGMA cohorts and public datasets. Using the Subtype and Stage Inference (SuStaIn) algorithm, we identify two distinct neurostructural subgroups by mapping the spatial and temporal 'trajectory' of gray matter change in schizophrenia. Subgroup 1 was characterized by an early cortical-predominant loss with enlarged striatum, whereas subgroup 2 displayed an early subcortical-predominant loss in the hippocampus, striatum and other subcortical regions. We confirmed the reproducibility of the two neurostructural subtypes across various sample sites, including Europe, North America and East Asia. This imaging-based taxonomy holds the potential to identify individuals with shared neurobiological attributes, thereby suggesting the viability of redefining existing disorder constructs based on biological factors.",
+    "similarity": 0.3804365277290344
+  },
+  {
+    "pmid": "40753099",
+    "title": "Whole-exome sequencing analysis identifies risk genes for schizophrenia.",
+    "abstract": "Whole-exome sequencing analysis identifies risk genes for schizophrenia.",
+    "similarity": 0.3801624059677124
+  },
+  {
+    "pmid": "35976655",
+    "title": "Understanding Connections and Boundaries Between Positive Symptoms, Negative Symptoms, and Role Functioning Among Individuals With Schizophrenia: A Network Psychometric Approach.",
+    "abstract": "Improved understanding of the boundaries and connections between positive symptoms, negative symptoms, and role functioning in schizophrenia is critical, given limited empirical support for clear distinctions among these clinical areas. This study's use of network psychometrics to investigate differential associations and structural overlap between positive symptoms, negative symptoms, and functional domains in schizophrenia may contribute to such understanding. To apply network analysis and community detection methods to examine the interplay and structure of positive symptoms, negative symptoms, and functional domains in individuals with schizophrenia. Cross-sectional study in 5 geographically distributed research centers in the US as part of the Consortium on the Genetics of Schizophrenia-2 from July 1, 2010, through January 31, 2014. Data were analyzed from November 2021 to June 2022. Clinically stable outpatients with schizophrenia or schizoaffective disorder were included. Participants were excluded if they had evidence of neurologic or additional Axis I psychiatric disorders. Other exclusion criteria included head injury, stroke, and substance abuse. Of 1415 patients approached, 979 were included in the final analysis. Measures included the Scale for the Assessment of Positive Symptoms, the Scale for the Assessment of Negative Symptoms, and the Role Functioning Scale. Main outcomes were expected influence, which assesses the relative importance of items to the network and is defined as the association of an item with all others, and community detection and stability, defined as the presence of statistical clusters and their replicability. Participants with complete data included 979 outpatients (mean [SD] age, 46 [11] years; 663 male [67.7%]; 390 participants [40%] self-identified as African American, 30 [3%] as Asian, 7 [0.7%] as Native American, 8 [0.8%] as Pacific Islander, 412 [42.1%] as White, 125 [12.8%] as more than 1 race, and 5 [0.5%] did not identify). Anhedonia had the highest expected influence in the most comprehensive network analysis, showing connections with negative and positive symptoms and functional domains. Positive symptoms had the lowest expected influence. Community detection analyses indicated the presence of 3 clusters corresponding to positive symptoms; negative symptoms and work functioning; functional domains, including independent living, family relationships, and social network; and avolition, anhedonia, and work functioning. Hallucinations and delusions replicated in 1000 bootstrapped samples (100%), while bizarre behavior and thought disorder replicated in 390 (39%) and 570 (57%), respectively. In contrast, negative symptoms and work functioning replicated between 730 (73%) and 770 (77%) samples, respectively, and the remaining functional domains in 940 samples (94%). The high centrality of anhedonia and its connections with multiple functional domains suggest that it could be a treatment target for global functioning. Interventions for work functioning may benefit from a specialized approach that focuses primarily on avolition.",
+    "similarity": 0.37479846477508544
+  },
+  {
+    "pmid": "36852587",
+    "title": "Neural substrates of verbal memory impairment in schizophrenia: A multimodal connectomics study.",
+    "abstract": "Neural substrates of verbal memory impairment in schizophrenia: A multimodal connectomics study.",
+    "similarity": 0.3608896017074585
+  },
+  {
+    "pmid": "29274735",
+    "title": "Neuroanatomical heterogeneity of schizophrenia revealed by semi-supervised machine learning methods.",
+    "abstract": "Schizophrenia is associated with heterogeneous clinical symptoms and neuroanatomical alterations. In this work, we aim to disentangle the patterns of neuroanatomical alterations underlying a heterogeneous population of patients using a semi-supervised clustering method. We apply this strategy to a cohort of patients with schizophrenia of varying extends of disease duration, and we describe the neuroanatomical, demographic and clinical characteristics of the subtypes discovered. We analyze the neuroanatomical heterogeneity of 157 patients diagnosed with Schizophrenia, relative to a control population of 169 subjects, using a machine learning method called CHIMERA. CHIMERA clusters the differences between patients and a demographically-matched population of healthy subjects, rather than clustering patients themselves, thereby specifically assessing disease-related neuroanatomical alterations. Voxel-Based Morphometry was conducted to visualize the neuroanatomical patterns associated with each group. The clinical presentation and the demographics of the groups were then investigated. Three subgroups were identified. The first two differed substantially, in that one involved predominantly temporal-thalamic-peri-Sylvian regions, whereas the other involved predominantly frontal regions and the thalamus. Both subtypes included primarily male patients. The third pattern was a mix of these two and presented milder neuroanatomic alterations and comprised a comparable number of men and women. VBM and statistical analyses suggest that these groups could correspond to different neuroanatomical dimensions of schizophrenia. Our analysis suggests that schizophrenia presents distinct neuroanatomical variants. This variability points to the need for a dimensional neuroanatomical approach using data-driven, mathematically principled multivariate pattern analysis methods, and should be taken into account in clinical studies.",
+    "similarity": 0.3583793520927429
+  },
+  {
+    "pmid": "39487353",
+    "title": "Altered resting-state functional connectivity in a thalamo-cortico-cerebellar network in patients with schizophrenia.",
+    "abstract": "The diagnosis of schizophrenia is associated with a complex psychopathology related to disrupted brain circuitry causing a failure in coordinating information across brain sites with no consensus regarding the mechanisms. Although schizophrenia is well-studied, the great majority of studies investigated pre-selected ROIs or Seed-based connectivity. Whole brain ROI-wise studies that consider all ROIs available simultaneously are lacking. This technique helps understand large- and local-scale dynamics of information exchange across the whole brain. We investigated ROI-wise whole brain networks in 35 participants diagnosed with schizophrenia and 41 control participants. To unveil dysfunctions in brain subnetworks and to characterize network topology, we applied a statistical tool specially developed for network comparison called network-based statistic and graph theory. We observed a hyperconnected thalamo-cortico-cerebellar subnetwork in participants with schizophrenia; nodal analysis revealed higher number of thalamic connections. Our results suggest disruptions at the local level of the subnetwork rather than globally spread across the brain and driven by hyperconnectivity. Importantly, this subnetwork emerged from an exploratory analysis directly comparing ROI-wise whole brain network. This fact makes it an important contribution to the field as additional evidence, demonstrating the high reliability of malfunction in the local thalamo-cortico-cerebellar network.",
+    "similarity": 0.3542389750480652
+  },
+  {
+    "pmid": "40642413",
+    "title": "Relationship between negative symptoms, cognitive function and social function in schizophrenia: new insight from a network analysis.",
+    "abstract": "Relationship between negative symptoms, cognitive function and social function in schizophrenia: new insight from a network analysis.",
+    "similarity": 0.3384805202484131
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "pmid": "40360802",
+    "title": "Genome-wide analyses identify 30 loci associated with obsessive-compulsive disorder.",
+    "abstract": "Genome-wide analyses identify 30 loci associated with obsessive-compulsive disorder.",
+    "similarity": 0.7267921447753907
+  },
+  {
+    "pmid": "40386117",
+    "title": "The comorbidity of anxiety and depression symptoms in obsessive-compulsive disorder: a network analysis.",
+    "abstract": "The comorbidity of anxiety and depression symptoms in obsessive-compulsive disorder: a network analysis.",
+    "similarity": 0.7121604561805726
+  },
+  {
+    "pmid": "32056748",
+    "title": "The speed of progression towards obsessive-compulsive disorder.",
+    "abstract": "The speed of progression towards obsessive-compulsive disorder.",
+    "similarity": 0.6829134106636048
+  },
+  {
+    "pmid": "38332338",
+    "title": "The natural history of lifetime psychiatric disorders in patients with obsessive-compulsive disorder followed over half a century.",
+    "abstract": "The natural history of lifetime psychiatric disorders in patients with obsessive-compulsive disorder followed over half a century.",
+    "similarity": 0.6577152490615845
+  },
+  {
+    "pmid": "39426506",
+    "title": "Clinical features of obsessive-compulsive disorder among individuals who experience health-related obsessive-compulsive symptoms.",
+    "abstract": "Clinical features of obsessive-compulsive disorder among individuals who experience health-related obsessive-compulsive symptoms.",
+    "similarity": 0.6410543203353882
+  },
+  {
+    "pmid": "39936257",
+    "title": "[Obsessive-compulsive disorder and eating disorders].",
+    "abstract": "[Obsessive-compulsive disorder and eating disorders].",
+    "similarity": 0.6397299647331238
+  },
+  {
+    "pmid": "40727850",
+    "title": "Clinical characteristics of obsessive-compulsive disorder comorbid with obsessive -compulsive personality disorder: subtype implications.",
+    "abstract": "Clinical characteristics of obsessive-compulsive disorder comorbid with obsessive -compulsive personality disorder: subtype implications.",
+    "similarity": 0.632267701625824
+  },
+  {
+    "pmid": "26487806",
+    "title": "The overlap between anxiety, depression, and obsessive-compulsive disorder.",
+    "abstract": "The overlap between anxiety, depression, and obsessive-compulsive disorder.",
+    "similarity": 0.6237601518630982
+  },
+  {
+    "pmid": "31421287",
+    "title": "The relationship between obsessive-compulsive disorder and anxiety disorders: A question of diagnostic boundaries or simply severity of symptoms?",
+    "abstract": "The relationship between obsessive-compulsive disorder and anxiety disorders: A question of diagnostic boundaries or simply severity of symptoms?",
+    "similarity": 0.6034772276878357
+  },
+  {
+    "pmid": "28052778",
+    "title": "Co-morbid obsessive-compulsive disorder and depression: a Bayesian network approach.",
+    "abstract": "Obsessive-compulsive disorder (OCD) is often co-morbid with depression. Using the methods of network analysis, we computed two networks that disclose the potentially causal relationships among symptoms of these two disorders in 408 adult patients with primary OCD and co-morbid depression symptoms. We examined the relationship between the symptoms constituting these syndromes by computing a (regularized) partial correlation network via the graphical LASSO procedure, and a directed acyclic graph (DAG) via a Bayesian hill-climbing algorithm. The results suggest that the degree of interference and distress associated with obsessions, and the degree of interference associated with compulsions, are the chief drivers of co-morbidity. Moreover, activation of the depression cluster appears to occur solely through distress associated with obsessions activating sadness - a key symptom that 'bridges' the two syndromic clusters in the DAG. Bayesian analysis can expand the repertoire of network analytic approaches to psychopathology. We discuss clinical implications and limitations of our findings.",
+    "similarity": 0.5904465198516846
+  }
+]

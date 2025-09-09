@@ -1,0 +1,55 @@
+{
+  "title": "Neural substrates of verbal memory impairment in schizophrenia: A multimodal connectomics study.",
+  "abstract": "While verbal memory is among the most compromised cognitive domains in schizophrenia (SZ), its neural substrates remain elusive. Here, we explored the structural and functional brain network correlates of verbal memory impairment in SZ. We acquired diffusion and resting-state functional MRI data of 49 SZ patients, classified as having preserved (VMP, n = 22) or impaired (VMI, n = 26) verbal memory based on the List Learning task, and 55 healthy controls (HC). Structural and functional connectivity matrices were obtained and analyzed to assess associations with disease status (SZ vs. HC) and verbal memory impairment (VMI vs. VMP) using two complementary data-driven approaches: threshold-free network-based statistics (TFNBS) and hybrid connectivity independent component analysis (connICA). TFNBS showed altered connectivity in SZ patients compared with HC (p < .05, FWER-corrected), with distributed structural changes and functional reorganization centered around sensorimotor areas. Specifically, functional connectivity was reduced within the visual and somatomotor networks and increased between visual areas and associative and subcortical regions. Only a tiny cluster of increased functional connectivity between visual and bilateral parietal attention-related areas correlated with verbal memory dysfunction. Hybrid connICA identified four robust traits, representing fundamental patterns of joint structural-functional connectivity. One of these, mainly capturing the functional connectivity profile of the visual network, was significantly associated with SZ (HC vs. SZ: Cohen's d = .828, p < .0001) and verbal memory impairment (VMP vs. VMI: Cohen's d = -.805, p = .01). We suggest that aberrant connectivity of sensorimotor networks may be a key connectomic signature of SZ and a putative biomarker of SZ-related verbal memory impairment, in consistency with bottom-up models of cognitive disruption.",
+  "journal": "Human brain mapping",
+  "authors": [
+    {
+      "lastname": "Tranfa",
+      "forename": "Mario",
+      "initials": "M"
+    },
+    {
+      "lastname": "Iasevoli",
+      "forename": "Felice",
+      "initials": "F"
+    },
+    {
+      "lastname": "Cocozza",
+      "forename": "Sirio",
+      "initials": "S"
+    },
+    {
+      "lastname": "Ciccarelli",
+      "forename": "Mariateresa",
+      "initials": "M"
+    },
+    {
+      "lastname": "Barone",
+      "forename": "Annarita",
+      "initials": "A"
+    },
+    {
+      "lastname": "Brunetti",
+      "forename": "Arturo",
+      "initials": "A"
+    },
+    {
+      "lastname": "de Bartolomeis",
+      "forename": "Andrea",
+      "initials": "A"
+    },
+    {
+      "lastname": "Pontillo",
+      "forename": "Giuseppe",
+      "initials": "G"
+    }
+  ],
+  "pmid": "36852587",
+  "doi": "10.1002/hbm.26248",
+  "similarity_score": 0.3608896017074585,
+  "source_subgraph": "schizophrenia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Schizophrenia"
+  ]
+}

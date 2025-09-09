@@ -1,0 +1,30 @@
+{
+  "title": "Two cases of hypotropia and dissociated vertical deviation treated with oblique muscle surgery.",
+  "abstract": "The authors report two cases with vertical deviations. The first patient had right exotropia and hypotropia and left inferior oblique overaction and was treated with left inferior oblique muscle weakening and bilateral lateral rectus muscle recession. The second patient had chin-up posture and right dissociated vertical deviation and was treated with bilateral superior oblique posterior tenotomy.",
+  "journal": "Journal of pediatric ophthalmology and strabismus",
+  "authors": [
+    {
+      "lastname": "Niyaz",
+      "forename": "Leyla",
+      "initials": "L"
+    },
+    {
+      "lastname": "Gursoy",
+      "forename": "Haluk Huseyin",
+      "initials": "HH"
+    },
+    {
+      "lastname": "Basmak",
+      "forename": "Hikmet",
+      "initials": "H"
+    }
+  ],
+  "pmid": "25490238",
+  "doi": "10.3928/01913913-20141203-01",
+  "similarity_score": 0.13118736743927,
+  "source_subgraph": "Hypotropia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Hypotropia"
+  ]
+}

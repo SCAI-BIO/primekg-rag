@@ -1,0 +1,60 @@
+{
+  "title": "Unraveling Hierarchical Brain Dysfunction in Major Depressive Disorder: A Multimodal Imaging and Transcriptomic Approach.",
+  "abstract": "Major depressive disorder (MDD) is characterized by deficits in sensory processing and higher-order executive functions, reflecting dysfunction in the hierarchical organization of the brain. However, current methods for investigating brain hierarchy in MDD have not fully integrated multimodal data, and the underlying biological mechanisms remain poorly understood. We acquired diffusion tensor imaging and functional magnetic resonance imaging (fMRI) data from 100 participants with MDD and 77 healthy controls (HCs). The structural-decoupling index (SDI) was employed to quantify the hierarchical organization in MDD and HC. We identified intergroup differences in the hierarchical brain organization and explored the molecular mechanism related to significantly different brain regions by investigating genetic factors and their relationship with neurotransmitter receptors/transporters. Finally, 10-fold cross-validation was used to develop a support vector machine (SVM) classification model. Dysfunctional hierarchical organization in MDD was characterized by increased SDI in the bilateral somatosensory cortex, while decreased SDI was observed in the bilateral visual, prefrontal, and parietal cortices, as well as the left orbitofrontal cortex and temporal pole. Moreover, SDI alterations showed negative correlations with neurotransmitters, including 5-HT1a, 5-HT2a, D1, GABAa, SERT, and mGluR5. The SDI alteration-related genes were enriched in kinase binding. After 10-fold cross-validation, the SVM exhibited a mean accuracy of 0.767 (area under the curve = 0.972). Our research employed multimodal data to investigate hierarchical brain dysfunction in MDD and established its associations with neurotransmitters and transcriptome profiles. This approach may improve the understanding of the neural, biological, and molecular genetic underpinning of SDI in MDD.",
+  "journal": "Human brain mapping",
+  "authors": [
+    {
+      "lastname": "Xiayan",
+      "forename": "Chen",
+      "initials": "C"
+    },
+    {
+      "lastname": "Haowei",
+      "forename": "Dai",
+      "initials": "D"
+    },
+    {
+      "lastname": "Lijing",
+      "forename": "Niu",
+      "initials": "N"
+    },
+    {
+      "lastname": "Zini",
+      "forename": "Chen",
+      "initials": "C"
+    },
+    {
+      "lastname": "Li",
+      "forename": "Xiaoyue",
+      "initials": "X"
+    },
+    {
+      "lastname": "Yuanyuan",
+      "forename": "Zeng",
+      "initials": "Z"
+    },
+    {
+      "lastname": "Qingzi",
+      "forename": "Zhu",
+      "initials": "Z"
+    },
+    {
+      "lastname": "Kangguang",
+      "forename": "Lin",
+      "initials": "L"
+    },
+    {
+      "lastname": "Ruibin",
+      "forename": "Zhang",
+      "initials": "Z"
+    }
+  ],
+  "pmid": "40590368",
+  "doi": "10.1002/hbm.70277",
+  "similarity_score": 0.5224144935607911,
+  "source_subgraph": "major depressive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Major Depressive Disorder"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "[Agoraphobia in times of confinement: Fear of losing control?].",
+  "abstract": "",
+  "journal": "Atencion primaria",
+  "authors": [
+    {
+      "lastname": "Regalado-Chamorro",
+      "forename": "Mónica",
+      "initials": "M"
+    },
+    {
+      "lastname": "Medina-Gamero",
+      "forename": "Aldo",
+      "initials": "A"
+    },
+    {
+      "lastname": "Rosario-Pacahuala",
+      "forename": "Emilio",
+      "initials": "E"
+    }
+  ],
+  "pmid": "34271503",
+  "doi": "10.1016/j.aprim.2021.102150",
+  "similarity_score": 0.46706591844558715,
+  "source_subgraph": "agoraphobia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Agoraphobia"
+  ]
+}

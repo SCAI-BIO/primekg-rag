@@ -1,0 +1,30 @@
+{
+  "title": "Examination of metacognitions and functionality in agoraphobia without comorbidities.",
+  "abstract": "Although agoraphobia is considered an independent diagnosis, the literature is limited in studies examining it alone. This study aims to investigate the relationship between agoraphobia, metacognitive beliefs, and functionality and to increase interest in studies on agoraphobia by contributing to areas that are missing in the literature. Seventy healthy controls without any psychiatric disorder and seventy individuals with agoraphobia without comorbidities were included in the study. Data regarding sociodemographic characteristics, agoraphobic symptoms, metacognitive beliefs, functionality, depression, and anxiety levels were collected from the participants. Comparisons were made between the groups. Mediation analysis was performed by adjusting for sociodemographic and clinical variables to determine the mediating role of metacognitions in the effect of agoraphobia severity on functionality. The agoraphobia group scored significantly higher than controls on pathological metacognitive beliefs, anxiety, and depression measures (p < 0.05), and showed more severe impairment in all functional domains (p < 0.05). Metacognitive belief levels were positively correlated (p < 0.001) with agoraphobia severity (r = 0.570) and functional impairment (r = 0.537). Mediation analysis indicated that metacognitive beliefs significantly mediated the impact of agoraphobia severity on functionality, accounting for approximately 26% of the total effect. Metacognitive beliefs mediated the relationship between the severity of agoraphobia and functional impairment (mediation effect accounting for 26%). Metacognitive processes play a key role in how agoraphobia severity translates into functional impairment. Targeting dysfunctional metacognitive beliefs in treatment may improve functional outcomes in agoraphobia. These findings highlight the need for further longitudinal and experimental studies focusing on agoraphobia without comorbid conditions.",
+  "journal": "BMC psychiatry",
+  "authors": [
+    {
+      "lastname": "Korkmaz",
+      "forename": "Ulaş",
+      "initials": "U"
+    },
+    {
+      "lastname": "Helvacı Çelik",
+      "forename": "Fatma Gül",
+      "initials": "FG"
+    },
+    {
+      "lastname": "Şimşek",
+      "forename": "Meltem Hazel",
+      "initials": "MH"
+    }
+  ],
+  "pmid": "40419989",
+  "doi": "10.1186/s12888-025-07003-y",
+  "similarity_score": 0.4353766918182373,
+  "source_subgraph": "agoraphobia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Agoraphobia"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Anxiety Disorders: A Review.",
+  "abstract": "Anxiety disorders have a lifetime prevalence of approximately 34% in the US, are often chronic, and significantly impair quality of life and functioning. Anxiety disorders are characterized by symptoms that include worry, social and performance fears, unexpected and/or triggered panic attacks, anticipatory anxiety, and avoidance behaviors. Generalized anxiety disorder (6.2% lifetime prevalence), social anxiety disorder (13% lifetime prevalence), and panic disorder (5.2% lifetime prevalence) with or without agoraphobia are common anxiety disorders seen in primary care. Anxiety disorders are associated with physical symptoms, such as palpitations, shortness of breath, and dizziness. Brief screening measures applied in primary care, such as the Generalized Anxiety Disorder-7, can aid in diagnosis of anxiety disorders (sensitivity, 57.6% to 93.9%; specificity, 61% to 97%). Providing information about symptoms, diagnosis, and evidence-based treatments is a first step in helping patients with anxiety. First-line treatments include pharmacotherapy and psychotherapy. Selective serotonin reuptake inhibitors (SSRIs, eg, sertraline) and serotonin-norepinephrine reuptake inhibitors (SNRIs, eg, venlafaxine extended release) remain first-line pharmacotherapy for generalized anxiety disorder, social anxiety disorder, and panic disorder. Meta-analyses suggest that SSRIs and SNRIs are associated with small to medium effect sizes compared with placebo (eg, generalized anxiety disorder: standardized mean difference [SMD], -0.55 [95% CI, -0.64 to -0.46]; social anxiety disorder: SMD, -0.67 [95% CI, -0.76 to -0.58]; panic disorder: SMD, -0.30 [95% CI, -0.37 to -0.23]). Cognitive behavioral therapy is the psychotherapy with the most evidence of efficacy for anxiety disorders compared with psychological or pill placebo (eg, generalized anxiety disorder: Hedges g = 1.01 [large effect size] [95% CI, 0.44 to 1.57]; social anxiety disorder: Hedges g = 0.41 [small to medium effect] [95% CI, 0.25 to 0.57]; panic disorder: Hedges g = 0.39 [small to medium effect[ [95% CI, 0.12 to 0.65]), including in primary care. When selecting treatment, clinicians should consider patient preference, current and prior treatments, medical and psychiatric comorbid illnesses, age, sex, and reproductive planning, as well as cost and access to care. Anxiety disorders affect approximately 34% of adults during their lifetime in the US and are associated with significant distress and impairment. First-line treatments for anxiety disorders include cognitive behavioral therapy, SSRIs such as sertraline, and SNRIs such as venlafaxine extended release.",
+  "journal": "JAMA",
+  "authors": [
+    {
+      "lastname": "Szuhany",
+      "forename": "Kristin L",
+      "initials": "KL"
+    },
+    {
+      "lastname": "Simon",
+      "forename": "Naomi M",
+      "initials": "NM"
+    }
+  ],
+  "pmid": "36573969",
+  "doi": "10.1001/jama.2022.22744",
+  "similarity_score": 0.5356960773468018,
+  "source_subgraph": "anxiety disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anxiety Disorder"
+  ]
+}

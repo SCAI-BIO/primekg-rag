@@ -1,0 +1,35 @@
+{
+  "title": "Genomics of Anxiety Disorders.",
+  "abstract": "Anxiety disorders are the most prevalent psychiatric conditions in the general population. Despite the early observation of family aggregation of anxiety disorders with a heritability of 30% to 50%, their exact genetic structure is not yet determined. Evidence suggests a composition of common and rare genetic factors contributing to the etiology of anxiety disorders. Recent hypothesis-free genome-wide association studies in mega cohorts mostly with a broad anxiety phenotype rendered an increasing number of novel genetic loci. Epigenetic research is still in its infancy with first evidence showing dynamic changes in response to environmental influences and during the therapy course.",
+  "journal": "The Psychiatric clinics of North America",
+  "authors": [
+    {
+      "lastname": "Weber",
+      "forename": "Heike",
+      "initials": "H"
+    },
+    {
+      "lastname": "Hettema",
+      "forename": "John M",
+      "initials": "JM"
+    },
+    {
+      "lastname": "Deckert",
+      "forename": "Jürgen",
+      "initials": "J"
+    },
+    {
+      "lastname": "Erhardt-Lehmann",
+      "forename": "Angelika",
+      "initials": "A"
+    }
+  ],
+  "pmid": "40348424",
+  "doi": "10.1016/j.psc.2025.01.012",
+  "similarity_score": 0.5360805273056031,
+  "source_subgraph": "anxiety disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Anxiety Disorder"
+  ]
+}

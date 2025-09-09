@@ -1,0 +1,35 @@
+{
+  "title": "Co-morbid obsessive-compulsive disorder and depression: a Bayesian network approach.",
+  "abstract": "Obsessive-compulsive disorder (OCD) is often co-morbid with depression. Using the methods of network analysis, we computed two networks that disclose the potentially causal relationships among symptoms of these two disorders in 408 adult patients with primary OCD and co-morbid depression symptoms. We examined the relationship between the symptoms constituting these syndromes by computing a (regularized) partial correlation network via the graphical LASSO procedure, and a directed acyclic graph (DAG) via a Bayesian hill-climbing algorithm. The results suggest that the degree of interference and distress associated with obsessions, and the degree of interference associated with compulsions, are the chief drivers of co-morbidity. Moreover, activation of the depression cluster appears to occur solely through distress associated with obsessions activating sadness - a key symptom that 'bridges' the two syndromic clusters in the DAG. Bayesian analysis can expand the repertoire of network analytic approaches to psychopathology. We discuss clinical implications and limitations of our findings.",
+  "journal": "Psychological medicine",
+  "authors": [
+    {
+      "lastname": "McNally",
+      "forename": "R J",
+      "initials": "RJ"
+    },
+    {
+      "lastname": "Mair",
+      "forename": "P",
+      "initials": "P"
+    },
+    {
+      "lastname": "Mugno",
+      "forename": "B L",
+      "initials": "BL"
+    },
+    {
+      "lastname": "Riemann",
+      "forename": "B C",
+      "initials": "BC"
+    }
+  ],
+  "pmid": "28052778",
+  "doi": "10.1017/S0033291716003287",
+  "similarity_score": 0.5904465198516846,
+  "source_subgraph": "obsessive-compulsive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Obsessive-Compulsive Disorder"
+  ]
+}

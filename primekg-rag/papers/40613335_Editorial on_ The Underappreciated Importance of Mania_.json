@@ -1,0 +1,30 @@
+{
+  "title": "Editorial on: The Underappreciated Importance of Mania.",
+  "abstract": "",
+  "journal": "Acta psychiatrica Scandinavica",
+  "authors": [
+    {
+      "lastname": "McElroy",
+      "forename": "Susan L",
+      "initials": "SL"
+    },
+    {
+      "lastname": "Frye",
+      "forename": "Mark A",
+      "initials": "MA"
+    },
+    {
+      "lastname": "Singh",
+      "forename": "Balwinder",
+      "initials": "B"
+    }
+  ],
+  "pmid": "40613335",
+  "doi": "10.1111/acps.13814",
+  "similarity_score": 0.14450411796569823,
+  "source_subgraph": "Mania_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Mania"
+  ]
+}

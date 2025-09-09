@@ -1,0 +1,45 @@
+{
+  "title": "Transcriptional Patterns of Functional Connectivity Associated With Somatic Symptoms in Major Depressive Disorder.",
+  "abstract": "Somatic symptoms are common in major depressive disorder (MDD), but their neurobiological and gene expression mechanisms are not yet well understood. To address this gap, we analyzed a multicenter magnetic resonance imaging dataset comprising 417 MDD patients. First, we conducted a correlation analysis between functional connectivity (FC) and somatic symptoms. Next, gene expression data from the Allen Human Brain Atlas were integrated with FC using partial least squares regression. Finally, functional enrichment analysis identified biological processes, molecular functions, and cellular components associated with the genes linked to FC. Our findings revealed that FC between the medial cerebellum and several cortical regions, including the occipital, temporal, parietal, and mid-insular cortices, was positively associated with somatic symptom severity. Similarly, FC between the parietal cortex and regions such as the anterior prefrontal cortex, ventral frontal cortex, temporal cortex, and precuneus also showed positive associations with somatic symptom severity. Moreover, connectome-transcriptome correlation analysis revealed that the expression of 1120 genes was spatially correlated with FC, and these genes were primarily enriched in synapses and ion channels. Our results indicated that gene expression variations in synaptic translation and ion channels may affect FC associated with somatic symptoms.",
+  "journal": "American journal of medical genetics. Part B, Neuropsychiatric genetics : the official publication of the International Society of Psychiatric Genetics",
+  "authors": [
+    {
+      "lastname": "Wang",
+      "forename": "Shiying",
+      "initials": "S"
+    },
+    {
+      "lastname": "Chen",
+      "forename": "Chengfeng",
+      "initials": "C"
+    },
+    {
+      "lastname": "Wang",
+      "forename": "Jiang",
+      "initials": "J"
+    },
+    {
+      "lastname": "Wang",
+      "forename": "Runhua",
+      "initials": "R"
+    },
+    {
+      "lastname": "Mao",
+      "forename": "Fuqiang",
+      "initials": "F"
+    },
+    {
+      "lastname": "Zhang",
+      "forename": "Bin",
+      "initials": "B"
+    }
+  ],
+  "pmid": "40546215",
+  "doi": "10.1002/ajmg.b.33041",
+  "similarity_score": 0.48142658472061156,
+  "source_subgraph": "major depressive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Major Depressive Disorder"
+  ]
+}

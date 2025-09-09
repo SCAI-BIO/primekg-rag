@@ -1,0 +1,35 @@
+{
+  "title": "Fixation-linked nondissociated hypotropia: a report of 3 cases.",
+  "abstract": "Fixation-linked hypotropia, or hypotropic dissociated vertical deviation, is a rare but well-defined ocular motility disorder characterized by a slow downward drift of a poor-seeing eye when the other eye is ﬁxating on a distant target. It can be successfully treated with a large recession or recession-resection of the inferior rectus muscle. We report 3 cases of fixation-linked nondissociated hypotropia with unilateral high myopia and amblyopia presenting with intermittent hypotropia of the worse-seeing eye when the dominant eye was fixating on a distant target and a hypertropia of the dominant eye when the poorer-seeing eye was made to fix. We discuss the surgical management of one of these patients.",
+  "journal": "Journal of AAPOS : the official publication of the American Association for Pediatric Ophthalmology and Strabismus",
+  "authors": [
+    {
+      "lastname": "Matalia",
+      "forename": "Jyoti",
+      "initials": "J"
+    },
+    {
+      "lastname": "Anaspure",
+      "forename": "Hemant",
+      "initials": "H"
+    },
+    {
+      "lastname": "Panmand",
+      "forename": "Pratibha",
+      "initials": "P"
+    },
+    {
+      "lastname": "Kowal",
+      "forename": "Lionel",
+      "initials": "L"
+    }
+  ],
+  "pmid": "25266837",
+  "doi": "10.1016/j.jaapos.2014.06.015",
+  "similarity_score": 0.297463583946228,
+  "source_subgraph": "Hypotropia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Hypotropia"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Clinicians' Assessment of Antisocial Personality Disorder (ASPD): A Network Analysis Approach on DSM-5-TR Criteria and Domains.",
+  "abstract": "Antisocial Personality Disorder (ASPD) is a personality disorder that entails significant impairments and/or costs at the individual, interpersonal, and community levels. Given its clinical relevance, scientific research is placing a significant focus on the study of the central characteristics of this condition to guide prevention and clinical practice. Within this framework, the present study aimed to investigate the associations and centrality of ASPD criteria and maladaptive trait domains in mental health professionals' conceptualization of the disorder, thus taking into account both categorical and dimensional approaches to personality pathology. The research involved 322 mental health professionals who reviewed the importance of ASPD criteria (Section II) and maladaptive trait domains (Criterion B of Section III). Data were analyzed using a network analysis approach. Both edge weights and node centrality were investigated. Within the criteria network, all centrality indices unanimously highlighted the role of lack of remorse. Regarding the trait domain network, the contributions of antagonism, detachment, and disinhibition were emphasized. The findings of this research collect and systematize the mental health professionals' perspective through the network analysis approach to provide further understanding of ASPD's central features. Such data may have useful practical implications for both research and clinical practice.",
+  "journal": "Personality and mental health",
+  "authors": [
+    {
+      "lastname": "Gori",
+      "forename": "Alessio",
+      "initials": "A"
+    },
+    {
+      "lastname": "Topino",
+      "forename": "Eleonora",
+      "initials": "E"
+    },
+    {
+      "lastname": "Sharp",
+      "forename": "Carla",
+      "initials": "C"
+    }
+  ],
+  "pmid": "40337951",
+  "doi": "10.1002/pmh.70017",
+  "similarity_score": 0.4745288372039795,
+  "source_subgraph": "personality disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Personality Disorder"
+  ]
+}

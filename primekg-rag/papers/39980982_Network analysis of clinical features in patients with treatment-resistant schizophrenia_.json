@@ -1,0 +1,35 @@
+{
+  "title": "Network analysis of clinical features in patients with treatment-resistant schizophrenia.",
+  "abstract": "This study compares the clinical features of Treatment-Resistant Schizophrenia (TRS) and Non-Treatment-Resistant Schizophrenia (NTRS) using network analysis. We recruited 511 patients, dividing them into TRS (N = 269) and NTRS (N = 242) groups. Eight scales were used: Positive and Negative Syndrome Scale (PANSS), Positive Symptom Assessment Scale (SAPS), Scale for Assessment of Negative Symptoms (SANS), Simpson-Angus Scale (SAS), Abnormal Involuntary Movements Scale (AIMS), Barnes Akathisia Rating Scale (BARS), Calgary Schizophrenia Depression Scale (CDSS), and Global Assessment of Functioning Scale (GAF). Demographic and clinical data were analyzed using T-tests and Chi-square tests. Network analysis was then applied to compare clinical features. Significant differences were found in the overall architectures (S = 1.396, <i>p</i> < 0.002) and edge weights (M = 0.289, <i>p</i> < 0.009) of TRS and NTRS networks. Nine edges (<i>p</i> < 0.05) and five nodes (p < 0.01) differed, indicating a correlation between clinical symptoms of the two groups. TRS core symptoms were linked to social functions through both positive (SAPS) and negative symptoms (SANS), while NTRS core symptoms were related to general psychopathological symptoms (PANSS-G). For TRS, it is essential to address both negative and positive symptoms, focusing on the impact of negative symptoms on functioning. Additionally, managing medication side effects is crucial to avoid worsening negative symptoms.",
+  "journal": "Frontiers in psychiatry",
+  "authors": [
+    {
+      "lastname": "Li",
+      "forename": "Wei",
+      "initials": "W"
+    },
+    {
+      "lastname": "Zhao",
+      "forename": "Jing",
+      "initials": "J"
+    },
+    {
+      "lastname": "Hu",
+      "forename": "Na",
+      "initials": "N"
+    },
+    {
+      "lastname": "Zhang",
+      "forename": "Wanling",
+      "initials": "W"
+    }
+  ],
+  "pmid": "39980982",
+  "doi": "10.3389/fpsyt.2025.1537418",
+  "similarity_score": 0.39610652923583983,
+  "source_subgraph": "schizophrenia_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Schizophrenia"
+  ]
+}

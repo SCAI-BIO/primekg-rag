@@ -1,0 +1,20 @@
+{
+  "title": "[From the abducens nucleus to spatial memory: an ocular motor journey].",
+  "abstract": "Advances in our knowledge on eye movements over the last 25 years are reviewed, focusing on the author's experience. First, the advantages of binocular frontal vision, which is a common characteristic of all predator mammals, are compared to those of lateral vision, characterizing their preys. Binocular frontal vision implies a perfect parallelism of both eyes, which is ensured in the pons by means of the abducens nucleus, controlling abduction as well as adduction. The pathological example of the \"one-and-a-half\" syndrome, in which the abducens nucleus and the adjacent medial longitudinal fasciculus are simultaneously impaired, is described. The main brainstem syndromes involving vertical eye movements are also reviewed: in particular, the third nerve nucleus syndrome, in which both ipsilateral third nerve paralysis and contralateral superior rectus paralysis (with hypotropia) result from a unilateral third nerve nucleus lesion. A case of upbeat nystagmus (in the primary position of gaze) due to a small upper pontine lesion, probably affecting the ventral tegmental tract (VTT) is also reported. This is an opportunity to emphasize that, although a number of cases of upbeat nystagmus due to focal brainstem lesions affecting the upward vestibular pathway (UVP)--either at the upper pontine (VTT) or caudal medullary level--exist in the literature, no convincing cases with downbeat nystagmus (in the primary position of gaze) due to a focal brainstem lesion have been reported. Downbeat nystagmus could result from a UVP hyperactivity (secondary to a floccular lesion) and the notion that this pathway is physiologically predominant compared to the downward pathway, maybe due to gravity, is developed. A new hypothesis about the role of the caudal medulla in UVP is also proposed. Next, the cortical control of saccadic eye movements is reviewed, with a reminder that reflexive saccades are mainly triggered by the parietal eye field whereas intentional saccades depend upon the frontal eye field. The inhibition of reflexive saccades is mainly controlled by the dorsolateral frontal cortex (DLPFC), i.e. area 46 of Brodmann. A few examples of the use of saccades as a research tool and model in cognitive neurosciences are given. The use of memory-guided saccades allowed us to study spatial memory and led us to propose a relatively original conception of the cortical control of spatial memory in which the DLPFC, the parahippocampal cortex and the hippocampal formation could be involved successively according to specific periods of time. An experiment using functional magnetic resonance imaging in a paradigm studying decision is described, again with the involvement of the DLPFC in the decisional process. Lastly, the usefulness of eye movements in clinical neuro-ophthalmology at the bedside as well as in neurophysiological or even neuropsychological research in the laboratory is emphasized.",
+  "journal": "Revue neurologique",
+  "authors": [
+    {
+      "lastname": "Pierrot-Deseilligny",
+      "forename": "C",
+      "initials": "C"
+    }
+  ],
+  "pmid": "16106806",
+  "doi": "10.1016/s0035-3787(05)85089-1",
+  "similarity_score": -0.07800931930541993,
+  "source_subgraph": "memory_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Memory"
+  ]
+}

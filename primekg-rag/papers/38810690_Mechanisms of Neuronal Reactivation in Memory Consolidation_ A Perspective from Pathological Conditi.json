@@ -1,0 +1,60 @@
+{
+  "title": "Mechanisms of Neuronal Reactivation in Memory Consolidation: A Perspective from Pathological Conditions.",
+  "abstract": "Memory consolidation refers to a process by which labile newly formed memory traces are progressively strengthened into long term memories and become more resistant to interference. Recent work has revealed that spontaneous hippocampal activity during rest, commonly referred to as \"offline\" activity, plays a critical role in the process of memory consolidation. Hippocampal reactivation occurs during sharp-wave ripples (SWRs), which are events associated with highly synchronous neural firing in the hippocampus and modulation of neural activity in distributed brain regions. Memory consolidation occurs primarily through a coordinated communication between hippocampus and neocortex. Cortical slow oscillations drive the repeated reactivation of hippocampal memory representations together with SWRs and thalamo-cortical spindles, inducing long-lasting cellular and network modifications responsible for memory stabilization.In this review, we aim to comprehensively cover the field of \"reactivation and memory consolidation\" research by detailing the physiological mechanisms of neuronal reactivation and firing patterns during SWRs and providing a discussion of more recent key findings. Several mechanistic explanations of neuropsychiatric diseases propose that impaired neural replay may underlie some of the symptoms of the disorders. Abnormalities in neuronal reactivation are a common phenomenon and cause pathological impairment in several diseases, such as Alzheimer's disease (AD), epilepsy and schizophrenia. However, the specific pathological changes and mechanisms of reactivation in each disease are different. Recent work has also enlightened some of the underlying pathological mechanisms of neuronal reactivation in these diseases. In this review, we further describe how SWRs, ripples and slow oscillations are affected in Alzheimer's disease, epilepsy, and schizophrenia. We then compare the differences of neuronal reactivation and discuss how different reactivation abnormalities cause pathological changes in these diseases. Aberrant neural reactivation provides insights into disease pathogenesis and may even serve as biomarkers for early disease progression and treatment response.",
+  "journal": "Neuroscience",
+  "authors": [
+    {
+      "lastname": "Xiang",
+      "forename": "Lei-Ying",
+      "initials": "LY"
+    },
+    {
+      "lastname": "Chen",
+      "forename": "Xiao-Yi",
+      "initials": "XY"
+    },
+    {
+      "lastname": "Lu",
+      "forename": "Li-Ming",
+      "initials": "LM"
+    },
+    {
+      "lastname": "Kong",
+      "forename": "Ming-Hui",
+      "initials": "MH"
+    },
+    {
+      "lastname": "Ji",
+      "forename": "Qi",
+      "initials": "Q"
+    },
+    {
+      "lastname": "Xiong",
+      "forename": "Yu",
+      "initials": "Y"
+    },
+    {
+      "lastname": "Xie",
+      "forename": "Mei-Ming",
+      "initials": "MM"
+    },
+    {
+      "lastname": "Jian",
+      "forename": "Xin-Ling",
+      "initials": "XL"
+    },
+    {
+      "lastname": "Zhu",
+      "forename": "Zhi-Ru",
+      "initials": "ZR"
+    }
+  ],
+  "pmid": "38810690",
+  "doi": "10.1016/j.neuroscience.2024.05.030",
+  "similarity_score": -0.04894108772277833,
+  "source_subgraph": "memory_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Memory"
+  ]
+}

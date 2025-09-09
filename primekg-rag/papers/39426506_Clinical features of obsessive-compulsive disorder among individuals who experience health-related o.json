@@ -1,0 +1,40 @@
+{
+  "title": "Clinical features of obsessive-compulsive disorder among individuals who experience health-related obsessive-compulsive symptoms.",
+  "abstract": "While some obsessive-compulsive disorder (OCD) phenotypes are well-established and better understood, it is unclear whether the presence of health-related obsessive-compulsive symptoms (OCS) is associated with specific clinical characteristics. We aimed to investigate whether OCS involving concerns with illness, diseases, body parts or aspects of appearance (i.e. health-related OCS) are associated with differences in demographics, experience of stressful life events, clinical severity, clinical course, endorsement of established OCD dimensions, and psychiatric comorbidities. Individuals (N = 1001) with a clinical diagnosis of OCD (M = 34.85, SD = 12.99) completed a questionnaire battery assessing clinical course (age at symptom onset, age at diagnosis, duration of illness), total and dimensional symptom severity, and psychiatric comorbidities. We ran initial univariate, and follow-up multivariate analyses where appropriate, to compare individuals reporting health-related OCS with those not reporting health-related OCS in terms of demographics, symptom severity and clinical course, OCD symptom dimensions, and psychiatric comorbidities. The presence of health-related OCS was associated with higher severity of contamination, hoarding and harm symptoms. Additionally, those with health-related OCS displayed significantly lower symptom insight, increased incidence of hypochondriasis, panic disorder and anxiety, and lower depression symptoms. Overall OCD symptom severity and clinical course did not differ between participants with and without health-related OCS. These novel findings provide clinicians with an enhanced understanding of health-related OCS in order to guide assessment and allow for more targeted treatment planning. Future investigations may examine the effectiveness of specialised treatment methods which target underlying clinical features of health-related OCS.",
+  "journal": "Journal of affective disorders",
+  "authors": [
+    {
+      "lastname": "Nanthakumar",
+      "forename": "Sandhiya",
+      "initials": "S"
+    },
+    {
+      "lastname": "Albertella",
+      "forename": "Lucy",
+      "initials": "L"
+    },
+    {
+      "lastname": "do Rosário",
+      "forename": "Maria Conceição",
+      "initials": "MC"
+    },
+    {
+      "lastname": "Brierley",
+      "forename": "Mary-Ellen E",
+      "initials": "ME"
+    },
+    {
+      "lastname": "Fontenelle",
+      "forename": "Leonardo F",
+      "initials": "LF"
+    }
+  ],
+  "pmid": "39426506",
+  "doi": "10.1016/j.jad.2024.10.014",
+  "similarity_score": 0.6410543203353882,
+  "source_subgraph": "obsessive-compulsive disorder_subgraph",
+  "retrieval_date": "2025-09-09",
+  "topics": [
+    "Obsessive-Compulsive Disorder"
+  ]
+}
