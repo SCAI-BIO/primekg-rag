@@ -7,6 +7,9 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     gcc \
     g++ \
+    curl \
+    wget \
+    p7zip-full \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements first for better caching
@@ -27,6 +30,11 @@ COPY . .
 
 # Set working directory to primekg-rag
 WORKDIR /app/primekg-rag
+
+# Download and extract databases from Zenodo (if not already present)
+RUN python setup_databases.py || echo "Database setup failed, continuing..." && \
+    python verify_databases.py || echo "Database verification failed, continuing..." && \
+    chmod -R 755 ./
 
 # Expose Streamlit port
 EXPOSE 8501
