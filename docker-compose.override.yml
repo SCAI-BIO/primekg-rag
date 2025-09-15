@@ -2,17 +2,7 @@ version: '3.8'
 
 services:
   primekg-rag:
-    build: .
-    ports:
-      - "8501:8501"
-    volumes:
-      # Mount data directories for persistence
-      - ./primekg-rag/data:/app/primekg-rag/data
-      - ./primekg-rag/pubmed_db:/app/primekg-rag/pubmed_db
-      - ./primekg-rag/node_db:/app/primekg-rag/node_db
-      - ./primekg-rag/question_db:/app/primekg-rag/question_db
-      - ./primekg-rag/shortest_path_db:/app/primekg-rag/shortest_path_db
-      - ./primekg-rag/new_subgraphs:/app/primekg-rag/new_subgraphs
+    # Override for development with database download
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - API_KEY=${API_KEY}
@@ -26,9 +16,19 @@ services:
       - NODE_DB_PATH=/app/primekg-rag/node_db
       - MAPPINGS_DB_PATH=/app/primekg-rag/mappings_db
       - SHORTEST_PATH_DB_PATH=/app/primekg-rag/shortest_path_db
-    restart: unless-stopped
+    volumes:
+      # Mount data directories for persistence
+      - ./primekg-rag/data:/app/primekg-rag/data
+      - ./primekg-rag/pubmed_db:/app/primekg-rag/pubmed_db
+      - ./primekg-rag/node_db:/app/primekg-rag/node_db
+      - ./primekg-rag/question_db:/app/primekg-rag/question_db
+      - ./primekg-rag/shortest_path_db:/app/primekg-rag/shortest_path_db
+      - ./primekg-rag/new_subgraphs:/app/primekg-rag/new_subgraphs
+      - ./primekg-rag/analyses_db:/app/primekg-rag/analyses_db
+    # Add health check
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
       interval: 30s
       timeout: 10s
       retries: 3
+      start_period: 60s
