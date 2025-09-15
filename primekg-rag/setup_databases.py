@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Configuration
-ZENODO_URL = "https://zenodo.org/records/17119877"
+ZENODO_URL = "https://doi.org/10.5281/zenodo.17119876"
 DATABASE_ARCHIVE = "databases.7z"
 EXTRACT_DIR = Path(__file__).parent
 
