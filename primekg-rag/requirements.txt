@@ -1,7 +1,0 @@
-streamlit
-pandas
-chromadb
-sentence-transformers
-torch
-ollama
-pyvis

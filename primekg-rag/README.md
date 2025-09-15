@@ -1,6 +1,6 @@
 # PrimeKG-RAG: Knowledge Graph RAG System
 
-A comprehensive Retrieval-Augmented Generation (RAG) system built on PrimeKG (Prime Knowledge Graph) for medical research analysis. This system combines knowledge graphs with AI-powered analysis to provide insights into medical conditions, treatments, and research relationships.
+A comprehensive Retrieval-Augmented Generation (RAG) system built on PrimeKG (Prime Knowledge Graph) and pubmed central research papers for medical research analysis. This system combines knowledge graphs with AI-powered analysis to provide insights into medical conditions, treatments, and research relationships.
 
 ## 🎯 Project Overview
 
@@ -70,7 +70,7 @@ The system consists of several interconnected components:
 - **Purpose**: Downloads and stores papers related to shortest paths
 - **Features**:
   - Finds papers for specific node relationships
-  - Downloads full-text papers when available
+  - Downloads abstracts from papers when available
   - Stores path-paper associations
 - **Database**: `shortest_path_db/` (ChromaDB)
 - **Collection**: `shortest_path_papers`
