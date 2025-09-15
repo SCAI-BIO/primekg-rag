@@ -25,22 +25,15 @@ from sentence_transformers import SentenceTransformer
 # --- Load Environment Variables ---
 load_dotenv()
 
-
 # --- Configuration ---
 BASE_DIR = Path(__file__).parent
-
-# Database paths - use environment variables if available, otherwise use local paths
-SUBGRAPHS_DIR = Path(os.getenv("SUBGRAPHS_DIR", BASE_DIR / "new_subgraphs"))
-NODES_CSV_PATH = Path(os.getenv("NODES_CSV_PATH", BASE_DIR / "nodes.csv"))
-ANALYSIS_DB_PATH = Path(os.getenv("ANALYSIS_DB_PATH", BASE_DIR / "analyses_db"))
-QUESTION_NODE_MAPPING_PATH = Path(os.getenv("QUESTION_NODE_MAPPING_PATH", BASE_DIR / "best_question_matches.csv"))
-PUBMED_DB_PATH = Path(os.getenv("PUBMED_DB_PATH", BASE_DIR / "pubmed_db"))
-NODE_DB_PATH = Path(os.getenv("NODE_DB_PATH", BASE_DIR / "node_db"))
-MAPPINGS_DB_PATH = Path(os.getenv("MAPPINGS_DB_PATH", BASE_DIR / "mappings_db"))
-SHORTEST_PATH_DB_PATH = Path(os.getenv("SHORTEST_PATH_DB_PATH", BASE_DIR / "shortest_path_db"))
-
+SUBGRAPHS_DIR = BASE_DIR / "new_subgraphs"
+NODES_CSV_PATH = BASE_DIR / "nodes.csv"
+ANALYSIS_DB_PATH = BASE_DIR / "analyses_db"
 ANALYSIS_COLLECTION_NAME = "medical_analyses"
 OPENAI_MODEL_NAME = "gpt-4o"
+QUESTION_NODE_MAPPING_PATH = BASE_DIR / "best_question_matches.csv"
+PUBMED_DB_PATH = BASE_DIR / "pubmed_db"
 
 # Enhanced Retrieval Configuration
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
@@ -283,12 +276,10 @@ def get_analysis_collection():
 def get_pubmed_collection():
     """Connects to the PubMed ChromaDB collection."""
     try:
-        db_path = str(PUBMED_DB_PATH)
-        if not PUBMED_DB_PATH.exists():
-            st.error(f"PubMed database not found at: {db_path}")
-            st.info("Please ensure the databases are downloaded from Zenodo repository.")
+        db_path = os.getenv("PUBMED_DB_PATH")
+        if not db_path:
+            st.error("PUBMED_DB_PATH not set in .env file.")
             return None
-            
         client = chromadb.PersistentClient(path=db_path)
         embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
             model_name="sentence-transformers/all-MiniLM-L6-v2"
@@ -297,7 +288,7 @@ def get_pubmed_collection():
             name="pubmed_abstracts",
             embedding_function=embedding_function
         )
-        st.info(f"PubMed evidence database connected from: {db_path} 🧬")
+        st.info("PubMed evidence database connected. 🧬")
         return collection
     except Exception as e:
         st.error(f"Could not connect to PubMed DB: {e}")
@@ -594,7 +585,7 @@ def calculate_weighted_cosine_similarity(query_embedding: List[float], title_emb
         title_vec = np.array(title_embedding, dtype=float)
         abstract_vec = np.array(abstract_embedding, dtype=float)
         
-        # Calculate cosine similarity for title
+        # Calculate cosine similarity for title we can use here sklearn and just use similarity function instead of the full formula (dot product/magnitude)
         title_similarity = np.dot(query_vec, title_vec) / (np.linalg.norm(query_vec) * np.linalg.norm(title_vec))
         
         # Calculate cosine similarity for abstract
