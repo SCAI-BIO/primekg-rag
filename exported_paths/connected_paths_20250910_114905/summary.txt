@@ -1,0 +1,87 @@
+Knowledge Graph Paths Summary
+========================================
+Generated: 2025-09-10 11:49:06
+Total nodes: 15
+Total unique node pairs: 105
+Connected pairs found: 78 (74.3%)
+
+Connected Pairs:
+----------------------------------------
+- Behavioral_abnormality_to_Bipolar_affective_disorder.csv
+- Behavioral_abnormality_to_Death_in_adolescence.csv
+- Behavioral_abnormality_to_Hypotropia.csv
+- Behavioral_abnormality_to_Mania.csv
+- Behavioral_abnormality_to_Panic_attack.csv
+- Behavioral_abnormality_to_Posttraumatic_stress_symptom.csv
+- Behavioral_abnormality_to_bipolar_disorder.csv
+- Behavioral_abnormality_to_eating_behavior.csv
+- Behavioral_abnormality_to_major_depressive_disorder.csv
+- Behavioral_abnormality_to_manic_bipolar_affective_disord.csv
+- Bipolar_affective_disorder_to_Death_in_adolescence.csv
+- Bipolar_affective_disorder_to_Hypotropia.csv
+- Bipolar_affective_disorder_to_Mania.csv
+- Bipolar_affective_disorder_to_Panic_attack.csv
+- Bipolar_affective_disorder_to_Posttraumatic_stress_symptom.csv
+- Bipolar_affective_disorder_to_bipolar_disorder.csv
+- Bipolar_affective_disorder_to_eating_behavior.csv
+- Bipolar_affective_disorder_to_major_depressive_disorder.csv
+- Bipolar_affective_disorder_to_manic_bipolar_affective_disord.csv
+- Death_in_adolescence_to_Hypotropia.csv
+- Death_in_adolescence_to_Mania.csv
+- Death_in_adolescence_to_Panic_attack.csv
+- Death_in_adolescence_to_Posttraumatic_stress_symptom.csv
+- Death_in_adolescence_to_eating_behavior.csv
+- Death_in_adolescence_to_major_depressive_disorder.csv
+- Death_in_adolescence_to_manic_bipolar_affective_disord.csv
+- Hypotropia_to_Mania.csv
+- Hypotropia_to_Panic_attack.csv
+- Hypotropia_to_Posttraumatic_stress_symptom.csv
+- Hypotropia_to_major_depressive_disorder.csv
+- Hypotropia_to_manic_bipolar_affective_disord.csv
+- Mania_to_Panic_attack.csv
+- Mania_to_Posttraumatic_stress_symptom.csv
+- Mania_to_manic_bipolar_affective_disord.csv
+- Panic_attack_to_Posttraumatic_stress_symptom.csv
+- alcohol_related_disorders_to_Behavioral_abnormality.csv
+- alcohol_related_disorders_to_Bipolar_affective_disorder.csv
+- alcohol_related_disorders_to_Death_in_adolescence.csv
+- alcohol_related_disorders_to_Hypotropia.csv
+- alcohol_related_disorders_to_Mania.csv
+- alcohol_related_disorders_to_Panic_attack.csv
+- alcohol_related_disorders_to_Posttraumatic_stress_symptom.csv
+- alcohol_related_disorders_to_anorexia_nervosa.csv
+- alcohol_related_disorders_to_bipolar_disorder.csv
+- alcohol_related_disorders_to_eating_behavior.csv
+- alcohol_related_disorders_to_major_depressive_disorder.csv
+- alcohol_related_disorders_to_manic_bipolar_affective_disord.csv
+- anorexia_nervosa_to_Behavioral_abnormality.csv
+- anorexia_nervosa_to_Bipolar_affective_disorder.csv
+- anorexia_nervosa_to_Death_in_adolescence.csv
+- anorexia_nervosa_to_Hypotropia.csv
+- anorexia_nervosa_to_Mania.csv
+- anorexia_nervosa_to_Panic_attack.csv
+- anorexia_nervosa_to_Posttraumatic_stress_symptom.csv
+- anorexia_nervosa_to_bipolar_disorder.csv
+- anorexia_nervosa_to_eating_behavior.csv
+- anorexia_nervosa_to_major_depressive_disorder.csv
+- anorexia_nervosa_to_manic_bipolar_affective_disord.csv
+- bipolar_disorder_to_Death_in_adolescence.csv
+- bipolar_disorder_to_Hypotropia.csv
+- bipolar_disorder_to_Mania.csv
+- bipolar_disorder_to_Panic_attack.csv
+- bipolar_disorder_to_Posttraumatic_stress_symptom.csv
+- bipolar_disorder_to_eating_behavior.csv
+- bipolar_disorder_to_major_depressive_disorder.csv
+- bipolar_disorder_to_manic_bipolar_affective_disord.csv
+- eating_behavior_to_Hypotropia.csv
+- eating_behavior_to_Mania.csv
+- eating_behavior_to_Panic_attack.csv
+- eating_behavior_to_Posttraumatic_stress_symptom.csv
+- eating_behavior_to_major_depressive_disorder.csv
+- eating_behavior_to_manic_bipolar_affective_disord.csv
+- major_depressive_disorder_to_Mania.csv
+- major_depressive_disorder_to_Panic_attack.csv
+- major_depressive_disorder_to_Posttraumatic_stress_symptom.csv
+- major_depressive_disorder_to_manic_bipolar_affective_disord.csv
+- manic_bipolar_affective_disord_to_Panic_attack.csv
+- manic_bipolar_affective_disord_to_Posttraumatic_stress_symptom.csv

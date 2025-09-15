@@ -1,0 +1,2 @@
+source,target,status,path_length,path,detailed_path
+bipolar disorder,manic bipolar affective disorder,Path found,1,bipolar disorder → manic bipolar affective disorder,• bipolar disorder [disease] --parent-child--> manic bipolar affective disorder [disease]

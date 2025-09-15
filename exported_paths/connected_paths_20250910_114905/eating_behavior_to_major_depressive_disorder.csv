@@ -1,0 +1,3 @@
+source,target,status,path_length,path,detailed_path
+eating behavior,major depressive disorder,Path found,2,eating behavior → LEP → major depressive disorder,"• eating behavior [biological_process] --interacts with--> LEP [gene/protein]
+  • LEP [gene/protein] --associated with--> major depressive disorder [disease]"

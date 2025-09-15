@@ -1,0 +1,3 @@
+source,target,status,path_length,path,detailed_path
+anorexia nervosa,Mania,Path found,2,anorexia nervosa → Bupropion → Mania,"• anorexia nervosa [disease] --contraindication--> Bupropion [drug]
+  • Bupropion [drug] --side effect--> Mania [effect/phenotype]"

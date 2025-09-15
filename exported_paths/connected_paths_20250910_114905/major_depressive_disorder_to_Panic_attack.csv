@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+major depressive disorder,Panic attack,Path found,3,major depressive disorder → CDKN2A → adrenal cortex carcinoma → Panic attack,"• major depressive disorder [disease] --associated with--> CDKN2A [gene/protein]
+  • CDKN2A [gene/protein] --associated with--> adrenal cortex carcinoma [disease]
+  • adrenal cortex carcinoma [disease] --phenotype present--> Panic attack [effect/phenotype]"

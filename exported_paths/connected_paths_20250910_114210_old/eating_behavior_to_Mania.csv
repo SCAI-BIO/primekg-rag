@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+eating behavior,Mania,Path found,3,eating behavior → ADORA2A → Lamotrigine → Mania,"• eating behavior [biological_process] --interacts with--> ADORA2A [gene/protein]
+  • ADORA2A [gene/protein] --target--> Lamotrigine [drug]
+  • Lamotrigine [drug] --side effect--> Mania [effect/phenotype]"

@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+eating behavior,manic bipolar affective disorder,Path found,3,eating behavior → feeding behavior → NTRK2 → manic bipolar affective disorder,"• eating behavior [biological_process] --parent-child--> feeding behavior [biological_process]
+  • feeding behavior [biological_process] --interacts with--> NTRK2 [gene/protein]
+  • NTRK2 [gene/protein] --associated with--> manic bipolar affective disorder [disease]"

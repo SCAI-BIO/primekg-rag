@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+Mania,Panic attack,Path found,3,Mania → PANDAS → Abnormal fear/anxiety-related behavior → Panic attack,"• Mania [effect/phenotype] --phenotype absent--> PANDAS [disease]
+  • PANDAS [disease] --phenotype present--> Abnormal fear/anxiety-related behavior [effect/phenotype]
+  • Abnormal fear/anxiety-related behavior [effect/phenotype] --parent-child--> Panic attack [effect/phenotype]"

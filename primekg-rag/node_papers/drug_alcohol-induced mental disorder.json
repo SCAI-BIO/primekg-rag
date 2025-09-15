@@ -1,0 +1,95 @@
+{
+  "node": "drug/alcohol-induced mental disorder",
+  "papers": [
+    {
+      "rank": 1,
+      "pmid": "31886105",
+      "title": "Alcohol Use Disorder and Schizophrenia or Schizoaffective Disorder.",
+      "abstract": "Schizophrenia and schizoaffective disorder are schizophrenia spectrum disorders that cause significant disability. Among individuals who have schizophrenia or schizoaffective disorder, alcohol use disorder (AUD) is common, and it contributes to worse outcomes than for those who do not have co-occurring substance use disorder. Common neurobiological mechanisms, including dysfunction in brain reward circuitry, may explain the high rates of co-occurrence of schizophrenia and AUD or other substance use disorders. Optimal treatment combines pharmacologic intervention and other therapeutic modalities to address both the psychotic disorder and AUD. Further research on the etiology of these co-occurring disorders and on treatment of affected individuals is needed.",
+      "similarity": 0.42322468757629395,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 2,
+      "pmid": "40421949",
+      "title": "Pharmacologic interventions for alcohol use disorder.",
+      "abstract": "Alcohol use disorder (AUD) has devastating effects, and its prevalence in the US is growing. It is therefore important to examine multiple avenues for successful cessation and continued abstinence. Disulfiram, oral naltrexone, naltrexone IM, and acamprosate are currently the only four medications approved for the treatment of AUD by the FDA. This review aims to examine the efficacy of the approved medications as well as explore the use of off-label pharmacologic treatments used for AUD treatment (including gabapentin, baclofen, oxytocin, N-acetylcysteine, calcium carbonate, and psilocybin). Through this exploration, the most effective treatment for individuals with AUD can be determined to enable providers in ameliorating the prevalence of this disease.",
+      "similarity": 0.39551055431365967,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 3,
+      "pmid": "40532747",
+      "title": "Alcohol use disorder exacerbates clinical and vascular risks differentially in psychiatric disorders.",
+      "abstract": "Alcohol Use Disorder (AUD) is a major public health concern with detrimental effects on cognitive and neurological function, yet its impact on psychiatric populations remains incompletely defined. In this global propensity score-matched cohort study, we examined the clinical and vascular consequences of comorbid alcohol abuse across diverse psychiatric disorders. Data from the TriNetX network, encompassing electronic medical records from 143 healthcare organizations, were analyzed. For each disorder-anxiety, depression, bipolar disorder, schizophrenia, reaction to severe stress, eating disorders, personality disorders, psychoactive substance dependence, developmental disorders, and obsessive-compulsive disorder-patients with alcohol abuse were matched 1:1 to those without, controlling for demographic and clinical factors. Over a 1095-day follow-up, outcomes evaluated included emergency department visits, pain prevalence, mortality, and cerebrovascular events (transient ischemic attacks and strokes). Alcohol abuse was consistently associated with significantly higher emergency care utilization, increased somatic pain, and elevated mortality across all groups. For instance, anxiety and depression cohorts exhibited 8.1% and 7.3% higher emergency visits and increased mortality by 2.7% and 2.4%, respectively, while schizophrenia showed a twofold increase in stroke risk and markedly higher pain (risk ratio 2.21). These results underscore that AUD exacerbates clinical and vascular risks in psychiatric patients, highlighting the urgent need for targeted interventions.",
+      "similarity": 0.39187371730804443,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 4,
+      "pmid": "16525520",
+      "title": "Substance use and psychosis.",
+      "abstract": "The use of alcohol and illicit substances is high among people with mental illnesses. Clinicians experience a range of complex issues while treating such patients. This article provides a brief overview of the problem of substance abuse comorbidity in people with a major mental illness. It outlines some of the epidemiological and clinical issues related to the association between the use of alcohol and illicit substances and disorders such as schizophrenia, and suggests approaches to assessment and treatment of people with such dual problems. An integrated approach to treatment is required, whereby mental health and substance use issues are addressed simultaneously by the one treatment team. The general practitioner has an important role in psychoeducation, physical and mental health care, pharmacotherapy, and coordination of care.",
+      "similarity": 0.35695117712020874,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 5,
+      "pmid": "39612154",
+      "title": "Psychedelic Research for Alcohol Use Disorder with Comorbid Major Depressive Disorder: An Unmet Need.",
+      "abstract": "In this narrative review, we discuss evidence for psilocybin- and LSD-assisted treatment of alcohol use disorder (AUD) and major depressive disorder (MDD). We describe limitations of psychedelic research and posit methodological considerations when designing a trial in patients with both disorders. In AUD, a growing evidence base for psilocybin treatment shows a promising beneficial and sustained effect on measures of drinking frequency. In MDD, a recent meta-analysis has demonstrated that psilocybin therapy provides a large and consistent reduction in depressive symptoms compared to no treatment. Co-occurrence of MDD and AUD is quite prevalent, and this comorbidity exacerbates symptomatology of the two individual disorders and complicates their treatment. Theoretically, patients presenting with both AUD and MDD would benefit from an integrated therapy that could treat MDD and AUD simultaneously. We believe that more research into the efficacy of psilocybin in patients with both AUD and MDD is warranted and justified.",
+      "similarity": 0.34429651498794556,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 6,
+      "pmid": "38299647",
+      "title": "Managing drug-induced psychosis.",
+      "abstract": "Substance-induced psychosis is a secondary psychotic disorder resulting from drug abuse, characterized by one or more psychotic episodes. Drug-induced psychosis is expected to resolve after a 30-day period of sobriety, however, individuals with this condition are more likely to develop severe drug addiction. Compared to primary psychosis, participants with drug-induced psychosis exhibit poorer family history of psychotic diseases, higher insight, fewer positive and negative symptoms, more depressive symptoms, and greater anxiety. Substance-induced psychosis is strongly associated with the emergence of bipolar illness or schizophrenia spectrum disorder, with an increased chance of developing schizophrenia at a younger age. Episodes of self-harm after substance-induced psychosis are strongly linked to an elevated likelihood of developing schizophrenia or bipolar disorder. Effective treatment involves ruling out emergencies, investigating underlying causes, and addressing acute intoxication and withdrawal. Management includes dynamic assessment, intervention, and vigilant monitoring in cases of suicidal behaviour. Antipsychotics may be used for short term, with gradual discontinuation when a person is in a stable condition. Relapse prevention strategies, both medication and non-medication-based, are crucial in long-term management. Conversion rates to schizophrenia or bipolar disorder can be as high as one in three individuals, with <i>cannabis</i> users and those with early-onset substance abuse at the highest risk.",
+      "similarity": 0.3348029851913452,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 7,
+      "pmid": "40528633",
+      "title": "Psychological Distress Trajectories in Residential Alcohol and Other Drug Treatment.",
+      "abstract": "Residential clients frequently report high psychological distress at intake, but little is known about changes in distress throughout treatment. This study aimed to identify in-treatment trajectories for psychological distress and factors associated with trajectory classes. A retrospective cohort of adults attending Australian non-government residential substance use treatment between 2012 and 2023 was identified from routinely collected data, NADAbase. Participants (N = 1492) completed ≥ 3 Kessler-10 Psychological Distress Scale (K10) assessments within 90 days of intake. Latent growth curve analyses identified classes of K10 trajectories. Multinomial regression identified demographic and clinical correlates (Severity of Dependence Scale [SDS] and EUROHIS Quality of Life scale [EQoL-8]) of class membership. A five-class model describing K10 trajectories (1: moderate-low improved; 2: high-low improved; 3: very high-moderate improved; 4: very high-high improved; 5: very high unchanged) had the best model fit. Compared to high-low improved (34.5%; referent), moderate-low improved (45.4%) were less likely to identify as female, have higher SDS and lower EQoL-8 scores, or use cannabis; very high-moderate improved (13.1%) were more likely to have lower SDS scores, be aged under 25 and use opioids; very high-high improved (5.6%) were less likely to identify as male, be aged over 25, have higher EQoL and SDS scores; and very high unchanged (1.3%) were more likely to have lower EQoL scores and have left without completing treatment. Four K10 trajectory classes showed improvement after 90 days. Around 7% reported sustained high to very high psychological distress. Routine monitoring of psychological distress provides opportunities to identify non-improving clients and review treatment plans to improve outcomes.",
+      "similarity": 0.31980061531066895,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 8,
+      "pmid": "40702912",
+      "title": "Psilocybin in alcohol use disorder and comorbid depressive symptoms: Results from a feasibility randomized clinical trial.",
+      "abstract": "Psilocybin has emerged as a potential treatment for alcohol use disorder (AUD), but early efficacy data are inconsistent. Depression following alcohol detoxification significantly increases the risk of relapse. This pilot study aimed to evaluate the feasibility, acceptability, and preliminary efficacy of psilocybin-assisted psychotherapy for patients with comorbid AUD and depression. A prospective, single-center, double-blind, parallel (2:1), randomized controlled pilot study. The study was conducted in a French inpatient addiction treatment program offering intensive relapse prevention interventions. Of 350 screened patients, 30 adults (mean age 49 ± 10 years; 43% female) with severe AUD (Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition [DSM-5] criteria) and a Beck Depression Inventory-II (BDI-II) score ≥14 were included. Participants had completed detoxification between 14 and 60 days prior to inclusion. Participants received either two oral sessions of 25 mg (n = 20) or 1 mg (n = 10) psilocybin-assisted psychotherapy spaced three weeks apart, as an add-on to standard care. Patients, investigators and outcome assessors were all blinded to patient group. The primary outcome was feasibility, according to participation in both dosing sessions and recruitment/inclusion rates. Secondary outcomes included alcohol use (Alcohol Timeline Followback), time to relapse, craving (Craving Experience Questionnaire), depression (BDI-II), safety and blinding integrity. One participant in the 25 mg group could not receive the second dose due to myocardial infarction occurring three days earlier, unrelated to the treatment. Four participants in the control group refused the second session after guessing their group assignment (p-value = 0.019), with one participant self-administering 3,4-Methylenedioxymethamphetamine (MDMA). At 12 weeks, the 25 mg group showed significantly greater abstinent rate (11/20 (55%) vs 1/9 (11%) (one lost of follow up) (difference = -44%, [95% confidence interval [CI]: -82% to -5.9%]), p = 0.043), reductions in % drinking days -100 (-100 to -49) vs - 93 (-96 to 0), p = 0.038 and craving frequency -8 (-23 to -1) vs + 7 (-2 to 11), p = 0.045, respectively in the 25 vs 1 mg groups (median [25;75]). Relapse rates were 35% in the 25 mg group and 50% in the control group (HR = 0.52 [0.16 to1.65]). No efficacy differences were observed based on antidepressant use in terms of drinking and depression. Blinding was imperfect (correct guess by patients: 93.3%; investigators: 86.7%). Twenty-five adverse events were reported in 10 patients (50%) in the 25 mg group versus 6 patients (60%) in the control group. Psilocybin-assisted psychotherapy appears feasible, acceptable, and safe in recently detoxified patients with comorbid alcohol use disorder and depression.",
+      "similarity": 0.3192090392112732,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 9,
+      "pmid": "39741446",
+      "title": "Multidimensional Personality Changes Following Psilocybin-Assisted Therapy in Patients With Alcohol Use Disorder: Results From a Double-Blind, Placebo-Controlled Clinical Trial.",
+      "abstract": "Evidence suggests that psilocybin-assisted therapy (PAT) leads to durable shifts in personality structure. However, such changes have yet to be characterized in disorders of addiction. In this secondary analysis from a randomized controlled trial, the authors examined the effect of PAT on personality dimensions in patients with alcohol use disorder (AUD), hypothesizing that PAT would attenuate personality abnormalities in AUD and that reductions in trait impulsiveness would be associated with lower drinking. Eighty-four adults with AUD were randomized to two medication sessions of either psilocybin (N=44) or active placebo (diphenhydramine; N=40), received 12 weekly psychotherapy sessions, and completed follow-up for an additional 24 weeks. Changes in personality traits (week 36 vs. baseline) were assessed with the revised NEO Personality Inventory; daily alcohol consumption was quantified using the timeline followback. Relative to the placebo group, the psilocybin group showed significant reductions in neuroticism and increases in extraversion and openness. Secondary analyses showed that reductions in neuroticism were driven by decreases in the facets depression, impulsiveness, and vulnerability; increases in openness were driven by increases in the facets openness toward feelings and fantasy. Across all participants, decreases in impulsiveness were associated with lower posttreatment alcohol consumption, and an exploratory analysis revealed that these associations were strongest among psilocybin-treated participants who continued moderate- or high-risk drinking prior to the first medication session. PAT elicited durable shifts in personality, suggesting normalization of abnormal personality trait expression in AUD. Further study is needed to clarify whether PAT exerts its beneficial effects by reducing impulsiveness or whether impulsive individuals inherently respond better to PAT.",
+      "similarity": 0.31613677740097046,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 10,
+      "pmid": "40319789",
+      "title": "Substance-induced mental disorders and discontinuation of medication for opioid use disorder.",
+      "abstract": "People with opioid use disorder (OUD) often exhibit psychiatric symptoms representing primary (PMD) and substance induced mental disorders (SIMD). PMD are associated with increased discontinuation of medications for OUD (MOUD). It is unknown if this relationship holds for SIMD. To examine the association between SIMD and time to MOUD discontinuation. In this retrospective cohort study using the Merative™ MarketScan® Commercial and Multi-State Medicaid insurance claims Databases (2015-2019), we identified individuals initiating MOUD (buprenorphine, methadone, and extended-release naltrexone) following a 180-day pre-period of continuous enrollment without MOUD. Episodes were classified based on > 1 SIMD diagnosis in this pre-period. We estimated days to MOUD discontinuation using stepwise multivariable Cox regression, adjusting for age, sex, insurance type (Medicaid or Commercial), Charlson Comorbidity Index, MOUD at initiation, co-occurring substance use disorders (SUD), and PMD. Of 31,134 MOUD initiation episodes, 3.5 % exhibited SIMD. Episodes with SIMD demonstrated a higher prevalence (p < .001 for all) of mood and psychotic disorders (42.8 vs 16.4 %; 4.0 % vs 0.7 % respectively) but lower prevalence of anxiety-related disorders (51.3 % vs 59.9 %) relative to episodes without SIMD. Unadjusted models illustrated a 44 % (95 %CI:1.34-1.55) increased hazard of MOUD discontinuation associated with SIMD. After adjusting for all covariates but PMD, SIMD retained a 13 % increased hazard of MOUD discontinuation (95 %CI:1.05-1.21). Adjusting for PMD eliminated this association. SIMD is associated with reduced time to MOUD discontinuation, which may be accounted for by PMD. Further research on SIMD treatment among individuals with OUD is needed to improve OUD treatment outcomes.",
+      "similarity": 0.30196768045425415,
+      "publication_date": "",
+      "journal": ""
+    }
+  ]
+}

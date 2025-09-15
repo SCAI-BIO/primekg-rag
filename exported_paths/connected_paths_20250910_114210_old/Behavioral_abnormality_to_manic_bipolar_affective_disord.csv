@@ -1,0 +1,3 @@
+source,target,status,path_length,path,detailed_path
+Behavioral abnormality,manic bipolar affective disorder,Path found,2,Behavioral abnormality → Valproic acid → manic bipolar affective disorder,"• Behavioral abnormality [effect/phenotype] --side effect--> Valproic acid [drug]
+  • Valproic acid [drug] --indication--> manic bipolar affective disorder [disease]"

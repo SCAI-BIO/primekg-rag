@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+eating behavior,Panic attack,Path found,3,eating behavior → TH → Parkinson disease → Panic attack,"• eating behavior [biological_process] --interacts with--> TH [gene/protein]
+  • TH [gene/protein] --associated with--> Parkinson disease [disease]
+  • Parkinson disease [disease] --phenotype present--> Panic attack [effect/phenotype]"

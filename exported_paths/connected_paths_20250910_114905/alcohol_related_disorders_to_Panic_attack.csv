@@ -1,0 +1,5 @@
+source,target,status,path_length,path,detailed_path
+alcohol-related disorders,Panic attack,Path found,4,alcohol-related disorders → pancreatitis → Autosomal recessive inheritance → Troyer syndrome → Panic attack,"• alcohol-related disorders [disease] --parent-child--> pancreatitis [disease]
+  • pancreatitis [disease] --phenotype present--> Autosomal recessive inheritance [effect/phenotype]
+  • Autosomal recessive inheritance [effect/phenotype] --phenotype present--> Troyer syndrome [disease]
+  • Troyer syndrome [disease] --phenotype present--> Panic attack [effect/phenotype]"

@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+Panic disorder,Posttraumatic stress symptom,Path found,3,Panic attack → Psychogenic non-epileptic seizure → Behavioral abnormality → Posttraumatic stress symptom,"• Panic attack [effect/phenotype] --parent-child--> Psychogenic non-epileptic seizure [effect/phenotype]
+  • Psychogenic non-epileptic seizure [effect/phenotype] --parent-child--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"

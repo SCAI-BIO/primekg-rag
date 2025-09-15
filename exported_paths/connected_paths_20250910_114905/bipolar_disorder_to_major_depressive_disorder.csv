@@ -1,0 +1,3 @@
+source,target,status,path_length,path,detailed_path
+bipolar disorder,major depressive disorder,Path found,2,bipolar disorder → Venlafaxine → major depressive disorder,"• bipolar disorder [disease] --contraindication--> Venlafaxine [drug]
+  • Venlafaxine [drug] --indication--> major depressive disorder [disease]"

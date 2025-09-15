@@ -1,5 +1,24 @@
-# Add requirements herestreamlit
-pandas
-numpy
-streamlit
-pyvis
+# Core dependencies
+streamlit>=1.28.0
+pandas>=1.5.0
+numpy>=1.24.0
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+torch>=2.0.0
+pyvis>=0.3.0
+
+# AI/ML dependencies
+openai>=1.0.0
+google-generativeai>=0.3.0
+ollama>=0.1.0
+
+# Data processing
+networkx>=3.0
+matplotlib>=3.7.0
+tqdm>=4.65.0
+duckdb>=0.8.0
+
+# Web and utilities
+requests>=2.31.0
+python-dotenv>=1.0.0
+pathlib2>=2.3.0

@@ -1,0 +1,95 @@
+{
+  "node": "anxiety disorder",
+  "papers": [
+    {
+      "rank": 1,
+      "pmid": "36573969",
+      "title": "Anxiety Disorders: A Review.",
+      "abstract": "Anxiety disorders have a lifetime prevalence of approximately 34% in the US, are often chronic, and significantly impair quality of life and functioning. Anxiety disorders are characterized by symptoms that include worry, social and performance fears, unexpected and/or triggered panic attacks, anticipatory anxiety, and avoidance behaviors. Generalized anxiety disorder (6.2% lifetime prevalence), social anxiety disorder (13% lifetime prevalence), and panic disorder (5.2% lifetime prevalence) with or without agoraphobia are common anxiety disorders seen in primary care. Anxiety disorders are associated with physical symptoms, such as palpitations, shortness of breath, and dizziness. Brief screening measures applied in primary care, such as the Generalized Anxiety Disorder-7, can aid in diagnosis of anxiety disorders (sensitivity, 57.6% to 93.9%; specificity, 61% to 97%). Providing information about symptoms, diagnosis, and evidence-based treatments is a first step in helping patients with anxiety. First-line treatments include pharmacotherapy and psychotherapy. Selective serotonin reuptake inhibitors (SSRIs, eg, sertraline) and serotonin-norepinephrine reuptake inhibitors (SNRIs, eg, venlafaxine extended release) remain first-line pharmacotherapy for generalized anxiety disorder, social anxiety disorder, and panic disorder. Meta-analyses suggest that SSRIs and SNRIs are associated with small to medium effect sizes compared with placebo (eg, generalized anxiety disorder: standardized mean difference [SMD], -0.55 [95% CI, -0.64 to -0.46]; social anxiety disorder: SMD, -0.67 [95% CI, -0.76 to -0.58]; panic disorder: SMD, -0.30 [95% CI, -0.37 to -0.23]). Cognitive behavioral therapy is the psychotherapy with the most evidence of efficacy for anxiety disorders compared with psychological or pill placebo (eg, generalized anxiety disorder: Hedges g = 1.01 [large effect size] [95% CI, 0.44 to 1.57]; social anxiety disorder: Hedges g = 0.41 [small to medium effect] [95% CI, 0.25 to 0.57]; panic disorder: Hedges g = 0.39 [small to medium effect[ [95% CI, 0.12 to 0.65]), including in primary care. When selecting treatment, clinicians should consider patient preference, current and prior treatments, medical and psychiatric comorbid illnesses, age, sex, and reproductive planning, as well as cost and access to care. Anxiety disorders affect approximately 34% of adults during their lifetime in the US and are associated with significant distress and impairment. First-line treatments for anxiety disorders include cognitive behavioral therapy, SSRIs such as sertraline, and SNRIs such as venlafaxine extended release.",
+      "similarity": 0.7186677157878876,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 2,
+      "pmid": "30282583",
+      "title": "The Diagnosis and Treatment of Anxiety Disorders.",
+      "abstract": "Anxiety disorders are the most common type of mental illness in Europe, with a 12-month prevalence of 14% among persons aged 14 to 65. Their onset is usually in adolescence or early adulthood. The affected patients often develop further mental or somatic illnesses (sequential comorbidity). This review is based on pertinent publications retrieved by a selective search in PubMed. The group of anxiety disorders includes generalized anxiety disorder (GAD), phobic disorders, panic disorders, and two disorders that are often restricted to childhood-separation anxiety and selective mutism. A comprehensive differential diag- nostic evaluation is essential, because anxiety can be a principal manifestation of other types of mental or somatic illness as well. Psychotherapy and treatment with psychoactive drugs are the therapeutic strategies of first choice. Of all types of psycho- therapy, cognitive behavioral therapy has the best documented efficacy. Modern antidepressants are the drugs of first choice for the treatment of panic disorders, agoraphobia, social phobia, and GAS; pregabalin is a further drug of first choice for GAS. In general, anxiety disorders can now be effectively treated. Patients should be informed of the therapeutic options and should be involved in treatment planning. Current research efforts are centered on individualized and therefore, it is hoped, even more effective treatment approaches than are available at present.",
+      "similarity": 0.6396707594394684,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 3,
+      "pmid": "36521463",
+      "title": "Anxiety Disorders in Children and Adolescents.",
+      "abstract": "Anxiety disorders are the most common psychiatric conditions in children and adolescents, affecting nearly 1 in 12 children and 1 in 4 adolescents. Anxiety disorders include specific phobias, social anxiety disorder, separation anxiety disorder, agoraphobia, panic disorder, and generalized anxiety disorder. Risk factors include parental history of anxiety disorders, socioeconomic stressors, exposure to violence, and trauma. The U.S. Preventive Services Task Force recommends screening for anxiety disorders in children eight years and older; there is insufficient evidence to support screening in children younger than eight years. Symptoms of anxiety disorders in children and adolescents are similar to those in adults and can include physical and behavioral symptoms such as diaphoresis, palpitations, and tantrums. Care should be taken to distinguish symptoms of a disorder from normal developmental fears and behaviors, such as separation anxiety in infants and toddlers. Several validated screening measures are useful for initial assessment and ongoing monitoring. Cognitive behavior therapy and selective serotonin reuptake inhibitors are the mainstay of treatment and may be used as monotherapies or in combination. Prognosis is improved with early intervention, caretaker support, and professional collaboration.",
+      "similarity": 0.5555869936943054,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 4,
+      "pmid": "29383412",
+      "title": "[Anxiety disorders: which psychotherapy for whom?].",
+      "abstract": "According to the Federal Healthcare Survey (Bundesgesundheitssurvey), approximately 15% of the German population fulfil the diagnostic criteria for at least one anxiety disorder within (any) 1 year. Women are affected approximately twice as often as men. The study by the Robert Koch Institute included the systematic assessment of panic disorder, agoraphobia, generalized anxiety disorder, social anxiety disorder and specific phobias; therefore, the question for both those affected and the treating therapist is \"anxiety disorders: which psychotherapy for whom?\" is of great clinical and healthcare political importance. We therefore review the available literature for answering three more specific questions: 1) what are the most suitable forms of psychotherapy, 2) which psychotherapy is most promising for an individual patient and diagnosis (differential evaluation of indications) and 3) what is the best approach to nonresponse or avoidance of the treatment offered? National and international guidelines agree that cognitive behavioral therapy is the psychotherapy of first choice in most patients with anxiety disorders. In cases of nonresponse or lack of availability of the appropriate therapy, psychodynamic therapy or pharmacotherapy can also be recommended. For individualized treatment recommendations we do not have empirical evidence. Also, no evidence-based (individual) recommendations are available for non-responders;however, there are some preferred strategies based on a clinical consensus.",
+      "similarity": 0.542158305644989,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 5,
+      "pmid": "28867934",
+      "title": "Treatment of anxiety disorders.",
+      "abstract": "Anxiety disorders (generalized anxiety disorder, panic disorder/agoraphobia, social anxiety disorder, and others) are the most prevalent psychiatric disorders, and are associated with a high burden of illness. Anxiety disorders are often underrecognized and undertreated in primary care. Treatment is indicated when a patient shows marked distress or suffers from complications resulting from the disorder. The treatment recommendations given in this article are based on guidelines, meta-analyses, and systematic reviews of randomized controlled studies. Anxiety disorders should be treated with psychological therapy, pharmacotherapy, or a combination of both. Cognitive behavioral therapy can be regarded as the psychotherapy with the highest level of evidence. First-line drugs are the selective serotonin reuptake inhibitors and serotonin-norepinephrine reuptake inhibitors. Benzodiazepines are not recommended for routine use. Other treatment options include pregabalin, tricyclic antidepressants, buspirone, moclobemide, and others. After remission, medications should be continued for 6 to 12 months. When developing a treatment plan, efficacy, adverse effects, interactions, costs, and the preference of the patient should be considered.",
+      "similarity": 0.5335448086261749,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 6,
+      "pmid": "26514227",
+      "title": "Treatment of Anxiety Disorders in a Psychology Clinic.",
+      "abstract": "People with anxiety disorders demand psychological attention most often. Therefore, it seems important to identify both the characteristics of the patients who demand help and the clinical variables related to that demand and its treatment. A cohort of 292 patients who requested help at a university clinical facility was studied. The typical profile of the patient was: being female, young, unmarried, with some college education, and having previously received treatment, especially pharmacological one. The three most frequent diagnoses of anxiety, which include 50% of the cases, were: Anxiety Disorder not otherwise specified, Social Phobia, and Panic Disorder with Agoraphobia. Regarding the characteristics of the intervention, the average duration of the assessment was 3.5 sessions (SD = 1.2), and the duration of the treatment was 14 sessions (SD = 11.2). The percentage of discharges was 70.2%. The average cost of treatment was around €840. The results are discussed, underlining the value of empirically supported treatments for anxiety disorders.",
+      "similarity": 0.5183639228343964,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 7,
+      "pmid": "31975791",
+      "title": "Anxiety Disorders Among Children and Adolescents.",
+      "abstract": "Anxiety disorders represent the most common psychiatric illnesses affecting children and adolescents. Youths who suffer from anxiety disorders typically experience impairment in social, family, and educational domains of functioning. Despite the prevalence of youth anxiety disorders, identifying anxiety as the underlying cause can be a challenge. This article summarizes recent changes in diagnostic criteria in <i>DSM-5</i>, reviews core features of anxiety, and discusses how to recognize anxiety among youths. It also provides recommendations on how to differentiate anxiety from other diagnoses, with a focus on attention-deficit hyperactivity disorder. Suggestions for evidence-based assessment methods and instruments will be made. This article will also review the current evidence base for treatments and provide recommendations for managing refractory cases from a behavioral perspective. The scope of the review focuses on the following constellation of anxiety disorders: separation anxiety disorder, social anxiety disorder, panic disorder, agoraphobia, specific phobia, and generalized anxiety disorder. Although obsessive-compulsive disorder is not categorized with the other anxiety disorders in <i>DSM-5</i>, it will also be covered within this review.",
+      "similarity": 0.5111729204654694,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 8,
+      "pmid": "30263217",
+      "title": "Anxiety disorders: Psychiatric comorbidities and psychosocial stressors among adult outpatients.",
+      "abstract": "Anxiety disorders are the most prevalent class of lifetime mental disorders according to South African research. However, little is known about the prevalence of factors that might complicate treatment among adults in a psychiatric outpatient setting. To explore the psychiatric comorbidities and psychosocial stressors among a population of adults treated for anxiety disorders at the outpatient unit of a tertiary psychiatric facility in Bloemfontein. In this retrospective cross-sectional study, clinical files of all mental healthcare users receiving treatment were reviewed to identify those with a current or previous diagnosis of one or more of the following anxiety disorders: generalised anxiety disorder (GAD), panic disorder, social anxiety disorder (SAD) and agoraphobia. Of the 650 available records, 103 (15.8%) included at least one anxiety disorder. Of those, 65.1% had GAD, 34.0% had panic disorder and 29.1% had SAD. Agoraphobia was diagnosed in 14.6% of patients almost exclusively as comorbid with panic disorder. Additional psychiatric disorders were present for 98.1% of patients and 36.9% had multiple anxiety disorders. The patients had a history of relational problems (64.1%), educational and occupational stressors (55.3%), abuse and neglect (28.2%), other problems related to the social environment (24.3%) and self-harm (23.3%). Clinical practice should take the high rates of comorbidity into account and the importance of integrated substance-related interventions in mental healthcare settings is clear. Diagnostic practices regarding agoraphobia without panic, and the comorbidity of anxiety and personality disorders should receive further attention. Clinicians should be aware of the potential impact of the frequently reported psychosocial stressors.",
+      "similarity": 0.46211469173431396,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 9,
+      "pmid": "27349358",
+      "title": "Anxiety.",
+      "abstract": "Anxiety disorders (separation anxiety disorder, selective mutism, specific phobias, social anxiety disorder, panic disorder, agoraphobia, and generalised anxiety disorder) are common and disabling conditions that mostly begin during childhood, adolescence, and early adulthood. They differ from developmentally normative or stress-induced transient anxiety by being marked (ie, out of proportion to the actual threat present) and persistent, and by impairing daily functioning. Most anxiety disorders affect almost twice as many women as men. They often co-occur with major depression, alcohol and other substance-use disorders, and personality disorders. Differential diagnosis from physical conditions-including thyroid, cardiac, and respiratory disorders, and substance intoxication and withdrawal-is imperative. If untreated, anxiety disorders tend to recur chronically. Psychological treatments, particularly cognitive behavioural therapy, and pharmacological treatments, particularly selective serotonin-reuptake inhibitors and serotonin-noradrenaline-reuptake inhibitors, are effective, and their combination could be more effective than is treatment with either individually. More research is needed to increase access to and to develop personalised treatments.",
+      "similarity": 0.4551132917404175,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 10,
+      "pmid": "27310233",
+      "title": "The Age of Onset of Anxiety Disorders.",
+      "abstract": "The objective was to estimate the age of onset (AOO) for all anxiety disorders and for specific subtypes. Gender differences in the AOO of anxiety disorders were examined, as were the influence of study characteristics on reported AOOs. Seven electronic databases were searched up to October 2014, with keywords representing anxiety disorder subtypes, AOO, and study design. The inclusion criteria were studies using a general population sample that provided data on the AOO for all anxiety disorders, or specific anxiety disorders, according to DSM-III-R, DSM-IV, or ICD-10 criteria. There were 1028 titles examined, which yielded 24 studies meeting the inclusion criteria. Eight studies reported the AOO and gender. Meta-analysis found a mean AOO of all anxiety disorders of 21.3 years (95% CI 17.46 to 25.07). Separation anxiety disorder, specific phobia, and social phobia had their mean onset before the age of 15 years, whereas the AOO of agoraphobia, obsessive-compulsive disorder, posttraumatic stress disorder, panic disorder, and generalized anxiety disorder began, on average, between 21.1 and 34.9 years. Meta-analysis revealed no difference in the AOO between genders. A prospective study design and higher developmental level of the study country were associated with an earlier AOO. Results from this meta-analysis indicate that anxiety disorder subtypes differ in the mean AOO, with onsets ranging from early adolescence to young adulthood. These findings suggest that prevention strategies of anxiety disorders should be directed towards factors associated with the development of anxiety disorder subtypes in the age groups with the greatest vulnerability for developing those disorders.",
+      "similarity": 0.41228771209716797,
+      "publication_date": "",
+      "journal": ""
+    }
+  ]
+}

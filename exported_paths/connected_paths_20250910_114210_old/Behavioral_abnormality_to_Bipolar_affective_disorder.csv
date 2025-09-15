@@ -1,0 +1,3 @@
+source,target,status,path_length,path,detailed_path
+Behavioral abnormality,Bipolar affective disorder,Path found,2,Behavioral abnormality → Impairment in personality functioning → Bipolar affective disorder,"• Behavioral abnormality [effect/phenotype] --parent-child--> Impairment in personality functioning [effect/phenotype]
+  • Impairment in personality functioning [effect/phenotype] --parent-child--> Bipolar affective disorder [effect/phenotype]"

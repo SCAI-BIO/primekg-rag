@@ -1,0 +1,6 @@
+source,target,status,path_length,path,detailed_path
+anorexia nervosa,Hypotropia,Path found,5,anorexia nervosa → Medroxyprogesterone acetate → Diplopia → Brown syndrome → strabismus → hypotropia,"• anorexia nervosa [disease] --contraindication--> Medroxyprogesterone acetate [drug]
+  • Medroxyprogesterone acetate [drug] --side effect--> Diplopia [effect/phenotype]
+  • Diplopia [effect/phenotype] --phenotype present--> Brown syndrome [disease]
+  • Brown syndrome [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"

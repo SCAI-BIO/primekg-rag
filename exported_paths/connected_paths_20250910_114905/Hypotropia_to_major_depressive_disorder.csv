@@ -1,0 +1,5 @@
+source,target,status,path_length,path,detailed_path
+Hypotropia,major depressive disorder,Path found,4,hypotropia → strabismus → Brown syndrome → genetic nervous system disorder → major depressive disorder,"• hypotropia [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> Brown syndrome [disease]
+  • Brown syndrome [disease] --parent-child--> genetic nervous system disorder [disease]
+  • genetic nervous system disorder [disease] --parent-child--> major depressive disorder [disease]"

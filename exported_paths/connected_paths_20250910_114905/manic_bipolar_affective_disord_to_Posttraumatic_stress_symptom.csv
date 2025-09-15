@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+manic bipolar affective disorder,Posttraumatic stress symptom,Path found,3,manic bipolar affective disorder → NTNG2 → Behavioral abnormality → Posttraumatic stress symptom,"• manic bipolar affective disorder [disease] --associated with--> NTNG2 [gene/protein]
+  • NTNG2 [gene/protein] --associated with--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"

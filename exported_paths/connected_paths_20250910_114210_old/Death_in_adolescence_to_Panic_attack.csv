@@ -1,0 +1,5 @@
+source,target,status,path_length,path,detailed_path
+Death in adolescence,Panic attack,Path found,4,"Death in adolescence → proteasome-associated autoinflammatory syndrome → Intellectual disability, mild → Troyer syndrome → Panic attack","• Death in adolescence [effect/phenotype] --phenotype present--> proteasome-associated autoinflammatory syndrome [disease]
+  • proteasome-associated autoinflammatory syndrome [disease] --phenotype present--> Intellectual disability, mild [effect/phenotype]
+  • Intellectual disability, mild [effect/phenotype] --phenotype present--> Troyer syndrome [disease]
+  • Troyer syndrome [disease] --phenotype present--> Panic attack [effect/phenotype]"

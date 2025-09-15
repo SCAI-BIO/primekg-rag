@@ -1,0 +1,5 @@
+source,target,status,path_length,path,detailed_path
+bipolar disorder,Death in adolescence,Path found,4,bipolar disorder → Citalopram → Stillbirth → Age of death → Death in adolescence,"• bipolar disorder [disease] --contraindication--> Citalopram [drug]
+  • Citalopram [drug] --side effect--> Stillbirth [effect/phenotype]
+  • Stillbirth [effect/phenotype] --parent-child--> Age of death [effect/phenotype]
+  • Age of death [effect/phenotype] --parent-child--> Death in adolescence [effect/phenotype]"

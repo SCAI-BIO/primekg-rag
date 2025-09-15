@@ -1,0 +1,6 @@
+source,target,status,path_length,path,detailed_path
+Hypotropia,Panic disorder,Path found,5,hypotropia → strabismus → esotropia → Echothiophate → Parkinson disease → Panic attack,"• hypotropia [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> esotropia [disease]
+  • esotropia [disease] --indication--> Echothiophate [drug]
+  • Echothiophate [drug] --contraindication--> Parkinson disease [disease]
+  • Parkinson disease [disease] --phenotype present--> Panic attack [effect/phenotype]"

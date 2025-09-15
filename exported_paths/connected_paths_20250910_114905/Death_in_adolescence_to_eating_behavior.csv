@@ -1,0 +1,5 @@
+source,target,status,path_length,path,detailed_path
+Death in adolescence,eating behavior,Path found,4,"Death in adolescence → mitochondrial complex 4 deficiency, nuclear → Seizure → ADORA2A → eating behavior","• Death in adolescence [effect/phenotype] --phenotype present--> mitochondrial complex 4 deficiency, nuclear [disease]
+  • mitochondrial complex 4 deficiency, nuclear [disease] --phenotype present--> Seizure [effect/phenotype]
+  • Seizure [effect/phenotype] --associated with--> ADORA2A [gene/protein]
+  • ADORA2A [gene/protein] --interacts with--> eating behavior [biological_process]"

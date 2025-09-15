@@ -1,0 +1,5 @@
+source,target,status,path_length,path,detailed_path
+Death in adolescence,manic bipolar affective disorder,Path found,4,Death in adolescence → proteasome-associated autoinflammatory syndrome → Arrhythmia → Valproic acid → manic bipolar affective disorder,"• Death in adolescence [effect/phenotype] --phenotype present--> proteasome-associated autoinflammatory syndrome [disease]
+  • proteasome-associated autoinflammatory syndrome [disease] --phenotype present--> Arrhythmia [effect/phenotype]
+  • Arrhythmia [effect/phenotype] --side effect--> Valproic acid [drug]
+  • Valproic acid [drug] --indication--> manic bipolar affective disorder [disease]"

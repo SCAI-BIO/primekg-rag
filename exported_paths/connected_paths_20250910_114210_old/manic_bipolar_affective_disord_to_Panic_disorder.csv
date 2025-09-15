@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+manic bipolar affective disorder,Panic disorder,Path found,3,manic bipolar affective disorder → Promazine → Parkinson disease → Panic attack,"• manic bipolar affective disorder [disease] --indication--> Promazine [drug]
+  • Promazine [drug] --contraindication--> Parkinson disease [disease]
+  • Parkinson disease [disease] --phenotype present--> Panic attack [effect/phenotype]"

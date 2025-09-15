@@ -1,0 +1,3 @@
+source,target,status,path_length,path,detailed_path
+bipolar disorder,eating behavior,Path found,2,bipolar disorder → TH → eating behavior,"• bipolar disorder [disease] --associated with--> TH [gene/protein]
+  • TH [gene/protein] --interacts with--> eating behavior [biological_process]"

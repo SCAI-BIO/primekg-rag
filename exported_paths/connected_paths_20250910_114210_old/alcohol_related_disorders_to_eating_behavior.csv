@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+alcohol-related disorders,eating behavior,Path found,3,alcohol-related disorders → substance abuse/dependence → CCK → eating behavior,"• alcohol-related disorders [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --associated with--> CCK [gene/protein]
+  • CCK [gene/protein] --interacts with--> eating behavior [biological_process]"

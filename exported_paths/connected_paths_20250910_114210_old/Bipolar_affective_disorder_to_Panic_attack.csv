@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+Bipolar affective disorder,Panic attack,Path found,3,Bipolar affective disorder → Impairment in personality functioning → Abnormal fear/anxiety-related behavior → Panic attack,"• Bipolar affective disorder [effect/phenotype] --parent-child--> Impairment in personality functioning [effect/phenotype]
+  • Impairment in personality functioning [effect/phenotype] --parent-child--> Abnormal fear/anxiety-related behavior [effect/phenotype]
+  • Abnormal fear/anxiety-related behavior [effect/phenotype] --parent-child--> Panic attack [effect/phenotype]"

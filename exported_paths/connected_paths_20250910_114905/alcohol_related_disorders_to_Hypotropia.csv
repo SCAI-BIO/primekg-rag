@@ -1,0 +1,6 @@
+source,target,status,path_length,path,detailed_path
+alcohol-related disorders,Hypotropia,Path found,5,alcohol-related disorders → pancreatitis → Autosomal dominant inheritance → Brown syndrome → strabismus → hypotropia,"• alcohol-related disorders [disease] --parent-child--> pancreatitis [disease]
+  • pancreatitis [disease] --phenotype present--> Autosomal dominant inheritance [effect/phenotype]
+  • Autosomal dominant inheritance [effect/phenotype] --phenotype present--> Brown syndrome [disease]
+  • Brown syndrome [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"

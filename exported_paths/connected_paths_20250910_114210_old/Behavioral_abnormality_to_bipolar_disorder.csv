@@ -1,0 +1,3 @@
+source,target,status,path_length,path,detailed_path
+Behavioral abnormality,bipolar disorder,Path found,2,Behavioral abnormality → Valproic acid → bipolar disorder,"• Behavioral abnormality [effect/phenotype] --side effect--> Valproic acid [drug]
+  • Valproic acid [drug] --off-label use--> bipolar disorder [disease]"
