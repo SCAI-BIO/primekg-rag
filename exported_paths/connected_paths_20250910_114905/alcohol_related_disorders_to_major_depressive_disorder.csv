@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+alcohol-related disorders,major depressive disorder,Path found,3,alcohol-related disorders → substance abuse/dependence → Ketamine → major depressive disorder,"• alcohol-related disorders [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --contraindication--> Ketamine [drug]
+  • Ketamine [drug] --off-label use--> major depressive disorder [disease]"

@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+alcohol-related disorders,anorexia nervosa,Path found,3,alcohol-related disorders → substance abuse/dependence → Medroxyprogesterone acetate → anorexia nervosa,"• alcohol-related disorders [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --contraindication--> Medroxyprogesterone acetate [drug]
+  • Medroxyprogesterone acetate [drug] --contraindication--> anorexia nervosa [disease]"

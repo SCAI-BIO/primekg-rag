@@ -1,0 +1,6 @@
+source,target,status,path_length,path,detailed_path
+Hypotropia,manic bipolar affective disorder,Path found,5,hypotropia → strabismus → esotropia → Echothiophate → Ziprasidone → manic bipolar affective disorder,"• hypotropia [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> esotropia [disease]
+  • esotropia [disease] --indication--> Echothiophate [drug]
+  • Echothiophate [drug] --synergistic interaction--> Ziprasidone [drug]
+  • Ziprasidone [drug] --indication--> manic bipolar affective disorder [disease]"

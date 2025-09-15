@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+anorexia nervosa,Posttraumatic stress symptom,Path found,3,anorexia nervosa → Methylphenidate → Behavioral abnormality → Posttraumatic stress symptom,"• anorexia nervosa [disease] --contraindication--> Methylphenidate [drug]
+  • Methylphenidate [drug] --side effect--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"

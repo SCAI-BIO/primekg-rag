@@ -1,0 +1,5 @@
+source,target,status,path_length,path,detailed_path
+Death in adolescence,Mania,Path found,4,"Death in adolescence → mitochondrial complex 4 deficiency, nuclear → Perseveration → Behavioral abnormality → Mania","• Death in adolescence [effect/phenotype] --phenotype present--> mitochondrial complex 4 deficiency, nuclear [disease]
+  • mitochondrial complex 4 deficiency, nuclear [disease] --phenotype present--> Perseveration [effect/phenotype]
+  • Perseveration [effect/phenotype] --parent-child--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Mania [effect/phenotype]"

@@ -1,0 +1,2 @@
+source,target,status,path_length,path,detailed_path
+Behavioral abnormality,Posttraumatic stress symptom,Path found,1,Behavioral abnormality → Posttraumatic stress symptom,• Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]

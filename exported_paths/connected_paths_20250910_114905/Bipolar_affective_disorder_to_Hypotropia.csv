@@ -1,0 +1,6 @@
+source,target,status,path_length,path,detailed_path
+Bipolar affective disorder,Hypotropia,Path found,5,Bipolar affective disorder → lithium transport → Autosomal dominant inheritance → Brown syndrome → strabismus → hypotropia,"• Bipolar affective disorder [effect/phenotype] --phenotype present--> lithium transport [disease]
+  • lithium transport [disease] --phenotype present--> Autosomal dominant inheritance [effect/phenotype]
+  • Autosomal dominant inheritance [effect/phenotype] --phenotype present--> Brown syndrome [disease]
+  • Brown syndrome [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"

@@ -1,15 +1,26 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
+import os
+import json
+import chromadb
+from typing import List, Dict, Any, Optional, Tuple
+import networkx as nx
+import matplotlib.pyplot as plt
+import io
+import base64
+from datetime import datetime
+import time
+import re
+from export_utils import export_detailed_path
+import openai
+import csv
 from pyvis.network import Network
 import streamlit.components.v1 as components
 from pathlib import Path
-import chromadb
 from chromadb.utils import embedding_functions
-import os
 from dotenv import load_dotenv
-from datetime import datetime
-import numpy as np
-import google.generativeai as genai
+from sentence_transformers import SentenceTransformer
 
 # --- Load Environment Variables ---
 load_dotenv()
@@ -20,15 +31,25 @@ SUBGRAPHS_DIR = BASE_DIR / "new_subgraphs"
 NODES_CSV_PATH = BASE_DIR / "nodes.csv"
 ANALYSIS_DB_PATH = BASE_DIR / "analyses_db"
 ANALYSIS_COLLECTION_NAME = "medical_analyses"
-GEMINI_MODEL_NAME = "gemini-1.5-pro"
+OPENAI_MODEL_NAME = "gpt-4o"
 QUESTION_NODE_MAPPING_PATH = BASE_DIR / "best_question_matches.csv"
+PUBMED_DB_PATH = BASE_DIR / "pubmed_db"
 
-# Initialize Gemini
-gemini_api_key = os.getenv("GOOGLE_API_KEY")
-if gemini_api_key:
-    genai.configure(api_key=gemini_api_key)
+# Enhanced Retrieval Configuration
+EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+TOP_K_PAPERS = 20
+SIMILARITY_THRESHOLD = 0.5
+TITLE_WEIGHT = 0.8
+ABSTRACT_WEIGHT = 0.2
+ENHANCE_QUERY_FOR_DIAGNOSTIC_THERAPEUTIC = True
+
+# Initialize OpenAI
+openai_api_key = os.getenv("OPENAI_API_KEY")
+if openai_api_key:
+    openai_client = openai.OpenAI(api_key=openai_api_key)
 else:
-    st.warning("GOOGLE_API_KEY not found in environment variables. Please set it in your .env file.")
+    st.warning("OPENAI_API_KEY not found in environment variables. Please set it in your .env file.")
+    openai_client = None
 
 # --- Graph Visualization Settings ---
 MAX_NODES = 25
@@ -62,7 +83,26 @@ def render_analysis_with_collapse(markdown_text: str, bullet_threshold: int = 10
         if targets is None:
             targets = ["Key Clinical Relationships"]
 
-        text = markdown_text.replace('\r\n', '\n').replace('\r', '\n')
+        # Light CSS for readability
+        st.markdown(
+            """
+            <style>
+            .analysis-text { max-width: 980px; word-wrap: break-word; overflow-wrap: anywhere; }
+            .analysis-text p { line-height: 1.6; }
+            </style>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        # Normalize line breaks and convert bare numeric citations to PMID form
+        def _norm_pmids(s: str) -> str:
+            def repl(m: re.Match) -> str:
+                inside = m.group(1)
+                if re.search(r"PMID\s*:\s*\d+", inside, flags=re.IGNORECASE):
+                    return f"({inside})"
+                return "(" + re.sub(r"\b\d{5,10}\b", lambda nm: f"PMID:{nm.group(0)}", inside) + ")"
+            return re.sub(r"\(([^)]+)\)", repl, s)
+        text = _norm_pmids(markdown_text.replace('\r\n', '\n').replace('\r', '\n'))
 
         def process_once(src_text: str, section_title: str) -> str:
             # Build header regex
@@ -115,7 +155,7 @@ def render_analysis_with_collapse(markdown_text: str, bullet_threshold: int = 10
         # Split on placeholders to interleave expanders
         parts = processed.split("<EXPANDER")
         # First part before any expander
-        st.markdown(parts[0], unsafe_allow_html=True)
+        st.markdown(f"<div class='analysis-text'>\n{convert_pmids_to_links(parts[0])}\n</div>", unsafe_allow_html=True)
         for chunk in parts[1:]:
             # Extract title and body
             try:
@@ -127,18 +167,17 @@ def render_analysis_with_collapse(markdown_text: str, bullet_threshold: int = 10
                 body = chunk[body_start:body_end]
             except Exception:
                 # Fallback: render raw
-                st.markdown("<EXPANDER" + chunk, unsafe_allow_html=True)
+                st.markdown(convert_pmids_to_links("<EXPANDER" + chunk), unsafe_allow_html=True)
                 continue
             with st.expander(title, expanded=False):
-                st.markdown(body)
+                st.markdown(convert_pmids_to_links(body), unsafe_allow_html=True)
             remainder = chunk[body_end + len('</EXPANDER>'):]
             if remainder.strip():
-                st.markdown(remainder, unsafe_allow_html=True)
+                st.markdown(convert_pmids_to_links(remainder), unsafe_allow_html=True)
     except Exception:
-        st.markdown(markdown_text, unsafe_allow_html=True)
+        st.markdown(convert_pmids_to_links(markdown_text), unsafe_allow_html=True)
 
 # --- Helper Functions ---
-@st.cache_data
 def get_subgraph_files():
     """Finds all available subgraph CSV files from disk (legacy fallback)."""
     if not SUBGRAPHS_DIR.is_dir():
@@ -474,54 +513,344 @@ def create_pubmed_link(pmid: str) -> str:
         return 'N/A'
     return f'<a href="https://pubmed.ncbi.nlm.nih.gov/{pmid}/" target="_blank">{pmid}</a>'
 
+
+
 def convert_pmids_to_links(text: str) -> str:
-    """Convert PMID references into '(PMID:xxxx) (PubMed link)' format without nesting issues."""
+    """Convert PMID references into clickable PubMed links."""
+    if not text:
+        return ""
+        
     import re
-
-    def format_pmid(pmid: str) -> str:
-        return f"(PMID:{pmid}) (<a href=\"https://pubmed.ncbi.nlm.nih.gov/{pmid}/\" target=\"_blank\" rel=\"noopener noreferrer\">PubMed</a>)"
-
-    # Handle groups like (PMID: 123, 456, 789)
-    def replace_pmid_group(match):
-        content = match.group(0)[1:-1]  # strip outer parentheses
-        pmids = []
-        for part in content.split(","):
-            part = part.strip()
-            if part.startswith("PMID:"):
-                part = part[5:].strip()
-            if part.isdigit():
-                pmids.append(part)
-        if not pmids:
-            return match.group(0)
-        # return each PMID separately, not nested
-        return " ".join(format_pmid(pmid) for pmid in pmids)
-
-    # Replace groups first
-    text = re.sub(r"\(PMID:\s*\d+(?:\s*,\s*\d+)*\)", replace_pmid_group, text)
-
-    # Replace single PMIDs outside parentheses
+    from html import escape
+    
+    # First, escape any existing HTML to prevent XSS
+    text = escape(str(text))
+    
+    # PubMed link template
+    def create_pmid_link(pmid: str) -> str:
+        return f'<a href="https://pubmed.ncbi.nlm.nih.gov/{pmid}/" target="_blank" rel="noopener noreferrer">PMID:{pmid}</a>'
+    
+    # Handle PMID:1234 format
     text = re.sub(
-        r"PMID:\s*(\d{1,8})(?![\d/])",
-        lambda m: format_pmid(m.group(1)),
-        text
+        r'(?<!\d)(PMID:?\s*)(\d+)', 
+        lambda m: create_pmid_link(m.group(2)),
+        text,
+        flags=re.IGNORECASE
     )
-
+    
+    # Handle (PMID: 1234, 5678) format
+    def replace_pmid_group(match):
+        pmids = [p.strip() for p in match.group(1).split(',')]
+        links = []
+        for pmid in pmids:
+            if pmid.isdigit():
+                links.append(create_pmid_link(pmid))
+            else:
+                links.append(pmid)
+        return f"({', '.join(links)})"
+    
+    text = re.sub(
+        r'\(PMID:?\s*([\d\s,]+)\)',
+        replace_pmid_group,
+        text,
+        flags=re.IGNORECASE
+    )
+    
     return text
+
+# --- Enhanced Retrieval Functions ---
+@st.cache_resource
+def get_embedding_model():
+    """Get the embedding model for similarity calculations."""
+    return SentenceTransformer(EMBEDDING_MODEL)
+
+def enhance_query_for_diagnostic_therapeutic(subgraph_name: str) -> str:
+    """Enhance the subgraph name query to focus on diagnostic and therapeutic implications."""
+    if not ENHANCE_QUERY_FOR_DIAGNOSTIC_THERAPEUTIC:
+        return subgraph_name
+    
+    # Clean the subgraph name
+    clean_name = subgraph_name.replace('_subgraph', '').replace('_', ' ').strip()
+    
+    # Add diagnostic and therapeutic focus terms
+    enhanced_query = f"{clean_name} diagnosis diagnostic criteria therapeutic treatment therapy clinical implications"
+    
+    return enhanced_query
+
+def calculate_weighted_cosine_similarity(query_embedding: List[float], title_embedding: List[float], abstract_embedding: List[float]) -> float:
+    """Calculate weighted cosine similarity between query and paper (80% title, 20% abstract)."""
+    try:
+        # Convert to numpy arrays for easier computation
+        query_vec = np.array(query_embedding, dtype=float)
+        title_vec = np.array(title_embedding, dtype=float)
+        abstract_vec = np.array(abstract_embedding, dtype=float)
+        
+        # Calculate cosine similarity for title
+        title_similarity = np.dot(query_vec, title_vec) / (np.linalg.norm(query_vec) * np.linalg.norm(title_vec))
+        
+        # Calculate cosine similarity for abstract
+        abstract_similarity = np.dot(query_vec, abstract_vec) / (np.linalg.norm(query_vec) * np.linalg.norm(abstract_vec))
+        
+        # Calculate weighted similarity (80% title, 20% abstract)
+        weighted_similarity = (TITLE_WEIGHT * title_similarity) + (ABSTRACT_WEIGHT * abstract_similarity)
+        
+        return float(weighted_similarity)
+        
+    except Exception as e:
+        st.error(f"Error calculating weighted similarity: {e}")
+        return 0.0
+
+def retrieve_similar_papers_dynamic(subgraph_name: str, pubmed_collection, top_k: int = TOP_K_PAPERS, threshold: float = SIMILARITY_THRESHOLD) -> List[Dict[str, Any]]:
+    """Retrieve similar papers from PubMed database using weighted cosine similarity (80% title, 20% abstract)."""
+    if not pubmed_collection:
+        st.warning("PubMed collection not available")
+        return []
+    
+    try:
+        # Get embedding model
+        embedding_model = get_embedding_model()
+        
+        # Enhance query for diagnostic/therapeutic focus
+        enhanced_query = enhance_query_for_diagnostic_therapeutic(subgraph_name)
+        
+        # Generate embedding for enhanced query
+        query_embedding = embedding_model.encode(enhanced_query, convert_to_tensor=False).tolist()
+        
+        # Get a larger pool of candidates for re-ranking
+        pool_size = min(top_k * 3, 100)  # Get 3x more candidates for better selection
+        
+        # Query the PubMed collection
+        results = pubmed_collection.query(
+            query_embeddings=[query_embedding],
+            n_results=pool_size,
+            include=["documents", "metadatas", "distances"]
+        )
+        
+        if not results or 'ids' not in results or not results['ids']:
+            st.warning(f"No results found for {subgraph_name}")
+            return []
+        
+        # Generate embeddings for titles and abstracts
+        titles = [results['metadatas'][0][i].get('title', '') for i in range(len(results['ids'][0]))]
+        abstracts = results['documents'][0]
+        
+        # Generate embeddings for titles and abstracts
+        title_embeddings = embedding_model.encode(titles, convert_to_tensor=False)
+        abstract_embeddings = embedding_model.encode(abstracts, convert_to_tensor=False)
+        
+        # Calculate weighted similarities and filter by threshold
+        papers = []
+        for i in range(len(results['ids'][0])):
+            try:
+                # Calculate individual similarities first
+                query_vec = np.array(query_embedding, dtype=float)
+                title_vec = np.array(title_embeddings[i], dtype=float)
+                abstract_vec = np.array(abstract_embeddings[i], dtype=float)
+                
+                # Calculate weighted similarity (80% title, 20% abstract)
+                title_similarity = float(np.dot(query_vec, title_vec) / (np.linalg.norm(query_vec) * np.linalg.norm(title_vec)))
+                abstract_similarity = float(np.dot(query_vec, abstract_vec) / (np.linalg.norm(query_vec) * np.linalg.norm(abstract_vec)))
+                weighted_similarity = (TITLE_WEIGHT * title_similarity) + (ABSTRACT_WEIGHT * abstract_similarity)
+                
+                # Filter by threshold
+                if weighted_similarity >= threshold:
+                    paper = {
+                        'pmid': results['ids'][0][i],
+                        'title': titles[i],
+                        'abstract': abstracts[i],
+                        'similarity': weighted_similarity
+                    }
+                    papers.append(paper)
+                    
+            except Exception as e:
+                st.warning(f"Error processing paper {i}: {e}")
+                continue
+        
+        # Sort by weighted similarity and return top_k
+        papers.sort(key=lambda x: x['similarity'], reverse=True)
+        
+        return papers[:top_k]
+        
+    except Exception as e:
+        st.error(f"Error retrieving papers for {subgraph_name}: {e}")
+        return []
+
+def format_subgraph_context_for_analysis(df: pd.DataFrame) -> str:
+    """Format subgraph data for the analysis prompt."""
+    if df.empty:
+        return "No subgraph data available."
+    
+    # Create a structured representation of the subgraph
+    context_lines = []
+    
+    # Add nodes information
+    nodes = set()
+    if 'x_name' in df.columns:
+        nodes.update(df['x_name'].dropna().unique())
+    if 'y_name' in df.columns:
+        nodes.update(df['y_name'].dropna().unique())
+    
+    if nodes:
+        context_lines.append(f"**Nodes in subgraph:** {', '.join(sorted(nodes))}")
+        context_lines.append("")
+    
+    # Add relationships
+    if all(col in df.columns for col in ['x_name', 'display_relation', 'y_name']):
+        context_lines.append("**Relationships:**")
+        for _, row in df[['x_name', 'display_relation', 'y_name']].dropna().iterrows():
+            context_lines.append(f"- {row['x_name']} --{row['display_relation']}--> {row['y_name']}")
+    
+    return "\n".join(context_lines)
+
+def format_research_papers_for_analysis(papers: List[Dict[str, Any]]) -> str:
+    """Format research papers for the analysis prompt."""
+    if not papers:
+        return "No relevant research papers found."
+    
+    papers_text = []
+    for i, paper in enumerate(papers, 1):
+        abstract_preview = paper['abstract'][:500]
+        if len(paper['abstract']) > 500:
+            abstract_preview += '...'
+        
+        papers_text.append(f"""
+**Paper {i} (PMID: {paper['pmid']})**
+Title: {paper['title']}
+Similarity: {paper['similarity']:.4f}
+Abstract: {abstract_preview}
+""")
+    
+    return "\n".join(papers_text)
+
+def generate_dynamic_analysis(subgraph_name: str, df: pd.DataFrame, papers: List[Dict[str, Any]]) -> str:
+    """Generate analysis using Gemini with enhanced retrieval."""
+    try:
+        # System prompt with diagnostic/therapeutic focus and clinical decision support
+        system_prompt = (
+            """You are a Principal Knowledge Graph Analyst producing clinician-friendly factual reports. """
+            "You strictly follow the provided structured data and retrieved research papers. "
+            "You do not use any external sources or prior knowledge beyond what is provided.\n\n"
+            "**Core Directives:**\n"
+            "1. **Strict Data Adherence:** Use ONLY the information in the `<SUBGRAPH_CONTEXT>` and `<RESEARCH_PAPERS>` blocks.\n"
+            "2. **No Hallucination:** Do not invent, infer, or embellish relationships.\n"
+            "3. **Traceability:** Every fact must be directly traceable to the provided data or research papers.\n"
+            "4. **Refusal on Missing Data:** If a relationship is not in the data, omit it.\n"
+            "5. **Complete Response:** You MUST always provide all sections below.\n"
+            "6. **Citation Requirements:** Always cite specific PMIDs when referencing research findings.\n"
+            "7. **Disorder Relationships:** Pay special attention to relationships between Major Depressive Disorder (MDD), Bipolar Disorder, and Schizophrenia when present in the data.\n\n"
+            "**MANDATORY OUTPUT FORMAT - INCLUDE ALL SECTIONS:**\n\n"
+            "### Evidence\n"
+            "List all verifiable relationships from the subgraph data, each on its own bullet point.\n\n"
+            "### Analysis\n"
+            "Write a comprehensive clinical analysis of the subgraph relationships, their patterns, "
+            "and significance for clinicians based solely on the provided data and research papers. "
+            "Focus on potential diagnostic implications and therapeutic considerations. "
+            "Include specific citations to research papers using PMID format.\n\n"
+            "### Clinical Decision Support\n"
+            "Provide actionable insights including:\n"
+            "- **Diagnostic Considerations:** Key diagnostic criteria and differential diagnosis points based on the subgraph relationships\n"
+            "- **Treatment Selection Framework:** Evidence-based treatment approaches, including normality and gold standard treatments most commonly used\n"
+            "- **Monitoring Recommendations:** Key parameters to monitor during treatment and follow-up\n"
+            "- **Disorder Relationships:** When MDD, Bipolar Disorder, or Schizophrenia are present, explain their interconnections, shared pathways, and clinical implications for diagnosis and treatment\n\n"
+            "### References\n"
+            "List all referenced research papers with their PMIDs and brief descriptions of their relevance.\n\n"
+            "**CRITICAL: Your response is incomplete if it does not contain all four sections above.**"
+        )
+        
+        # Format the data
+        subgraph_context = format_subgraph_context_for_analysis(df)
+        research_papers = format_research_papers_for_analysis(papers)
+        
+        # Build the complete prompt
+        user_prompt = f"""**TASK:** Generate a complete clinician-friendly report based on the provided 
+knowledge graph subgraph data and relevant research papers.
+
+**SUBGRAPH CONTEXT:**
+{subgraph_context}
+
+**RESEARCH PAPERS:**
+{research_papers}
+
+**MANDATORY REQUIREMENT:** Your response must contain exactly four sections:
+1. ### Evidence (with bullet points of all relationships from subgraph)
+2. ### Analysis (with clinical interpretation using both subgraph and research data)
+3. ### Clinical Decision Support (with actionable insights and disorder relationships)
+4. ### References (with all cited papers and their PMIDs)
+
+**OUTPUT TEMPLATE - Fill in each section completely:**
+
+### Evidence
+[Extract and list every relationship from the subgraph data above as bullet points]
+
+### Analysis
+[Provide a comprehensive clinical analysis of the relationships, their patterns, and significance for clinicians. 
+Focus specifically on potential diagnostic implications and therapeutic considerations based on the retrieved research papers. 
+Use specific citations to research papers when making claims. Base analysis solely on the provided subgraph relationships and research papers.]
+
+### Clinical Decision Support
+[Provide actionable insights including:
+- Diagnostic Considerations: Key diagnostic criteria and differential diagnosis points
+- Treatment Selection Framework: Evidence-based treatment approaches, including normality and gold standard treatments most commonly used
+- Monitoring Recommendations: Key parameters to monitor during treatment and follow-up
+- Disorder Relationships: When MDD, Bipolar Disorder, or Schizophrenia are present, explain their interconnections, shared pathways, and clinical implications]
+
+### References
+[List all referenced research papers with their PMIDs and brief descriptions of their relevance to the analysis]
+
+**REMINDER: Complete all four sections above. Use only the data provided in the context and research papers.**
+"""
+        
+        # Generate analysis with OpenAI
+        if not openai_client:
+            return "OpenAI client not initialized. Please check your API key."
+            
+        response = openai_client.chat.completions.create(
+            model=OPENAI_MODEL_NAME,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ],
+            max_tokens=4000,
+            temperature=0.1
+        )
+        
+        if response and response.choices and response.choices[0].message.content:
+            return response.choices[0].message.content
+        else:
+            return "The model returned an empty response."
+            
+    except Exception as e:
+        return f"Error generating analysis: {str(e)}"
 
 def generate_chat_response(
     context: str,
     question: str,
     chat_history: list,
-    pubmed_collection: chromadb.Collection
+    pubmed_collection: chromadb.Collection,
+    current_subgraph: str = None
 ):
-    """Generates a response using both subgraph and PubMed evidence."""
+    """Generates a response using both subgraph and PubMed evidence.
+    
+    Args:
+        context: Formatted subgraph context
+        question: User's question
+        chat_history: List of previous messages
+        pubmed_collection: ChromaDB collection for PubMed
+        current_subgraph: Name of the current subgraph being viewed
+    """
     # Format the chat history
     formatted_history = "\n".join(
         f"{'User' if msg['role'] == 'user' else 'Assistant'}: {msg['content']}"
         for msg in chat_history
     )
     
-    pubmed_evidence = retrieve_from_pubmed(question, pubmed_collection, k=3, save_csv=False)
+    # Enhance the PubMed query with subgraph context
+    pubmed_query = question
+    if current_subgraph:
+        # Add the subgraph name to focus the search
+        pubmed_query = f"{question} related to {current_subgraph}"
+    
+    pubmed_evidence = retrieve_from_pubmed(pubmed_query, pubmed_collection, k=5, save_csv=False)
 
     # Combine system instructions with the user prompt
     prompt = (
@@ -552,15 +881,24 @@ def generate_chat_response(
     )
 
     try:
-        model = genai.GenerativeModel(GEMINI_MODEL_NAME)
-        response = model.generate_content(prompt)
+        if not openai_client:
+            return "OpenAI client not initialized. Please check your API key."
+            
+        response = openai_client.chat.completions.create(
+            model=OPENAI_MODEL_NAME,
+            messages=[
+                {"role": "user", "content": prompt}
+            ],
+            max_tokens=2000,
+            temperature=0.1
+        )
         
-        if response.text:
-            return convert_pmids_to_links(response.text)
+        if response and response.choices and response.choices[0].message.content:
+            return convert_pmids_to_links(response.choices[0].message.content)
         else:
             return "The model returned an empty response."
     except Exception as e:
-        return f"Error communicating with Gemini: {e}"
+        return f"Error communicating with OpenAI: {e}"
 
 @st.cache_data
 def load_precomputed_paths():
@@ -579,6 +917,76 @@ def load_precomputed_paths():
         st.error(f"Error loading pre-computed paths: {e}")
         return pd.DataFrame()
 
+# Import the new downloader module
+from path_paper_downloader import PathPaperDownloader
+
+def download_pubmed_papers_for_path(path_nodes: List[str], papers_per_node: int, max_total_papers: int, 
+                                   include_intermediate: bool, include_pmc_metadata: bool, pubmed_collection) -> Dict[str, Any]:
+    """
+    Download PubMed papers for nodes in a shortest path using the new downloader module.
+    
+    Args:
+        path_nodes: List of node names in the path
+        papers_per_node: Number of papers to retrieve per node
+        max_total_papers: Maximum total papers to download
+        include_intermediate: Whether to include intermediate nodes
+        pubmed_collection: ChromaDB collection with PubMed data (not used in new implementation)
+        
+    Returns:
+        Dictionary with download results and summary
+    """
+    try:
+        # Initialize the new downloader
+        downloader = PathPaperDownloader()
+        
+        # Download papers with PMC metadata and MeSH terms, focusing on associations
+        results = downloader.download_papers_for_path(
+            path_nodes=path_nodes,
+            papers_per_node=papers_per_node,
+            max_total_papers=max_total_papers,
+            include_intermediate=include_intermediate,
+            include_pmc_metadata=include_pmc_metadata,  # Use the parameter from UI
+            focus_on_associations=True  # Focus on associations between source and target
+        )
+        
+        if results['success']:
+            # Embed papers into ChromaDB
+            embed_results = downloader.embed_papers_to_chromadb(results['papers'])
+            
+            if embed_results['success']:
+                results['embedding_success'] = True
+                results['embedded_count'] = embed_results['embedded_count']
+                results['collection_name'] = embed_results['collection_name']
+            else:
+                results['embedding_success'] = False
+                results['embedding_error'] = embed_results['error']
+            
+            # Get sample papers for display (top 5 by publication date)
+            sample_papers = sorted(results['papers'], key=lambda x: x.get('publication_date', ''), reverse=True)[:5]
+            results['sample_papers'] = sample_papers
+            
+        return results
+        
+    except Exception as e:
+        return {
+            'success': False,
+            'error': str(e),
+            'total_papers': 0,
+            'summary': [],
+            'sample_papers': []
+        }
+
+def save_path_papers_results(download_result: Dict[str, Any], source_node: str, target_node: str):
+    """Save the downloaded papers results to a file using the new downloader."""
+    try:
+        # Initialize downloader to use its save method
+        downloader = PathPaperDownloader()
+        filepath = downloader.save_results(download_result, source_node, target_node)
+        st.success(f"Results saved to: {filepath}")
+        
+    except Exception as e:
+        st.error(f"Error saving results: {str(e)}")
+
 # --- Streamlit App Layout ---
 st.set_page_config(layout="wide")
 st.title("🧠 Knowledge Graph AI Analyst")
@@ -593,16 +1001,7 @@ if "selected_file" not in st.session_state:
     st.session_state.selected_file = None
 
 # --- Load API Key ---
-GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY")
-if not GEMINI_API_KEY:
-    st.error("❌ Could not find GOOGLE_API_KEY in your .env file. Please add it.")
-    st.stop()
-
-try:
-    genai.configure(api_key=GEMINI_API_KEY)
-except Exception as e:
-    st.error(f"❌ Could not configure Gemini API: {e}")
-    st.stop()
+# OpenAI API key is already configured above
 
 # --- Load Question-to-Node Mappings ---
 try:
@@ -647,6 +1046,10 @@ else:
     if selected_file and selected_file != st.session_state.selected_file:
         st.session_state.selected_file = selected_file
         st.session_state.messages = []
+        # Reset analysis state when new subgraph is selected
+        st.session_state.generate_analysis = False
+        st.session_state.current_analysis = None
+        st.session_state.current_papers = None
         try:
             file_path = SUBGRAPHS_DIR / selected_file
             df_raw = pd.read_csv(file_path)
@@ -673,76 +1076,116 @@ else:
 
         with tab1:
             st.subheader("🔬 AI Expert Analysis")
-            if analysis_collection:
-                try:
-                    # First try to find by exact analysis filename derived from the CSV name
-                    expected_analysis = st.session_state.selected_file.replace('_subgraph.csv', '_subgraph_analysis.txt')
-                    result = analysis_collection.get(
-                        where={"filename": expected_analysis}
-                    )
-                    
-                    # If not found, try to find by partial filename match
-                    if not result or 'documents' not in result or not result['documents']:
-                        # Extract the main condition from the filename (e.g., 'Panic attack' from 'Panic attack_subgraph.csv')
-                        condition = st.session_state.selected_file.replace('_subgraph.csv', '').lower()
-                        
-                        # Get all analyses to search through
-                        all_analyses = analysis_collection.get()
-                        
-                        if all_analyses and 'metadatas' in all_analyses and all_analyses['metadatas']:
-                            # Try to find a matching analysis by stored condition or by filename
-                            for i, meta in enumerate(all_analyses['metadatas']):
-                                if not meta:
-                                    continue
-                                meta_filename = (meta.get('filename') or '').lower()
-                                meta_condition = (meta.get('condition') or '').lower()
-                                if meta_condition == condition or condition in meta_filename:
-                                    # Found a match
-                                    st.success(f"Found matching analysis for '{condition}' in '{meta.get('filename','unknown')}'")
-                                    result = {
-                                        'documents': [all_analyses['documents'][i]] if 'documents' in all_analyses else ["No content available"],
-                                        'metadatas': [meta]
-                                    }
-                                    break
-                    
-                    # Display the analysis if found
-                    if result and 'documents' in result and result['documents']:
-                        st.markdown("### Analysis Results")
-                        st.markdown("---")
-                        
-                        # Render analysis with collapsible sections if long
-                        render_analysis_with_collapse(
-                            result['documents'][0],
-                            bullet_threshold=10,
-                            targets=["Key Clinical Relationships", "Therapeutic Insights"]
-                        )
-                    else:
-                        st.warning(f"No analysis found for '{st.session_state.selected_file}'")
-                        
-                        # Show available analyses for reference
-                        all_analyses = analysis_collection.get()
-                        if all_analyses and 'metadatas' in all_analyses and all_analyses['metadatas']:
-                            st.info("### Analyses")
-                            st.write("The following analyses are available in the database:")
-                            
-                            # Create a simple list of available analyses
-                            analyses_text = "\n\n".join([
-                                f"- {meta.get('condition', 'Unknown')} ({meta.get('filename', 'No filename')})"
-                                for meta in all_analyses['metadatas']
-                                if meta and 'filename' in meta
-                            ])
-                            
-                            st.text_area(
-                                "Available analyses:",
-                                value=analyses_text,
-                                height=200,
-                                disabled=True
-                            )
-                except Exception as e:
-                    st.error(f"Error querying analysis database: {e}")
+            
+            # Check if we have subgraph data
+            if st.session_state.current_subgraph_df.empty:
+                st.warning("No subgraph data available for analysis.")
             else:
-                st.error("Analysis database is unavailable. Could not connect to ChromaDB.")
-                st.info("This could be because the database is empty or there was an error connecting to it.")
+                # Get subgraph name for analysis
+                subgraph_name = st.session_state.selected_file.replace('_subgraph.csv', '')
+                
+                # Add a button to generate/regenerate analysis
+                col1, col2, col3 = st.columns([1, 2, 1])
+                with col2:
+                    if st.button("🚀 Generate Dynamic Analysis", type="primary", use_container_width=True):
+                        st.session_state.generate_analysis = True
+                
+                # Check if we should generate analysis
+                if st.session_state.get('generate_analysis', False):
+                    with st.spinner("🔍 Retrieving relevant research papers..."):
+                        # Retrieve similar papers using enhanced retrieval
+                        papers = retrieve_similar_papers_dynamic(
+                            subgraph_name, 
+                            pubmed_collection, 
+                            top_k=TOP_K_PAPERS, 
+                            threshold=SIMILARITY_THRESHOLD
+                        )
+                        
+                        if papers:
+                            st.success(f"✅ Retrieved {len(papers)} relevant papers")
+                            
+                            # Show paper details in an expander
+                            with st.expander(f"📚 Retrieved Papers ({len(papers)} papers)", expanded=False):
+                                for i, paper in enumerate(papers[:10], 1):  # Show first 10
+                                    st.markdown(f"""
+                                    **{i}. {paper['title']}**
+                                    - PMID: {create_pubmed_link(paper['pmid'])}
+                                    - Similarity: {paper['similarity']:.4f}
+                                    - Abstract: {paper['abstract'][:200]}...
+                                    """, unsafe_allow_html=True)
+                                
+                                if len(papers) > 10:
+                                    st.info(f"... and {len(papers) - 10} more papers")
+                        else:
+                            st.warning("⚠️ No relevant papers found above the similarity threshold")
+                    
+                    with st.spinner("🤖 Generating AI analysis with OpenAI..."):
+                        # Generate dynamic analysis
+                        analysis_text = generate_dynamic_analysis(
+                            subgraph_name, 
+                            st.session_state.current_subgraph_df, 
+                            papers
+                        )
+                        
+                        if analysis_text and not analysis_text.startswith("Error"):
+                            st.session_state.current_analysis = analysis_text
+                            st.session_state.current_papers = papers
+                            #st.success("✅ Analysis generated successfully!")
+                        else:
+                            st.error(f"❌ Failed to generate analysis: {analysis_text}")
+                
+                # Display the analysis if available
+                if st.session_state.get('current_analysis'):
+                    st.markdown("### Analysis Results")
+                    st.markdown("---")
+                    
+                    # Parse the analysis to extract sections
+                    analysis_text = st.session_state.current_analysis
+                    
+                    # Extract Evidence section
+                    evidence_match = re.search(r'### Evidence\s*\n(.*?)(?=### |$)', analysis_text, re.DOTALL | re.IGNORECASE)
+                    evidence_section = evidence_match.group(1).strip() if evidence_match else ""
+                    
+                    # Extract Analysis section
+                    analysis_match = re.search(r'### Analysis\s*\n(.*?)(?=### |$)', analysis_text, re.DOTALL | re.IGNORECASE)
+                    analysis_section = analysis_match.group(1).strip() if analysis_match else ""
+                    
+                    # Extract Clinical Decision Support section
+                    clinical_support_match = re.search(r'### Clinical Decision Support\s*\n(.*?)(?=### |$)', analysis_text, re.DOTALL | re.IGNORECASE)
+                    clinical_support_section = clinical_support_match.group(1).strip() if clinical_support_match else ""
+                    
+                    # Extract References section
+                    references_match = re.search(r'### References\s*\n(.*?)(?=### |$)', analysis_text, re.DOTALL | re.IGNORECASE)
+                    references_section = references_match.group(1).strip() if references_match else ""
+                    
+                    # Display References in expander (moved to top)
+                    if st.session_state.get('current_papers'):
+                        with st.expander("📚 References", expanded=False):
+                            for i, paper in enumerate(st.session_state.current_papers, 1):
+                                st.markdown(f"""
+                                **{i}. {paper['title']}**
+                                - PMID: {create_pubmed_link(paper['pmid'])}
+                                - Similarity: {paper['similarity']:.4f}
+                                - Abstract: {paper['abstract'][:300]}{'...' if len(paper['abstract']) > 300 else ''}
+                                """, unsafe_allow_html=True)
+                                st.markdown("---")
+
+                    # Display Evidence in expander
+                    if evidence_section:
+                        with st.expander("📋 Evidence", expanded=True):
+                            st.markdown(convert_pmids_to_links(evidence_section), unsafe_allow_html=True)
+
+                    # Display Analysis in expander
+                    if analysis_section:
+                        with st.expander("🔬 Analysis", expanded=True):
+                            st.markdown(convert_pmids_to_links(analysis_section), unsafe_allow_html=True)
+
+                    # Display Clinical Decision Support in expander
+                    if clinical_support_section:
+                        with st.expander("🏥 Clinical Decision Support", expanded=True):
+                            st.markdown(convert_pmids_to_links(clinical_support_section), unsafe_allow_html=True)
+                else:
+                    st.info("👆 Click 'Generate Dynamic Analysis' to create an AI-powered analysis based on the selected subgraph and relevant research papers.")
 
         with tab2:
             if not st.session_state.current_subgraph_df.empty:
@@ -754,23 +1197,64 @@ else:
                 st.warning("No subgraph data available for summary.")
 
         with tab3:
-            st.subheader(f"💬 Chat about `{st.session_state.selected_file}`")
-            for message in st.session_state.messages:
+            current_subgraph = st.session_state.selected_file.replace('_subgraph.csv', '')
+            st.subheader(f"💬 Chat about `{current_subgraph}`")
+            st.info(f"ℹ️ Chat context is limited to the `{current_subgraph}` subgraph. "
+                   "For questions about other conditions, please select the appropriate subgraph first.")
+            
+            # Initialize chat history if not exists
+            if 'chat_history' not in st.session_state:
+                st.session_state.chat_history = []
+            
+            # Display chat messages
+            for message in st.session_state.chat_history:
                 with st.chat_message(message["role"]):
                     st.markdown(message["content"], unsafe_allow_html=True)
-
-            if prompt := st.chat_input("Ask a question about this subgraph..."):
-                st.session_state.messages.append({"role": "user", "content": prompt})
+            
+            # Chat input
+            if prompt := st.chat_input(f"Ask about {current_subgraph}..."):
+                # Add user message to chat history
+                user_message = {"role": "user", "content": prompt}
+                st.session_state.chat_history.append(user_message)
+                
+                # Display user message
                 with st.chat_message("user"):
                     st.markdown(prompt, unsafe_allow_html=True)
+                
+                # Generate and display assistant response
                 with st.chat_message("assistant"):
-                    with st.spinner("🧠 Thinking..."):
-                        context = format_subgraph_for_chat_prompt(st.session_state.current_subgraph_df)
-                        response = generate_chat_response(
-                            context, prompt, st.session_state.messages[:-1], pubmed_collection
-                        )
-                        st.markdown(response, unsafe_allow_html=True)
-                        st.session_state.messages.append({"role": "assistant", "content": response})
+                    with st.spinner("🧠 Analyzing..."):
+                        try:
+                            # Get context from the current subgraph only
+                            context = format_subgraph_for_chat_prompt(st.session_state.current_subgraph_df)
+                            
+                            # Generate response with clear scope
+                            response = generate_chat_response(
+                                context=context,
+                                question=prompt,
+                                chat_history=st.session_state.chat_history[:-1],  # Exclude current message
+                                pubmed_collection=pubmed_collection,
+                                current_subgraph=current_subgraph  # Pass current subgraph name
+                            )
+                            
+                            # Ensure response stays on topic
+                            if current_subgraph.lower() not in response.lower():
+                                response = f"Based on the {current_subgraph} subgraph: " + response
+                            
+                            # Display and store the response
+                            st.markdown(response, unsafe_allow_html=True)
+                            st.session_state.chat_history.append({
+                                "role": "assistant", 
+                                "content": response
+                            })
+                            
+                        except Exception as e:
+                            error_msg = f"I encountered an error while analyzing the {current_subgraph} subgraph. Please try rephrasing your question."
+                            st.error(error_msg)
+                            st.session_state.chat_history.append({
+                                "role": "assistant", 
+                                "content": error_msg
+                            })
 
         with tab4:
             st.subheader(f"📊 Interactive Graph: {st.session_state.selected_file}")
@@ -878,6 +1362,142 @@ else:
                                     st.markdown(f"**{source.strip()}** → {target.strip()}")
                             else:
                                 st.markdown(f"• {step}")
+                    
+                    # Add export button
+                    if st.button("💾 Export Path to CSV"):
+                        try:
+                            output_file = export_detailed_path(path_info)
+                            st.success(f'Successfully saved path to {output_file}')
+                        except Exception as e:
+                            st.error(f'Error exporting path: {str(e)}')
+                    
+                    # New PubMed Download Task
+                    st.subheader("📚 Download PubMed Papers for Path")
+                    st.info("Download research papers that discuss the **associations and relationships** between the source and target nodes in this path to provide context for analysis.")
+                    
+                    # Get path nodes
+                    path_nodes = path_info['Path'].split(' → ')
+                    
+                    # Display path nodes
+                    st.write("**Path nodes to search for papers:**")
+                    for i, node in enumerate(path_nodes):
+                        if i == 0:
+                            st.write(f"🔘 **Source:** {node}")
+                        elif i == len(path_nodes) - 1:
+                            st.write(f"🎯 **Target:** {node}")
+                        else:
+                            st.write(f"🔗 **Intermediate:** {node}")
+                    
+                    # Configuration options
+                    col1, col2, col3, col4 = st.columns(4)
+                    with col1:
+                        papers_per_node = st.number_input("Papers per node", min_value=5, max_value=50, value=10, help="Number of papers to download for each node")
+                    with col2:
+                        max_total_papers = st.number_input("Max total papers", min_value=20, max_value=200, value=50, help="Maximum total papers to download")
+                    with col3:
+                        include_intermediate = st.checkbox("Include intermediate nodes", value=True, help="Download papers for intermediate nodes in the path")
+                    with col4:
+                        include_pmc_metadata = st.checkbox("Include PMC metadata", value=True, help="Fetch PMC IDs and URLs for full text access")
+                    
+                    # Download button
+                    if st.button("📥 Download PubMed Papers", type="primary"):
+                        with st.spinner("Downloading PubMed papers for path nodes..."):
+                            try:
+                                download_result = download_pubmed_papers_for_path(
+                                    path_nodes=path_nodes,
+                                    papers_per_node=papers_per_node,
+                                    max_total_papers=max_total_papers,
+                                    include_intermediate=include_intermediate,
+                                    include_pmc_metadata=include_pmc_metadata,
+                                    pubmed_collection=pubmed_collection
+                                )
+                                
+                                if download_result['success']:
+                                    st.success(f"✅ Successfully downloaded {download_result['total_papers']} papers!")
+                                    
+                                    # Show embedding status
+                                    if download_result.get('embedding_success'):
+                                        st.success(f"📚 Embedded {download_result['embedded_count']} papers into ChromaDB collection: `{download_result['collection_name']}`")
+                                    else:
+                                        st.warning(f"⚠️ Embedding failed: {download_result.get('embedding_error', 'Unknown error')}")
+                                    
+                                    # Display summary
+                                    st.subheader("📊 Download Summary")
+                                    summary_df = pd.DataFrame(download_result['summary'])
+                                    st.dataframe(summary_df, use_container_width=True)
+                                    
+                                    # Display all papers with enhanced information
+                                    if download_result.get('papers'):
+                                        st.subheader(f"📄 All Papers ({len(download_result['papers'])} total)")
+                                        
+                                        # Sort papers by publication date (newest first)
+                                        sorted_papers = sorted(download_result['papers'], 
+                                                            key=lambda x: x.get('publication_date', ''), 
+                                                            reverse=True)
+                                        
+                                        for i, paper in enumerate(sorted_papers):
+                                            # Create expander title with paper number and key info
+                                            title_preview = paper['title'][:60] + "..." if len(paper['title']) > 60 else paper['title']
+                                            expander_title = f"📖 {i+1}. {title_preview}"
+                                            
+                                            with st.expander(expander_title):
+                                                col1, col2 = st.columns(2)
+                                                
+                                                with col1:
+                                                    st.write(f"**PMID:** {paper['pmid']}")
+                                                    st.write(f"**Journal:** {paper.get('journal', 'N/A')}")
+                                                    st.write(f"**Publication Date:** {paper.get('publication_date', 'N/A')}")
+                                                    if paper.get('pmc_id'):
+                                                        st.write(f"**PMC ID:** {paper['pmc_id']}")
+                                                
+                                                with col2:
+                                                    st.write(f"**Source:** {paper.get('source_node', 'N/A')}")
+                                                    if paper.get('search_term'):
+                                                        st.write(f"**Search Term:** {paper.get('search_term', 'N/A')}")
+                                                    if paper.get('authors'):
+                                                        authors_display = ', '.join(paper['authors'][:3])
+                                                        if len(paper['authors']) > 3:
+                                                            authors_display += f" (+{len(paper['authors'])-3} more)"
+                                                        st.write(f"**Authors:** {authors_display}")
+                                                
+                                                # MeSH terms
+                                                if paper.get('all_mesh_terms'):
+                                                    mesh_display = ', '.join(paper['all_mesh_terms'][:8])
+                                                    if len(paper['all_mesh_terms']) > 8:
+                                                        mesh_display += f" (+{len(paper['all_mesh_terms'])-8} more)"
+                                                    st.write(f"**MeSH Terms:** {mesh_display}")
+                                                
+                                                # Abstract
+                                                abstract_text = paper.get('abstract', 'No abstract available')
+                                                if len(abstract_text) > 500:
+                                                    st.write(f"**Abstract:** {abstract_text[:500]}...")
+                                                    with st.expander("View Full Abstract"):
+                                                        st.write(abstract_text)
+                                                else:
+                                                    st.write(f"**Abstract:** {abstract_text}")
+                                                
+                                                # Links
+                                                col1, col2 = st.columns(2)
+                                                with col1:
+                                                    st.write(f"**PubMed:** [View Paper](https://pubmed.ncbi.nlm.nih.gov/{paper['pmid']}/)")
+                                                with col2:
+                                                    if paper.get('pmc_url'):
+                                                        st.write(f"**PMC:** [View Full Text]({paper['pmc_url']})")
+                                        
+                                        # Add a summary at the bottom
+                                        st.info(f"📊 **Summary:** Found {len(download_result['papers'])} papers total. "
+                                               f"Papers are sorted by publication date (newest first).")
+                                    
+                                    # Save results option
+                                    if st.button("💾 Save Results to File"):
+                                        save_path_papers_results(download_result, source_node, target_node)
+                                        st.success("Results saved successfully!")
+                                        
+                                else:
+                                    st.error(f"❌ Download failed: {download_result['error']}")
+                                    
+                            except Exception as e:
+                                st.error(f"❌ Error during download: {str(e)}")
                     
                     # Add some space at the bottom
                     st.markdown("<br><br>", unsafe_allow_html=True)

@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+Behavioral abnormality,Death in adolescence,Path found,3,"Behavioral abnormality → Perseveration → mitochondrial complex 4 deficiency, nuclear → Death in adolescence","• Behavioral abnormality [effect/phenotype] --parent-child--> Perseveration [effect/phenotype]
+  • Perseveration [effect/phenotype] --phenotype present--> mitochondrial complex 4 deficiency, nuclear [disease]
+  • mitochondrial complex 4 deficiency, nuclear [disease] --phenotype present--> Death in adolescence [effect/phenotype]"

@@ -1,0 +1,95 @@
+{
+  "node": "personality disorder",
+  "papers": [
+    {
+      "rank": 1,
+      "pmid": "40674742",
+      "title": "Mental Health and Personality Disorders: Personality Disorders.",
+      "abstract": "Personality disorders describe enduring, pervasive, pathologic patterns of behavior and inner experiences that deviate from a patient's culture. Personality disorders are divided into three clusters depending on core features. Diagnosis of a personality disorder is generally made based on criteria from the <i>Diagnostic and Statistical Manual of Mental Disorders</i>, although other diagnostic modalities exist. The most common disorders in primary care settings include obsessive-compulsive personality, narcissistic personality, and borderline personality disorders. Obsessive-compulsive personality disorder is associated with pathologic perfectionism and intense rigidity. Treatment is primarily psychotherapy, although there is some evidence for using selective serotonin reuptake inhibitors. Narcissistic personality disorder is marked by grandiosity, need for admiration, and a lack of empathy. Psychotherapy is the primary treatment. Borderline personality disorder is associated with instability and intense reactivity, and the primary treatment is typically psychotherapy. Dialectical behavior therapy was developed specifically for borderline personality disorder, although evidence suggests other behavior therapies may be as beneficial.",
+      "similarity": 0.5119071006774902,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 2,
+      "pmid": "40674739",
+      "title": "Mental Health and Personality Disorders: Foreword.",
+      "abstract": "",
+      "similarity": 0.46254801750183105,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 3,
+      "pmid": "40328239",
+      "title": "[Diagnostic of personality disorders according to ICD-11].",
+      "abstract": "The treatment of individuals with personality disorders often poses a major challenge in psychotherapy. It is therefore of great importance to accurately diagnose and classify personality disorders. This article provides an overview of the new diagnosis of personality disorders according to ICD-11 and shows the various steps and examples of the diagnostic process.",
+      "similarity": 0.404557466506958,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 4,
+      "pmid": "40705631",
+      "title": "A generative model of personality disorder as a relational disorder.",
+      "abstract": "Existing models of personality disorder are statistical models: dispersion patterns of personality facets. Although useful in describing personality differences, such models fall short in terms of explaining those differences. Generative models can address these explanatory gaps by explicating the mechanisms that generate descriptive pathologies. In this article, we aim to move beyond the former descriptive models and toward the latter explanatory ones. To do so, we formalize personality pathology using a generative model with four key properties. First, it is probabilistic: it outlines how humans leverage uncertainty to make sense of their own and others' ways of being. Second, it is relational: it posits that personality pathology is about poor ways of experiencing and relating to the self and others. Third, it is hierarchical: it accounts for the multiplicity of self- and other-states (in the here-and-now) and traits (in the long run). Finally, it is dynamic: it outlines how these properties evolve over time, accounting for the development of personality. By simulating data from this model, we demonstrate how it can account for the generation, maintenance, and treatment of various personality problems (from borderline instability to narcissistic grandiosity) by formalizing them as relational problems: problems with navigating relationships. We thus discuss how our model could be used to address recent debates on what is central to personality pathology by clarifying the distinction between description (what personality \"is\") and explanation (what personality \"does\"). We conclude the article with a tutorial on our model and suggestions for future research. (PsycInfo Database Record (c) 2025 APA, all rights reserved).",
+      "similarity": 0.3512331247329712,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 5,
+      "pmid": "40709660",
+      "title": "Co-occurrence of personality disorders and anxiety disorders.",
+      "abstract": "This review explores the high co-occurrence between personality disorders (PDs) and anxiety disorders (ADs), focusing on clinical implications, the frequency of their association, and the challenges these comorbidities pose for diagnosis and treatment. In addition, this review highlights recent research findings and the need for better therapeutic strategies. Contemporary studies have confirmed a strong association between PDs and ADs, particularly borderline personality disorder (BPD), which shows an 85% comorbidity with anxiety disorders. Gender differences are also observed, with women generally exhibiting higher rates of co-occurring psychiatric conditions. These comorbidities contribute to increased symptom severity, a higher suicide risk, and worse long-term outcomes. Recent clinical trials have shown positive results in managing these disorders. However, treatment approaches remain inconsistent, and further research is needed to refine these strategies. The co-occurrence of PDs and ADs complicates diagnosis and treatment, leading to worse outcomes. Although promising therapies exist, the current lack of a standardized treatment approach for this comorbid population highlights the need for further research. Future studies should explore more targeted treatment options, causal mechanisms linking PDs and ADs, and potential benefits of personalized interventions to improve clinical outcomes.",
+      "similarity": 0.34848034381866455,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 6,
+      "pmid": "40365806",
+      "title": "[ADHD and personality disorders].",
+      "abstract": "ADHD and personality disorders, like emotional unstable personality disorder and dissocial personality disorder, overlap to some extent but they also commonly co-occur in clinical populations. Prevalences, key issues in differential diagnosis, and the different aetiological background of the two categories are presented in this review. In depth, clinical diagnostic evaluation of both disorder syndromes, not only based on use of questionnaires, is needed to sufficiently distinct the separate main categories. In case of co-occurrence treatment, recommendations of both disorders and social support should be considered to achieve a patient-centered approach of the specific needs.",
+      "similarity": 0.3180835247039795,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 7,
+      "pmid": "40448559",
+      "title": "Multimodal approaches to the treatment of personality disorder.",
+      "abstract": "Personality disorder is the most common of all psychiatric disorders and is best perceived as a diagnostic spectrum extending from no personality dysfunction to severe personality disorder. The position on the spectrum is determined mainly by problems in interpersonal social dysfunction, self-perception and awareness, and dangers to the self and others. We examine psychological and psychodynamic treatments, pharmacotherapy, neuromodulation and other related approaches, environmental treatments, and therapeutic communities. Although many published studies refer to individual categories, these are now linked to the diagnostic spectrum in this review. There is some evidence that focused psychological treatments linked to problem solving (STEPPS), mentalization based therapy and dialectical behavior therapy, are successful in treating moderately severe personality disorder, especially regarding self-harm, but there is also benefit from well organized standard care that is similarly effective. There is no good evidence that drug treatment is of real value in personality disorder. Brain stimulation approaches have limited evidence. Psychodynamic approaches, environmental interventions, nidotherapy, and therapeutic communities appear to be of some value, but good data are few. Long-term studies of treatment effectiveness are few but some show that personality disorder can respond to treatment and remit.",
+      "similarity": 0.29570066928863525,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 8,
+      "pmid": "40709661",
+      "title": "Mentalization-based therapy for personality disorder in adolescents.",
+      "abstract": "Mentalization-based therapy for adolescents (MBT-A) is a treatment approach that aligns well with dimensional models of personality disorders. This article reviews recent literature on mentalizing and MBT, proposing ways in which findings may inform future research and clinical innovations. There have been few new treatment studies and meta-analyses, and the evidence generally does not support the superiority of MBT-A over other well structured treatments for personality disorder in adolescents. Long-term follow-up studies suggest heterotypic continuity of personality disorder (PD) and indicate that discrepancies between adolescent and parent reporting may point to important mentalizing problems. A pilot study of MBT-A for conduct disorder has been published and shows promising results, despite a high dropout rate. MBT was originally developed for BPD in adults, but it is increasingly being recognized as a transdiagnostic common-factor model relevant to many conditions, such as those affecting adolescents who have experienced childhood adversity and juveniles with persistent aggressive behavior. For the field to progress further, there is a strong need for more research and clinical innovation, which should continue to move beyond categorical classification and approach disorder and alleviation of suffering from a developmental and social-ecological starting point.",
+      "similarity": 0.2460932731628418,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 9,
+      "pmid": "40245074",
+      "title": "A digital therapeutic for people with borderline personality disorder in Germany (EPADIP-BPD): a pragmatic, assessor-blind, parallel-group, randomised controlled trial.",
+      "abstract": "Fewer than 25% of patients with borderline personality disorder (BPD) receive guideline-adherent psychotherapy. Digital therapeutics can help reduce this gap. Therefore, we tested the effectiveness and safety of priovi, a digital therapeutic for BPD. We conducted a pragmatic, assessor-blind, parallel-group, randomised controlled trial, recruiting patients with BPD, according to DSM-5 classification, of at least moderate severity on the 23-item Borderline Symptom List (BSL-23) via online advertisements in Germany. Patients were aged 18 years or older, agreed on an emergency plan for suicidal crises, and gave informed consent to participate. Patients were excluded if they had a primary diagnosis of a substance use disorder or a diagnosis of a psychotic disorder. Simple computerised coin-toss randomisation (1:1) without stratification was used to assign patients to either the unguided digital therapeutic based on schema therapy together with treatment as usual (TAU; intervention group) or TAU alone (control group) and study investigators were masked to group assignment until after the analysis of the primary outcome and main safety outcome. All patients could use any form of usual care. The control group received freely available BPD-specific self-help material. The primary outcome was the time by treatment interaction in the intention-to-treat sample at 3 months measured by BSL-23 score. Safety was established via the number of serious adverse events (ie, suicide attempts, other life-threatening events, and hospitalisation), assessed via online questionnaire. Individuals with BPD were involved in the development of the digital therapeutic, but not in the design of this study. The trial was registered on German Clinical Trials Register (DRKS00028888) and is completed. Between May 3 and Oct 20, 2022, 1766 patients were screened for eligibility and 580 patients (520 [90%] women, 47 [8%] men, and 13 [2%] gender diverse) were randomly assigned to the intervention group (n=302) and control group (n=278). Ethnicity data were not recorded. At the primary timepoint of 3 months, 35 (12%) patients dropped out of the intervention group and 15 (5%) of the control group. The median age of patients was 29 years (IQR 24-37). Intention-to-treat analysis with linear mixed models showed a significant time by treatment interaction (p=0·0005) at 3 months in favour of the intervention group (d=0·24 [95% CI 0·07-0·42]). Regarding safety, there were significantly fewer suicide attempts in the intervention group (n=7) than in the control group (n=21; incidence rate ratio 0·34 [95% CI 0·14-0·79]; p=0·0081) and there were no differences regarding other serious adverse events. This trial provides tentative evidence of the effectiveness and absence of safety concerns of the digital therapeutic, priovi, in the treatment of individuals with BPD. GAIA.",
+      "similarity": 0.23721683025360107,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 10,
+      "pmid": "38214629",
+      "title": "Borderline personality disorder: a comprehensive review of diagnosis and clinical presentation, etiology, treatment, and current controversies.",
+      "abstract": "Borderline personality disorder (BPD) was introduced in the DSM-III in 1980. From the DSM-III to the DSM-5, no major changes have occurred in its defining criteria. The disorder is characterized by instability of self-image, interpersonal relationships and affects. Further symptoms include impulsivity, intense anger, feelings of emptiness, strong abandonment fears, suicidal or self-mutilation behavior, and transient stress-related paranoid ideation or severe dissociative symptoms. There is evidence that BPD can be reliably diagnosed and differentiated from other mental disorders by semi-structured interviews. The disorder is associated with considerable functional impairment, intensive treatment utilization, and high societal costs. The risk of self-mutilation and suicide is high. In the general adult population, the lifetime prevalence of BPD has been reported to be from 0.7 to 2.7%, while its prevalence is about 12% in outpatient and 22% in inpatient psychiatric services. BPD is significantly associated with other mental disorders, including depressive disorders, substance use disorders, post-traumatic stress disorder, attention-deficit/hyperactivity disorder, bipolar disorder, bulimia nervosa, and other personality disorders. There is convincing evidence to suggest that the interaction between genetic factors and adverse childhood experiences plays a central role in the etiology of BPD. In spite of considerable research, the neurobiological underpinnings of the disorder remain to be clarified. Psychotherapy is the treatment of choice for BPD. Various approaches have been empirically supported in randomized controlled trials, including dialectical behavior therapy, mentalization-based therapy, transference-focused therapy, and schema therapy. No approach has proved to be superior to others. Compared to treatment as usual, psychotherapy has proved to be more efficacious, with effect sizes between 0.50 and 0.65 with regard to core BPD symptom severity. However, almost half of the patients do not respond sufficiently to psychotherapy, and further research in this area is warranted. It is not clear whether some patients may benefit more from one psychotherapeutic approach than from others. No evidence is available consistently showing that any psychoactive medication is efficacious for the core features of BPD. For discrete and severe comorbid anxiety or depressive symptoms or psychotic-like features, pharmacotherapy may be useful. Early diagnosis and treatment of BPD can reduce individual suffering and societal costs. However, more high-quality studies are required, in both adolescents and adults. This review provides a comprehensive update of the BPD diagnosis and clinical characterization, risk factors, neurobiology, cognition, and management. It also discusses the current controversies concerning the disorder, and highlights the areas in which further research is needed.",
+      "similarity": 0.22638332843780518,
+      "publication_date": "",
+      "journal": ""
+    }
+  ]
+}

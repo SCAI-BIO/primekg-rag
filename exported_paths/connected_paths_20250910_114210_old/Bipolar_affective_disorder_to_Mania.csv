@@ -1,0 +1,2 @@
+source,target,status,path_length,path,detailed_path
+Bipolar affective disorder,Mania,Path found,1,Bipolar affective disorder → Mania,• Bipolar affective disorder [effect/phenotype] --parent-child--> Mania [effect/phenotype]

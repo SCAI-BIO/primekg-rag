@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+Bipolar affective disorder,eating behavior,Path found,3,Bipolar affective disorder → Lamotrigine → ADORA2A → eating behavior,"• Bipolar affective disorder [effect/phenotype] --side effect--> Lamotrigine [drug]
+  • Lamotrigine [drug] --target--> ADORA2A [gene/protein]
+  • ADORA2A [gene/protein] --interacts with--> eating behavior [biological_process]"

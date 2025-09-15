@@ -1,0 +1,6 @@
+source,target,status,path_length,path,detailed_path
+bipolar disorder,Hypotropia,Path found,5,bipolar disorder → BCHE → Echothiophate → esotropia → strabismus → hypotropia,"• bipolar disorder [disease] --associated with--> BCHE [gene/protein]
+  • BCHE [gene/protein] --target--> Echothiophate [drug]
+  • Echothiophate [drug] --indication--> esotropia [disease]
+  • esotropia [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"

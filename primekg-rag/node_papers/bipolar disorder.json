@@ -1,0 +1,95 @@
+{
+  "node": "bipolar disorder",
+  "papers": [
+    {
+      "rank": 1,
+      "pmid": "40712624",
+      "title": "Bipolar disorder.",
+      "abstract": "The hallmark of bipolar disorder is hypomania or mania, and the predominant phase of illness is depression. Affecting approximately 40 million individuals worldwide, bipolar disorder is associated with a substantial psychosocial, medical, and financial burden and increased mortality from suicide and other causes. Diagnosis can be challenging due to symptom overlap with attention-deficit hyperactivity disorder, major depressive disorder, psychotic spectrum disorders, and personality disorders, which often leads to a delay in diagnosis. Recent advancements in understanding disease risk and pathophysiology have identified multigene risk and possible infectious and mitochondrial causes. Treatment approaches include pharmacotherapy, psychotherapy, and lifestyle modifications, which should always be patient-centred and aligned with individual goals and priorities. Future directions for bipolar disorder care include increasing the availability of psychosocial interventions aimed at self-management, addressing treatment-resistant bipolar depression, deepening the understanding of pathophysiology, and exploring novel interventions, such as ketamine, esketamine, other rapid-acting antidepressants, and various neuromodulation approaches.",
+      "similarity": 0.7990111708641052,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 2,
+      "pmid": "39811787",
+      "title": "Bipolar disorders: an update on critical aspects.",
+      "abstract": "Bipolar disorders are chronic psychiatric conditions characterized by recurrent episodes of mania and depression. Affecting over 1% of the global population, these disorders contribute significantly to disability and mortality, often due to suicide and cardiovascular disease. Diagnostic challenges arise from symptom overlap with unipolar depression, frequently leading to delays. Bipolar disorders are driven by complex genetic, neurobiological, and environmental factors and are commonly accompanied by psychiatric and medical comorbidities, further complicating diagnosis and treatment. Standard management strategies include mood stabilizers, antipsychotics, and selective use of antidepressants, complemented by psychosocial interventions like cognitive-behavioral therapy and psychoeducation, which are vital for relapse prevention. Despite recent advancements, the management of bipolar disorders remains challenging, constrained by clinical variability, an absence of specific biomarkers, and differences in approved treatments and treatment guidelines across regions. Emerging research underscores the potential of precision psychiatry and digital health tools to enhance diagnosis and treatment. Nonetheless, critical gaps persist, particularly in implementing equitable care worldwide. This review offers a comprehensive update on bipolar disorders, examining clinical presentation, early diagnosis, pathogenesis, therapeutic strategies, and future perspectives to guide clinicians and researchers in addressing these ongoing challenges in research and clinical practice. None.",
+      "similarity": 0.5752833783626556,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 3,
+      "pmid": "40476411",
+      "title": "[Living with… bipolar disorder].",
+      "abstract": "",
+      "similarity": 0.5636530816555023,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 4,
+      "pmid": "40449413",
+      "title": "Thinking bipolar disorder as a symptom rather than a disease.",
+      "abstract": "Bipolar affective disorder (BAD), a major global health challenge, has traditionally been classified as a distinct psychiatric condition characterized by episodes of mania and depression. Recent findings suggest that BAD may not represent a singular disease but rather a manifestation of broader, interconnected pathophysiological processes underlying mood dysregulation. This study proposes a paradigm shift, conceptualizing BAD as a shared symptom reflecting common pathophysiological mechanisms rather than a discrete disorder. Through a systematic disease-wide association study (DWAS) of over 7,000 BAD patients and 337,000 controls, this study identified a wide range of comorbid conditions across multiple organ systems-neurological, metabolic, gastrointestinal, cardiovascular, and immune-related disorders. These comorbidities indicate a deeper etiological connection rather than coincidental associations. This study suggests that BAD is part of a larger, transdiagnostic continuum, supporting the growing emphasis on dimensional models of psychopathology. This reconceptualization offers important clinical advantages, including enhanced diagnostic accuracy, integrated interventions targeting common pathophysiological pathways, and more effective patient management. By transcending traditional diagnostic boundaries, this approach fosters precision psychiatry and lays the groundwork for future research focused on shared biomarkers and therapeutic targets, ultimately improving the clinical care and outcomes for individuals with mood disorders.",
+      "similarity": 0.49982547760009766,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 5,
+      "pmid": "11349478",
+      "title": "Bipolar disorder.",
+      "abstract": "Bipolar disorder (manic-depressive illness) is a common, recurrent, and severe psychiatric disorder that affects 1% to 3% of the US population. The illness is characterized by episodes of mania, depression, or mixed states (simultaneously occurring manic and depressive symptoms). Bipolar disorder frequently goes unrecognized and untreated for many years without clinical vigilance. New screening tools have been developed to assist physicians in making the diagnosis. Fortunately, several medications are now available to treat the acute mood episodes of bipolar disorder and to prevent further episodes with maintenance treatment.",
+      "similarity": 0.4932103753089905,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 6,
+      "pmid": "26961448",
+      "title": "The management of bipolar disorder.",
+      "abstract": "Bipolar disorder is a common mental disorder which is relapsing and remitting in nature. Subsyndromal symptoms are common and associated with poorer outcomes. Management of the disorder can be challenging and depends on the polarity and severity of the mood episode.",
+      "similarity": 0.44825440645217896,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 7,
+      "pmid": "27378177",
+      "title": "Bipolar and related disorders in DSM-5 and ICD-10.",
+      "abstract": "Bipolar disorders are a group of psychiatric disorders with profound negative impact on affected patients. Even if their symptomatology has long been recognized, diagnostic criteria have changed over time and diagnosis often remains difficult. The Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-5), issued in May 2013, comprises several changes regarding the diagnosis of bipolar disorders compared to the previous edition. Diagnostic categories and criteria for bipolar disorders show some concordance with the internationally also widely used Tenth Edition of the International Statistical Classification of Diseases and Related Health Problems (ICD-10). However, there are also major differences that are worth highlighting. The aim of the following text is to depict and discuss those.",
+      "similarity": 0.4337669610977173,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 8,
+      "pmid": "38911011",
+      "title": "Bipolar Disorder: From Pathophysiology to Treatment.",
+      "abstract": "Bipolar disorder is a mental disorder that involves a manic or hypomanic state and a depressive state, and was once called manic-depressive disorder and was considered one of the two major mental disorders along with schizophrenia. Major depressive disorder, on the other hand, is a disorder in which only depressive states occur, and the two are sometimes referred to together as \"mood disorders. This review will introduce the pathophysiology, diagnosis, epidemiology, and treatment of bipolar disorder, focusing on the current situation in Japan.",
+      "similarity": 0.43270957469940186,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 9,
+      "pmid": "12596029",
+      "title": "[The spectrum of bipolar disorders].",
+      "abstract": "On the basis of epidemiology, neurobiology and clinical observation, the classification of bipolar disorders has shown considerable development and expansion in recent years. In particular, the recognition of mixed states, the introduction of bipolar II disorders, increasing awareness of the diagnosis of hypomania, as well as the interest in cyclothymic disorders and temperament have led to a shift in diagnostic attitudes in the USA, as well as in European countries. In this article, the possible clinical and scientific benefits of such tendencies are discussed, as are the risks of broadening bipolar disorders beyond DSM-IV. Also demonstrated is how several \"modern\" concepts of bipolarity have deep roots in the history of German psychiatry; a mixity scale based on Kraepelin's classification of affective mixed states is presented.",
+      "similarity": 0.43269842863082886,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 10,
+      "pmid": "27262007",
+      "title": "Bipolar Disorder.",
+      "abstract": "Bipolar disorder is a chronic mental health disorder that is frequently encountered in primary care. Many patients with depression may actually have bipolar disorder. The management of bipolar disorder requires proper diagnosis and awareness or referral for appropriate pharmacologic therapy. Patients with bipolar disorder require primary care management for comorbidities such as cardiovascular and metabolic disorders.",
+      "similarity": 0.4297906160354614,
+      "publication_date": "",
+      "journal": ""
+    }
+  ]
+}

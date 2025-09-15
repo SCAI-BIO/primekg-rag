@@ -1,0 +1,95 @@
+{
+  "node": "substance abuse/dependence",
+  "papers": [
+    {
+      "rank": 1,
+      "pmid": "40708553",
+      "title": "Suicidal behavior and substance dependence.",
+      "abstract": "Suicidal behavior is a common psychiatric emergency and poses a significant challenge in mental health care. Substance use disorders are among the most frequently observed mental health conditions in individuals who die by suicide.",
+      "similarity": 0.4639676809310913,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 2,
+      "pmid": "40400270",
+      "title": "Prevalence of attention deficit hyperactivity disorder in individuals with psychoactive substance dependence.",
+      "abstract": "Attention Deficit Hyperactivity Disorder (ADHD) is the most common neurodevelopmental childhood disorder, which in most cases persists into adulthood, causing severe functional impairment. ADHD constitutes an important risk factor for the onset of use and the development of dependence on psychoactive substances. Impulse control disorders, anxiety, mood disorders, and substance abuse are the most common comorbid disorders. The present study aims to estimate the prevalence of ADHD in adult users of psychoactive substances who have attended a treatment program in a special detoxification unit for psychoactive substances. The study concerns the examination of one hundred eighteen psychoactive substance users using the following diagnostic tools: (a) Section 12 of the semi-structured interview SCAN 2.0, which assesses diagnostic criteria of psychoactive substance abuse and dependence. (b) The structured clinical interview CIS-R, which investigates the presence of psychopathological symptoms of \"common mental disorders\". (c) The WURS scale retrospectively probes into ADHD symptoms up to the age of 7. The prevalence of ADHD in the sample of individuals with psychoactive substance use disorders was found to be 38.1%. Analyses were also performed concerning age and the comorbidity of common psychiatric disorders and ADHD. Findings are consistent with the results of other studies. The drug users of psychoactive substances, regardless of the ADHD comorbidity, had an increased prevalence of common psychiatric disorders. The most common comorbidities were other psychoactive substance disorders, anxiety, and depressive disorders. The small number of participants, the exclusive use of one substance by the participants, and the type of unit where the present study was conducted restrict the generalizability of its results.",
+      "similarity": 0.3192709684371948,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 3,
+      "pmid": "29451585",
+      "title": "Psychoactive substance abuse and dependence and its association with anxiety disorders: a population-based study of young adults in Brazil.",
+      "abstract": "To evaluate the association between abuse of and dependence on different psychoactive substances and the presence of anxiety disorders in a sample of young adults from a city in southern Brazil. Between 2007 and 2009, we carried out a cross-sectional, population-based study of individuals aged 18-24 years who lived in Pelotas, a city in southern Brazil. We evaluated anxiety disorders using the Mini International Neuropsychiatric Interview 5.0 (MINI), and use of psychoactive substances with the Alcohol, Smoking, and Substance Involvement Screening Test (ASSIST 2.0/0MS). We used Fisher's exact test for univariate analysis, and Poisson regression models with robust variance for multivariable analysis. The sample consisted of 1,560 young adults. The overall prevalence of abuse/dependence was 26.9% for alcohol, 24.9% for tobacco, and 7.3% for illicit substances. Individuals with agoraphobia had a 32% higher prevalence of tobacco abuse/dependence (prevalence ratio [PR] = 1.32 [95%CI 1.01-1.74]). Individuals with posttraumatic stress disorder (PTSD) or generalized anxiety disorder (GAD) had a 2.41-fold (95%CI 1.22-4.77) and 1.76-fold (95%CI 1.00-3.11) higher prevalence of illicit substance abuse/dependence, respectively. In this population-based sample, we found associations between GAD, PTSD, and increased prevalence of illicit substance abuse/dependence. In addition, individuals with agoraphobia seem to have increased tobacco abuse/dependence.",
+      "similarity": 0.3107900619506836,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 4,
+      "pmid": "40365801",
+      "title": "[ADHD and problematic substance use].",
+      "abstract": "Attention Deficit Hyperactivity Disorder (ADHD) often coexists with problematic substance use, such as harmful use or dependency. In this review, studies estimate a 21% prevalence of ADHD among individuals with problematic substance use, who often exhibit earlier substance initiation, faster dependency transitions, and higher relapse risks. Diagnosis and treatment are challenging due to overlapping symptoms and comorbidities, but integrated, case-managed approaches combining psychosocial, pharmacological, and therapeutic interventions show promise in improving outcomes for this vulnerable population.",
+      "similarity": 0.28352516889572144,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 5,
+      "pmid": "40020139",
+      "title": "Depression and substance abuse among university students.",
+      "abstract": "The purpose of the study was to examine the association between depression and substance abuse and to assess their prevalence and associated factors. A cross-sectional design was employed. To collect data for the present study, 2 scales (Beck depression inventory and Alcohol, Smoking, and Substance Involvement screening Test [ASSIST]) was administered to students. Two hundred fifty seven Addis Ababa Institute of Technology final year regular undergraduate students were participated. The results revealed that a high correlation was found between depression and substance abuse. The prevalence of depression is 27.2%. Similarly, the prevalence of alcohol abuse, khat abuse, cigarette abuse and cannabis abuse are 25.5%, 17.7%, 9.5%, and 3.3% respectively. Hence, the overall substance abuse prevalence is 14%. Alcohol is most abused drug followed by khat abuse. Cigarette and cannabis abuse take the 3rd and 4th rank respectively. Multivariate test of significance reveals that gender, religion and the interaction of gender with religion, residence, and ethnicity had an effect on the two combined dependent measures. Females are more depressed than males. In turn, males are more substance abusers than females. The researchers suggested that the university to establish its own substance abuse prevention and treatment working center which is open for psychologists, therapist and other health workers.",
+      "similarity": 0.27707624435424805,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 6,
+      "pmid": "40676068",
+      "title": "Global burden of substance use disorders in adolescents and young adults aged 10-24 years from 1990 to 2021.",
+      "abstract": "Substance use disorders (SUDs) among adolescents and young adults aged 10-24 years represent a major global public health challenge, contributing to various medical conditions and significant disease burden. This study analyzed global, regional, and national estimates of the SUD burden within this demographic from 1990 to 2021. Using data from the Global Burden of Diseases, Injuries, and Risk Factors Study (GBD) 2021, we analyzed incidence, prevalence, mortality, and disability-adjusted life-years (DALYs) of SUDs among population aged 10-24 years. SUDs in GBD 2021 encompass alcohol and drug use disorders. We calculated age-standardized rates (per 100,000 population) for incidence (ASIR), prevalence (ASPR), mortality (ASMR), and DALYs (ASDR). Health inequalities were assessed using the slope index of inequality (SII) and concentration index. Risk factors were also analyzed. Statistical analyses were performed in R (v4.4.1). In 2021, the global ASIR and ASPR of SUDs among population aged 10-24 years were 614.0 (95% CI 467.6-805.0) and 1557.0 (1234.1-1944.6) per 100,000 population. Substance-specific ASPRs in 2021 included alcohol (651.9, 95% CI 439.0-941.7), cannabis (536.8, 343.5-831.8), opioid use disorders (155.0, 120.0-199.7), etc. The global ASMR and ASDR for SUDs were 1.1 (1.0 to 1.2) and 228.9 (172.4-295.3). From 1990 to 2021, ASIR (average annual percent change [AAPC] - 0.70, 95% CI - 0.71 to - 0.69), ASPR (AAPC - 0.71, - 0.72 to - 0.70), and ASDR (AAPC - 0.60, - 0.63 to - 0.56) declined globally, while ASMR increased (AAPC 0.83, 0.52-1.23). During the COVID-19 pandemic (2019-2021), ASIR and ASPR decreased, ASDR remained stable, and ASMR rose. Substantial disparities were observed across regions and countries and territories. Males, older adolescents, and populations in higher socio-demographic index (SDI) regions exhibited disproportionately higher SUD burden. SUDs impose a significant health burden on adolescents and young adults aged 10-24 years, with distinct demographic and geographic inequities. Evidence-based interventions should prioritize male populations, older age groups, and the high-SDI regions. Lower-SDI regions require enhanced monitoring to address evolving epidemiological trends. Urgent implementation of targeted prevention and treatment strategies is critical to mitigate the impact of SUDs in this vulnerable population.",
+      "similarity": 0.27348554134368896,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 7,
+      "pmid": "36458086",
+      "title": "Prevalence and association of comorbid substance dependence on the course and outcome of bipolar disorder: Findings from the bipolar disorder course and outcome study from India (BiD-CoIN study).",
+      "abstract": "To evaluate the prevalence of substance use disorder (SUD) and its association with the course and outcome of bipolar disorder (BD). A total of 773 patients with BD were recruited from 14 centers in different parts of India, and they were evaluated for the prevalence of comorbid substance dependence, course and outcome, subjective cognitive functioning, and disability. About one-fourth (22.9%) of the participants had one or more substance dependence. In terms of specific substance of abuse, 136 (17.6%) had nicotine dependence, 80 (10.3%) patients had alcohol dependence, 13 (1.7%) had cannabis dependence, and nine (1.2%) had opioid dependence. Compared to those without comorbid substance dependence, those with a dual diagnosis (i.e., using at least one substance in a dependent pattern) were less educated, more often males, more often currently single, more often employed, had a lower number of depressive episodes per year of illness, had a higher number of manic and mixed episodes per year of illness in the first 5 years of illness, had a higher level of disability, and more often had a history of hospitalization and a history of receiving electroconvulsive therapy (ECT); also, a higher proportion of them had manic predominant polarity, more often had recurrent mania course, and were more often receiving a combination of lithium and valproate. About one-fourth of BD patients have comorbid SUDs, and presence of SUD has a negative impact on the course and outcome of BD.",
+      "similarity": 0.26895737648010254,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 8,
+      "pmid": "40505157",
+      "title": "A network perspective on heroin use: associations between craving, withdrawal symptoms, dependence, loss of control, and psychosocial consequences.",
+      "abstract": "Opioid use disorder (OUD) is a complex diagnosis characterized by symptoms such as craving, tolerance, withdrawal, and impaired social, occupational, or recreational activities. However, there is a lack of data about the interconnectedness of these symptoms, in particular the links between withdrawal symptoms and psychosocial impairment. The present study uses symptom network analysis to better understand these associations surrounding heroin use. We used data from individuals who reported heroin use during the past 12 months in the National Survey on Drug Use and Health (NSDUH) (year 2021, n = 207). We estimated a cross-sectional network that included heroin use-related aspects, including coping and withdrawal symptoms, consequences, loss of control, craving, and dependence symptoms. To examine key 'bridge nodes' that connect these different clusters, we computed a measure of bridge expected influence for each node. The network model revealed several symptom connections within and between clusters. The withdrawal symptom, sleep problems, had the strongest bridge centrality. The dependence symptom \"increased use for an effect\", was a key bridge node connecting to withdrawal symptoms and consequences. Craving was connected with two withdrawal symptoms (depressed mood and sweating). Additional symptom connections emerged between the loss of control and other dependence symptom nodes. Our network analysis model provides additional insight into how heroin use symptoms and relevant characteristics are interconnected. Craving and loss of control (time spent using, amount of use) map onto specific withdrawal symptoms.",
+      "similarity": 0.2629440426826477,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 9,
+      "pmid": "40381539",
+      "title": "Psychological rehabilitation of individuals with alcohol use disorder, drug addiction, gambling disorder, and codependency.",
+      "abstract": "The objective of this study was to assess the impact of a 12-month course of cognitive behavioral therapy (CBT) on individuals diagnosed with alcohol use disorder, drug addiction, gambling disorder, and codependency, with a focus on improving quality of life and reducing symptom severity. A quantitative design was employed, involving both control and experimental groups, each initially comprising 100 participants. By the end of the study, the final sample sizes in the experimental groups were 72 (alcohol use disorder), 70 (drug addiction), 74 (gambling disorder), and 73 (codependent behavior) individuals. An equal number of participants in the corresponding control groups were reassessed. Quality of life was measured using the World Health Organization Quality of Life BREF instrument, which measures physical health, psychological health, social relationships, and environmental conditions. The results indicated a significant improvement in quality-of-life scores in the experimental groups compared to the control groups. The Wilcoxon signed-rank test confirmed statistically significant improvements (p < 0.001) across all addiction categories, while the Mann-Whitney U test demonstrated substantial post-intervention differences between control and experimental groups (p < 0.001). Participants in the experimental group showed marked reductions in addiction severity, as indicated by AUDIT, DAST, G-SAS, and Spann-Fisher Codependency Scale assessments. Effect sizes (Cohen's d) ranged from 2.83 to 3.47, confirming the strong impact of psychotherapy. These findings underscore the effectiveness of CBT in reducing addiction severity and enhancing quality of life, supporting its broader integration into addiction treatment programs. The study provides valuable evidence for addiction rehabilitation efforts in Kazakhstan. From a practical perspective, these findings highlight the importance of structured psychotherapeutic interventions in addressing addiction-related issues. The study underscores the need to expand access to CBT in rehabilitation centers, particularly in regions with high addiction rates. Future policy initiatives should prioritize the development of therapist training programs and the implementation of evidence-based treatment methods. Moreover, the results emphasize the necessity for continuous post-treatment support to maintain long-term recovery and prevent relapse. By incorporating CBT into standardized rehabilitation protocols, policymakers and healthcare providers can enhance the overall effectiveness of addiction treatment services.",
+      "similarity": 0.26189637184143066,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 10,
+      "pmid": "9258854",
+      "title": "Integrating substance abuse treatment for the seriously mentally ill into inpatient psychiatric treatment.",
+      "abstract": "This paper offers guidelines for the assessment and treatment of substance abuse problems in seriously mentally ill persons who are admitted into inpatient psychiatric treatment. This approach has been used successfully by the authors and may be most useful in settings where a specialized dual-diagnosis treatment program is not feasible. The first step consists of identifying potential substance abusers using several sources of information including the patient's record, a brief patient interview, and an interview with the patient's family and caseworker. Patients who have a confirmed or suspected substance abuse problem undergo a substance abuse assessment designed to evaluate consumption patterns, the negative consequences of substance use, and high-risk situations for alcohol and drug use. Patients are then presented with individualized feedback in a non-coercive manner, which is intended to increase their motivation to change their substance-use behavior. Treatment consists of a structured coping skills group which covers nine specific topics. The topics covered in the group treatment include both general social skills and specific drug and alcohol coping skills intended to assist individuals in coping effectively with high-risk situations. The content of each group session is described along with guidelines for conducting coping skills group treatment with the seriously mentally ill.",
+      "similarity": 0.24996215105056763,
+      "publication_date": "",
+      "journal": ""
+    }
+  ]
+}

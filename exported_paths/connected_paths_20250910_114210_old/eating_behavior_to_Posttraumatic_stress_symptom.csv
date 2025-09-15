@@ -1,0 +1,5 @@
+source,target,status,path_length,path,detailed_path
+eating behavior,Posttraumatic stress symptom,Path found,4,eating behavior → ADORA2A → schizophrenia → Behavioral abnormality → Posttraumatic stress symptom,"• eating behavior [biological_process] --interacts with--> ADORA2A [gene/protein]
+  • ADORA2A [gene/protein] --associated with--> schizophrenia [disease]
+  • schizophrenia [disease] --phenotype present--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"

@@ -1,0 +1,6 @@
+source,target,status,path_length,path,detailed_path
+Hypotropia,Mania,Path found,5,hypotropia → strabismus → paralytic strabismus → Strabismus → Atropine → Mania,"• hypotropia [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> paralytic strabismus [disease]
+  • paralytic strabismus [disease] --phenotype present--> Strabismus [effect/phenotype]
+  • Strabismus [effect/phenotype] --side effect--> Atropine [drug]
+  • Atropine [drug] --side effect--> Mania [effect/phenotype]"

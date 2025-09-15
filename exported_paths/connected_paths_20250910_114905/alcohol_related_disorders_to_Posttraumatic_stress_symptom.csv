@@ -1,0 +1,5 @@
+source,target,status,path_length,path,detailed_path
+alcohol-related disorders,Posttraumatic stress symptom,Path found,4,alcohol-related disorders → substance abuse/dependence → Topiramate → Behavioral abnormality → Posttraumatic stress symptom,"• alcohol-related disorders [disease] --parent-child--> substance abuse/dependence [disease]
+  • substance abuse/dependence [disease] --off-label use--> Topiramate [drug]
+  • Topiramate [drug] --side effect--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"

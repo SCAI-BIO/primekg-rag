@@ -1,0 +1,6 @@
+source,target,status,path_length,path,detailed_path
+Death in adolescence,Hypotropia,Path found,5,Death in adolescence → deeah syndrome → Strabismus → paralytic strabismus → strabismus → hypotropia,"• Death in adolescence [effect/phenotype] --phenotype present--> deeah syndrome [disease]
+  • deeah syndrome [disease] --phenotype present--> Strabismus [effect/phenotype]
+  • Strabismus [effect/phenotype] --phenotype present--> paralytic strabismus [disease]
+  • paralytic strabismus [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"

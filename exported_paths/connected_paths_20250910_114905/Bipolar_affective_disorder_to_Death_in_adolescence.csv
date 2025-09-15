@@ -1,0 +1,5 @@
+source,target,status,path_length,path,detailed_path
+Bipolar affective disorder,Death in adolescence,Path found,4,Bipolar affective disorder → lithium transport → Autosomal dominant inheritance → proteasome-associated autoinflammatory syndrome → Death in adolescence,"• Bipolar affective disorder [effect/phenotype] --phenotype present--> lithium transport [disease]
+  • lithium transport [disease] --phenotype present--> Autosomal dominant inheritance [effect/phenotype]
+  • Autosomal dominant inheritance [effect/phenotype] --phenotype present--> proteasome-associated autoinflammatory syndrome [disease]
+  • proteasome-associated autoinflammatory syndrome [disease] --phenotype present--> Death in adolescence [effect/phenotype]"

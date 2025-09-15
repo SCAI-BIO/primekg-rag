@@ -1,0 +1,5 @@
+source,target,status,path_length,path,detailed_path
+Behavioral abnormality,Hypotropia,Path found,4,Behavioral abnormality → Riley-Day syndrome → neuro-ophthalmological disease → strabismus → hypotropia,"• Behavioral abnormality [effect/phenotype] --phenotype present--> Riley-Day syndrome [disease]
+  • Riley-Day syndrome [disease] --parent-child--> neuro-ophthalmological disease [disease]
+  • neuro-ophthalmological disease [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"

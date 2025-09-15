@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+anorexia nervosa,Panic attack,Path found,3,anorexia nervosa → Rivastigmine → Parkinson disease → Panic attack,"• anorexia nervosa [disease] --contraindication--> Rivastigmine [drug]
+  • Rivastigmine [drug] --contraindication--> Parkinson disease [disease]
+  • Parkinson disease [disease] --phenotype present--> Panic attack [effect/phenotype]"

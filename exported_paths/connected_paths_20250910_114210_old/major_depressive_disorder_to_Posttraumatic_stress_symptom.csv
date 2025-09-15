@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+major depressive disorder,Posttraumatic stress symptom,Path found,3,major depressive disorder → NR4A2 → Behavioral abnormality → Posttraumatic stress symptom,"• major depressive disorder [disease] --associated with--> NR4A2 [gene/protein]
+  • NR4A2 [gene/protein] --associated with--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"

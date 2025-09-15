@@ -1,0 +1,7 @@
+source,target,status,path_length,path,detailed_path
+eating behavior,Hypotropia,Path found,6,eating behavior → OXTR → 3p- syndrome → Strabismus → paralytic strabismus → strabismus → hypotropia,"• eating behavior [biological_process] --interacts with--> OXTR [gene/protein]
+  • OXTR [gene/protein] --associated with--> 3p- syndrome [disease]
+  • 3p- syndrome [disease] --phenotype present--> Strabismus [effect/phenotype]
+  • Strabismus [effect/phenotype] --phenotype present--> paralytic strabismus [disease]
+  • paralytic strabismus [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> hypotropia [disease]"

@@ -1,0 +1,4 @@
+source,target,status,path_length,path,detailed_path
+bipolar disorder,Panic disorder,Path found,3,bipolar disorder → ATP1A1 → adrenal cortex carcinoma → Panic attack,"• bipolar disorder [disease] --associated with--> ATP1A1 [gene/protein]
+  • ATP1A1 [gene/protein] --associated with--> adrenal cortex carcinoma [disease]
+  • adrenal cortex carcinoma [disease] --phenotype present--> Panic attack [effect/phenotype]"

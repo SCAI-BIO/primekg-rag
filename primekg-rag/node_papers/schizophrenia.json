@@ -1,0 +1,95 @@
+{
+  "node": "schizophrenia",
+  "papers": [
+    {
+      "rank": 1,
+      "pmid": "36260895",
+      "title": "Schizophrenia.",
+      "abstract": "Schizophrenia is the most common psychotic mental disorder, and those affected have two to four times higher mortality than the general population. Genetic and environmental factors increase the risk of developing schizophrenia, and substance use disorder (particularly cannabis) may have the strongest link. Schizophrenia typically develops in young adulthood and is characterized by the presence of positive and negative symptoms. Positive symptoms include hallucinations, delusions, and disorganized speech. Negative symptoms include blunted affect, alogia, avolition, asociality, and anhedonia. Symptoms must be present for at least six months and be severe for at least one month to make a diagnosis. Because schizophrenia is debilitating, it should be treated with antipsychotics, and early treatment decreases long-term disability. Treatment should be individualized, and monitoring for effectiveness and adverse effects is important. Patients with a first episode of psychosis who receive a formal diagnosis of schizophrenia should be treated in a coordinated specialty care program. Second-generation antipsychotics are the preferred first-line treatment because they cause fewer extrapyramidal symptoms. Patients with schizophrenia who are treated with second-generation antipsychotics are at increased risk of cardiovascular disease and should receive at least annual metabolic screening and counseling with interventions to prevent weight gain and encourage smoking cessation. Treatment-resistant schizophrenia should be treated with clozapine. Adjunctive treatments include electroconvulsive therapy, antidepressants, and cognitive behavior therapy for psychosis. Family and social support are keys to improved outcomes.",
+      "similarity": 0.795600488781929,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 2,
+      "pmid": "39473188",
+      "title": "What is the neurobiology of schizophrenia?",
+      "abstract": "Schizophrenia spectrum disorders are brain diseases that are developmental dementias (dementia praecox). Their pathology begins in utero with psychosis most commonly becoming evident in adolescence and early adulthood. It is estimated they afflict the U.S. population at a prevalence rate of approximately 0.8%. Genetic studies indicate that these brain diseases are about 80% determined by genes and about 20% determined by environmental risk factors. Inheritance is polygenic with some 270 gene loci having been identified as contributing to the risk for schizophrenia. Interestingly, many of the identified gene loci and gene polymorphisms are involved in brain formation and maturation. The identified genetic and epigenetic risks give rise to a brain in which neuroblasts migrate abnormally, assume abnormal locations and orientations, and are vulnerable to excessive neuronal and synaptic loss, resulting in overt psychotic illness. The illness trajectory of schizophrenia then is one of loss of brain mass related to the number of active psychotic exacerbations and the duration of untreated illness. In this context, molecules such as dopamine, glutamate, and serotonin play critical roles with respect to positive, negative, and cognitive domains of illness. Acutely, antipsychotics ameliorate active psychotic illness, especially positive signs and symptoms. The long-term effects of antipsychotic medications have been debated; however, the bulk of imaging data suggest that antipsychotics slow but do not reverse the illness trajectory of schizophrenia. Long-acting injectable antipsychotics (LAI) appear superior in this regard. Clozapine remains the \"gold standard\" in managing treatment-resistant schizophrenia.",
+      "similarity": 0.46361100673675537,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 3,
+      "pmid": "37725988",
+      "title": "[Not Available].",
+      "abstract": "Schizophrenia is a mental disorder characterized by marked heterogeneity at both the phenomenological and neurobiological levels. Its diagnostic disentanglement would lead to more precise treatment and improved prognosis in people with schizophrenia. For this, a deeper understanding of the pathophysiological mechanisms of schizophrenia is needed.",
+      "similarity": 0.4350736141204834,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 4,
+      "pmid": "40364647",
+      "title": "Schizophrenia: Genetics, neurological mechanisms, and therapeutic approaches.",
+      "abstract": "Schizophrenia is a complex psychiatric disorder marked by positive and negative symptoms, leading to mood disturbances, cognitive impairments, and social withdrawal. While anti-psychotic medications remain the cornerstone of treatment, they often fail to fully address certain symptoms. Additionally, treatment-resistant schizophrenia, affecting 30%-40% of patients, remains a substantial clinical challenge. Positive, negative symptoms and cognitive impairments have been linked to disruptions in the glutamatergic, serotonin, GABAergic, and muscarinic pathways in the brain. Recent advances using genome-wide association study and other approaches have uncovered a significant number of new schizophrenia risk genes that uncovered new, and reinforced prior, concepts on the genetic and neurological underpinnings of schizophrenia, including abnormalities in synaptic function, immune processes, and lipid metabolism. Concurrently, new therapeutics targeting different modalities, which are expected to address some of the limitations of anti-psychotic drugs currently being offered to patients, are currently being evaluated. Collectively, these efforts provide new momentum for the next phase of schizophrenia research and treatment.",
+      "similarity": 0.42692553997039795,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 5,
+      "pmid": "39025058",
+      "title": "[Acute Treatment Of Schizophrenia].",
+      "abstract": "Schizophrenia is one of the most common, most severe and most costly mental illnesses in adults. In the acute phase, sufferers usually experience massive anxiety and a high level of distress due to their altered perception. If the symptoms are severe, psychiatric emergencies can arise. The earliest possible antipsychotic treatment, which is felt to be appropriate by those affected, is essential for acute treatment.",
+      "similarity": 0.4089912176132202,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 6,
+      "pmid": "24666064",
+      "title": "Psychosis and schizophrenia.",
+      "abstract": "Essential facts Psychosis and schizophrenia (the latter is often described as a psychotic disorder) are mental health conditions in which a person's perception, thoughts, mood and behaviour are significantly altered. Over a lifetime, about one in 100 people will experience the symptoms, according to the National Institute for Health and Care Excellence (NICE).",
+      "similarity": 0.4054661989212036,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 7,
+      "pmid": "37977755",
+      "title": "Schizophrenia and Emergency Medicine.",
+      "abstract": "Schizophrenia is a chronic condition characterized by positive symptoms (auditory hallucinations, delusion), negative symptoms (avolition, social withdrawal), and disorganized thoughts/behaviors. Although the pathophysiology is incompletely understood, several neurobiological mechanisms have been proposed. Treatment usually involves antipsychotic medication as well as psychotherapy and supportive services. When evaluating patients in the emergency department, acute safety considerations are paramount. Patients should be assessed for suicide risk, violence risk, inability to care for self, and the risk of being the victim of a crime. Persons with schizophrenia are at an increased risk of substance use and a variety of medical problems.",
+      "similarity": 0.3874243497848511,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 8,
+      "pmid": "40246428",
+      "title": "[Interest of ETP and cognitive remediation in the management of dangerous schizophrenics].",
+      "abstract": "Schizophrenia is a severe mental disorder whose delusional and hallucinatory symptoms can sometimes cause sufferers to act with potentially serious consequences. This complex pathology therefore requires an integrated treatment approach, combining various therapeutic tools to improve the clinical condition and evolution of these patients throughout their lives. The main components of treatment are antipsychotics, psychotherapy and psychosocial rehabilitation, including therapeutic patient education and cognitive remediation.",
+      "similarity": 0.3806713819503784,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 9,
+      "pmid": "40539029",
+      "title": "Editorial: Case reports in Schizophrenia and psychotic disorders: 2023.",
+      "abstract": "",
+      "similarity": 0.3718274235725403,
+      "publication_date": "",
+      "journal": ""
+    },
+    {
+      "rank": 10,
+      "pmid": "37779634",
+      "title": "Editorial: Case reports in schizophrenia and psychotic disorders.",
+      "abstract": "",
+      "similarity": 0.36429959535598755,
+      "publication_date": "",
+      "journal": ""
+    }
+  ]
+}

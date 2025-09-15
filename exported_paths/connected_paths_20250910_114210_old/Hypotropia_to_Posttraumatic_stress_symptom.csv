@@ -1,0 +1,6 @@
+source,target,status,path_length,path,detailed_path
+Hypotropia,Posttraumatic stress symptom,Path found,5,hypotropia → strabismus → neuro-ophthalmological disease → Riley-Day syndrome → Behavioral abnormality → Posttraumatic stress symptom,"• hypotropia [disease] --parent-child--> strabismus [disease]
+  • strabismus [disease] --parent-child--> neuro-ophthalmological disease [disease]
+  • neuro-ophthalmological disease [disease] --parent-child--> Riley-Day syndrome [disease]
+  • Riley-Day syndrome [disease] --phenotype present--> Behavioral abnormality [effect/phenotype]
+  • Behavioral abnormality [effect/phenotype] --parent-child--> Posttraumatic stress symptom [effect/phenotype]"

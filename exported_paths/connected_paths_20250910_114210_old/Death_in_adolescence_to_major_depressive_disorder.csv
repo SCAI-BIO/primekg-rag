@@ -1,0 +1,5 @@
+source,target,status,path_length,path,detailed_path
+Death in adolescence,major depressive disorder,Path found,4,Death in adolescence → Age of death → Stillbirth → Citalopram → major depressive disorder,"• Death in adolescence [effect/phenotype] --parent-child--> Age of death [effect/phenotype]
+  • Age of death [effect/phenotype] --parent-child--> Stillbirth [effect/phenotype]
+  • Stillbirth [effect/phenotype] --side effect--> Citalopram [drug]
+  • Citalopram [drug] --indication--> major depressive disorder [disease]"
