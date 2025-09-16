@@ -1072,7 +1072,7 @@ else:
         ])
 
         with tab1:
-            st.subheader("🔬 AI Expert Analysis")
+            st.subheader("🔬 LLM Summary")
             
             # Check if we have subgraph data
             if st.session_state.current_subgraph_df.empty:
