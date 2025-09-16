@@ -35,7 +35,6 @@ pip install -r requirements.txt
 ```bash
 # Create .env file with correct paths
 echo "OPENAI_API_KEY=your_key_here" > .env
-echo "PUBMED_DB_PATH=pubmed_db" >> .env
 ```
 *Replace `your_key_here` with your actual OpenAI API key*
 
@@ -90,7 +89,6 @@ cd primekg-rag
 2. **Set up environment file:**
 ```bash
 echo "OPENAI_API_KEY=your_key_here" > .env
-echo "PUBMED_DB_PATH=primekg-rag/pubmed_db" >> .env
 ```
 *Replace `your_key_here` with your actual OpenAI API key*
 
