@@ -276,10 +276,7 @@ def get_analysis_collection():
 def get_pubmed_collection():
     """Connects to the PubMed ChromaDB collection."""
     try:
-        db_path = os.getenv("PUBMED_DB_PATH")
-        if not db_path:
-            st.error("PUBMED_DB_PATH not set in .env file.")
-            return None
+        db_path = os.getenv("PUBMED_DB_PATH", str(PUBMED_DB_PATH))
         client = chromadb.PersistentClient(path=db_path)
         embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
             model_name="sentence-transformers/all-MiniLM-L6-v2"
