@@ -4,7 +4,7 @@ import numpy as np
 import os
 import json
 import chromadb
-from typing import List, Dict, Any, Optional, Tuple
+from typing import List, Dict, Any, Optional, Tuple, Union
 import networkx as nx
 import matplotlib.pyplot as plt
 import io
@@ -72,7 +72,7 @@ NODE_COLORS = {
 }
 
 # --- Analysis Rendering Helpers ---
-def render_analysis_with_collapse(markdown_text: str, bullet_threshold: int = 10, targets: list[str] | None = None):
+def render_analysis_with_collapse(markdown_text: str, bullet_threshold: int = 10, targets: Union[List[str], None] = None):
     """Render the analysis markdown, collapsing long sections.
 
     - targets: list of section titles (level-3) to collapse if they have > bullet_threshold bullets.
@@ -185,7 +185,7 @@ def get_subgraph_files():
     return sorted([f.name for f in SUBGRAPHS_DIR.glob("*.csv")])
 
 @st.cache_data
-def list_analyzed_subgraphs(collection: chromadb.Collection | None) -> list[str]:
+def list_analyzed_subgraphs(collection: Union[chromadb.Collection, None]) -> List[str]:
     """Return list of subgraph CSV filenames that have stored analyses in ChromaDB.
 
     We derive the subgraph CSV name from the stored analysis metadata 'filename',
