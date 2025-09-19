@@ -4,7 +4,7 @@ import numpy as np
 import os
 import json
 import chromadb
-from typing import List, Dict, Any, Optional, Tuple
+from typing import List, Dict, Any, Optional, Tuple, Union
 import networkx as nx
 import matplotlib.pyplot as plt
 import io
@@ -72,7 +72,7 @@ NODE_COLORS = {
 }
 
 # --- Analysis Rendering Helpers ---
-def render_analysis_with_collapse(markdown_text: str, bullet_threshold: int = 10, targets: list[str] | None = None):
+def render_analysis_with_collapse(markdown_text: str, bullet_threshold: int = 10, targets: Union[List[str], None] = None):
     """Render the analysis markdown, collapsing long sections.
 
     - targets: list of section titles (level-3) to collapse if they have > bullet_threshold bullets.
@@ -185,7 +185,7 @@ def get_subgraph_files():
     return sorted([f.name for f in SUBGRAPHS_DIR.glob("*.csv")])
 
 @st.cache_data
-def list_analyzed_subgraphs(collection: chromadb.Collection | None) -> list[str]:
+def list_analyzed_subgraphs(collection: Union[chromadb.Collection, None]) -> List[str]:
     """Return list of subgraph CSV filenames that have stored analyses in ChromaDB.
 
     We derive the subgraph CSV name from the stored analysis metadata 'filename',
@@ -276,10 +276,7 @@ def get_analysis_collection():
 def get_pubmed_collection():
     """Connects to the PubMed ChromaDB collection."""
     try:
-        db_path = os.getenv("PUBMED_DB_PATH")
-        if not db_path:
-            st.error("PUBMED_DB_PATH not set in .env file.")
-            return None
+        db_path = os.getenv("PUBMED_DB_PATH", str(PUBMED_DB_PATH))
         client = chromadb.PersistentClient(path=db_path)
         embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
             model_name="sentence-transformers/all-MiniLM-L6-v2"
@@ -1075,7 +1072,7 @@ else:
         ])
 
         with tab1:
-            st.subheader("🔬 AI Expert Analysis")
+            st.subheader("🔬 LLM Summary")
             
             # Check if we have subgraph data
             if st.session_state.current_subgraph_df.empty:
