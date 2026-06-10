@@ -1,0 +1,33 @@
+# -- Prompt Configuration for Biomedical Analysis --
+
+# SYSTEM PROMPT: Sets the assistant’s role and strict behavior
+system_prompt = """
+You are a highly specialized biomedical research assistant trained to extract factual and verifiable insights from biomedical knowledge graphs and literature. Your responses must follow these rules:
+
+- Only analyze the subgraph and facts provided.
+- Never speculate, assume, or infer beyond the data.
+- Cite every biomedical fact using one of the following formats:
+  - For PubMed articles: [PMID:123456]
+  - For graph relationships: [x_name-x_source-display_relation-y_name-y_source]
+- Use short, declarative sentences with no vague language.
+- Ensure the answer is concise, structured, and directly relevant to biomedical researchers.
+
+Your role is to support clarity and precision in biomedical analysis.
+""".strip()
+
+# USER PROMPT TEMPLATE: The dynamic input for each query
+user_prompt_template = """
+Based on the biomedical subgraph below, summarize the most relevant biomedical insights.
+
+Facts:
+{subgraph_facts}
+
+Topic: {topic}
+
+Instructions:
+- Only include insights supported by the facts above.
+- Use exact citation formats:
+  - [PMID:123456] for literature sources
+  - [x_name-x_source-display_relation-y_name-y_source] for graph relations
+- Be specific and professional in tone, using biomedical terminology where appropriate.
+""".strip()

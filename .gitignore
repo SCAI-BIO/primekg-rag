@@ -196,6 +196,38 @@ cython_debug/
 kg.csv
 nodes_embeddings.pkl
 
+# Local/generated project data
+nodes.csv
+pathways.csv
+pubmed_records_unique.json
+pubmed_abstracts*.json
+pubmed_trd_new.jsonl
+pubmed_trd_extras.jsonl
+pubmed_gene_depression.jsonl
+pubmed_gene_aliases.jsonl
+pubmed_final_corpus*.json
+chroma_data/
+chroma_expanded_corpus*/
+pubmed_db/
+analyses_db/
+node_db/
+question_db/
+mappings_db/
+shortest_path_db/
+rag_results/
+rag_results_old/
+evaluation_results/
+evaluation_results_kg_debug/
+evaluation_results_kg_only/
+kg_triplet_judgment_results/
+ollama_evaluation/
+combined_evaluation_results/
+appendix_figures/
+eval_summary*.csv
+*.csv
+graph.html
+logs/
+
 scihub.py/
 
 # .gitignore
@@ -226,3 +258,4 @@ ENV/
 .idea/
 
 *db.py
+!chroma_db.py
