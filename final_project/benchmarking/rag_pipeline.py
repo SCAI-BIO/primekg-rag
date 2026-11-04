@@ -27,9 +27,9 @@ except ImportError:
 BASE_DIR = Path(__file__).resolve().parent
 
 PATHWAYS_CSV = BASE_DIR / "pathways.csv"
-CHROMA_DIR = BASE_DIR / "chroma_data" / "pubmed_trd_mdd"
+CHROMA_DIR = BASE_DIR / "chroma_expanded_corpus_v2"
+COLLECTION_NAME = "pubmed_depression_expanded"
 OUTPUT_DIR = BASE_DIR / "rag_results"
-COLLECTION_NAME = "pubmed_trd_mdd"
 
 
 # ============================================================================
