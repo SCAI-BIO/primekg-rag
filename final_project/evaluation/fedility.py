@@ -26,7 +26,7 @@ client = OpenAI(api_key=api_key)
 
 BASE_DIR = Path(__file__).resolve().parent
 
-RESULTS_DIR = BASE_DIR / "rag_results"
+RESULTS_DIR = BASE_DIR.parent / "benchmarking" / "rag_results"
 OUTPUT_DIR = BASE_DIR / "kg_triplet_judgment_results"
 
 OPENAI_MODEL = "gpt-4o-mini"
