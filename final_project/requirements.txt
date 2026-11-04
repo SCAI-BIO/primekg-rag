@@ -31,3 +31,6 @@ py7zr>=0.20.0
 
 # Bioinformatics
 biopython>=1.81
+
+pymed
+pydantic>=2
