@@ -22,7 +22,7 @@ def find_latest_json():
     
     # Check each file in order and return the first one that exists
     for filename in known_files:
-        file_path = PARENT_DIR / filename
+        file_ = PARENT_DIR / filename
         if file_path.exists():
             logging.info(f"Found JSON file: {file_path}")
             return file_path
@@ -39,7 +39,7 @@ def find_latest_json():
 # The path to the latest JSON file containing the PubMed abstracts
 PUBMED_JSON_FILE = find_latest_json()
 # The path where the persistent database will be stored
-DB_PATH = str(PARENT_DIR / "pubmed_db")  # Changed to use absolute path in project root
+DB_PATH = str(Path(__file__).resolve().parent / "pubmed_db")  # Changed to use absolute path in project root
 # The name of the collection within the database
 COLLECTION_NAME = "pubmed_abstracts"
 # The embedding model to use. Must match the one in your Streamlit app.
