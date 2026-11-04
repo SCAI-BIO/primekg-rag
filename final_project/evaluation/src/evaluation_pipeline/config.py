@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 log = logging.getLogger(__name__)
 
 BASE_DIR = Path(__file__).resolve().parents[2]
-RESULTS_DIR = Path(os.environ.get("RAG_RESULTS_DIR", str(BASE_DIR.parent / "benchmarking" / "rag_results")))
+RESULTS_DIR = BASE_DIR.parent / "benchmarking" / "rag_results"
 OUTPUT_DIR = BASE_DIR / "evaluation_results"
 
 EXPECTED_REPS = set(range(1, 101))
