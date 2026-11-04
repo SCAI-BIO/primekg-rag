@@ -4,7 +4,7 @@ This project combines PrimeKG pathways and PubMed evidence to generate
 gene-focused explanations for treatment-resistant major depressive
 disorder (TR-MDD).
 
-It includes a Streamlit disease exploration tool, a local LLM benchmark,
+It includes a Streamlit Knowledge Graph Interpretation Tool, a local LLM benchmark,
 and evaluation scripts.
 
 ## Project structure
