@@ -1,0 +1,18 @@
+{
+  "MAOA": {"type": "gene"},
+  "DRD4": {"type": "gene"},
+  "HTR2C": {"type": "gene"},
+  "ADRA1A": {"type": "gene"},
+  "ADRA2A": {"type": "gene"},
+  "OPRM1": {"type": "gene"},
+  "OPRK1": {"type": "gene"},
+  "KCND2": {"type": "gene"},
+  "KCND3": {"type": "gene"},
+  "KCNQ2": {"type": "gene"},
+  "KCNQ3": {"type": "gene"},
+  "CHRNA3": {"type": "gene"},
+  "CHRNB4": {"type": "gene"},
+  "CHRM1": {"type": "gene"},
+  "ABAT": {"type": "gene"},
+  "GPT2": {"type": "gene"}
+}
