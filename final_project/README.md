@@ -7,6 +7,11 @@ disorder (TR-MDD).
 It includes a Streamlit Knowledge Graph Interpretation Tool, a local LLM benchmark,
 and evaluation scripts.
 
+The tool uses PrimeKG and PubMed evidence to help interpret relationships
+between biomedical entities. Users can explore disease subgraphs, inspect
+connecting paths, retrieve related papers, and generate explanations
+grounded in the selected evidence.
+
 ## Project structure
 
 | Folder | Contents |
