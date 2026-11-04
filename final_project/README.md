@@ -70,22 +70,23 @@ Further documentation is available on the
 
 ### Extracting gene pathways
 
-PrimeKG was loaded into Neo4j from `kg.csv`. Nodes represent biomedical
-entities, and relationships describe the connections between them.
+PrimeKG was loaded into Neo4j, and Cypher queries were used to find
+two-hop connections between the 16 SHAP-selected genes and major
+depressive disorder.
 
-Cypher queries were used to extract two-hop paths connecting the 16
-SHAP-selected genes to major depressive disorder through an intermediate
-entity:
+The intermediate entities included genes/proteins, drugs, diseases,
+and effects/phenotypes. Relationships were searched in either direction
+to identify connecting paths.
 
-```text
-Gene → Intermediate entity → MDD
-```
+The results were exported as `pathways.csv` with these columns:
 
-The extracted paths were exported as `pathways.csv`, containing:
+gene, intermediate_node, intermediate_type, relationship_1, relationship_2
 
-```text
-gene,intermediate_node,intermediate_type,relationship_1,relationship_2
-```
+The benchmark removes duplicate rows and assigns each pathway a reference
+such as `[T1]` or `[T2]` for use in the generated explanations.
+
+Place the exported file in `benchmarking/` before running
+`rag_pipeline.py`. The original CSV-export query is not included here.
 
 Duplicate paths are removed when the benchmark loads the file.
 Each path is assigned a reference such as `[T1]` or `[T2]`, allowing
