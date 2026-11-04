@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parents[2]
 RESULTS_DIR = Path("C:\\Users\\aemekkawi\\Documents\\rag_results")
 OUTPUT_DIR = BASE_DIR / "evaluation_results"
 
-EXPECTED_REPS = set(range(1, 91))
+EXPECTED_REPS = set(range(1, 101))
 EXPECTED_MODELS = 12
 EXPECTED_GENES = 16
 EXPECTED_ROWS = len(EXPECTED_REPS) * EXPECTED_MODELS * EXPECTED_GENES
